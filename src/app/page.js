@@ -1,35 +1,70 @@
 "use client"
-import Navbar from "@/components/Navbar";
+import Image from "next/image";
+import rightArrowWhite from "../public/img/rightArrowWhite.png"
+import mainDriving from "../public/img/mainDriving.jpg"
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
     <>
       <main>
-          <Navbar />
-          <section className=" h-[85vh] bg-cover bg-center" >
-            <div className="absolute inset-0 bg-black opacity-50"></div> {/* Optional overlay for darkening the background */}
-
-            <div className="relative z-10 flex flex-col justify-center items-start h-full max-w-6xl mx-auto px-6 text-white">
-              {/* Subheading */}
-              <p className="text-lg mb-4">Start With A Best Course</p>
-
-              {/* Main Heading */}
-              <h1 className="text-5xl font-bold mb-6">
-                Learn Car <span className="text-blue-500">Driving</span> With Us
-              </h1>
-
-              {/* Buttons */}
-              <div className="flex space-x-4">
-                <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-                  Explore Courses →
-                </button>
-
-                <button className="flex items-center space-x-2 px-6 py-3 bg-transparent border border-white rounded-lg hover:bg-white hover:text-black transition">
-                  <span>Watch Our Story</span>
+        <section className="container mx-auto pt-24 w-full">
+          <article className="flex justify-between items-center">
+            <div className="flex flex-col justify-center items-start gap-y-12 w-[40vw]">
+              <div className=" flex flex-col gap-y-4">
+                <div className="text-xl font-semibold">Grow up your driving skills</div>
+                <div className="text-5xl font-bold">Learn to
+                  <span className="bg-orange-400 text-white px-3 mx-2">Drive With</span>
+                </div>
+                <div className="text-5xl font-bold">Confidence</div>
+              </div>
+              <div className="">
+                <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">EXPLORE COURSES
+                  <Image
+                    src={rightArrowWhite}
+                    width={18}
+                    height={20}
+                    alt="Picture of the author"
+                  />
                 </button>
               </div>
             </div>
-          </section>
+            <div>
+              <Image
+                src={mainDriving}
+                className="sm:w-[50vw] rounded-3xl object-cover"
+                alt="Picture of the author"
+              />
+            </div>
+          </article>
+        </section>
+
+        <div className="h-1 w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section className="container mx-auto">
+          <article>
+            <div className="flex flex-col gap-y-3">
+              <div className="text-xl font-semibold text-orange-400">Our Services</div>
+              <div className="text-4xl font-bold">We Provide Service For You</div>
+            </div>
+
+            <div className="flex">
+              <Card data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+              <Card data="Instructor Training" details="Brainstrom words related to your skills and confidence." />
+              <Card data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+              <Card data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+            </div>
+          </article>
+        </section>
+
+        <div className="h-1 w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section className="container mx-auto">
+          <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, necessitatibus totam tempora officia facere ipsam voluptatem ipsa dolores consequuntur. Doloremque ut assumenda amet odit! Consectetur odio iure eligendi deserunt at.
+          </article>
+        </section>
+
       </main>
     </>
   );
