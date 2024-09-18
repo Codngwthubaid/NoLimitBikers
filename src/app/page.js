@@ -10,6 +10,17 @@ import ELD from "../public/img/ELD.png"
 import IT from "../public/img/IT.png"
 import RTP from "../public/img/RTP.png"
 import CYSAT from "../public/img/CYSAT.png"
+import bikeFirst from "../public/img/bikeFirst.jpg"
+import bikeSecond from "../public/img/bikeSecond.jpg"
+import bikeThird from "../public/img/bikeThird.jpg"
+import bikeFour from "../public/img/bikeFour.jpg"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 
 export default function Home() {
   return (
@@ -21,21 +32,21 @@ export default function Home() {
               <div className=" flex flex-col gap-y-4">
                 <div className="text-xl font-semibold">Grow up your driving skills</div>
                 <div className="text-5xl font-bold">Learn to
-                  <span className="bg-orange-400 text-white px-3 mx-2">Drive With</span>
+                  <span className="rounded-xl bg-orange-400 text-white px-3 mx-2">Drive With</span>
                 </div>
                 <div className="text-5xl font-bold">Confidence</div>
               </div>
               <div>
                 <Link href="/pages/courses">
-                <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">EXPLORE COURSES
-                  <Image
-                    src={rightArrowWhite}
-                    width={18}
-                    height={20}
-                    alt="Picture of the author"
+                  <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">EXPLORE COURSES
+                    <Image
+                      src={rightArrowWhite}
+                      width={18}
+                      height={20}
+                      alt="Picture of the author"
                     />
-                </button>
-                    </Link>
+                  </button>
+                </Link>
               </div>
             </div>
             <div>
@@ -71,8 +82,31 @@ export default function Home() {
         <section className="container mx-auto">
           <article>
             <div className="flex justify-center items-center">
-              <div className="w-[45vw]">
-                Image
+              <div className="sm:w-[45vw] flex justify-center items-center gap-x-3">
+                <div className="flex flex-col gap-y-2">
+                  <Image
+                    src={bikeFirst}
+                    className="sm:w-[200px] rounded-3xl object-cover"
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src={bikeSecond}
+                    className="sm:w-[200px] h-auto rounded-3xl object-cover"
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="flex flex-col gap-y-2">
+                  <Image
+                    src={bikeFour}
+                    className="sm:w-[200px] rounded-3xl object-cover"
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src={bikeThird}
+                    className="sm:w-[200px] h-auto rounded-3xl object-cover"
+                    alt="Picture of the author"
+                  />
+                </div>
               </div>
               <div>
                 <div className="flex flex-col gap-y-5 w-[45vw]">
@@ -99,9 +133,9 @@ export default function Home() {
                           width={18}
                           height={20}
                           alt="Picture of the author"
-                          />
+                        />
                       </button>
-                          </Link>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -113,8 +147,79 @@ export default function Home() {
 
         <section>
           <article>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam temporibus omnis, suscipit harum culpa blanditiis facilis sapiente magni dolorum quidem quo obcaecati minima non voluptatum architecto explicabo deserunt autem.
+            <div className="bg-[#a99595] max-h-fit">
+              <div className="text-white w-[95vw] mx-auto flex justify-around items-center py-10">
+                <div className="w-1/2">
+                  <div className="flex flex-col gap-y-3">
+                    <div className="text-orange-400 font-semibold text-2xl">FAQ</div>
+                    <div className="text-[#ffedd5] text-5xl font-bold">Frequently Asked Question</div>
+                  </div>
+                  <div className="my-10 flex flex-col gap-y-4 ">
+                    <div className="bg-orange-400 px-3 rounded-xl">
+                      <Accordion type="single" collapsible>
+                        <AccordionItem value="item-1">
+                          <AccordionTrigger className="text-lg">Can I book lessons online?</AccordionTrigger>
+                          <AccordionContent className="text-lg">
+                            Yes, our website allows you to easily book lessons online with a few clicks.
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <div className="bg-orange-400 px-3 rounded-xl">
+                      <Accordion type="single" collapsible>
+                        <AccordionItem value="item-1">
+                          <AccordionTrigger className="text-lg">How long is each bike driving lesson?</AccordionTrigger>
+                          <AccordionContent className="text-lg">
+                            Each lesson typically lasts between 60 to 90 minutes, depending on your chosen package.
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <div className="bg-orange-400 px-3 rounded-xl">
+                      <Accordion type="single" collapsible>
+                        <AccordionItem value="item-1">
+                          <AccordionTrigger className="text-lg">How many lessons will I need to become a confident rider?</AccordionTrigger>
+                          <AccordionContent className="text-lg">
+                            The number of lessons varies depending on your individual progress, but most learners require 10-15 lessons to gain confidence.
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <div className="bg-orange-400 px-3 rounded-xl">
+                      <Accordion type="single" collapsible>
+                        <AccordionItem value="item-1">
+                          <AccordionTrigger className="text-lg">What safety gear do I need for lessons?</AccordionTrigger>
+                          <AccordionContent className="text-lg">
+                            We provide helmets and basic protective gear. We recommend wearing gloves, jackets, and sturdy footwear for additional protection.
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                  </div>
+                </div>
+                <div className="border-red-600 border w-[40vw] text-[#a99595]">
+                  <div>
+                    <div>Asking Question Now</div>
+                    <div>
+                      <div className="flex justify-around items-center">
+                        <input type="text" name="name" id="name" placeholder="Your Name"/>
+                        <input type="email" name="email" id="email" placeholder="Your Email"/>
+                      </div>
+                      <div className="flex justify-around items-center">
+                        <input type="number" name="number" id="number" placeholder="Your Number"/>
+                        <select name="option" id="option">
+                          <option value="">lulla</option>
+                          <option value="">lulla</option>
+                          <option value="">lulla</option>
+                        </select>
+                      </div>
+                      <div>
+                        <textarea name="textarea" id="textarea" cols="60" rows="10" placeholder="Your Message" className="p-3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </article>
         </section>
