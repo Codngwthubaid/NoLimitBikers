@@ -2,7 +2,10 @@
 import Image from "next/image";
 import rightArrowWhite from "../public/img/rightArrowWhite.png"
 import mainDriving from "../public/img/mainDriving.jpg"
+import rightTick from "../public/img/rightTick.png"
 import Card from "@/components/Card";
+import AboutTick from "@/components/AboutTick";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,15 +21,17 @@ export default function Home() {
                 </div>
                 <div className="text-5xl font-bold">Confidence</div>
               </div>
-              <div className="">
+              <div>
+                <Link href="/pages/courses">
                 <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">EXPLORE COURSES
                   <Image
                     src={rightArrowWhite}
                     width={18}
                     height={20}
                     alt="Picture of the author"
-                  />
+                    />
                 </button>
+                    </Link>
               </div>
             </div>
             <div>
@@ -39,7 +44,7 @@ export default function Home() {
           </article>
         </section>
 
-        <div className="h-1 w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
         <section className="container mx-auto">
           <article>
@@ -48,7 +53,7 @@ export default function Home() {
               <div className="text-4xl font-bold">We Provide Service For You</div>
             </div>
 
-            <div className="flex">
+            <div className="flex gap-x-5 my-10">
               <Card data="Easy Learn Driving" details="Our Course module is very easy to understand." />
               <Card data="Instructor Training" details="Brainstrom words related to your skills and confidence." />
               <Card data="Easy Learn Driving" details="Our Course module is very easy to understand." />
@@ -57,11 +62,56 @@ export default function Home() {
           </article>
         </section>
 
-        <div className="h-1 w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
         <section className="container mx-auto">
           <article>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, necessitatibus totam tempora officia facere ipsam voluptatem ipsa dolores consequuntur. Doloremque ut assumenda amet odit! Consectetur odio iure eligendi deserunt at.
+            <div className="flex justify-center items-center">
+              <div className="w-[45vw]">
+                Image
+              </div>
+              <div>
+                <div className="flex flex-col gap-y-5 w-[45vw]">
+                  <div className="text-xl font-semibold text-orange-400">About Us</div>
+                  <div className="text-4xl font-bold bg-orange-400 text-white">Learn To Drive, Drive With Safety And Control</div>
+                  <div className="text-lg">To learn to drive safely and with control, first familiarize yourself with the vehicle and obey traffic laws. Keep a safe following distance, use turn signals, and regularly check mirrors and blind spots.</div>
+                  <div className="flex justify-evenly font-semibold my-3">
+                    <div className="flex flex-col items-start gap-y-1">
+                      <AboutTick src={rightTick} data="Basic of driving skills" />
+                      <AboutTick src={rightTick} data="Road test preparation" />
+                      <AboutTick src={rightTick} data="Master the Basics" />
+                    </div>
+                    <div className="flex flex-col items-start gap-y-1">
+                      <AboutTick src={rightTick} data="Practice Defensive Driving" />
+                      <AboutTick src={rightTick} data="Control Your Speed Around Turns" />
+                      <AboutTick src={rightTick} data="Stay Calm During Long Drives" />
+                    </div>
+                  </div>
+                  <div>
+                    <Link href="/pages/about">
+                      <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">ABOUT MORE
+                        <Image
+                          src={rightArrowWhite}
+                          width={18}
+                          height={20}
+                          alt="Picture of the author"
+                          />
+                      </button>
+                          </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section>
+          <article>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam temporibus omnis, suscipit harum culpa blanditiis facilis sapiente magni dolorum quidem quo obcaecati minima non voluptatum architecto explicabo deserunt autem.
+            </div>
           </article>
         </section>
 

@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Card = (props) => {
     return (
         <>
-            <div className='border-2 border-red-600 '>
+            <div className='flex flex-col justify-center items-center text-center gap-y-3 border border-orange-300 py-5 rounded-2xl hover:bg-orange-400 hover:text-white'>
                 <div>
                     {/* <Image
                             src={ }
@@ -14,17 +14,16 @@ const Card = (props) => {
                             alt="Picture of the author"
                         />  */}
                 </div>
-                <div>{props.data}</div>
+                <div className='font-semibold text-xl'>{props.data}</div>
                 <div>{props.details}</div>
-                <div>
-                    <Link href="/pages/about" className='underline'>READ MORE
-                        {/* <Image
+                <div className='flex justify-center items-center gap-x-2 cursor-pointer'>
+                    <Link href="/pages/about" className='font-semibold hover:underline text-sm'>READ MORE</Link>
+                    {/* <Image
                             src={ }
                             width={18}
                             height={20}
                             alt="Picture of the author"
                         /> */}
-                    </Link>
                 </div>
             </div>
         </>
