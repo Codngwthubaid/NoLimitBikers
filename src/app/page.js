@@ -6,6 +6,10 @@ import rightTick from "../public/img/rightTick.png"
 import Card from "@/components/Card";
 import AboutTick from "@/components/AboutTick";
 import Link from "next/link";
+import ELD from "../public/img/ELD.png"
+import IT from "../public/img/IT.png"
+import RTP from "../public/img/RTP.png"
+import CYSAT from "../public/img/CYSAT.png"
 
 export default function Home() {
   return (
@@ -54,10 +58,10 @@ export default function Home() {
             </div>
 
             <div className="flex gap-x-5 my-10">
-              <Card data="Easy Learn Driving" details="Our Course module is very easy to understand." />
-              <Card data="Instructor Training" details="Brainstrom words related to your skills and confidence." />
-              <Card data="Easy Learn Driving" details="Our Course module is very easy to understand." />
-              <Card data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+              <Card img={ELD} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+              <Card img={IT} data="Instructor Training" details="Brainstrom words related to your skills and confidence." />
+              <Card img={CYSAT} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+              <Card img={RTP} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
             </div>
           </article>
         </section>
@@ -73,7 +77,7 @@ export default function Home() {
               <div>
                 <div className="flex flex-col gap-y-5 w-[45vw]">
                   <div className="text-xl font-semibold text-orange-400">About Us</div>
-                  <div className="text-4xl font-bold bg-orange-400 text-white">Learn To Drive, Drive With Safety And Control</div>
+                  <div className="text-4xl font-bold">Learn To Drive, Drive With Safety And Control</div>
                   <div className="text-lg">To learn to drive safely and with control, first familiarize yourself with the vehicle and obey traffic laws. Keep a safe following distance, use turn signals, and regularly check mirrors and blind spots.</div>
                   <div className="flex justify-evenly font-semibold my-3">
                     <div className="flex flex-col items-start gap-y-1">
