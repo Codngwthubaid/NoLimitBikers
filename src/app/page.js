@@ -23,6 +23,8 @@ import G3 from "../public/Gallery/G3.jpg"
 import G4 from "../public/Gallery/G4.jpg"
 import G5 from "../public/Gallery/G5.jpg"
 import G6 from "../public/Gallery/G6.jpg"
+import G7 from "../public/Gallery/G7.jpg"
+import CardWCU from "@/components/CardWCU";
 
 
 export default function Home() {
@@ -67,7 +69,7 @@ export default function Home() {
         <section className="container mx-auto">
           <article>
             <div className="flex flex-col gap-y-3">
-              <div className="text-xl font-semibold text-orange-400">Our Services</div>
+              <div className="text-2xl font-semibold text-orange-400">Our Services</div>
               <div className="text-4xl font-bold">We Provide Service For You</div>
             </div>
 
@@ -113,7 +115,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="flex flex-col gap-y-5 w-[45vw]">
-                  <div className="text-xl font-semibold text-orange-400">About Us</div>
+                  <div className="text-2xl font-semibold text-orange-400">About Us</div>
                   <div className="text-4xl font-bold">Learn To Drive, Drive With Safety And Control</div>
                   <div className="text-lg">To learn to drive safely and with control, first familiarize yourself with the vehicle and obey traffic laws. Keep a safe following distance, use turn signals, and regularly check mirrors and blind spots.</div>
                   <div className="flex justify-evenly font-semibold my-3">
@@ -176,7 +178,7 @@ export default function Home() {
         <section>
           <article>
             <div className="flex flex-col justify-center items-center gap-y-5">
-              <div className="text-xl font-semibold text-orange-400">Our Gallery</div>
+              <div className="text-2xl font-semibold text-orange-400">Our Gallery</div>
               <div className="text-5xl font-bold">See Our Driving Practice Gallery</div>
             </div>
             <div className="flex flex-col gap-y-7 mt-10">
@@ -195,6 +197,53 @@ export default function Home() {
         </section>
 
         <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section>
+          <article className="flex justify-around items-center bg-[#a99595] py-10 ">
+            <div className="w-[50vw] flex flex-col gap-y-10">
+              <div className="flex flex-col justify-center items-start gap-y-5">
+                <div className="text-2xl text-orange-400 font-semibold">Why Choosing Us</div>
+                <div className="text-5xl font-bold text-[#ffedd5]">Get Behind The Wheel And Take The Lead</div>
+              </div>
+              <div className="flex flex-col justify-center items-start gap-y-5">
+                <div className="flex justify-around items-center gap-x-5">
+                  <div>
+                    <CardWCU src={rightTick} heading="Affordable Fee" details="All of our course fee are very affordable for everyone." />
+                  </div>
+                  <div>
+                    <CardWCU src={rightTick} heading="Affordable Fee" details="All of our course fee are very affordable for everyone." />
+                  </div>
+                </div>
+                <div className="flex justify-around items-center gap-x-5">
+                  <div>
+                    <CardWCU src={rightTick} heading="Affordable Fee" details="All of our course fee are very affordable for everyone." />
+                  </div>
+                  <div>
+                    <CardWCU src={rightTick} heading="Affordable Fee" details="All of our course fee are very affordable for everyone." />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-[40vw] flex justify-center">
+              <Image
+                src={G7}
+                className="w-96 rounded-2xl"
+                alt=""
+              />
+            </div>
+          </article>
+        </section>
+
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section>
+          <article>
+            <div>
+              <div className="text-2xl font-semibold">Our Work Process</div>
+              <div className="text-5xl font-bold">Start The Dride Learning Process</div>
+            </div>
+          </article>
+        </section>
 
       </main>
     </>
