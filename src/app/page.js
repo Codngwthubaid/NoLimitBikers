@@ -3,7 +3,6 @@ import Image from "next/image";
 import rightArrowWhite from "../public/img/rightArrowWhite.png"
 import mainDriving from "../public/img/mainDriving.jpg"
 import rightTick from "../public/img/rightTick.png"
-import Card from "@/components/Card";
 import AboutTick from "@/components/AboutTick";
 import Link from "next/link";
 import ELD from "../public/img/ELD.png"
@@ -20,7 +19,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-
+import FAQ from "../components/FAQ"
+import { Card } from "@/components/ui/card"
 
 export default function Home() {
   return (
@@ -147,7 +147,7 @@ export default function Home() {
 
         <section>
           <article>
-            <div className="bg-[#a99595] max-h-fit">
+            <div className="bg-[#a99595] max-h-fit ">
               <div className="text-white w-[95vw] mx-auto flex justify-around items-center py-10">
                 <div className="w-1/2">
                   <div className="flex flex-col gap-y-3">
@@ -197,26 +197,9 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="border-red-600 border w-[40vw] text-[#a99595]">
+                <div className="w-[40vw] text-[#a99595]">
                   <div>
-                    <div>Asking Question Now</div>
-                    <div>
-                      <div className="flex justify-around items-center">
-                        <input type="text" name="name" id="name" placeholder="Your Name"/>
-                        <input type="email" name="email" id="email" placeholder="Your Email"/>
-                      </div>
-                      <div className="flex justify-around items-center">
-                        <input type="number" name="number" id="number" placeholder="Your Number"/>
-                        <select name="option" id="option">
-                          <option value="">lulla</option>
-                          <option value="">lulla</option>
-                          <option value="">lulla</option>
-                        </select>
-                      </div>
-                      <div>
-                        <textarea name="textarea" id="textarea" cols="60" rows="10" placeholder="Your Message" className="p-3"></textarea>
-                      </div>
-                    </div>
+                    <FAQ />
                   </div>
                 </div>
               </div>
