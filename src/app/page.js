@@ -13,14 +13,17 @@ import bikeFirst from "../public/img/bikeFirst.jpg"
 import bikeSecond from "../public/img/bikeSecond.jpg"
 import bikeThird from "../public/img/bikeThird.jpg"
 import bikeFour from "../public/img/bikeFour.jpg"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 import FAQ from "../components/FAQ"
-import { Card } from "@/components/ui/card"
+import Card from "@/components/Card";
+import AccordionCom from "@/components/AccordionCom";
+import Gallery from "@/components/Gallery";
+import G1 from "../public/Gallery/G1.jpg"
+import G2 from "../public/Gallery/G2.jpg"
+import G3 from "../public/Gallery/G3.jpg"
+import G4 from "../public/Gallery/G4.jpg"
+import G5 from "../public/Gallery/G5.jpg"
+import G6 from "../public/Gallery/G6.jpg"
+
 
 export default function Home() {
   return (
@@ -154,47 +157,8 @@ export default function Home() {
                     <div className="text-orange-400 font-semibold text-2xl">FAQ</div>
                     <div className="text-[#ffedd5] text-5xl font-bold">Frequently Asked Question</div>
                   </div>
-                  <div className="my-10 flex flex-col gap-y-4 ">
-                    <div className="bg-orange-400 px-3 rounded-xl">
-                      <Accordion type="single" collapsible>
-                        <AccordionItem value="item-1">
-                          <AccordionTrigger className="text-lg">Can I book lessons online?</AccordionTrigger>
-                          <AccordionContent className="text-lg">
-                            Yes, our website allows you to easily book lessons online with a few clicks.
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion>
-                    </div>
-                    <div className="bg-orange-400 px-3 rounded-xl">
-                      <Accordion type="single" collapsible>
-                        <AccordionItem value="item-1">
-                          <AccordionTrigger className="text-lg">How long is each bike driving lesson?</AccordionTrigger>
-                          <AccordionContent className="text-lg">
-                            Each lesson typically lasts between 60 to 90 minutes, depending on your chosen package.
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion>
-                    </div>
-                    <div className="bg-orange-400 px-3 rounded-xl">
-                      <Accordion type="single" collapsible>
-                        <AccordionItem value="item-1">
-                          <AccordionTrigger className="text-lg">How many lessons will I need to become a confident rider?</AccordionTrigger>
-                          <AccordionContent className="text-lg">
-                            The number of lessons varies depending on your individual progress, but most learners require 10-15 lessons to gain confidence.
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion>
-                    </div>
-                    <div className="bg-orange-400 px-3 rounded-xl">
-                      <Accordion type="single" collapsible>
-                        <AccordionItem value="item-1">
-                          <AccordionTrigger className="text-lg">What safety gear do I need for lessons?</AccordionTrigger>
-                          <AccordionContent className="text-lg">
-                            We provide helmets and basic protective gear. We recommend wearing gloves, jackets, and sturdy footwear for additional protection.
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion>
-                    </div>
+                  <div>
+                    <AccordionCom />
                   </div>
                 </div>
                 <div className="w-[40vw] text-[#a99595]">
@@ -206,6 +170,31 @@ export default function Home() {
             </div>
           </article>
         </section>
+
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section>
+          <article>
+            <div className="flex flex-col justify-center items-center gap-y-5">
+              <div className="text-xl font-semibold text-orange-400">Our Gallery</div>
+              <div className="text-5xl font-bold">See Our Driving Practice Gallery</div>
+            </div>
+            <div className="flex flex-col gap-y-7 mt-10">
+              <div className="flex justify-center items-center gap-x-7">
+                <Gallery source={G1} desc="" />
+                <Gallery source={G2} desc="" />
+                <Gallery source={G3} desc="" />
+              </div>
+              <div className="flex justify-center items-center gap-x-7">
+                <Gallery source={G4} desc="" />
+                <Gallery source={G5} desc="" />
+                <Gallery source={G6} desc="" />
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
       </main>
     </>
