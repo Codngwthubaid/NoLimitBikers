@@ -22,10 +22,9 @@ import {
 const FAQ = () => {
     return (
         <>
-            <Card className="w-[40vw] bg-[#ffedd5]">
+            <Card className="w-[85vw] md:w-[40vw] bg-[#ffedd5]">
                 <CardHeader>
                     <CardTitle className="text-3xl text-center text-orange-400 font-bold">Asking Question Now</CardTitle>
-                    {/* <CardDescription>Deploy your new project in one-click.</CardDescription> */}
                 </CardHeader>
                 <CardContent>
                     <form>

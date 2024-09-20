@@ -5,7 +5,7 @@ const CardWCU = (props) => {
     return (
         <>
             <main>
-                <div className='flex justify-center items-start flex-col w-[20vw] bg-orange-400 p-5 gap-y-3 text-white rounded-2xl'>
+                <div className='flex justify-center items-start flex-col w-[45vw] lg:w-[20vw] bg-orange-400 p-5 gap-y-3 text-white rounded-2xl'>
                     <div className='flex justify-center items-center gap-x-2'>
                         <div>
                             <Image
