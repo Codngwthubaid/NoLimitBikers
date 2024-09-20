@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-orange-400 fixed w-full">
-      <nav className="container mx-auto p-6 flex justify-between items-center">
+      <nav className="container mx-auto p-5 flex justify-between items-center">
         <Link href="#" className="text-2xl font-bold text-white">Driving Lessons</Link>
         <ul className="hidden md:flex justify-between items-center">
           <li className="mr-8">

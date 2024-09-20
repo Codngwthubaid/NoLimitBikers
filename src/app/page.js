@@ -25,7 +25,7 @@ import G5 from "../public/Gallery/G5.jpg"
 import G6 from "../public/Gallery/G6.jpg"
 import G7 from "../public/Gallery/G7.jpg"
 import CardWCU from "@/components/CardWCU";
-
+import CardOWP from "@/components/CardOWP";
 
 export default function Home() {
   return (
@@ -238,9 +238,50 @@ export default function Home() {
 
         <section>
           <article>
-            <div>
-              <div className="text-2xl font-semibold">Our Work Process</div>
-              <div className="text-5xl font-bold">Start The Dride Learning Process</div>
+            <div className="container mx-auto flex flex-col justify-center items-start gap-y-10">
+              <div>
+                <div className="text-2xl font-semibold">Our Work Process</div>
+                <div className="text-5xl font-bold">Start The Dride Learning Process</div>
+              </div>
+              <div>
+                <CardOWP />
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section>
+          <article>
+            <div className="bg-[#a99595] h-[60vh] flex flex-col justify-center items-center gap-y-10">
+              <div className="text-orange-400 font-semibold text-2xl">(+163) 6972 9901</div>
+              <div className="flex flex-col justify-center items-center">
+                <div className="text-5xl text-[#ffedd5] font-bold">Book Your First Driving Lesson</div>
+                <div className="text-5xl text-[#ffedd5] font-bold">And Contact Us</div>
+              </div>
+              <div className="flex justify-center items-center gap-x-3">
+                <div>
+                  <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">BOOK NOW
+                    <Image
+                      src={rightArrowWhite}
+                      width={18}
+                      height={20}
+                      alt="Picture of the author"
+                    />
+                  </button>
+                </div>
+                <div>
+                  <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">CONTACT US
+                    <Image
+                      src={rightArrowWhite}
+                      width={18}
+                      height={20}
+                      alt="Picture of the author"
+                    />
+                  </button>
+                </div>
+              </div>
             </div>
           </article>
         </section>
