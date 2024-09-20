@@ -150,53 +150,6 @@ export default function Home() {
 
         <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
-        <section>
-          <article>
-            <div className="bg-[#a99595] max-h-fit ">
-              <div className="text-white w-[95vw] mx-auto flex justify-around items-center py-10">
-                <div className="w-1/2">
-                  <div className="flex flex-col gap-y-3">
-                    <div className="text-orange-400 font-semibold text-2xl">FAQ</div>
-                    <div className="text-[#ffedd5] text-5xl font-bold">Frequently Asked Question</div>
-                  </div>
-                  <div>
-                    <AccordionCom />
-                  </div>
-                </div>
-                <div className="w-[40vw] text-[#a99595]">
-                  <div>
-                    <FAQ />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
-
-        <section>
-          <article>
-            <div className="flex flex-col justify-center items-center gap-y-5">
-              <div className="text-2xl font-semibold text-orange-400">Our Gallery</div>
-              <div className="text-5xl font-bold">See Our Driving Practice Gallery</div>
-            </div>
-            <div className="flex flex-col gap-y-7 mt-10">
-              <div className="flex justify-center items-center gap-x-7">
-                <Gallery source={G1} desc="" />
-                <Gallery source={G2} desc="" />
-                <Gallery source={G3} desc="" />
-              </div>
-              <div className="flex justify-center items-center gap-x-7">
-                <Gallery source={G4} desc="" />
-                <Gallery source={G5} desc="" />
-                <Gallery source={G6} desc="" />
-              </div>
-            </div>
-          </article>
-        </section>
-
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
         <section>
           <article className="flex justify-around items-center bg-[#a99595] py-10 ">
@@ -254,6 +207,54 @@ export default function Home() {
 
         <section>
           <article>
+            <div className="bg-[#a99595] max-h-fit ">
+              <div className="text-white w-[95vw] mx-auto flex justify-around items-center py-10">
+                <div className="w-1/2">
+                  <div className="flex flex-col gap-y-3">
+                    <div className="text-orange-400 font-semibold text-2xl">FAQ</div>
+                    <div className="text-[#ffedd5] text-5xl font-bold">Frequently Asked Question</div>
+                  </div>
+                  <div>
+                    <AccordionCom />
+                  </div>
+                </div>
+                <div className="w-[40vw] text-[#a99595]">
+                  <div>
+                    <FAQ />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section>
+          <article>
+            <div className="flex flex-col justify-center items-center gap-y-5">
+              <div className="text-2xl font-semibold text-orange-400">Our Gallery</div>
+              <div className="text-5xl font-bold">See Our Driving Practice Gallery</div>
+            </div>
+            <div className="flex flex-col gap-y-7 mt-10">
+              <div className="flex justify-center items-center gap-x-7">
+                <Gallery source={G1} desc="" />
+                <Gallery source={G2} desc="" />
+                <Gallery source={G3} desc="" />
+              </div>
+              <div className="flex justify-center items-center gap-x-7">
+                <Gallery source={G4} desc="" />
+                <Gallery source={G5} desc="" />
+                <Gallery source={G6} desc="" />
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+
+        <section>
+          <article>
             <div className="bg-[#a99595] h-[60vh] flex flex-col justify-center items-center gap-y-10">
               <div className="text-orange-400 font-semibold text-2xl">(+163) 6972 9901</div>
               <div className="flex flex-col justify-center items-center">
@@ -285,6 +286,8 @@ export default function Home() {
             </div>
           </article>
         </section>
+
+        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
       </main>
     </>
