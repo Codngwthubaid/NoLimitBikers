@@ -12,27 +12,27 @@ const Navbar = () => {
   return (
     <header className="bg-orange-400 fixed w-full">
       <nav className="container mx-auto p-5 flex justify-between items-center">
-        <Link href="#" className="text-2xl font-bold text-white">Driving Lessons</Link>
+        <Link href="#" className="text-3xl font-bold text-[#FFEED5]">Driving Lessons</Link>
         <ul className="hidden md:flex justify-between items-center">
-          <li className="mr-8">
-            <Link href="/" className="text-lg text-white hover:text-gray-800">Home</Link>
+          <li className="mr-8 p-1">
+            <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
           </li>
-          <li className="mr-8">
-            <Link href="/pages/about" className="text-lg text-white hover:text-gray-800">About</Link>
+          <li className="mr-8 p-1">
+            <Link href="/pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">About</Link>
           </li>
-          <li className="mr-8">
-            <Link href="/pages/courses" className="text-lg text-white hover:text-gray-800">Courses</Link>
+          <li className="mr-8 p-1">
+            <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
           </li>
-          <li className="mr-8">
-            <Link href="/pages/contact" className="text-lg text-white hover:text-gray-800">Contact</Link>
+          <li className="mr-8 p-1">
+            <Link href="/pages/contact" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
           </li>
-          <li className="mr-8">
-            <Link href="/pages/help" className="text-lg text-white hover:text-gray-800">Help</Link>
+          <li className="mr-8 p-1">
+            <Link href="/pages/help" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Help</Link>
           </li>
         </ul>
         <div className="md:hidden flex justify-center" onClick={handleMobileMenu}>
           <svg
-            className={`w-6 h-6 text-white transition duration-300 ease-in-out ${
+            className={`w-6 h-6 text-[#FFEED5] transition duration-300 ease-in-out ${
               mobileMenuActive ? 'rotate-90' : ''
             }`}
             viewBox="0 0 24 24"
@@ -48,27 +48,27 @@ const Navbar = () => {
       </nav>
       {mobileMenuActive && (
         <ul
-          className={`md:hidden flex flex-col justify-center items-center absolute top-16 left-0 w-full h-[90vh] bg-orange-400 shadow-md transition duration-300 ease-in-out ${
+          className={`md:hidden flex flex-col justify-center items-center absolute top-16 left-0 w-full min-h-[100vh] bg-orange-400 shadow-md transition duration-300 ease-in-out ${
             mobileMenuActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
-            <Link href="#" className="text-lg text-white hover:text-gray-800">Home</Link>
+            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
-            <Link href="#" className="text-lg text-white hover:text-gray-800">About</Link>
+            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">About</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="#" className="text-lg text-white hover:text-gray-800">Courses</Link>
+            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="#" className="text-lg text-white hover:text-gray-800">Pages</Link>
+            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Pages</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="#" className="text-lg text-white hover:text-gray-800">Contact</Link>
+            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="#" className="text-lg text-white hover:text-gray-800">Help</Link>
+            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Help</Link>
           </li>
         </ul>
       )}
@@ -77,67 +77,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-// import Link from 'next/link';
-// import Image from 'next/image';
-
-// export default function Navbar() {
-//   return (
-//     <>
-//       {/* First navigation bar */}
-//       <nav className="bg-white border-gray-200 dark:bg-gray-900">
-//         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-//           <Link href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
-//               {/* Use Next.js Image for optimized image loading */}
-//               <Image
-//                 src="https://flowbite.com/docs/images/logo.svg"
-//                 alt="Flowbite Logo"
-//                 width={32}
-//                 height={32}
-//                 className="h-8"
-//               />
-//               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-//                 Bike Driving 
-//               </span>
-//           </Link>
-
-//           <div className="flex items-center space-x-6 rtl:space-x-reverse">
-//             <Link href="tel:5541251234" className="text-sm text-gray-mr-800 dark:text-white hover:underline">
-//               (555) 412-1234
-//             </Link>
-//           </div>
-//         </div>
-//       </nav>
-
-//       {/* Second navigation bar */}
-//       <nav className="bg-gray-mr-80 dark:bg-gray-700">
-//         <div className="max-w-screen-xl px-4 py-3 mx-auto">
-//           <div className="flex items-center">
-//             <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-//               <li>
-//                 <Link href="#" className="text-gray-900 dark:text-white hover:underline" aria-current="page">
-//                     Home
-//                 </Link>
-//               </li>
-//               <li>
-//                 <Link href="#" className="text-gray-900 dark:text-white hover:underline">About
-//                 </Link>
-//               </li>
-//               <li>
-//                 <Link href="#" className="text-gray-900 dark:text-white hover:underline">Courses
-//                 </Link>
-//               </li>
-//               <li>
-//                 <Link href="#" className="text-gray-900 dark:text-white hover:underline">Contact
-//                 </Link>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-//       </nav>
-//     </>
-//   );
-// }
-
-

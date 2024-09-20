@@ -32,14 +32,14 @@ export default function Home() {
     <>
       <main>
         <section className="container mx-auto pt-24 w-full">
-          <article className="flex justify-between items-center">
-            <div className="flex flex-col justify-center items-start gap-y-12 w-[40vw]">
+          <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
+            <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
               <div className=" flex flex-col gap-y-4">
                 <div className="text-xl font-semibold">Grow up your driving skills</div>
-                <div className="text-5xl font-bold">Learn to
+                <div className="text-3xl sm:text-5xl font-bold">Learn to
                   <span className="rounded-xl bg-orange-400 text-white px-3 mx-2">Drive With</span>
                 </div>
-                <div className="text-5xl font-bold">Confidence</div>
+                <div className="text-3xl sm:text-5xl font-bold">Confidence</div>
               </div>
               <div>
                 <Link href="/pages/courses">
@@ -54,10 +54,10 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div>
+            <div className="flex justify-center items-center">
               <Image
                 src={mainDriving}
-                className="sm:w-[50vw] rounded-3xl object-cover"
+                className="lg:w-[50vw] w-11/12 rounded-3xl object-cover"
                 alt="Picture of the author"
               />
             </div>
@@ -73,11 +73,22 @@ export default function Home() {
               <div className="text-4xl font-bold">We Provide Service For You</div>
             </div>
 
-            <div className="flex gap-x-5 my-10">
-              <Card img={ELD} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
-              <Card img={IT} data="Instructor Training" details="Brainstrom words related to your skills and confidence." />
-              <Card img={CYSAT} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
-              <Card img={RTP} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+            <div className="flex flex-col lg:flex-row gap-x-5 my-10">
+              <div className="">
+                <div>
+                  <Card img={ELD} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+                </div>
+                <div>
+                  <Card img={IT} data="Instructor Training" details="Brainstrom words related to your skills and confidence." />
+                </div>
+              </div>
+
+              <div>
+                <Card img={CYSAT} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+              </div>
+              <div>
+                <Card img={RTP} data="Easy Learn Driving" details="Our Course module is very easy to understand." />
+              </div>
             </div>
           </article>
         </section>

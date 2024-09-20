@@ -15,35 +15,35 @@ const Footer = () => {
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <h2 class="mb-6 text-lg font-bold text-[#a99595] uppercase dark:text-white ">Contact</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
                       <li class="mb-4">
-                          <Link href="https://flowbite.com/" class="hover:underline">Flowbite</Link>
+                          <Link href="https://flowbite.com/" class="hover:text-orange-400">(+163) 6972 9901</Link>
                       </li>
                       <li>
-                          <Link href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</Link>
+                          <Link href="https://tailwindcss.com/" class="hover:text-orange-400">Info@nolimitbikers.nl</Link>
                       </li>
                   </ul>
               </div>
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <h2 class="mb-6 text-lg font-bold text-[#a99595] uppercase dark:text-white ">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
                       <li class="mb-4">
-                          <Link href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</Link>
+                          <Link href="https://github.com/themesberg/flowbite" class=" hover:text-orange-400">Instagram</Link>
                       </li>
                       <li>
-                          <Link href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</Link>
+                          <Link href="https://discord.gg/4eeurUVvTy" class="hover:text-orange-400">Facebook</Link>
                       </li>
                   </ul>
               </div>
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <h2 class="mb-6 text-lg font-bold text-[#a99595] uppercase dark:text-white ">Legal</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
                       <li class="mb-4">
-                          <Link href="#" class="hover:underline">Privacy Policy</Link>
+                          <Link href="#" class="hover:text-orange-400">Privacy Policy</Link>
                       </li>
                       <li>
-                          <Link href="#" class="hover:underline">Terms &amp; Conditions</Link>
+                          <Link href="#" class="hover:text-orange-400">Terms &amp; Conditions</Link>
                       </li>
                   </ul>
               </div>
@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <Link href="https://flowbite.com/" class="hover:underline">Flowbite™</Link>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2024 <Link href="/" class="hover:text-orange-400 hover:underline">Driving Lessons</Link>. All Rights Reserved.
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
               <Link href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
