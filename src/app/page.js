@@ -246,13 +246,13 @@ export default function Home() {
               <div className="text-2xl font-semibold text-orange-400">Our Gallery</div>
               <div className="text-4xl sm:text-5xl font-bold text-center">See Our Driving Practice Gallery</div>
             </div>
-            <div className="flex flex-row md:flex-col gap-y-7 mt-10 justify-center items-center">
-              <div className="flex justify-center items-center gap-x-7 flex-col-reverse gap-y-5">
+            <div className="flex flex-row md:flex-col gap-y-7 mt-10 justify-center items-center px-5">
+              <div className="flex justify-center items-center gap-x-7 flex-col-reverse md:flex-row gap-y-5">
                 <Gallery source={G1} desc="" />
                 <Gallery source={G2} desc="" />
                 <Gallery source={G3} desc="" />
               </div>
-              <div className="flex justify-center items-center gap-x-7 flex-col-reverse gap-y-5">
+              <div className="flex justify-center items-center gap-x-7 flex-col-reverse md:flex-row gap-y-5">
                 <Gallery source={G4} desc="" />
                 <Gallery source={G5} desc="" />
                 <Gallery source={G6} desc="" />
@@ -267,30 +267,34 @@ export default function Home() {
           <article>
             <div className="bg-[#a99595] min-h-fit p-5 flex flex-col justify-center items-center gap-y-10">
               <div className="text-orange-400 font-semibold text-2xl">(+163) 6972 9901</div>
-              <div className="flex flex-col justify-center items-start lg:items-center">
+              <div className="flex flex-col justify-center items-start sm:items-center">
                 <div className="text-4xl lg:text-5xl text-[#ffedd5] font-bold">Book Your First Driving Lesson</div>
                 <div className="text-4xl lg:-5xl text-[#ffedd5] font-bold">And Contact Us</div>
               </div>
               <div className="flex justify-center items-center gap-x-3">
                 <div>
-                  <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">BOOK NOW
-                    <Image
-                      src={rightArrowWhite}
-                      width={18}
-                      height={20}
-                      alt="Picture of the author"
-                    />
-                  </button>
+                  <Link href="pages/courses">
+                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">BOOK NOW
+                      <Image
+                        src={rightArrowWhite}
+                        width={18}
+                        height={20}
+                        alt="Picture of the author"
+                      />
+                    </button>
+                  </Link>
                 </div>
                 <div>
-                  <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">CONTACT US
-                    <Image
-                      src={rightArrowWhite}
-                      width={18}
-                      height={20}
-                      alt="Picture of the author"
-                    />
-                  </button>
+                  <Link href="pages/courses">
+                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">CONTACT US
+                      <Image
+                        src={rightArrowWhite}
+                        width={18}
+                        height={20}
+                        alt="Picture of the author"
+                      />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

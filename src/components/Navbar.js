@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className="bg-orange-400 fixed w-full">
       <nav className="container mx-auto p-5 flex justify-between items-center">
-        <Link href="#" className="text-3xl font-bold text-[#FFEED5]">Driving Lessons</Link>
+        <Link href="/" className="text-3xl font-bold text-[#FFEED5]">Driving Lessons</Link>
         <ul className="hidden md:flex justify-between items-center">
           <li className="mr-8 p-1">
             <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
@@ -48,27 +48,24 @@ const Navbar = () => {
       </nav>
       {mobileMenuActive && (
         <ul
-          className={`md:hidden flex flex-col justify-center items-center absolute top-16 left-0 w-full min-h-[100vh] bg-orange-400 shadow-md transition duration-300 ease-in-out ${
+          className={`md:hidden flex flex-col justify-center items-center absolute top-16 left-0 w-full min-h-fit rounded-2xl bg-orange-400 shadow-md transition duration-300 ease-in-out ${
             mobileMenuActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
-            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
+            <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
-            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">About</Link>
+            <Link href="pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">About</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
+            <Link href="pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Pages</Link>
+            <Link href="pages/contact" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
           </li>
           <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
-          </li>
-          <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="#" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Help</Link>
+            <Link href="pages/help" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Help</Link>
           </li>
         </ul>
       )}
