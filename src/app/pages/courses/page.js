@@ -44,8 +44,8 @@ const page = () => {
                             Defensive driving is a set of driving techniques that help minimize the risks of accidents and improve overall safety.
                           </p>
                           <div>
-                            <Link href="/pages/courses">
-                              <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">EXPLORE COURSES
+                            <Link href="/pages/coursedetails">
+                              <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">READ MORE
                                 <Image
                                   src={rightArrowWhite}
                                   width={18}
@@ -74,8 +74,8 @@ const page = () => {
                             Professional driving involves driving for a living, such as delivery drivers, taxi drivers, and truck drivers it requires.
                           </p>
                           <div>
-                            <Link href="/pages/courses">
-                              <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">EXPLORE COURSES
+                            <Link href="/pages/coursedetails">
+                              <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">READ MORE
                                 <Image
                                   src={rightArrowWhite}
                                   width={18}
@@ -104,8 +104,8 @@ const page = () => {
                             The Traffic Science course covers the principles and practices of traffic engineering, including traffic flow theory.
                           </p>
                           <div>
-                            <Link href="/pages/courses">
-                              <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">EXPLORE COURSES
+                            <Link href="/pages/coursedetails">
+                              <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">READ MORE
                                 <Image
                                   src={rightArrowWhite}
                                   width={18}
@@ -149,38 +149,31 @@ const page = () => {
               <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
 
-              <section className="text-gray-600 body-font overflow-hidden">
-                <div className="container px-5 py-24 mx-auto">
+              <section className="body-font overflow-hidden">
+                <div className="container px-5 py-12 mx-auto">
                   <div className="flex flex-col text-center w-full mb-10">
                     <h1 className="text-orange-400 text-2xl font-medium title-font mb-2">Pricing Plan</h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-5xl font-bold">Our Most Valuable Pricing Packages</p>
                   </div>
-                  <div className="flex flex-wrap -m-4">
+                  <div className="flex justify-evenly flex-wrap -m-4">
                     <PricingCard
-                      plan="START"
-                      price="Free"
-                      features={['Vexillologist pitchfork', 'Tumeric plaid portland', 'Mixtape chillwave tumeric']}
+                      plan="Basic Package"
+                      price="$120"
+                      features={['Vexillologist pitchfork', 'Tumeric plaid portland', 'Hexagon neutra unicorn']}
                       buttonColor="bg-gray-400"
                       hoverColor="hover:bg-gray-500"
                     />
                     <PricingCard
-                      plan="PRO"
-                      price="$38"
+                      plan="Standard Package"
+                      price="$180"
                       features={['Vexillologist pitchfork', 'Tumeric plaid portland', 'Hexagon neutra unicorn']}
                       buttonColor="bg-yellow-500"
                       hoverColor="hover:bg-yellow-600"
                       isPopular
                     />
                     <PricingCard
-                      plan="BUSINESS"
-                      price="$56"
-                      features={['Vexillologist pitchfork', 'Tumeric plaid portland', 'Hexagon neutra unicorn']}
-                      buttonColor="bg-gray-400"
-                      hoverColor="hover:bg-gray-500"
-                    />
-                    <PricingCard
-                      plan="SPECIAL"
-                      price="$72"
+                      plan="Premium Package"
+                      price="$250"
                       features={['Vexillologist pitchfork', 'Tumeric plaid portland', 'Hexagon neutra unicorn']}
                       buttonColor="bg-gray-400"
                       hoverColor="hover:bg-gray-500"
