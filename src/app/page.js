@@ -26,7 +26,6 @@ export default function Home() {
         <SectionSeventh/>
         <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
         <SectionEight/>
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
       </main>
     </>
   );

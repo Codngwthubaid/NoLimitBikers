@@ -31,7 +31,7 @@ const PricingCard = ({ plan, price, features, isPopular }) => {
           </p>
         ))}
         <div>
-          <Link href="/pages/courses">
+          <Link href="/pages/contact">
             <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">CHOOSE PACKAGES
               <Image
                 src={rightArrowWhite}

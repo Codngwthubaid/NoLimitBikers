@@ -18,10 +18,9 @@ const page = () => {
             <div>
               <SubSectionheadings Head="Courses" mainPage="Home" currentPage="Courses" />
               <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
-
               <div className='flex flex-col justify-center items-center gap-y-2'>
                 <div className='text-2xl font-semibold text-orange-400'>Our Trending Courses</div>
-                <div className='text-5xl font-bold'>Our Popular Driving Courses</div>
+                <div className='text-5xl font-bold text-center'>Our Popular Driving Courses</div>
                 <div>
                   <section className="text-gray-600 body-font">
                     <div className="container px-5 py-12 mx-auto">
