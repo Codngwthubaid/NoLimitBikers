@@ -31,21 +31,21 @@ const FAQ = () => {
                         <div className="grid w-full items-center gap-4">
                             <div className="flex flex-col space-y-1.5">
                                 <Label htmlFor="name">Name</Label>
-                                <Input id="name" placeholder="Enter Name" />
+                                <Input id="name" />
                             </div>
                             <div className="flex flex-col space-y-1.5">
                                 <Label htmlFor="email">Email</Label>
-                                <Input id="email" placeholder="Enter Email" />
+                                <Input id="email" />
                             </div>
                             <div className="flex flex-col space-y-1.5">
                                 <Label htmlFor="number">Number</Label>
-                                <Input id="number" placeholder="Enter Number" />
+                                <Input id="number" />
                             </div>
                             <div className="flex flex-col space-y-1.5">
                                 <Label htmlFor="framework">Select Course</Label>
                                 <Select>
                                     <SelectTrigger id="framework">
-                                        <SelectValue placeholder="Select" />
+                                        <SelectValue />
                                     </SelectTrigger>
                                     <SelectContent position="popper">
                                         <SelectItem value="next">Next.js</SelectItem>

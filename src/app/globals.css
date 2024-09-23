@@ -9,6 +9,15 @@ body{
     background-color: rgb(255 237 213 / var(--tw-bg-opacity))
 }
 
+.customBG{
+  background-image: url("../public/Gallery/G6.jpg");
+  object-fit:cover;
+  object-position: center;
+  box-sizing: border-box;
+  background-position: start bottom;
+  height: 50vh;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

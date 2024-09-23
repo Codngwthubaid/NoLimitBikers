@@ -12,7 +12,7 @@ const SubSectionheadings = (props) => {
     return (
         <>
             <main>
-                <div className='bg-[#a99595] gap-y-5 flex flex-col justify-center items-center h-[50vh] text-white'>
+                <div className='customBG gap-y-5 flex flex-col justify-center items-center text-white'>
                     <div className='text-5xl font-bold text-[#ffedd5]'>{props.Head}</div>
                     <div>
                         <Breadcrumb>

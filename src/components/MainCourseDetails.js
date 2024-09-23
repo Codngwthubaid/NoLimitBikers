@@ -72,19 +72,19 @@ const MainCourseDetails = (props) => {
                       <div className="text-[#ffedd5] grid w-full items-center gap-4">
                         <div className="flex flex-col space-y-1.5">
                           <Label htmlFor="name">Enter Name </Label>
-                          <Input className="text-[#ffedd5]" id="name" />
+                          <Input className="text-[#ffedd5] bg-white" id="name" />
                         </div>
                         <div className="flex flex-col space-y-1.5">
                           <Label htmlFor="email">Enter Email </Label>
-                          <Input className="text-[#ffedd5]" id="email" />
+                          <Input className="text-[#ffedd5] bg-white" id="email" />
                         </div>
                         <div className="flex flex-col space-y-1.5">
                           <Label htmlFor="number">Enter Number </Label>
-                          <Input className="text-[#ffedd5]" id="number" />
+                          <Input className="text-[#ffedd5] bg-white" id="number" />
                         </div>
                         <div className="flex justify-start items-start flex-col space-y-1.5 ">
                           <Label htmlFor="textarea">Enter Message </Label>
-                          <Input type="text" id="textarea" />
+                          <Input type="text" id="textarea" className="bg-white" />
                         </div>
                       </div>
                     </form>
