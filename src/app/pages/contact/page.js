@@ -14,23 +14,26 @@ const page = () => {
 
               <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
-              <div>
-                <div>
+              <div className='border-2 border-red-500 mx-auto flex justify-center items-center '>
+                <div className="w-[32vw] border-2 border-red-500 flex justify-center items-center flex-col">
                   <div></div>
-                  <div></div>
-                  <div></div>
+                  <div>OUR OFFICE LOCATION</div>
+                  <div>1254 FH Abu Dhabi - UAE</div>
                 </div>
-                <div>
+                <div className="w-[32vw] border-2 border-red-500 flex justify-center items-center flex-col">
                   <div></div>
-                  <div></div>
-                  <div></div>
+                  <div>HAVE A QUESTION?</div>
+                  <div>(+163) 6972 9901</div>
                 </div>
-                <div>
+                <div className="w-[32vw] border-2 border-red-500 flex justify-center items-center flex-col">
                   <div></div>
-                  <div></div>
-                  <div></div>
+                  <div>Email Us On</div>
+                  <div>Info@nolimitbikers.nl</div>
                 </div>
               </div>
+
+              <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+
 
               <div className='border-2 border-blue-600'>
                 <section className="text-gray-600 body-font relative">
