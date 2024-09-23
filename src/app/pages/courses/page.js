@@ -43,7 +43,7 @@ const page = () => {
                             Defensive driving is a set of driving techniques that help minimize the risks of accidents and improve overall safety.
                           </p>
                           <div>
-                            <Link href="/pages/coursedetails">
+                            <Link href="/pages/coursedetails/DefensiveDriving">
                               <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">READ MORE
                                 <Image
                                   src={rightArrowWhite}
@@ -73,7 +73,7 @@ const page = () => {
                             Professional driving involves driving for a living, such as delivery drivers, taxi drivers, and truck drivers it requires.
                           </p>
                           <div>
-                            <Link href="/pages/coursedetails">
+                            <Link href="/pages/coursedetails/ProfessionalDriving">
                               <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">READ MORE
                                 <Image
                                   src={rightArrowWhite}
@@ -103,7 +103,7 @@ const page = () => {
                             The Traffic Science course covers the principles and practices of traffic engineering, including traffic flow theory.
                           </p>
                           <div>
-                            <Link href="/pages/coursedetails">
+                            <Link href="/pages/coursedetails/TrafficScience">
                               <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">READ MORE
                                 <Image
                                   src={rightArrowWhite}
