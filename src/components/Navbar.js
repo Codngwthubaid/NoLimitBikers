@@ -1,6 +1,14 @@
 "use client"
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
 
 const Navbar = () => {
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
@@ -28,41 +36,44 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="md:hidden flex justify-center" onClick={handleMobileMenu}>
-          <svg
-            className={`w-6 h-6 text-[#FFEED5] transition duration-300 ease-in-out ${
-              mobileMenuActive ? 'rotate-90' : ''
-            }`}
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <rect x="4" y="4" width="8" height="8" rx="1" fill="#fff" />
-            <rect x="12" y="4" width="8" height="8" rx="1" fill="#fff" />
-            <rect x="4" y="12" width="8" height="8" rx="1" fill="#fff" />
-          </svg>
+          <Sheet>
+            <SheetTrigger>
+              <svg
+                className={`w-6 h-6 text-[#FFEED5] transition duration-300 ease-in-out ${mobileMenuActive ? 'rotate-90' : ''
+                  }`}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <rect x="4" y="4" width="8" height="8" rx="1" fill="#fff" />
+                <rect x="12" y="4" width="8" height="8" rx="1" fill="#fff" />
+                <rect x="4" y="12" width="8" height="8" rx="1" fill="#fff" />
+              </svg>
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetDescription>
+                  <ul className='h-[100vh] flex flex-col justify-center border border-red-500'>
+                    <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
+                      <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
+                    </li>
+                    <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
+                      <Link href="/pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">About</Link>
+                    </li>
+                    <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
+                      <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
+                    </li>
+                    <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
+                      <Link href="/pages/contact" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
+                    </li>
+                  </ul>
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
-      {mobileMenuActive && (
-        <ul
-          className={`md:hidden flex flex-col justify-center items-center absolute top-16 left-0 w-full min-h-fit rounded-2xl bg-orange-400 shadow-md transition duration-300 ease-in-out ${
-            mobileMenuActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
-            <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
-          </li>
-          <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
-            <Link href="/pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">About</Link>
-          </li>
-          <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
-          </li>
-          <li className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-            <Link href="/pages/contact" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
-          </li>
-        </ul>
-      )}
     </header>
   );
 };
