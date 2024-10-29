@@ -3,6 +3,7 @@ import FAQ from './FAQ'
 import AccordionCom from './AccordionCom'
 
 const SectionSixth = () => {
+   
     return (
         <>
             <main>
@@ -24,7 +25,7 @@ const SectionSixth = () => {
                                         <FAQ />
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </article>
                 </section>
