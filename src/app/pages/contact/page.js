@@ -6,6 +6,32 @@ import iconEmail from "@/public/iconsProcess/iconEmail.png"
 import iconLocation from "@/public/iconsProcess/iconLocation.png"
 
 const page = () => {
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const data = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      message: event.target.message.value,
+    };
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      alert('Message sent successfully!');
+    } else {
+      alert('Failed to send message');
+    }
+  };
+
+
   return (
     <>
       <main>
@@ -84,7 +110,7 @@ const page = () => {
                             EMAIL
                           </h2>
                           <a href="mailto:example@email.com" className="text-yellow-500 leading-relaxed">
-                          Info@nolimitbikers.nl
+                            Info@nolimitbikers.nl
                           </a>
                           <h2 className="title-font font-semibold hover:text-orange-400 text-gray-900 tracking-widest text-xs mt-4">
                             PHONE
