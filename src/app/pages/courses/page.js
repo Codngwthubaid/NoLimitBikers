@@ -200,7 +200,7 @@ const page = () => {
                       </div>
 
                       {/* Gold Package */}
-                      <div className="relative flex flex-col items-center bg-blue-900 rounded-xl shadow-lg p-6 w-full max-w-xs text-white">
+                      <div className="relative flex flex-col items-center bg-[#050B30] rounded-xl shadow-lg p-6 w-full max-w-xs text-white">
                         <div className="absolute -top-4 bg-green-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
                           Recommended
                         </div>
