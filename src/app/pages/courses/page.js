@@ -154,7 +154,7 @@ const page = () => {
                     <h1 className="text-orange-400 text-2xl font-medium title-font mb-2">Pricing Plan</h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-5xl font-bold">Our Most Valuable Pricing Packages</p>
                   </div>
-                  <div className="flex justify-evenly flex-wrap -m-4">
+                  {/* <div className="flex justify-evenly flex-wrap -m-4">
                     <PricingCard
                       plan="Basic Package"
                       price="$120"
@@ -177,7 +177,63 @@ const page = () => {
                       buttonColor="bg-gray-400"
                       hoverColor="hover:bg-gray-500"
                     />
-                  </div>
+                  </div> */}
+                  <section className="flex flex-col items-center bg-gradient-to-r from-orange-500 to-orange-400 py-10 px-4">
+                    <h2 className="text-white text-2xl lg:text-4xl font-bold mb-6 text-center">
+                      MOTOREXAMEN VOERTUIGBEHEERSING AVB
+                    </h2>
+                    <div className="flex flex-col lg:flex-row gap-8">
+
+                      {/* Silver Package */}
+                      <div className="flex flex-col items-center bg-white rounded-xl shadow-lg p-6 w-full max-w-xs">
+                        <h3 className="text-gray-800 font-bold text-lg">AVB Pakket Silver</h3>
+                        <p className="text-4xl font-bold text-gray-800 mt-4">€749,00</p>
+                        <ul className="mt-4 space-y-2 text-gray-700 text-sm">
+                          <li>12 uur rijles</li>
+                          <li>Vaste instructeur</li>
+                          <li>Nieuwe les motor</li>
+                          <li>Leskaart & Advies</li>
+                        </ul>
+                        <button className="mt-6 bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 transition">
+                          Beginnen met basis
+                        </button>
+                      </div>
+
+                      {/* Gold Package */}
+                      <div className="relative flex flex-col items-center bg-blue-900 rounded-xl shadow-lg p-6 w-full max-w-xs text-white">
+                        <div className="absolute -top-4 bg-green-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
+                          Recommended
+                        </div>
+                        <h3 className="font-bold text-lg mt-4">AVB Pakket Gold Mega Deal</h3>
+                        <p className="text-4xl font-bold mt-4">€999,00</p>
+                        <ul className="mt-4 space-y-2 text-sm text-gray-300">
+                          <li>16 uur rijles</li>
+                          <li>Vaste instructeur</li>
+                          <li>Nieuwe les motor</li>
+                          <li>Leskaart & Advies</li>
+                        </ul>
+                        <button className="mt-6 bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 transition">
+                          Selecteer Goud
+                        </button>
+                      </div>
+
+                      {/* Platinum Package */}
+                      <div className="flex flex-col items-center bg-orange-100 rounded-xl shadow-lg p-6 w-full max-w-xs">
+                        <h3 className="text-gray-800 font-bold text-lg">AVB Pakket Platinum</h3>
+                        <p className="text-4xl font-bold text-gray-800 mt-4">€1299,00</p>
+                        <ul className="mt-4 space-y-2 text-gray-700 text-sm">
+                          <li>20 uur rijles</li>
+                          <li>Vaste instructeur</li>
+                          <li>Nieuwe les motor</li>
+                          <li>Leskaart & Advies</li>
+                        </ul>
+                        <button className="mt-6 bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 transition">
+                          Kies Platina
+                        </button>
+                      </div>
+
+                    </div>
+                  </section>
                 </div>
               </section>
 
