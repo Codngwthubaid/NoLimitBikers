@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import G1 from "../public/Gallery/G1.jpg"
+import G2 from "../public/Gallery/G2.jpg"
+import G3 from "../public/Gallery/G3.jpg"
+import G4 from "../public/Gallery/G4.jpg"
+import G5 from "../public/Gallery/G5.jpg"
+import G6 from "../public/Gallery/G6.jpg"
 import rightArrowWhite from "../public/img/rightArrowWhite.png"
-import mainDriving from "../public/img/mainDriving.jpg"
 const SectionFirst = () => {
+
+    const [currentSlide, setCurrentSlide] = useState(0)
+    const slides = [G1,G2,G3,G4,G5,G6]
+
+    const nextSlide = () => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length)
+    }
+
+    const prevSlide = () => {
+        setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+    }
+
+    const goToSlide = (index) => {
+        setCurrentSlide(index)
+    }
+
+    useEffect(() => {
+        const interval = setInterval(nextSlide, 5000) // Auto-advance every 5 seconds
+        return () => clearInterval(interval)
+    }, [])
+
+
     return (
         <>
             <main>
@@ -31,56 +58,40 @@ const SectionFirst = () => {
                             </div>
                         </div>
                         <div className="flex justify-center items-center">
-                            {/* <Image
-                                src={mainDriving}
-                                className="lg:w-[50vw] w-11/12 rounded-3xl object-cover"
-                                alt="Picture of the author"
-                            /> */}
-
-
-                            <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                    <div class="w-[90vw] sm:w-[40vw] duration-700 ease-in-out" data-carousel-item>
-                                        <Image src={mainDriving} class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></Image>
-                                    </div>
-                                    <div class="w-[90vw] sm:w-[40vw] duration-700 ease-in-out" data-carousel-item>
-                                        <Image src={rightArrowWhite} class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></Image>
-                                    </div>
-                                    <div class="w-[90vw] sm:w-[40vw] duration-700 ease-in-out" data-carousel-item>
-                                        <Image src={mainDriving} class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></Image>
-                                    </div>
-                                    <div class="w-[90vw] sm:w-[40vw] duration-700 ease-in-out" data-carousel-item>
-                                        <Image src={mainDriving} class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></Image>
-                                    </div>
-                                    <div class="w-[90vw] sm:w-[40vw] duration-700 ease-in-out" data-carousel-item>
-                                        <Image src={mainDriving} class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></Image>
+                            <div className="lg:w-[50vw] w-11/12 rounded-3xl object-cover" aria-roledescription="carousel">
+                                <div className="relative h-56 overflow-hidden rounded-lg md:h-[77vh]">
+                                    {slides.map((slide, index) => (
+                                        <div
+                                            key={index}
+                                            className={`absolute w-full h-full transition-opacity duration-700 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                                                }`}
+                                            aria-hidden={index !== currentSlide}
+                                        >
+                                            <Image
+                                                src={slide}
+                                                alt={`Slide ${index + 1}`}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                priority={index === currentSlide}
+                                            />
+                                        </div>
+                                    ))}
+                                    <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                                        {slides.map((_, index) => (
+                                            <button
+                                                key={index}
+                                                type="button"
+                                                className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-white' : 'bg-white/50'
+                                                    }`}
+                                                aria-current={index === currentSlide}
+                                                aria-label={`Slide ${index + 1}`}
+                                                onClick={() => goToSlide(index)}
+                                            ></button>
+                                        ))}
                                     </div>
                                 </div>
-                                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                                </div>
-                                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-                                        </svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                                        </svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
+
                             </div>
-
                         </div>
                     </article>
                 </section>
