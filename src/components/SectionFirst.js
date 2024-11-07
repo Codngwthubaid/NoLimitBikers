@@ -58,7 +58,7 @@ const SectionFirst = () => {
                             </div>
                         </div>
                         <div className="flex justify-center items-center">
-                            <div className="lg:w-[50vw] w-11/12 rounded-3xl object-cover" aria-roledescription="carousel">
+                            <div className="lg:w-[50vw] w-[80vw] rounded-3xl object-cover" aria-roledescription="carousel">
                                 <div className="relative h-56 overflow-hidden rounded-lg md:h-[77vh]">
                                     {slides.map((slide, index) => (
                                         <div
@@ -90,7 +90,6 @@ const SectionFirst = () => {
                                         ))}
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </article>
