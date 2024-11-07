@@ -7,7 +7,7 @@ import G9 from "@/public/Gallery/G9.jpg"
 import G10 from "@/public/Gallery/G10.jpg"
 import Link from 'next/link';
 import rightArrowWhite from "@/public/img/rightArrowWhite.png"
-import PricingCard from '@/components/PricingCard';
+
 
 const page = () => {
   return (
@@ -144,19 +144,8 @@ const page = () => {
                 </div>
               </div>
 
-
               <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
-
-              <section className="body-font overflow-hidden">
-                <div className="container px-5 py-12 mx-auto">
-                  <div className="flex flex-col text-center w-full mb-10">
-                    <h1 className="text-orange-400 text-2xl font-medium title-font mb-2">Pricing Plan</h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-5xl font-bold">Our Most Valuable Pricing Packages</p>
-                  </div>
-                  <PricingCard/>
-                </div>
-              </section>
             </div>
           </article>
         </section>

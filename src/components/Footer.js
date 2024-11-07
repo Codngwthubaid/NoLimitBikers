@@ -18,7 +18,7 @@ const Footer = () => {
                   <h2 className="mb-6 text-lg font-bold text-[#a99595] uppercase dark:text-white ">Contact</h2>
                   <ul className="text-gray-500 dark:text-gray-400">
                       <li className="mb-4">
-                          <Link href="https://flowbite.com/" className="hover:text-orange-400">(+163) 6972 9901</Link>
+                          <Link href="https://flowbite.com/" className="hover:text-orange-400">06143 82099</Link>
                       </li>
                       <li>
                           <Link href="https://tailwindcss.com/" className="hover:text-orange-400">Info@nolimitbikers.nl</Link>

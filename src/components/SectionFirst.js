@@ -1,35 +1,36 @@
+'use client'
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import G1 from "../public/Gallery/G1.jpg"
-import G2 from "../public/Gallery/G2.jpg"
-import G3 from "../public/Gallery/G3.jpg"
-import G4 from "../public/Gallery/G4.jpg"
-import G5 from "../public/Gallery/G5.jpg"
-import G6 from "../public/Gallery/G6.jpg"
 import rightArrowWhite from "../public/img/rightArrowWhite.png"
+import { useRouter } from 'next/navigation'
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+
+const packages = [
+    { id: 1, name: "AVB Pakket Silver", price: "€749,00", selectBtn: "Beginnen met basis" , features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
+    { id: 2, name: "AVB Pakket Gold Mega Deal", price: "€999,00", selectBtn: "Selecteer Goud" , features: ["16 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
+    { id: 3, name: "AVB Pakket Platinum", price: "€1299,00", selectBtn: "Kies Platina" , features: ["20 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
+    { id: 4, name: "AVD Pakket Silver", price: "€799,00", selectBtn: "Beginnen met basis" , features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
+    { id: 5, name: "AVD Pakket Gold Mega Deal", price: "€1199,00", selectBtn: "Selecteer Goud"  , features: ["18 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
+    { id: 6, name: "AVD Pakket Platinum", price: "€1299,00", selectBtn: "Kies Platina", features: ["20 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
+    
+]
+
+
 const SectionFirst = () => {
+    const router = useRouter()
 
-    const [currentSlide, setCurrentSlide] = useState(0)
-    const slides = [G1,G2,G3,G4,G5,G6]
-
-    const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % slides.length)
+    const handleSubmit = () => {
+        router.push("/pages/contact")
     }
-
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-    }
-
-    const goToSlide = (index) => {
-        setCurrentSlide(index)
-    }
-
-    useEffect(() => {
-        const interval = setInterval(nextSlide, 5000) // Auto-advance every 5 seconds
-        return () => clearInterval(interval)
-    }, [])
-
 
     return (
         <>
@@ -57,41 +58,39 @@ const SectionFirst = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex justify-center items-center">
-                            <div className="lg:w-[50vw] w-[80vw] rounded-3xl object-cover" aria-roledescription="carousel">
-                                <div className="relative h-56 overflow-hidden rounded-lg md:h-[77vh]">
-                                    {slides.map((slide, index) => (
-                                        <div
-                                            key={index}
-                                            className={`absolute w-full h-full transition-opacity duration-700 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
-                                                }`}
-                                            aria-hidden={index !== currentSlide}
-                                        >
-                                            <Image
-                                                src={slide}
-                                                alt={`Slide ${index + 1}`}
-                                                layout="fill"
-                                                objectFit="cover"
-                                                priority={index === currentSlide}
-                                            />
+                        <Carousel className="w-[70vw] bg-[#ffeed5] lg:w-[30vw] mt-16">
+                            <CarouselContent>
+                                {packages.map((pkg) => (
+                                    <CarouselItem key={pkg.id}>
+                                        <div className="p-1">
+                                            <Card className="flex flex-col items-center bg-[#ffeed5] shadow-[0_10px_20px_rgba(251,_146,_60,_1)] m-1 rounded-2xl">
+                                                <CardHeader>
+                                                    <CardTitle className="text-[#a99595] font-bold text-2xl">{pkg.name}</CardTitle>
+                                                </CardHeader>
+                                                <CardContent className="text-center">
+                                                    <p className="text-4xl font-bold text-gray-800 mt-4">{pkg.price}</p>
+                                                    <ul className="mt-4 space-y-2 text-gray-700 text-sm">
+                                                        {pkg.features.map((feature, index) => (
+                                                            <li key={index}>{feature}</li>
+                                                        ))}
+                                                    </ul>
+                                                </CardContent>
+                                                <CardFooter>
+                                                    <Button
+                                                        className="w-full bg-orange-500 hover:bg-orange-600"
+                                                        onClick={() => handleSubmit(pkg.id)}
+                                                    >
+                                                        {pkg.selectBtn}
+                                                    </Button>
+                                                </CardFooter>
+                                            </Card>
                                         </div>
-                                    ))}
-                                    <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                                        {slides.map((_, index) => (
-                                            <button
-                                                key={index}
-                                                type="button"
-                                                className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-white' : 'bg-white/50'
-                                                    }`}
-                                                aria-current={index === currentSlide}
-                                                aria-label={`Slide ${index + 1}`}
-                                                onClick={() => goToSlide(index)}
-                                            ></button>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <CarouselPrevious />
+                            <CarouselNext />
+                        </Carousel>
                     </article>
                 </section>
             </main>

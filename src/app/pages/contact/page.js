@@ -63,7 +63,7 @@ const page = () => {
                       className="" />
                   </div>
                   <div>HAVE A QUESTION?</div>
-                  <div className='text-xl font-bold hover:text-orange-400'>(+163) 6972 9901</div>
+                  <div className='text-xl font-bold hover:text-orange-400'>06143 82099</div>
                 </div>
                 <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-orange-400 flex justify-center items-center flex-col">
                   <div>
@@ -115,7 +115,7 @@ const page = () => {
                           <h2 className="title-font font-semibold hover:text-orange-400 text-gray-900 tracking-widest text-xs mt-4">
                             PHONE
                           </h2>
-                          <p className="leading-relaxed">(+163) 6972 9901</p>
+                          <p className="leading-relaxed">06143 82099</p>
                         </div>
                       </div>
                     </div>

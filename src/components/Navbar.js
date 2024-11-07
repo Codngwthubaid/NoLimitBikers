@@ -32,6 +32,9 @@ const Navbar = () => {
             <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
           </li>
           <li className="mr-8 p-1">
+            <Link href="/pages/pricing" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Pricing</Link>
+          </li>
+          <li className="mr-8 p-1">
             <Link href="/pages/contact" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
           </li>
         </ul>
@@ -63,6 +66,9 @@ const Navbar = () => {
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
                       <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
+                    </li>
+                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
+                      <Link href="/pages/pricing" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Pricing</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
                       <Link href="/pages/contact" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
