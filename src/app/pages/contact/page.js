@@ -1,36 +1,56 @@
+"use client"
 import SubSectionheadings from '@/components/SubSectionheadings'
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import iconCall from "@/public/iconsProcess/iconCall.png"
 import iconEmail from "@/public/iconsProcess/iconEmail.png"
 import iconLocation from "@/public/iconsProcess/iconLocation.png"
 
 const page = () => {
+  const ref = useRef(null)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const SubmitName = (e) => {
+    setName(e.target.value)
+  }
+  const SubmitEmail = (e) => {
+    setEmail(e.target.value)
+  }
 
-    const data = {
-      name: event.target.name.value,
-      email: event.target.email.value,
-      message: event.target.message.value,
-    };
+  const SubmitMessage = (e) => {
+    setMessage(e.target.value)
+  }
 
-    const response = await fetch('/api/contactRoute', {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert('Sending')
+    let data = {
+      name,
+      email,
+      message
+    }
+    
+    fetch('/api/contactRoute', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data),
-    });
-
-    if (response.ok) {
-      alert('Message sent successfully!');
-    } else {
-      alert('Failed to send message');
-    }
-  };
-
+      body: JSON.stringify(data)
+    }).then((res) => {
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setSubmitted(true)
+        setName('')
+        setEmail('')
+        setMessage('')
+      }
+    })
+  }
 
   return (
     <>
@@ -129,6 +149,7 @@ const page = () => {
                           Name
                         </label>
                         <input
+                          ref={ref} onChange={(e) => { setName(e.target.value) }}
                           type="text"
                           id="name"
                           name="name"
@@ -141,6 +162,7 @@ const page = () => {
                           Email
                         </label>
                         <input
+                          ref={ref} onChange={(e) => { setEmail(e.target.value) }}
                           type="email"
                           id="email"
                           name="email"
@@ -152,12 +174,13 @@ const page = () => {
                           Message
                         </label>
                         <textarea
+                          ref={ref} onChange={(e) => { setMessage(e.target.value) }}
                           id="message"
                           name="message"
                           className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
                         ></textarea>
                       </div>
-                      <button onClick={handleSubmit()} className="bg-[#a99595] border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg text-white font-semibold ">
+                      <button onClick={(e) => { handleSubmit(e) }} className="bg-[#a99595] border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg text-white font-semibold ">
                         Submit Now
                       </button>
                     </div>
