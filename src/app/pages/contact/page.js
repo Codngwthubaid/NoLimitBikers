@@ -16,7 +16,7 @@ const page = () => {
       message: event.target.message.value,
     };
 
-    const response = await fetch('/api/contact', {
+    const response = await fetch('/api/contactRoute', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -157,7 +157,7 @@ const page = () => {
                           className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
                         ></textarea>
                       </div>
-                      <button className="bg-[#a99595] border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg text-white font-semibold ">
+                      <button onSubmit={handleSubmit()} className="bg-[#a99595] border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg text-white font-semibold ">
                         Submit Now
                       </button>
                     </div>
