@@ -24,15 +24,44 @@ const page = () => {
     setMessage(e.target.value)
   }
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   alert('Sending')
+  //   let data = {
+  //     name,
+  //     email,
+  //     message
+  //   }
+    
+  //   fetch('/api/contactRoute', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Accept': 'application/json, text/plain, */*',
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(data)
+  //   }).then((res) => {
+  //     console.log('Response received')
+  //     if (res.status === 200) {
+  //       console.log('Response succeeded!')
+  //       setSubmitted(true)
+  //       setName('')
+  //       setEmail('')
+  //       setMessage('')
+  //     }
+  //   })
+  // }
+
   const handleSubmit = (e) => {
-    e.preventDefault()
-    alert('Sending')
+    e.preventDefault();
+    alert('Sending');
+    
     let data = {
       name,
       email,
       message
-    }
-    
+    };
+  
     fetch('/api/contactRoute', {
       method: 'POST',
       headers: {
@@ -40,17 +69,24 @@ const page = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
-    }).then((res) => {
-      console.log('Response received')
-      if (res.status === 200) {
-        console.log('Response succeeded!')
-        setSubmitted(true)
-        setName('')
-        setEmail('')
-        setMessage('')
+    })
+    .then((res) => {
+      console.log('Response received');
+      if (res.ok) { // Use res.ok for a more general check
+        console.log('Response succeeded!');
+        setSubmitted(true);
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        console.error('Response failed:', res.status, res.statusText);
+        // Optionally, handle the error response here
       }
     })
-  }
+    .catch((error) => {
+      console.error('Error occurred during fetch:', error);
+    });
+  };
 
   return (
     <>
