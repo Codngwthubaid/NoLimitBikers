@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer';
-
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -15,7 +14,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: process.env.GMAIL,
-        pass: process.env.GMAIL_PASSWORD, // Use App Password instead of regular password
+        pass: process.env.GMAIL_PASSWORD
       },
     });
 
