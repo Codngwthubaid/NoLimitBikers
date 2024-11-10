@@ -1,12 +1,12 @@
 "use client"
-import SectionFirst from "@/components/SectionFirst";
-import SectionSecond from "@/components/SectionSecond";
-import SectionThird from "@/components/SectionThird";
-import SectionFourth from "@/components/SectionFourth";
-import SectionFifth from "@/components/SectionFifth";
-import SectionSixth from "@/components/SectionSixth";
-import SectionSeventh from "@/components/SectionSeventh";
-import SectionEight from "@/components/SectionEight";
+import SectionFirst from "../components/SectionFirst";
+import SectionSecond from "../components/SectionSecond";
+import SectionThird from "../components/SectionThird";
+import SectionFourth from "../components/SectionFourth";
+import SectionFifth from "../components/SectionFifth";
+import SectionSixth from "../components/SectionSixth";
+import SectionSeventh from "../components/SectionSeventh";
+import SectionEight from "../components/SectionEight";
 export default function Home() {
   return (
     <>
