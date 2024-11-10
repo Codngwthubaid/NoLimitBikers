@@ -3,16 +3,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import G3 from "@/public/Gallery/G3.jpg"
 import rightArrowWhite from "@/public/img/rightArrowWhite.png"
-import { Button } from "@/components/ui/button"
+import { Button } from "./ui/button"
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+} from "./ui/card"
+import { Input } from "./ui/input"
+import { Label } from "./ui/label"
 
 const MainCourseDetails = (props) => {
   return (
