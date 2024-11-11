@@ -1,23 +1,22 @@
 import React from 'react'
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 import {
     Card,
     CardContent,
-    CardDescription,
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card"
+} from "../components/ui/card"
 import { useForm } from "react-hook-form"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Input } from "../components/ui/input"
+import { Label } from "../components/ui/label"
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select"
+} from "../components/ui/select"
 
 const FAQ = () => {
     const {

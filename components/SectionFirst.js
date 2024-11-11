@@ -4,15 +4,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import rightArrowWhite from "../public/img/rightArrowWhite.png"
 import { useRouter } from 'next/navigation'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
+import { Button } from "../components/ui/button"
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "../components/ui/carousel"
 
 const packages = [
     { id: 1, name: "AVB Pakket Silver", price: "€749,00", selectBtn: "Beginnen met basis" , features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
