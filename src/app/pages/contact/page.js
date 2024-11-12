@@ -5,6 +5,7 @@ import Image from 'next/image'
 import iconCall from "@/public/iconsProcess/iconCall.png"
 import iconEmail from "@/public/iconsProcess/iconEmail.png"
 import iconLocation from "@/public/iconsProcess/iconLocation.png"
+import axios from 'axios'
 
 const page = () => {
   const ref = useRef(null)
@@ -19,7 +20,6 @@ const page = () => {
   const SubmitEmail = (e) => {
     setEmail(e.target.value)
   }
-
   const SubmitMessage = (e) => {
     setMessage(e.target.value)
   }
@@ -27,14 +27,14 @@ const page = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Sending');
-    
+
     let data = {
       name,
       email,
       message
     };
-  
-    fetch('/api/contact', {
+
+    axios('/api/contact', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -42,21 +42,21 @@ const page = () => {
       },
       body: JSON.stringify(data)
     })
-    .then((res) => {
-      console.log('Response received');
-      if (res.ok) {
-        console.log('Response succeeded!');
-        setSubmitted(true);
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
-        console.error('Response failed:', res.status, res.statusText);
-      }
-    })
-    .catch((error) => {
-      console.error('Error occurred during fetch:', error);
-    });
+      .then((res) => {
+        console.log('Response received');
+        if (res.ok) {
+          console.log('Response succeeded!');
+          setSubmitted(true);
+          setName('');
+          setEmail('');
+          setMessage('');
+        } else {
+          console.error('Response failed:', res.status, res.statusText);
+        }
+      })
+      .catch((error) => {
+        console.error('Error occurred during fetch:', error);
+      });
   };
 
   return (
