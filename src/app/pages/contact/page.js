@@ -13,6 +13,7 @@ const page = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState("")
 
   const SubmitName = (e) => {
     setName(e.target.value)
@@ -24,40 +25,64 @@ const page = () => {
     setMessage(e.target.value)
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   alert('Sending');
+
+  //   let data = {
+  //     name,
+  //     email,
+  //     message
+  //   };
+
+  //   axios.post('/api/contact', {
+  //     headers: {
+  //       'Accept': 'application/json, text/plain, */*',
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(data)
+  //   })
+  //     .then((res) => {
+  //       console.log('Response received');
+  //       if (res.ok) {
+  //         console.log('Response succeeded!');
+  //         setSubmitted(true);
+  //         setName('');
+  //         setEmail('');
+  //         setMessage('');
+  //       } else {
+  //         console.error('Response failed:', res.status, res.statusText);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error occurred during fetch:', error);
+  //     });
+  // };
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
     alert('Sending');
+    setError('')
+    setSubmitted(false)
 
-    let data = {
-      name,
-      email,
-      message
-    };
-
-    axios('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-      .then((res) => {
-        console.log('Response received');
-        if (res.ok) {
-          console.log('Response succeeded!');
-          setSubmitted(true);
-          setName('');
-          setEmail('');
-          setMessage('');
-        } else {
-          console.error('Response failed:', res.status, res.statusText);
-        }
-      })
-      .catch((error) => {
-        console.error('Error occurred during fetch:', error);
-      });
-  };
+    try {
+      const response = await axios.post('/api/contact', { name, email, message })
+      console.log(name,email,message);
+      
+      if (response.data.success) {
+        setSubmitted(true)
+        setName('')
+        setEmail('')
+        setMessage('')
+      } else {
+        setError('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setError('An error occurred. Please try again later.')
+    }
+  }
 
   return (
     <>
@@ -190,6 +215,8 @@ const page = () => {
                       <button onClick={(e) => { handleSubmit(e) }} className="bg-[#a99595] border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg text-white font-semibold ">
                         Submit Now
                       </button>
+                      {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We'll get back to you soon!</p>}
+                      {error && <p className="mt-4 text-red-800 font-semibold">{error}</p>}
                     </div>
                   </div>
                 </section>
@@ -203,3 +230,4 @@ const page = () => {
 }
 
 export default page
+
