@@ -21,13 +21,15 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useForm } from "react-hook-form"
+import React from "react"
 
 const page = () => {
-
     const {
         register,
+        handleSubmit,
+        watch,
         formState: { errors },
-    } = useForm()
+      } = useForm()
 
     const onSubmit = (data) => console.log(data)
 
@@ -62,9 +64,6 @@ const page = () => {
                                     </ul>
                                 </CardContent>
                                 <CardFooter>
-                                    {/* <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                                        <Link href="/pages/contact">Beginnen met basis</Link>
-                                    </Button> */}
                                     <Dialog>
                                         <DialogTrigger asChild>
                                             <Button className="bg-orange-500 hover:text-white hover:bg-orange-600 text-white" variant="outline">Beginnen met basis</Button>

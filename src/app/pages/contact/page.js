@@ -25,41 +25,6 @@ const page = () => {
     setMessage(e.target.value)
   }
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   alert('Sending');
-
-  //   let data = {
-  //     name,
-  //     email,
-  //     message
-  //   };
-
-  //   axios.post('/api/contact', {
-  //     headers: {
-  //       'Accept': 'application/json, text/plain, */*',
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(data)
-  //   })
-  //     .then((res) => {
-  //       console.log('Response received');
-  //       if (res.ok) {
-  //         console.log('Response succeeded!');
-  //         setSubmitted(true);
-  //         setName('');
-  //         setEmail('');
-  //         setMessage('');
-  //       } else {
-  //         console.error('Response failed:', res.status, res.statusText);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error occurred during fetch:', error);
-  //     });
-  // };
-
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     alert('Sending');
