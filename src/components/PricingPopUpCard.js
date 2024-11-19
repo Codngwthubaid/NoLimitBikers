@@ -16,11 +16,11 @@ import {
 } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { TriangleAlert } from 'lucide-react';
+import { SquareArrowOutUpRight, TriangleAlert } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
-
+import Link from "next/link";
 
 const PricingPopUpCard = (props) => {
     const { register, handleSubmit, formState: { errors } } = useForm()
@@ -66,11 +66,16 @@ const PricingPopUpCard = (props) => {
                                 <SelectValue />
                             </SelectTrigger>
                             <SelectContent className="bg-[#ffedd5]" position="popper">
-                                <SelectItem className="cursor-pointer" value="AVB Pakket Silver">{props.Op1} </SelectItem>
-                                <SelectItem className="cursor-pointer" value="AVB Pakket Gold Mega Deal">{props.Op2}</SelectItem>
-                                <SelectItem className="cursor-pointer" value="AVB Pakket Platinum">{props.Op3} </SelectItem>
+                                <SelectItem className="cursor-pointer" id={props.Op1} value="AVB Pakket Silver">{props.Op1} </SelectItem>
+                                <SelectItem className="cursor-pointer" id={props.Op2} value="AVB Pakket Gold Mega Deal">{props.Op2}</SelectItem>
+                                <SelectItem className="cursor-pointer" id={props.Op3} value="AVB Pakket Platinum">{props.Op3} </SelectItem>
                             </SelectContent>
                         </Select>
+                    </div>
+                    <div>
+                        <Link href="#" className="hover:text-blue-600 text-green-600 font-semibold flex items-center">
+                            <span><SquareArrowOutUpRight /></span>
+                            <span>WhatsApp</span></Link>
                     </div>
                 </form>
                 <DialogFooter className="flex justify-between">
