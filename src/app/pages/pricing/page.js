@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -20,14 +21,16 @@ import {
 } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { useForm } from "react-hook-form"
 import React from "react"
-
-const { register, handleSubmit, formState: { errors } } = useForm()
-
-const onSubmit = (data) => console.log(data)
+import { useForm } from "react-hook-form"
 
 const page = () => {
+
+
+    const { register, handleSubmit, formState: { errors } } = useForm()
+
+    const onSubmit = (data) => console.log(data)
+
 
     return (
         <div>
