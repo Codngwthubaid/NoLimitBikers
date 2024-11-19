@@ -2,11 +2,40 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import SubSectionheadings from "@/components/SubSectionheadings"
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { useForm } from "react-hook-form"
+
 const page = () => {
+
+    const {
+        register,
+        formState: { errors },
+    } = useForm()
+
+    const onSubmit = (data) => console.log(data)
+
+
     return (
         <div>
             <section className="body-font overflow-hidden pt-[75px]">
-             <SubSectionheadings Head="Pricing" mainPage="Home" currentPage="Pricing" />
+                <SubSectionheadings Head="Pricing" mainPage="Home" currentPage="Pricing" />
                 <div className="container px-5 py-12 mx-auto">
                     <div className="flex flex-col text-center w-full mb-10">
                         <h1 className="text-orange-400 text-2xl font-medium title-font mb-2">Pricing Plan</h1>
@@ -33,9 +62,65 @@ const page = () => {
                                     </ul>
                                 </CardContent>
                                 <CardFooter>
-                                    <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                                    {/* <Button className="bg-orange-500 hover:bg-orange-600 text-white">
                                         <Link href="/pages/contact">Beginnen met basis</Link>
-                                    </Button>
+                                    </Button> */}
+                                    <Dialog>
+                                        <DialogTrigger asChild>
+                                            <Button className="bg-orange-500 hover:text-white hover:bg-orange-600 text-white" variant="outline">Beginnen met basis</Button>
+                                        </DialogTrigger>
+                                        <DialogContent className="bg-[#ffedd5] sm:max-w-[425px]">
+                                            <DialogHeader>
+                                                <DialogTitle className="font-bold text-4xl text-orange-400">Book Your Lesson</DialogTitle>
+                                                <DialogDescription className="text-black text-base">
+                                                    Book your lesson today! Choose your preferred time for driving lessons and start your journey towards becoming a confident driver!
+                                                </DialogDescription>
+                                            </DialogHeader>
+                                            <div className="grid gap-4 py-4" onSubmit={handleSubmit(onSubmit)}>
+                                                <div className="flex flex-col space-y-1.5 items-start">
+                                                    <Label htmlFor="name" className="text-base text-orange-400">
+                                                        Name
+                                                    </Label>
+                                                    <Input id="name" className="col-span-3" {...register("name", { required: true })} />
+                                                    {errors.name && <span>This field is required</span>}
+                                                </div>
+                                                <div className="flex flex-col space-y-1.5 items-start">
+                                                    <Label htmlFor="email" className="text-base text-orange-400">
+                                                        Email
+                                                    </Label>
+                                                    <Input id="email" className="col-span-3" {...register("email", { required: true })} />
+                                                    {errors.email && <span>This field is required</span>}
+                                                </div>
+                                                <div className="flex flex-col space-y-1.5 items-start">
+                                                    <Label htmlFor="number" className="text-base text-orange-400">
+                                                        Number
+                                                    </Label>
+                                                    <Input id="number" className="col-span-3" {...register("number", { required: true })} />
+                                                    {errors.number && <span>This field is required</span>}
+                                                </div>
+                                                <div className="flex flex-col space-y-1.5 items-start">
+                                                    <Label htmlFor="framework" className="text-base text-orange-400">Select Course</Label>
+                                                    <Select>
+                                                        <SelectTrigger id="framework">
+                                                            <SelectValue />
+                                                        </SelectTrigger>
+                                                        <SelectContent className="bg-[#ffedd5]" position="popper">
+                                                            <SelectItem className="cursor-pointer" value="next">Next.js</SelectItem>
+                                                            <SelectItem className="cursor-pointer" value="sveltekit">SvelteKit</SelectItem>
+                                                            <SelectItem className="cursor-pointer" value="astro">Astro</SelectItem>
+                                                            <SelectItem className="cursor-pointer" value="nuxt">Nuxt.js</SelectItem>
+                                                        </SelectContent>
+                                                    </Select>
+                                                </div>
+                                            </div>
+                                            <DialogFooter className="flex justify-between">
+                                                <DialogTrigger>
+                                                    <Button variant="outline">Cancel</Button>
+                                                </DialogTrigger>
+                                                <Button type="submit" className="bg-orange-400 hover:bg-[#a99595]">Submit</Button>
+                                            </DialogFooter>
+                                        </DialogContent>
+                                    </Dialog>
                                 </CardFooter>
                             </Card>
 
