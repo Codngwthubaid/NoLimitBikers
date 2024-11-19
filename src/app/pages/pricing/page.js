@@ -23,16 +23,11 @@ import { Label } from "@/components/ui/label"
 import { useForm } from "react-hook-form"
 import React from "react"
 
+const { register, handleSubmit, formState: { errors } } = useForm()
+
+const onSubmit = (data) => console.log(data)
+
 const page = () => {
-    const {
-        register,
-        handleSubmit,
-        watch,
-        formState: { errors },
-      } = useForm()
-
-    const onSubmit = (data) => console.log(data)
-
 
     return (
         <div>
