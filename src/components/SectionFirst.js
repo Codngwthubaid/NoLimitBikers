@@ -29,7 +29,7 @@ const SectionFirst = () => {
     const router = useRouter()
 
     const handleSubmit = () => {
-        router.push("/pages/contact")
+        router.push("/pages/pricing")
     }
 
     return (
