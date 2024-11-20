@@ -21,19 +21,67 @@ import { SquareArrowOutUpRight, TriangleAlert } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import axios from "axios"
+import {Loader2} from "lucide-react"
 
 const PricingPopUpCard = (props) => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
-    const [error, setError] = useState("")
     const [number, setNumber] = useState("")
     const [selectedCourse, setSelectedCourse] = useState('');
+    const [errors, setErrors] = useState({
+        name: '',
+        email: '',
+        number: '',
+        course: ''
+    })
     const [submitted, setSubmitted] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
 
     const handleCourseChange = (e) => {
         setSelectedCourse(e);
+        setErrors(prev => ({ ...prev, course: '' }))
     }
+
+    const validateForm = () => {
+        let isValid = true
+        const newErrors = {
+            name: '',
+            email: '',
+            number: '',
+            course: ''
+        }
+
+        if (!name.trim()) {
+            newErrors.name = 'Please enter your name'
+            isValid = false
+        }
+
+        if (!email.trim()) {
+            newErrors.email = 'Please enter your email'
+            isValid = false
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            newErrors.email = 'Please enter a valid email'
+            isValid = false
+        }
+
+        if (!number.trim()) {
+            newErrors.number = 'Please enter your number'
+            isValid = false
+        }
+
+        if (!selectedCourse) {
+            newErrors.course = 'Please select a course'
+            isValid = false
+        }
+
+        setErrors(newErrors)
+        return isValid
+    }
+
+
+
+
     const SubmitName = (e) => {
         setName(e.target.value)
     }
@@ -46,12 +94,12 @@ const PricingPopUpCard = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        alert('Sending');
-        setError('')
+        if (!validateForm()) return
+        setIsLoading(true)
         setSubmitted(false)
 
         try {
-            const response = await axios.post('/api/pricing', { name, email, number,courseId: selectedCourse })
+            const response = await axios.post('/api/pricing', { name, email, number, courseId: selectedCourse })
             console.log(name, email, number, selectedCourse);
 
             if (response.data.success) {
@@ -61,11 +109,13 @@ const PricingPopUpCard = (props) => {
                 setNumber('')
                 setSelectedCourse('')
             } else {
-                setError('Failed to send message. Please try again.')
+                setErrors(prev => ({ ...prev, submit: 'Failed to send message. Please try again.' }))
             }
         } catch (error) {
             console.error('Error submitting form:', error)
-            setError('An error occurred. Please try again later.')
+            setErrors(prev => ({ ...prev, submit: 'An error occurred. Please try again later.' }))
+        } finally {
+            setIsLoading(false)
         }
     }
     return (
@@ -83,16 +133,16 @@ const PricingPopUpCard = (props) => {
                 <form className="grid gap-4 py-4" onSubmit={handleSubmit}>
                     <div className="flex flex-col space-y-1.5 items-start">
                         <Input onChange={(e) => { setName(e.target.value) }} placeholder="Name" id="name" className=" text-black col-span-3" />
-                        {error.name && <span className="text-red-500 font-semibold flex"><TriangleAlert /> <span>Please enter your name</span></span>}
+                        {errors.name && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.name}</span></span>}
 
                     </div>
                     <div className="flex flex-col space-y-1.5 items-start">
-                        <Input  onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" id="email" className=" text-black col-span-3" />
-                        {error.email && <span className="text-red-500 font-semibold flex"><TriangleAlert /> <span>Please enter your name</span></span>}
+                        <Input onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" id="email" className=" text-black col-span-3" />
+                        {errors.email && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.email}</span></span>}
                     </div>
                     <div className="flex flex-col space-y-1.5 items-start">
-                        <Input  onChange={(e) => { setNumber(e.target.value) }} placeholder="Number" id="number" className=" text-black col-span-3" />
-                        {error.number && <span className="text-red-500 font-semibold flex"><TriangleAlert /> <span>Please enter your number</span></span>}
+                        <Input onChange={(e) => { setNumber(e.target.value) }} placeholder="Number" id="number" className=" text-black col-span-3" />
+                        {errors.number && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.number}</span></span>}
                     </div>
                     <div className="flex flex-col space-y-1.5 items-start">
                         <Label htmlFor="framework" className="text-base text-orange-400">Select Course</Label>
@@ -106,6 +156,7 @@ const PricingPopUpCard = (props) => {
                                 <SelectItem className="cursor-pointer" id={props.Op3} value={props.Op3}>{props.Op3} </SelectItem>
                             </SelectContent>
                         </Select>
+                        {errors.course && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.course}</span></span>}
                     </div>
                     <div>
                         <Link href="#" className="hover:text-blue-600 text-green-600 font-semibold">
@@ -114,19 +165,31 @@ const PricingPopUpCard = (props) => {
                                 <span>WhatsApp</span>
                             </div>
                             <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We'll get back to you soon!</p>}
-                                {error && <p className="mt-4 text-red-800 font-semibold text-sm">{error}</p>}</div>
+                            
+                            {/* error */}
+                            </div>
                         </Link>
                     </div>
                 </form>
                 <DialogFooter className="flex justify-between">
-
                     <DialogTrigger>
                         <Button variant="outline">Cancel</Button>
                     </DialogTrigger>
-
-                    <Button type="button" className="bg-orange-400 hover:bg-[#a99595]" onClick={(e) => { handleSubmit(e) }}
-                    >Submit</Button>
-
+                    <Button
+                        type="button"
+                        onClick={handleSubmit}
+                        disabled={isLoading}
+                        className="w-full sm:w-auto"
+                    >
+                        {isLoading ? (
+                            <>
+                                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                Submitting...
+                            </>
+                        ) : (
+                            'Submit'
+                        )}
+                    </Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>
