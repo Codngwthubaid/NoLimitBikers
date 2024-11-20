@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Button } from "../components/ui/button"
 import {
     Card,
@@ -9,20 +9,21 @@ import {
 } from "../components/ui/card"
 import { Input } from "../components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import {TriangleAlert , Loader2} from "lucide-react" 
+import { TriangleAlert, Loader2 } from "lucide-react"
+import axios from 'axios'
 
 const FAQ = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [submitted, setSubmitted] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
     const [errors, setErrors] = useState({
         name: '',
         email: '',
         number: '',
         course: ''
     })
-    const [submitted, setSubmitted] = useState(false)
-    const [isLoading, setIsLoading] = useState(false)
 
 
     const SubmitName = (e) => {
@@ -121,6 +122,8 @@ const FAQ = () => {
                                     placeholder="Your message ..."
                                 />
                                 {errors.message && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.message}</span></span>}
+                            </div>
+                            <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thanks for the query, We will solved your query ASAP!</p>}
                             </div>
                         </div>
                         <div>
