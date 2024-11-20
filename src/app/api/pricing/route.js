@@ -1,24 +1,24 @@
 import nodemailer from "nodemailer"
+import { NextResponse } from "next/server"
 
-export async function POST(req, res) {
-    const { name, email, number, courseId } = await res.json()
+export async function POST(req) {
+  const { name, email, number, courseId } = await req.json()
+  const transport = nodemailer.createTransport({
+    service: "gmail",
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.GMAIL,
+      pass: process.env.GMAIL_PASSWORD
+    }
+  })
 
-    const transport = nodemailer.createTransport({
-        service: "gmail",
-        port: 465,
-        secure: true,
-        auth: {
-            user: process.env.GMAIL,
-            pass: process.env.GMAIL_PASSWORD
-        }
-    })
-
-    try {
-        await transport.sendMail({
-            from: email, // User's email
-            to: process.env.GMAIL, // Company email
-            subject: "Lesson Booking Form",
-            html: `<div style="font-family: Arial, sans-serif; background-color: #fff4e6; border: 1px solid #ffa500; padding: 20px; border-radius: 10px; max-width: 500px; margin: 20px auto; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+  try {
+    await transport.sendMail({
+      from: email, // User's email
+      to: process.env.GMAIL, // Company email
+      subject: "Lesson Booking Form",
+      html: `<div style="font-family: Arial, sans-serif; background-color: #fff4e6; border: 1px solid #ffa500; padding: 20px; border-radius: 10px; max-width: 500px; margin: 20px auto; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
   <h3 style="font-size: 24px; color: #ff8303; font-weight: bold; text-align: center; margin-bottom: 20px;">
     New Lesson Booking Details
   </h3>
@@ -35,12 +35,12 @@ export async function POST(req, res) {
     <strong style="color: #ff8303;">Course:</strong> ${courseId}
   </p>
 </div>`,
-        })
-        await transport.sendMail({
-            from: process.env.GMAIL,
-            to: email,
-            subject: "Driving Lesson Booking Confirmation and Get Ready to Hit the Road",
-            html: `<div style="font-family: Arial, sans-serif; background-color: #fff4e6; margin: 0; padding: 0; color: #333;">
+    })
+    await transport.sendMail({
+      from: process.env.GMAIL,
+      to: email,
+      subject: "Driving Lesson Booking Confirmation and Get Ready to Hit the Road",
+      html: `<div style="font-family: Arial, sans-serif; background-color: #fff4e6; margin: 0; padding: 0; color: #333;">
   <div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border: 1px solid #ffa500; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
     <div style="background-color: #ff8303; padding: 20px; text-align: center;">
       <h1 style="color: #ffffff; font-size: 28px; margin: 0;">Driving Lesson Booking Confirmation</h1>
@@ -89,11 +89,17 @@ export async function POST(req, res) {
     </div>
   </div>
 </div>`
-        });
+    });
 
-        res.status(200).json({ success: true, message: 'Email sent successfully!' });
-    } catch (error) {
-        console.error('Error sending email:', error);
-        res.status(500).json({ success: false, message: 'Failed to send email', error: error.message });
-    }
+    return NextResponse.json(
+      { success: true, message: 'Emails sent successfully!' },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error('Error in POST /api/pricing:', error);
+    return NextResponse.json(
+      { success: false, message: 'Failed to process request', error: error.message },
+      { status: 500 }
+    );
+  }
 }
