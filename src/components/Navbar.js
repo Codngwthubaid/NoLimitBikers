@@ -20,19 +20,20 @@ const Navbar = () => {
   return (
     <header className="bg-orange-400 fixed w-full z-10">
       <nav className="container mx-auto p-5 flex justify-between items-center">
-        <Link href="/" className="text-3xl font-bold text-[#FFEED5]">Driving Lessons</Link>
+        <Link href="/" className="text-3xl font-bold text-[#FFEED5]">
+        Rijlessen</Link>
         <ul className="hidden md:flex justify-between items-center">
           <li className="mr-8 p-1">
-            <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
+            <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Thuis</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">About</Link>
+            <Link href="/pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Over</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
+            <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Cursussen</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/pricing" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Pricing</Link>
+            <Link href="/pages/pricing" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Prijzen</Link>
           </li>
           <li className="mr-8 p-1">
             <Link href="/pages/contact" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
@@ -59,16 +60,16 @@ const Navbar = () => {
                 <SheetDescription>
                   <ul className='h-[100vh] flex flex-col justify-center border border-red-500'>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
-                      <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Home</Link>
+                      <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">ThuisThuisThuisThuisThuisThuis</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
-                      <Link href="/pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">About</Link>
+                      <Link href="/pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Over</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-                      <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Courses</Link>
+                      <Link href="/pages/courses" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Cursussen</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-                      <Link href="/pages/pricing" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Pricing</Link>
+                      <Link href="/pages/pricing" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Prijzen</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
                       <Link href="/pages/contact" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Contact</Link>
