@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer"
 
 export async function POST(req, res) {
-    const { name, email, number, course } = await res.json()
+    const { name, email, number, courseId } = await res.json()
 
     const transport = nodemailer.createTransport({
         service: "gmail",
@@ -32,7 +32,7 @@ export async function POST(req, res) {
     <strong style="color: #ff8303;">Number:</strong> ${number}
   </p>
   <p style="font-size: 16px; color: #333; margin-bottom: 10px; line-height: 1.5;">
-    <strong style="color: #ff8303;">Course:</strong> ${course}
+    <strong style="color: #ff8303;">Course:</strong> ${courseId}
   </p>
 </div>`,
         })
@@ -65,7 +65,7 @@ export async function POST(req, res) {
           <strong style="color: #ff8303;">Number:</strong> ${number}
         </p>
         <p style="font-size: 16px; margin: 5px 0;">
-          <strong style="color: #ff8303;">Course:</strong> ${course}
+          <strong style="color: #ff8303;">Course:</strong> ${courseId}
         </p>
       </div>
       <p style="font-size: 16px; color: #333; line-height: 1.6; margin: 15px 0;">

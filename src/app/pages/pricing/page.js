@@ -3,47 +3,9 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import SubSectionheadings from "@/components/SubSectionheadings"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
 
-const page = () => {
-    const formRef = useRef(null)
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
-    const [isSubmitting, setIsSubmitting] = useState(false)
 
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault()
-      setIsSubmitting(true)
-  
-      try {
-        const response = await axios.post('/api/contact', { name, email, message })
-        
-        if (response.data.success) {
-            console.log("Message Sent,Thank you for your message. We'll get back to you soon!");
-        //   toast({
-        //     title: "Message Sent",
-        //     description: "Thank you for your message. We'll get back to you soon!",
-        //     icon: <CheckCircle2 className="h-4 w-4" />,
-        //   })
-          setName('')
-          setEmail('')
-          setMessage('')
-          formRef.current?.reset()
-        } else {
-          throw new Error('Failed to send message')
-        }
-      } catch (error) {
-        console.error('Error submitting form:', error)
-        // toast({
-        //   title: "Error",
-        //   description: "Failed to send message. Please try again.",
-        //   variant: "destructive",
-        //   icon: <AlertCircle className="h-4 w-4" />,
-        // })
-      } finally {
-        setIsSubmitting(false)
-      }
-    }
+const page = () => {
+
     return (
         <div>
             <section className="body-font overflow-hidden pt-[75px]">
@@ -147,7 +109,7 @@ const page = () => {
                                     </ul>
                                 </CardContent>
                                 <CardFooter>
-                                <PricingPopUpCard
+                                    <PricingPopUpCard
                                         Op1="AVD Pakket Silver"
                                         Op2="AVD Pakket Gold Mega Deal"
                                         Op3="AVD Pakket Platinum" />
@@ -171,7 +133,7 @@ const page = () => {
                                     </ul>
                                 </CardContent>
                                 <CardFooter>
-                                <PricingPopUpCard
+                                    <PricingPopUpCard
                                         Op1="AVD Pakket Silver"
                                         Op2="AVD Pakket Gold Mega Deal"
                                         Op3="AVD Pakket Platinum" />
@@ -192,7 +154,7 @@ const page = () => {
                                     </ul>
                                 </CardContent>
                                 <CardFooter>
-                                <PricingPopUpCard
+                                    <PricingPopUpCard
                                         Op1="AVD Pakket Silver"
                                         Op2="AVD Pakket Gold Mega Deal"
                                         Op3="AVD Pakket Platinum" />
