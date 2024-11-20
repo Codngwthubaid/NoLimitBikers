@@ -1,3 +1,4 @@
+import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(req) {
@@ -78,9 +79,16 @@ export async function POST(req) {
       `,
     });
 
-    res.status(200).json({ success: true, message: 'Email sent successfully!' });
+    return NextResponse.json(
+      { success: true, message: 'Emails sent successfully!' },
+      { status: 200 }
+    )
+
   } catch (error) {
-    console.error('Error sending email:', error);
-    res.status(500).json({ success: false, message: 'Failed to send email', error: error.message });
+    console.error('Error in POST /api/pricing:', error);
+    return NextResponse.json(
+      { success: false, message: 'Failed to process request', error: error.message },
+      { status: 500 }
+    );
   }
 }

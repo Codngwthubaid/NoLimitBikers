@@ -61,9 +61,9 @@ const page = () => {
                                 </CardContent>
                                 <CardFooter>
                                     <PricingPopUpCard
-                                        Op1="AVB Pakket Silver"
-                                        Op2="AVB Pakket Gold Mega Deal"
-                                        Op3="AVB Pakket Platinum" />
+                                        Op1="AVD Pakket Silver"
+                                        Op2="AVD Pakket Gold Mega Deal"
+                                        Op3="AVD Pakket Platinum" />
                                 </CardFooter>
                             </Card>
 

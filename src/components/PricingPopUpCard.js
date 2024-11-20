@@ -51,8 +51,8 @@ const PricingPopUpCard = (props) => {
         setSubmitted(false)
 
         try {
-            const response = await axios.post('/api/pricing', { name, email, number,courseId: selectedCourse.id })
-            console.log(name, email, number, selectedCourse.id);
+            const response = await axios.post('/api/pricing', { name, email, number,courseId: selectedCourse })
+            console.log(name, email, number, selectedCourse);
 
             if (response.data.success) {
                 setSubmitted(true)
