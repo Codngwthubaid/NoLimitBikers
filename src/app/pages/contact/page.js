@@ -1,19 +1,26 @@
 "use client"
 import SubSectionheadings from '@/components/SubSectionheadings'
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import iconCall from "@/public/iconsProcess/iconCall.png"
 import iconEmail from "@/public/iconsProcess/iconEmail.png"
 import iconLocation from "@/public/iconsProcess/iconLocation.png"
 import axios from 'axios'
+import { TriangleAlert } from "lucide-react"
+import { Loader2 } from 'lucide-react'
 
 const page = () => {
-  const ref = useRef(null)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    number: '',
+    course: ''
+  })
   const [submitted, setSubmitted] = useState(false)
-  const [error, setError] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
 
   const SubmitName = (e) => {
     setName(e.target.value)
@@ -25,27 +32,60 @@ const page = () => {
     setMessage(e.target.value)
   }
 
+  const validateForm = () => {
+    let isValid = true
+    const newErrors = {
+      name: '',
+      email: '',
+      message: ''
+    }
+
+    if (!name.trim()) {
+      newErrors.name = 'Please enter your name'
+      isValid = false
+    }
+
+    if (!email.trim()) {
+      newErrors.email = 'Please enter your email'
+      isValid = false
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = 'Please enter a valid email'
+      isValid = false
+    }
+
+    if (!message.trim()) {
+      newErrors.name = 'Please enter your name'
+      isValid = false
+    }
+
+    setErrors(newErrors)
+    return isValid
+  }
+
+
   const handleSubmit = async (e) => {
     e.preventDefault()
-    alert('Sending');
-    setError('')
+    if (!validateForm()) return
+    setIsLoading(true)
     setSubmitted(false)
 
     try {
       const response = await axios.post('/api/contact', { name, email, message })
-      console.log(name,email,message);
-      
+      console.log(name, email, message);
+
       if (response.data.success) {
         setSubmitted(true)
         setName('')
         setEmail('')
         setMessage('')
       } else {
-        setError('Failed to send message. Please try again.')
+        setErrors(prev => ({ ...prev, submit: 'Failed to send message. Please try again.' }))
       }
     } catch (error) {
       console.error('Error submitting form:', error)
-      setError('An error occurred. Please try again later.')
+      setErrors(prev => ({ ...prev, submit: 'An error occurred. Please try again later.' }))
+    } finally {
+      setIsLoading(false)
     }
   }
 
@@ -146,42 +186,59 @@ const page = () => {
                           Name
                         </label>
                         <input
-                          ref={ref} onChange={(e) => { setName(e.target.value) }}
+                          onChange={(e) => { setName(e.target.value) }}
                           type="text"
                           id="name"
                           name="name"
                           className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
-                          required="Please fill out this field. ..."
                         />
+                        {errors.name && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.name}</span></span>}
                       </div>
                       <div className="relative mb-4 text-[#ffedd5]">
                         <label htmlFor="email" className="leading-7 text-base font-semibold text-[#ffedd5]">
                           Email
                         </label>
                         <input
-                          ref={ref} onChange={(e) => { setEmail(e.target.value) }}
+                          onChange={(e) => { setEmail(e.target.value) }}
                           type="email"
                           id="email"
                           name="email"
                           className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
                         />
                       </div>
+                      {errors.email && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.email}</span></span>}
                       <div className="relative mb-4 text-[#ffedd5]">
                         <label htmlFor="message" className="leading-7 text-base font-semibold text-[#ffedd5]">
                           Message
                         </label>
                         <textarea
-                          ref={ref} onChange={(e) => { setMessage(e.target.value) }}
+                          onChange={(e) => { setMessage(e.target.value) }}
                           id="message"
                           name="message"
                           className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
                         ></textarea>
+                        {errors.message && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.message}</span></span>}
+
                       </div>
-                      <button onClick={(e) => { handleSubmit(e) }} className="bg-[#a99595] border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg text-white font-semibold ">
-                        Submit Now
+
+                      <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We'll get back to you soon!</p>}
+                      </div>
+
+                      <button type="button"
+                        onClick={handleSubmit}
+                        disabled={isLoading}
+                        className="bg-[#a99595] border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg text-white font-semibold ">
+                        {isLoading ? (
+                          <>
+                            <div className='flex justify-center items-center'>
+                              <span><Loader2 className="mr-2 h-4 w-4 animate-spin" /></span>
+                              <span>Submitting...</span>
+                            </div>
+                          </>
+                        ) : (
+                          'Submit'
+                        )}
                       </button>
-                      {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We'll get back to you soon!</p>}
-                      {error && <p className="mt-4 text-red-800 font-semibold">{error}</p>}
                     </div>
                   </div>
                 </section>

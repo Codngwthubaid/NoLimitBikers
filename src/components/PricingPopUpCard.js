@@ -79,9 +79,6 @@ const PricingPopUpCard = (props) => {
         return isValid
     }
 
-
-
-
     const SubmitName = (e) => {
         setName(e.target.value)
     }
@@ -165,8 +162,6 @@ const PricingPopUpCard = (props) => {
                                 <span>WhatsApp</span>
                             </div>
                             <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We'll get back to you soon!</p>}
-                            
-                            {/* error */}
                             </div>
                         </Link>
                     </div>
