@@ -16,7 +16,7 @@ const CardOWP = () => {
         <div>
           <div className='flex justify-center gap-x-5 flex-col sm:flex-row gap-y-5'>
             <div className='flex flex-col gap-y-5 justify-center items-center lg:flex-row gap-x-5'>
-              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400'>
+              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400 h-60'>
                 <div className='flex justify-around items-end'>
                   <div>
                     <Image
@@ -32,11 +32,11 @@ const CardOWP = () => {
                   </div>
                 </div>
                 <div className='flex flex-col text-center gap-y-2'>
-                  <div className='text-xl font-bold'>Select Your Plan</div>
-                  <div>Before starting any course please select a plan as your requirement to achieve your goal in time.</div>
+                  <div className='text-xl font-bold'>Selecteer uw abonnement</div>
+                  <div>Voordat u met een cursus begint, selecteert u een plan als vereiste om uw doel op tijd te bereiken.</div>
                 </div>
               </div>
-              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400'>
+              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400 h-60'>
                 <div className='flex justify-around items-center'>
                   <div>
                     <Image
@@ -52,13 +52,13 @@ const CardOWP = () => {
                   </div>
                 </div>
                 <div className='flex flex-col text-center gap-y-2'>
-                  <div className='text-xl font-bold'>Consultation</div>
-                  <div>If you face any problem to start your program our support team is always ready consult with them.</div>
+                  <div className='text-xl font-bold'>Overleg</div>
+                  <div>Als u problemen ondervindt bij het starten van uw programma, staat ons ondersteuningsteam altijd klaar om met hen te overleggen.</div>
                 </div>
               </div>
             </div>
             <div className='flex flex-col gap-y-5 justify-center items-center lg:flex-row gap-x-5'>
-              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400'>
+              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400 h-60'>
                 <div className='flex justify-around items-center'>
                   <div>
                     <Image
@@ -74,11 +74,11 @@ const CardOWP = () => {
                   </div>
                 </div>
                 <div className='flex flex-col text-center gap-y-2'>
-                  <div className='text-xl font-bold'>Buy Your Courses</div>
-                  <div>Once you are ready to start the course please purchase your choosen course via online or physically.</div>
+                  <div className='text-xl font-bold'>Koop uw cursussen</div>
+                  <div>Zodra u klaar bent om met de cursus te beginnen, kunt u de door u gekozen cursus online of fysiek kopen.</div>
                 </div>
               </div>
-              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400'>
+              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400 h-60'>
                 <div className='flex justify-around items-center'>
                   <div>
                     <Image
@@ -94,8 +94,8 @@ const CardOWP = () => {
                   </div>
                 </div>
                 <div className='flex flex-col text-center gap-y-2'>
-                  <div className='text-xl font-bold'>Start Your Training</div>
-                  <div>Finally when you finished every process then it is time to start your training with us regularly.</div>
+                  <div className='text-xl font-bold'>Begin met uw training</div>
+                  <div>Als je eindelijk elk proces hebt afgerond, is het tijd om regelmatig bij ons te gaan trainen.</div>
                 </div>
               </div>
             </div>
