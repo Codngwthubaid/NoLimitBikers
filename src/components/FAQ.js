@@ -97,20 +97,20 @@ const FAQ = () => {
         <>
             <Card className="w-[85vw] md:w-[40vw] bg-[#ffedd5]">
                 <CardHeader>
-                    <CardTitle className="text-3xl text-center text-orange-400 font-bold">Asking Question Now</CardTitle>
+                    <CardTitle className="text-3xl text-center text-orange-400 font-bold">Nu vraag stellen</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <form className='flex flex-col gap-y-4'>
                         <div className="grid w-full items-center gap-4">
                             <div className="flex flex-col space-y-1.5">
                                 <label htmlFor="name">
-                                    <Input type='text' id='name' placeholder='Enter Name ' onChange={(e) => { setName(e.target.value) }} />
+                                    <Input type='text' id='name' placeholder='Voer Naam in' onChange={(e) => { setName(e.target.value) }} />
                                 </label>
                                 {errors.name && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.name}</span></span>}
                             </div>
                             <div className="flex flex-col space-y-1.5">
                                 <label htmlFor="email">
-                                    <Input type='email' id='email' placeholder='Enter Email ' onChange={(e) => { setEmail(e.target.value) }} />
+                                    <Input type='email' id='email' placeholder='Voer e-mailadres in' onChange={(e) => { setEmail(e.target.value) }} />
                                 </label>
                                 {errors.email && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.email}</span></span>}
                             </div>
@@ -119,16 +119,16 @@ const FAQ = () => {
                                     onChange={(e) => { setMessage(e.target.value) }}
                                     id="message"
                                     name="message"
-                                    placeholder="Your message ..."
+                                    placeholder="Jouw bericht ..."
                                 />
                                 {errors.message && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.message}</span></span>}
                             </div>
-                            <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thanks for the query, We will solved your query ASAP!</p>}
+                            <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Bedankt voor de vraag. We zullen uw vraag zo snel mogelijk oplossen!</p>}
                             </div>
                         </div>
                         <div>
                             <CardFooter className="flex justify-between">
-                                <Button variant="outline">Cancel</Button>
+                                <Button variant="outline">Annuleren</Button>
                                 <Button
                                     type="button"
                                     onClick={handleSubmit}
@@ -138,10 +138,10 @@ const FAQ = () => {
                                     {isLoading ? (
                                         <>
                                             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                            Submitting...
+                                            Indienen...
                                         </>
                                     ) : (
-                                        'Submit'
+                                        'Indienen'
                                     )}
                                 </Button>
                             </CardFooter>

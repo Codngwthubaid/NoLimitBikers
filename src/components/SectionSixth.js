@@ -13,8 +13,8 @@ const SectionSixth = () => {
                             <div className="text-white w-[95vw] mx-auto flex justify-around items-center py-10 flex-col md:flex-row gap-x-5">
                                 <div className="w-11/12 lg:w-1/2">
                                     <div className="flex flex-col gap-y-3">
-                                        <div className="text-orange-400 font-semibold text-2xl">FAQ</div>
-                                        <div className="text-[#ffedd5] text-5xl font-bold">Frequently Asked Question</div>
+                                        <div className="text-orange-400 font-semibold text-2xl">F A Q</div>
+                                        <div className="text-[#ffedd5] text-5xl font-bold">Veelgestelde vraag</div>
                                     </div>
                                     <div>
                                         <AccordionCom />

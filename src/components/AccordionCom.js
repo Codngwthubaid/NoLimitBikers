@@ -13,9 +13,9 @@ const AccordionCom = () => {
                 <div className="bg-orange-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg">Can I book lessons online?</AccordionTrigger>
+                            <AccordionTrigger className="text-lg">Kan ik online lessen boeken?</AccordionTrigger>
                             <AccordionContent className="text-lg">
-                                Yes, our website allows you to easily book lessons online with a few clicks.
+                                Ja, op onze website kunt u eenvoudig met een paar klikken online lessen boeken.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -23,9 +23,9 @@ const AccordionCom = () => {
                 <div className="bg-orange-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg">How long is each bike driving lesson?</AccordionTrigger>
+                            <AccordionTrigger className="text-lg">Hoe lang duurt elke fietsrijles?</AccordionTrigger>
                             <AccordionContent className="text-lg">
-                                Each lesson typically lasts between 60 to 90 minutes, depending on your chosen package.
+                                Elke les duurt doorgaans tussen de 60 en 90 minuten, afhankelijk van het door u gekozen pakket.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -33,9 +33,9 @@ const AccordionCom = () => {
                 <div className="bg-orange-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg">How many lessons will I need to become a confident rider?</AccordionTrigger>
+                            <AccordionTrigger className="text-lg">Hoeveel lessen heb ik nodig om een ​​zelfverzekerde ruiter te worden?</AccordionTrigger>
                             <AccordionContent className="text-lg">
-                                The number of lessons varies depending on your individual progress, but most learners require 10-15 lessons to gain confidence.
+                                Het aantal lessen varieert afhankelijk van uw individuele vooruitgang, maar de meeste leerlingen hebben 10-15 lessen nodig om vertrouwen te winnen.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -43,9 +43,9 @@ const AccordionCom = () => {
                 <div className="bg-orange-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg">What safety gear do I need for lessons?</AccordionTrigger>
+                            <AccordionTrigger className="text-lg">Welke veiligheidsuitrusting heb ik nodig voor de lessen?</AccordionTrigger>
                             <AccordionContent className="text-lg">
-                                We provide helmets and basic protective gear. We recommend wearing gloves, jackets, and sturdy footwear for additional protection.
+                                Wij bieden helmen en basisbeschermingsmiddelen. We raden aan handschoenen, jassen en stevig schoeisel te dragen voor extra bescherming.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
