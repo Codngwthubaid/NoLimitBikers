@@ -34,15 +34,15 @@ const MainCourseDetails = (props) => {
                     <div className='text-3xl font-bold'>{props.Head}</div>
                     <div className='flex justify-center items-center gap-x-10 '>
                       <div className='hover:text-orange-400'>{props.Price}</div>
-                      <div className='hover:text-orange-400'>{props.Level}</div>
                       <div className='hover:text-orange-400'>{props.Duration}</div>
                     </div>
                   </div>
 
                   <div className='flex flex-col gap-y-5 mx-8'>
-                    <div>{props.contentParaFirst}
-                    </div>
+                    <div>{props.contentParaFirst}</div>
                     <div>{props.contentParaSecond}</div>
+                    <div>{props.contentParaThird}</div>
+                    <div>{props.contentParaFourth}</div>
                   </div>
 
                   <div className='flex justify-center items-center border-2 border-[#FFEED5] bg-[#ffeed525] text-orange-400 w-fit font-semibold gap-x-5 mx-auto my-8'>
@@ -61,38 +61,6 @@ const MainCourseDetails = (props) => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className='w-[95vw] lg:w-[30vw] '>
-                <Card className="w-[95vw] lg:w-[350px] bg-orange-400">
-                  <CardHeader>
-                    <CardTitle className="text-[#ffedd5] text-center text-3xl font-bold">Get A Quote</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <form>
-                      <div className="text-[#ffedd5] grid w-full items-center gap-4">
-                        <div className="flex flex-col space-y-1.5">
-                          <Label htmlFor="name">Enter Name </Label>
-                          <Input className="text-[#ffedd5] bg-white" id="name" />
-                        </div>
-                        <div className="flex flex-col space-y-1.5">
-                          <Label htmlFor="email">Enter Email </Label>
-                          <Input className="text-[#ffedd5] bg-white" id="email" />
-                        </div>
-                        <div className="flex flex-col space-y-1.5">
-                          <Label htmlFor="number">Enter Number </Label>
-                          <Input className="text-[#ffedd5] bg-white" id="number" />
-                        </div>
-                        <div className="flex justify-start items-start flex-col space-y-1.5 ">
-                          <Label htmlFor="textarea">Enter Message </Label>
-                          <Input type="text" id="textarea" className="bg-white" />
-                        </div>
-                      </div>
-                    </form>
-                  </CardContent>
-                  <CardFooter className="flex justify-center">
-                    <Button className="w-full bg-[#a99595]">Deploy</Button>
-                  </CardFooter>
-                </Card>
               </div>
             </div>
           </article>
