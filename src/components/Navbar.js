@@ -60,7 +60,7 @@ const Navbar = () => {
                 <SheetDescription>
                   <ul className='h-[100vh] flex flex-col justify-center border border-red-500'>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
-                      <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">ThuisThuisThuisThuisThuisThuis</Link>
+                      <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Thuis</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
                       <Link href="/pages/about" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Over</Link>

@@ -14,18 +14,18 @@ const page = () => {
       <main>
         <section>
           <article className='pt-[75px]'>
-            <SubSectionheadings Head="About Us" mainPage="Home" currentPage="About Us" />
+            <SubSectionheadings Head="Over ons" mainPage="Thuis" currentPage="Over ons" />
 
             <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
             <div className='mx-auto flex justify-center items-center lg:gap-x-5 lg:flex-row flex-col-reverse  gap-y-10'>
               <div className='px-6 lg:w-[50vw] flex justify-center items-start flex-col gap-y-5'>
-                <div className='text-orange-400 font-semibold text-xl'>You Get Know More</div>
-                <div className='text-4xl lg:text-5xl font-bold'>We<span>&apos;</span>re Very Experienced & 98% Students Pass Test Driving On Frist Try</div>
-                <div className='text-lg'>Driving defensively includes controlling your speed, looking ahead and being prepared for unexpected events, being alert and distraction-free, and preparedness for all sorts of actions and reactions of other drivers.</div>
+                <div className='text-orange-400 font-semibold text-xl'>Je krijgt meer te weten</div>
+                <div className='text-4xl lg:text-5xl font-bold'>Wij<span>&apos;</span>re Zeer ervaren en 98% studenten slagen voor het rijexamen bij de eerste poging</div>
+                <div className='text-lg'>Defensief rijden omvat het beheersen van je snelheid, vooruitkijken en voorbereid zijn op onverwachte gebeurtenissen, alert en vrij van afleiding zijn en voorbereid zijn op allerlei acties en reacties van andere bestuurders.</div>
                 <div>
                   <Link href="/pages/courses">
-                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">EXPLORE COURSES
+                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">ONTDEK CURSUSSEN
                       <Image
                         src={rightArrowWhite}
                         width={18}
