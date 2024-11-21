@@ -14,8 +14,8 @@ const SectionSeventh = () => {
                 <section>
                     <article>
                         <div className="flex flex-col justify-center items-center gap-y-5">
-                            <div className="text-2xl font-semibold text-orange-400">Our Gallery</div>
-                            <div className="text-4xl sm:text-5xl font-bold text-center">See Our Driving Practice Gallery</div>
+                            <div className="text-2xl font-semibold text-orange-400">Onze galerij</div>
+                            <div className="text-4xl sm:text-5xl font-bold text-center">Bekijk onze rijpraktijkgalerij</div>
                         </div>
                         <div className="flex flex-row md:flex-col gap-y-7 mt-10 justify-center items-center px-5">
                             <div className="flex justify-center items-center gap-x-7 flex-col-reverse md:flex-row gap-y-5">
