@@ -4,12 +4,12 @@ import nodemailer from 'nodemailer';
 export async function POST(req) {
   const { name, email, message } = await req.json();
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.strato.com",
     port: 465,
     secure: true,
     auth: {
-      user: process.env.GMAIL,
-      pass: process.env.GMAIL_PASSWORD
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD
     },
   });
 
@@ -39,7 +39,7 @@ export async function POST(req) {
       `,
     });
     await transporter.sendMail({
-      from: process.env.GMAIL,
+      from: process.env.EMAIL,
       to: email,
       subject: 'Thank You for Your Inquiry About Driving Lessons!',
       html: `
