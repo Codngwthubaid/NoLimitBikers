@@ -96,7 +96,7 @@ const page = () => {
           <article>
             <div>
               <div className='pt-[75px]'>
-                <SubSectionheadings Head="Contact" mainPage="Home" currentPage="Contact" />
+                <SubSectionheadings Head="Contact" mainPage="Thuis" currentPage="Contact" />
               </div>
 
               <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
@@ -109,7 +109,7 @@ const page = () => {
                       alt=""
                       className="" />
                   </div>
-                  <div>OUR OFFICE LOCATION</div>
+                  <div>ONZE KANTOORLOCATIE</div>
                   <div className='text-xl font-bold hover:text-orange-400'>1254 FH Abu Dhabi</div>
                 </div>
                 <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-orange-400 flex justify-center items-center flex-col">
@@ -119,7 +119,7 @@ const page = () => {
                       alt=""
                       className="" />
                   </div>
-                  <div>HAVE A QUESTION?</div>
+                  <div>HEEFT U EEN VRAAG?</div>
                   <div className='text-xl font-bold hover:text-orange-400'>06143 82099</div>
                 </div>
                 <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-orange-400 flex justify-center items-center flex-col">
@@ -129,7 +129,7 @@ const page = () => {
                       alt=""
                       className="" />
                   </div>
-                  <div>Email Us On</div>
+                  <div>E-mail ons</div>
                   <div className='text-xl font-bold hover:text-orange-400'>Info@nolimitbikers.nl</div>
                 </div>
               </div>
@@ -156,15 +156,15 @@ const page = () => {
                       <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
                           <h2 className="title-font font-semibold hover:text-orange-400 text-gray-900 tracking-widest text-xs">
-                            ADDRESS
+                          ADRES
                           </h2>
                           <p className="mt-1">
-                            Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter
+                           Netherlands Home Address
                           </p>
                         </div>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                           <h2 className="title-font font-semibold hover:text-orange-400 text-gray-900 tracking-widest text-xs">
-                            EMAIL
+                          E-MAIL
                           </h2>
                           <a href="mailto:example@email.com" className="text-yellow-500 leading-relaxed">
                             Info@nolimitbikers.nl
@@ -177,9 +177,9 @@ const page = () => {
                       </div>
                     </div>
                     <div className="bg-orange-400 lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 p-5 rounded-2xl">
-                      <h2 className="text-3xl mb-1 font-medium title-font text-[#ffedd5] text-center">Get A Free Quote</h2>
+                      <h2 className="text-3xl mb-1 font-medium title-font text-[#ffedd5] text-center">Ontvang een gratis offerte</h2>
                       <p className="leading-relaxed mb-5 text-[#ffedd5] text-center">
-                        Car driver instructor must also have good communication skills patience confidence and teaching skills.
+                      De autobestuurder-instructeur moet ook beschikken over goede communicatieve vaardigheden, geduld, vertrouwen en onderwijsvaardigheden.
                       </p>
                       <div className="relative mb-4 text-[#ffedd5]">
                         <label htmlFor="name" className="text-base font-semibold leading-7  text-[#ffedd5]">

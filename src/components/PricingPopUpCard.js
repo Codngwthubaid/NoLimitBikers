@@ -157,7 +157,7 @@ const PricingPopUpCard = (props) => {
                         {errors.course && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.course}</span></span>}
                     </div>
                     <div>
-                        <Link href="#" className="hover:text-blue-600 text-green-600 font-semibold">
+                        <Link href="https://wa.me/0614382099" className="hover:text-blue-600 text-green-600 font-semibold">
                             <div className="flex">
                                 <span><SquareArrowOutUpRight /></span>
                                 <span>WhatsApp</span>
