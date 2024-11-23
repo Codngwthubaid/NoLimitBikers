@@ -13,7 +13,7 @@ export default function loading() {
     return (
         <div className="h-[100vh] flex justify-center items-center">
             <div className="flex items-center justify-center h-screen">
-                {loading ? (
+                {isloading ? (
                     <div className="animate-spin rounded-full border-8 border-t-8 border-gray-200 border-t-orange-500 w-16 h-16"></div>
                 ) : (
                     <h1 className="text-2xl">Content Loaded!</h1>
