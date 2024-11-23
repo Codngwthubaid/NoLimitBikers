@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export async function POST(req) {
   const { name, email, message } = await req.json();
   const transporter = nodemailer.createTransport({
-    host: "smtp.strato.com",
+    service: "gmail",
     port: 465,
     secure: true,
     auth: {

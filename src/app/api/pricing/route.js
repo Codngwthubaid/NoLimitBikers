@@ -4,12 +4,12 @@ import { NextResponse } from "next/server"
 export async function POST(req) {
   const { name, email, number, courseId } = await req.json()
   const transport = nodemailer.createTransport({
-    host: "smtp.strato.com",
+    service: "gmail",
     port: 465,
     secure: true,
     auth: {
-      user: process.env.GMAIL,
-      pass: process.env.GMAIL_PASSWORD
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD
     }
   })
 
