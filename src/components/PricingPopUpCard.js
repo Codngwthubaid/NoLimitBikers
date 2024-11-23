@@ -1,5 +1,12 @@
 "use client"
 import React, { useState } from "react"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { SquareArrowOutUpRight, TriangleAlert } from 'lucide-react';
+import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import axios from "axios"
+import {Loader2} from "lucide-react"
 import {
     Dialog,
     DialogContent,
@@ -16,13 +23,6 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { SquareArrowOutUpRight, TriangleAlert } from 'lucide-react';
-import { Button } from "@/components/ui/button"
-import Link from "next/link";
-import axios from "axios"
-import {Loader2} from "lucide-react"
 
 const PricingPopUpCard = (props) => {
     const [name, setName] = useState('')

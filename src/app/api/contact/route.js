@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export async function POST(req) {
   const { name, email, message } = await req.json();
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.strato.com",
     port: 465,
     secure: true,
     auth: {
@@ -16,7 +16,7 @@ export async function POST(req) {
   try {
     await transporter.sendMail({
       from: email, // User's email
-      to: process.env.GMAIL, // Company email
+      to: process.env.EMAIL, // Company email
       subject: 'Inquiry About Driving Lessons',
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #FFF3E0; padding: 20px; border-radius: 8px;">
@@ -85,7 +85,7 @@ export async function POST(req) {
     )
 
   } catch (error) {
-    console.error('Error in POST /api/pricing:', error);
+    console.error(error);
     return NextResponse.json(
       { success: false, message: 'Failed to process request', error: error.message },
       { status: 500 }

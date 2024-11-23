@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 export async function POST(req) {
   const { name, email, number, courseId } = await req.json()
   const transport = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.strato.com",
     port: 465,
     secure: true,
     auth: {
@@ -96,7 +96,7 @@ export async function POST(req) {
       { status: 200 }
     );
   } catch (error) {
-    console.error('Error in POST /api/pricing:', error);
+    console.error(error);
     return NextResponse.json(
       { success: false, message: 'Failed to process request', error: error.message },
       { status: 500 }
