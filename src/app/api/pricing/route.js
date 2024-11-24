@@ -8,15 +8,15 @@ export async function POST(req) {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASSWORD
+      user: process.env.GMAIL,
+      pass: process.env.GMAIL_PASSWORD
     }
   })
 
   try {
     await transport.sendMail({
-      from: email, // User's email
-      to: process.env.EMAIL, // Company email
+      replyTo: email, // User's email
+      to: process.env.GMAIL, // Company email
       subject: "Lesson Booking Form",
       html: `<div style="font-family: Arial, sans-serif; background-color: #fff4e6; border: 1px solid #ffa500; padding: 20px; border-radius: 10px; max-width: 500px; margin: 20px auto; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
   <h3 style="font-size: 24px; color: #ff8303; font-weight: bold; text-align: center; margin-bottom: 20px;">
@@ -37,7 +37,7 @@ export async function POST(req) {
 </div>`,
     })
     await transport.sendMail({
-      from: process.env.EMAIL,
+      replyTo: process.env.GMAIL,
       to: email,
       subject: "Driving Lesson Booking Confirmation and Get Ready to Hit the Road",
       html: `<div style="font-family: Arial, sans-serif; background-color: #fff4e6; margin: 0; padding: 0; color: #333;">
