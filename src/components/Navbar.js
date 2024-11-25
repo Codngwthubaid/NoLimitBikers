@@ -20,8 +20,7 @@ const Navbar = () => {
   return (
     <header className="bg-orange-400 fixed w-full z-10">
       <nav className="container mx-auto p-5 flex justify-between items-center">
-        <Link href="/" className="text-3xl font-bold text-[#FFEED5]">
-        Rijlessen</Link>
+        <Link href="/" className="text-3xl font-bold text-[#FFEED5]">NoLimitBikers</Link>
         <ul className="hidden md:flex justify-between items-center">
           <li className="mr-8 p-1">
             <Link href="/" className="text-xl text-[#FFEED5] hover:text-white hover:font-semibold">Thuis</Link>
