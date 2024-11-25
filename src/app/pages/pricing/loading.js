@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-export default function loading() {
+export default function useloading() {
     const [isloading, setIsLoading] = useState(true);
 
     useEffect(() => {
