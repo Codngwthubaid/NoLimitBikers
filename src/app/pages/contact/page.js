@@ -9,7 +9,7 @@ import axios from 'axios'
 import { TriangleAlert } from "lucide-react"
 import { Loader2 } from 'lucide-react'
 
-const page = () => {
+const Page = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -251,5 +251,5 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
 

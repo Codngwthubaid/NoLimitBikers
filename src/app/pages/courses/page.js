@@ -9,7 +9,7 @@ import Link from 'next/link';
 import rightArrowWhite from "@/public/img/rightArrowWhite.png"
 import PricingPopUpCard from '@/components/PricingPopUpCard';
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <main>
@@ -231,4 +231,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

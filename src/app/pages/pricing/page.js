@@ -4,7 +4,7 @@ import SubSectionheadings from "@/components/SubSectionheadings"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
 
 
-const page = () => {
+const Page = () => {
 
     return (
         <div>
@@ -168,4 +168,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

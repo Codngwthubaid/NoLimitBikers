@@ -6,9 +6,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import SubSectionheadings from '@/components/SubSectionheadings'
 import rightArrowWhite from "@/public/img/rightArrowWhite.png"
+  
 
-
-const page = () => {
+const Page = () => {
   return (
     <>
       <main>
@@ -65,4 +65,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
