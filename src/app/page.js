@@ -13,16 +13,16 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Driving Lessons - Biking Learning Lessons in the Netherlands</title>
+        <title>NoLimitBikers - Biking Learning Lessons in the Netherlands</title>
         <meta name="description" content="Book your biking lessons with our expert instructors. Learn to ride safely and confidently in the Netherlands." />
-        <meta name="keywords" content="biking lessons, driving lessons, AVB, AVD, bike training, Netherlands" />
+        <meta name="keywords" content="biking lessons, NoLimitBikers, AVB, AVD, bike training, Netherlands" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Driving Lessons - Biking Learning Lessons in the Netherlands" />
+        <meta property="og:title" content="NoLimitBikers - Biking Learning Lessons in the Netherlands" />
         <meta property="og:description" content="Book your biking lessons with our expert instructors. Learn to ride safely and confidently in the Netherlands." />
         <meta property="og:image" content="https://www.yourwebsite.com/images/home-banner.jpg" />
         <meta property="og:url" content="https://www.yourwebsite.com/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Driving Lessons - Biking Learning Lessons in the Netherlands" />
+        <meta name="twitter:title" content="NoLimitBikers - Biking Learning Lessons in the Netherlands" />
         <meta name="twitter:description" content="Book your biking lessons with our expert instructors. Learn to ride safely and confidently in the Netherlands." />
         <meta name="twitter:image" content="https://www.yourwebsite.com/images/home-banner.jpg" />
         <link rel="canonical" href="https://www.yourwebsite.com/" />
@@ -41,7 +41,7 @@ export default function Home() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Driving Lessons",
+            "name": "NoLimitBikers",
             "url": "https://www.yourwebsite.com",
             "logo": "https://www.yourwebsite.com/images/logo.png",
             "sameAs": [
