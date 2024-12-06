@@ -54,7 +54,7 @@ export default function Home() {
       </Head>
       <main>
         <SectionFirst />
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-[#CCFF00] mx-auto my-14"></div>
         <SectionSecond />
         <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
         <SectionThird />

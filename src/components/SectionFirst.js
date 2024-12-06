@@ -15,13 +15,13 @@ import {
 } from "../components/ui/carousel"
 
 const packages = [
-    { id: 1, name: "AVB Pakket Silver", price: "€749,00", selectBtn: "Beginnen met basis" , features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
-    { id: 2, name: "AVB Pakket Gold Mega Deal", price: "€999,00", selectBtn: "Selecteer Goud" , features: ["16 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
-    { id: 3, name: "AVB Pakket Platinum", price: "€1299,00", selectBtn: "Kies Platina" , features: ["20 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
-    { id: 4, name: "AVD Pakket Silver", price: "€799,00", selectBtn: "Beginnen met basis" , features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
-    { id: 5, name: "AVD Pakket Gold Mega Deal", price: "€1199,00", selectBtn: "Selecteer Goud"  , features: ["18 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
-    { id: 6, name: "AVD Pakket Platinum", price: "€1299,00", selectBtn: "Kies Platina", features: ["20 uur rijles", "Vaste instructeur", "Nieuwe les motor","Leskaart &amp; Advies"] },
-    
+    { id: 1, name: "AVB Pakket Silver", price: "€749,00", selectBtn: "Beginnen met basis", features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
+    { id: 2, name: "AVB Pakket Gold Mega Deal", price: "€999,00", selectBtn: "Selecteer Goud", features: ["16 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
+    { id: 3, name: "AVB Pakket Platinum", price: "€1299,00", selectBtn: "Kies Platina", features: ["20 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
+    { id: 4, name: "AVD Pakket Silver", price: "€799,00", selectBtn: "Beginnen met basis", features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
+    { id: 5, name: "AVD Pakket Gold Mega Deal", price: "€1199,00", selectBtn: "Selecteer Goud", features: ["18 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
+    { id: 6, name: "AVD Pakket Platinum", price: "€1299,00", selectBtn: "Kies Platina", features: ["20 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
+
 ]
 
 
@@ -34,7 +34,7 @@ const SectionFirst = () => {
 
     return (
         <>
-            <main>
+            {/* <main>
                 <section className="container mx-auto pt-24 w-full">
                     <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
                         <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
@@ -90,6 +90,69 @@ const SectionFirst = () => {
                             </CarouselContent>
                             <CarouselPrevious />
                             <CarouselNext />
+                        </Carousel>
+                    </article>
+                </section>
+            </main> */}
+            <main className="bg-[#F0FF42]">
+                <section className="container mx-auto pt-24 w-full">
+                    <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
+                        <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
+                            <div className="flex flex-col gap-y-4">
+                                <div className="text-xl font-semibold text-[#2D3100]">Ontwikkel uw rijvaardigheid</div>
+                                <div className="text-3xl sm:text-5xl font-bold text-[#2D3100]">Leer
+                                    <span className="rounded-xl bg-white text-[#CCFF00] px-3 mx-2 shadow-lg">ermee rijden</span>
+                                </div>
+                                <div className="text-3xl sm:text-5xl font-bold text-[#2D3100]">Vertrouwen</div>
+                            </div>
+                            <div>
+                                <Link href="/pages/courses">
+                                    <Button
+                                        className="flex justify-center items-end gap-x-2 bg-[#CCFF00] hover:bg-[#B8E600] text-[#2D3100] font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2 shadow-lg"
+                                    >
+                                        ONTDEK CURSUSSEN
+                                        <Image
+                                            src={rightArrowWhite}
+                                            width={18}
+                                            height={20}
+                                            alt="Right arrow"
+                                        />
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
+                        <Carousel className="w-[70vw] bg-white lg:w-[30vw] mt-16 rounded-xl shadow-xl">
+                            <CarouselContent>
+                                {packages.map((pkg) => (
+                                    <CarouselItem key={pkg.id}>
+                                        <div className="p-1">
+                                            <Card className="flex flex-col items-center bg-[#F0FF42] border border-[#CCFF00] shadow-lg m-1 rounded-2xl">
+                                                <CardHeader>
+                                                    <CardTitle className="text-[#2D3100] font-bold text-2xl">{pkg.name}</CardTitle>
+                                                </CardHeader>
+                                                <CardContent className="text-center">
+                                                    <p className="text-4xl font-bold text-[#2D3100] mt-4">{pkg.price}</p>
+                                                    <ul className="mt-4 space-y-2 text-[#2D3100] text-sm">
+                                                        {pkg.features.map((feature, index) => (
+                                                            <li key={index}>{feature}</li>
+                                                        ))}
+                                                    </ul>
+                                                </CardContent>
+                                                <CardFooter>
+                                                    <Button
+                                                        className="w-full bg-white hover:bg-[#E6E6E6] text-[#CCFF00] font-bold shadow-md"
+                                                        onClick={() => handleSubmit(pkg.id)}
+                                                    >
+                                                        {pkg.selectBtn}
+                                                    </Button>
+                                                </CardFooter>
+                                            </Card>
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <CarouselPrevious className="text-[#2D3100] bg-white" />
+                            <CarouselNext className="text-[#2D3100] bg-white" />
                         </Carousel>
                     </article>
                 </section>
