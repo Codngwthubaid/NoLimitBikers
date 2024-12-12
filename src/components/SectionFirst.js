@@ -34,7 +34,7 @@ const SectionFirst = () => {
 
     return (
         <>
-            {/* <main>
+            <main>
                 <section className="container mx-auto pt-24 w-full">
                     <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
                         <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
@@ -93,8 +93,8 @@ const SectionFirst = () => {
                         </Carousel>
                     </article>
                 </section>
-            </main> */}
-            <main className="bg-[#F0FF42]">
+            </main>
+            {/* <main className="bg-[#F0FF42]">
                 <section className="container mx-auto pt-24 w-full">
                     <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
                         <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
@@ -156,7 +156,7 @@ const SectionFirst = () => {
                         </Carousel>
                     </article>
                 </section>
-            </main>
+            </main> */}
         </>
     )
 }

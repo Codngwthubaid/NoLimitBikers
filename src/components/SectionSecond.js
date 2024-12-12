@@ -8,7 +8,7 @@ import CYSAT from "../public/img/CYSAT.png"
 const SectionSecond = () => {
     return (
         <>
-            {/* <main>
+            <main>
                 <section className="container mx-auto">
                     <article>
                         <div className="flex justify-center items-center flex-col gap-y-3">
@@ -35,8 +35,8 @@ const SectionSecond = () => {
                         </div>
                     </article>
                 </section>
-            </main> */}
-              <main className="bg-[#F0FF42]">
+            </main>
+              {/* <main className="bg-[#F0FF42]">
       <section className="container mx-auto py-16">
         <article>
           <div className="flex justify-center items-center flex-col gap-y-3 mb-10">
@@ -63,7 +63,7 @@ const SectionSecond = () => {
           </div>
         </article>
       </section>
-    </main>
+    </main> */}
         </>
     )
 }

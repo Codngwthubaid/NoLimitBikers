@@ -44,12 +44,12 @@ const Page = () => {
                             Het AVB Pakket Silver is een zorgvuldig samengesteld rijlespakket dat is ontworpen om leerlingen de beste voorbereiding te bieden voor het behalen van hun motorrijbewijs. Dit pakket is ideaal voor zowel beginners als voor degenen die hun rijvaardigheden willen verbeteren.
                           </p>
                           <div>
-                            <div type="button" className="text-white flex justify-start items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2 mt-6">
+                  
                               <PricingPopUpCard
                                 Op1="AVB Pakket Silver"
                                 Op2="AVB Pakket Gold Mega Deal"
                                 Op3="AVB Pakket Platinum" />
-                            </div>
+                            
                           </div>
                         </div>
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 flex flex-col justify-start items-start gap-y-3">
@@ -70,12 +70,12 @@ const Page = () => {
                             Het AVB Pakket Gold Mega Deal is een premium rijlespakket dat speciaal is ontworpen voor leerlingen die de hoogste kwaliteit en een uitgebreide opleiding willen ervaren op weg naar het behalen van hun motorrijbewijs. Dit pakket biedt niet alleen meer rijlessen, maar ook extra voordelen die de leerervaring verbeteren.
                           </p>
                           <div>
-                            <div type="button" className="text-white flex justify-start items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">
+                          
                               <PricingPopUpCard
                                 Op1="AVB Pakket Silver"
                                 Op2="AVB Pakket Gold Mega Deal"
                                 Op3="AVB Pakket Platinum" />
-                            </div>
+                           
                           </div>
                         </div>
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 flex flex-col justify-start items-start gap-y-3">
@@ -96,12 +96,12 @@ const Page = () => {
                             Het AVB Pakket Platinum is een exclusief en uitgebreid rijlespakket dat is ontworpen voor leerlingen die serieus zijn over het behalen van hun motorrijbewijs. Dit pakket biedt niet alleen een aanzienlijke hoeveelheid rijlessen, maar ook persoonlijke begeleiding en de nieuwste lesmotoren, wat bijdraagt aan een optimale leerervaring.
                           </p>
                           <div>
-                            <div type="button" className="text-white flex justify-start items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">
+                          
                               <PricingPopUpCard
                                 Op1="AVB Pakket Silver"
                                 Op2="AVB Pakket Gold Mega Deal"
                                 Op3="AVB Pakket Platinum" />
-                            </div>
+                           
                           </div>
                         </div>
                       </div>
@@ -132,12 +132,12 @@ const Page = () => {
                             Het AVD Pakket Silver is een zorgvuldig samengesteld rijlespakket dat is ontworpen voor leerlingen die hun motorrijbewijs willen behalen met een solide basis en persoonlijke begeleiding. Dit pakket biedt een uitstekende combinatie van praktijkervaring en ondersteuning, waardoor het een ideale keuze is voor zowel beginners als voor degenen die hun rijvaardigheden willen verbeteren.
                           </p>
                           <div>
-                            <div type="button" className="text-white flex justify-start items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">
+                           
                               <PricingPopUpCard
                                 Op1="AVD Pakket Silver"
                                 Op2="AVD Pakket Gold Mega Deal"
                                 Op3="AVD Pakket Platinum" />
-                            </div>
+                         
                           </div>
                         </div>
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 flex flex-col justify-start items-start gap-y-3">
@@ -158,12 +158,12 @@ const Page = () => {
                             Het AVD Pakket Gold Mega Deal is een premium rijlespakket dat speciaal is ontworpen voor leerlingen die hun motorrijbewijs willen behalen met een uitgebreide en persoonlijke aanpak. Dit pakket biedt niet alleen een aanzienlijke hoeveelheid rijlessen, maar ook de ondersteuning en middelen die nodig zijn om zelfverzekerd en veilig te leren motorrijden.
                           </p>
                           <div>
-                            <div type="button" className="text-white flex justify-start items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2 mt-7">
+                   
                               <PricingPopUpCard
                                 Op1="AVD Pakket Silver"
                                 Op2="AVD Pakket Gold Mega Deal"
                                 Op3="AVD Pakket Platinum" />
-                            </div>
+                           
                           </div>
                         </div>
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 flex flex-col justify-start items-start gap-y-3">
@@ -184,12 +184,12 @@ const Page = () => {
                             Het AVD Pakket Platinum is een exclusief en uitgebreid rijlespakket dat is ontworpen voor leerlingen die hun motorrijbewijs willen behalen met de hoogste kwaliteit van instructie en ondersteuning. Dit pakket biedt een ongeëvenaarde leerervaring, waarbij leerlingen de kans krijgen om hun vaardigheden te ontwikkelen en zich goed voor te bereiden op het motorrijden in diverse omstandigheden.
                           </p>
                           <div>
-                            <div type="button" className="text-white flex justify-start items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">
+                         
                               <PricingPopUpCard
                                 Op1="AVD Pakket Silver"
                                 Op2="AVD Pakket Gold Mega Deal"
                                 Op3="AVD Pakket Platinum" />
-                            </div>
+                           
                           </div>
                         </div>
                       </div>
@@ -197,7 +197,7 @@ const Page = () => {
                   </section>
                 </div>
               </div>
-              <div className='bg-orange-400 flex justify-around items-center py-16'>
+              {/* <div className='bg-orange-400 flex justify-around items-center py-16'>
                 <div className='flex flex-col justify-start items-center'>
                   <div className="whitespace-pre-wrap text-3xl font-medium tracking-tighter text-black dark:text-white">
                     <NumberTicker className="text-[#ffedd5] text-4xl" value={150} />
@@ -219,7 +219,7 @@ const Page = () => {
                   </div>
                   <div className="text-[#ffedd5] text-xl">Expert Instructor</div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
 
