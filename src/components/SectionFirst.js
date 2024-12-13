@@ -100,15 +100,15 @@ const SectionFirst = () => {
                     <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
                         <div className="flex flex-col gap-y-4">
                             <div className="text-xl font-semibold text-[#4B5F4B]">Ontwikkel uw rijvaardigheid</div>
-                            <div className="text-3xl sm:text-5xl font-bold text-[#4B5F4B]">Leer
-                                <span className="rounded-xl bg-[#E1C1E1] text-[#4B5F4B] px-3 mx-2 shadow-lg">ermee rijden</span>
+                            <div className="text-3xl sm:text-5xl font-bold text-[#4B5F4B]">Leer ermee
+                                <span className="rounded-xl bg-[#E1C1E1] text-[#4B5F4B] px-3 mx-2 shadow-lg">rijden</span>
                             </div>
                             <div className="text-3xl sm:text-5xl font-bold text-[#4B5F4B]">Vertrouwen</div>
                         </div>
                         <div>
                             <Link href="/pages/courses">
                                 <Button
-                                    className="flex justify-center items-end gap-x-2 bg-[#E1C1E1] hover:bg-[#D1B1D1] text-[#4B5F4B] font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2 shadow-lg"
+                                    className="flex justify-center items-center gap-x-2 bg-[#E1C1E1] hover:bg-[#D1B1D1] text-[#4B5F4B] font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2 shadow-lg"
                                 >
                                     ONTDEK CURSUSSEN
                                     <Image
@@ -125,7 +125,7 @@ const SectionFirst = () => {
                         <CarouselContent>
                             {packages.map((pkg) => (
                                 <CarouselItem key={pkg.id}>
-                                    <div className="p-1">
+                                    <div className="p-1 bg-[#c1e1c1] rounded-lg drop-shadow-md">
                                         <Card className="flex flex-col items-center bg-[#E1C1E1] border border-[#C1E1C1] shadow-lg m-1 rounded-2xl">
                                             <CardHeader>
                                                 <CardTitle className="text-[#4B5F4B] font-bold text-2xl">{pkg.name}</CardTitle>

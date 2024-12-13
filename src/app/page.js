@@ -54,19 +54,19 @@ export default function Home() {
       </Head>
       <main>
         <SectionFirst />
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-[#9FD09F] mx-auto my-14"></div>
         <SectionSecond />
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-[#9FD09F] mx-auto my-14"></div>
         <SectionThird />
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-[#9FD09F] mx-auto my-14"></div>
         <SectionFourth />
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-[#9FD09F] mx-auto my-14"></div>
         <SectionFifth />
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-[#9FD09F] mx-auto my-14"></div>
         <SectionSixth />
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-[#9FD09F] mx-auto my-14"></div>
         <SectionSeventh />
-        <div className="h-[2px] w-11/12 bg-orange-400 mx-auto my-14"></div>
+        <div className="h-[2px] w-11/12 bg-[#9FD09F] mx-auto my-14"></div>
         <SectionEight />
       </main>
     </>
