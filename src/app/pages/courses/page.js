@@ -44,7 +44,6 @@ const Page = () => {
                             Het AVB Pakket Silver is een zorgvuldig samengesteld rijlespakket dat is ontworpen om leerlingen de beste voorbereiding te bieden voor het behalen van hun motorrijbewijs. Dit pakket is ideaal voor zowel beginners als voor degenen die hun rijvaardigheden willen verbeteren.
                           </p>
                           <div>
-                  
                               <PricingPopUpCard
                                 Op1="AVB Pakket Silver"
                                 Op2="AVB Pakket Gold Mega Deal"

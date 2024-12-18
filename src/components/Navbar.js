@@ -8,6 +8,8 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Image from 'next/image';
+import MainLogo from "@/public/img/MainLogo.png"
 
 
 const Navbar = () => {
@@ -18,31 +20,39 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-[#9FD09F] fixed w-full z-10">
+    <header className="bg-black fixed w-full z-10">
       <nav className="container mx-auto p-5 flex justify-between items-center">
-        <Link href="/" className="text-3xl font-bold text-[#4B5F4B]">NoLimitBikers</Link>
+        <div className='flex justify-center items-center'>
+          <Link href="/">
+            <Image
+              src={MainLogo}
+              alt="Logo"
+              className='w-[300px] '
+            />
+          </Link>
+        </div>
         <ul className="hidden md:flex justify-between items-center">
           <li className="mr-8 p-1">
-            <Link href="/" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Thuis</Link>
+            <Link href="/" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Thuis</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/about" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Over</Link>
+            <Link href="/pages/about" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Over</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/courses" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Cursussen</Link>
+            <Link href="/pages/courses" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Cursussen</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/pricing" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Prijzen</Link>
+            <Link href="/pages/pricing" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Prijzen</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/contact" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Contact</Link>
+            <Link href="/pages/contact" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Contact</Link>
           </li>
         </ul>
         <div className="md:hidden flex justify-center" onClick={handleMobileMenu}>
           <Sheet>
             <SheetTrigger>
               <svg
-                className={`w-6 h-6 text-[#4B5F4B] transition duration-300 ease-in-out ${mobileMenuActive ? 'rotate-90' : ''
+                className={`w-6 h-6 text-[#c1e1c1] transition duration-300 ease-in-out ${mobileMenuActive ? 'rotate-90' : ''
                   }`}
                 viewBox="0 0 24 24"
                 fill="none"
@@ -59,19 +69,19 @@ const Navbar = () => {
                 <SheetDescription>
                   <ul className='h-[100vh] flex flex-col justify-center border border-red-500'>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
-                      <Link href="/" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Thuis</Link>
+                      <Link href="/" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Thuis</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
-                      <Link href="/pages/about" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Over</Link>
+                      <Link href="/pages/about" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Over</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-                      <Link href="/pages/courses" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Cursussen</Link>
+                      <Link href="/pages/courses" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Cursussen</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-                      <Link href="/pages/pricing" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Prijzen</Link>
+                      <Link href="/pages/pricing" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Prijzen</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-                      <Link href="/pages/contact" className="text-xl text-[#4B5F4B] hover:text-white hover:font-semibold">Contact</Link>
+                      <Link href="/pages/contact" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Contact</Link>
                     </li>
                   </ul>
                 </SheetDescription>

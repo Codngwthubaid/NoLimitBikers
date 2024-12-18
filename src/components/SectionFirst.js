@@ -34,20 +34,20 @@ const SectionFirst = () => {
 
     return (
         <>
-            {/* <main>
+            <main>
                 <section className="container mx-auto pt-24 w-full">
                     <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
                         <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
                             <div className=" flex flex-col gap-y-4">
-                                <div className="text-xl font-semibold">Ontwikkel uw rijvaardigheid</div>
-                                <div className="text-3xl sm:text-5xl font-bold">Leer
-                                    <span className="rounded-xl bg-orange-400 text-white px-3 mx-2">ermee rijden</span>
+                                <div className="text-xl font-semibold text-gray-700">Ontwikkel uw rijvaardigheid</div>
+                                <div className="text-3xl sm:text-5xl font-bold text-gray-700">Leer
+                                    <span className="rounded-xl bg-[#c1e1c1] text-white px-3 mx-2">ermee rijden</span>
                                 </div>
-                                <div className="text-3xl sm:text-5xl font-bold">Vertrouwen</div>
+                                <div className="text-3xl sm:text-5xl font-bold text-gray-700">Vertrouwen</div>
                             </div>
                             <div>
                                 <Link href="/pages/courses">
-                                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">ONTDEK CURSUSSEN
+                                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">ONTDEK CURSUSSEN
                                         <Image
                                             src={rightArrowWhite}
                                             width={18}
@@ -58,14 +58,14 @@ const SectionFirst = () => {
                                 </Link>
                             </div>
                         </div>
-                        <Carousel className="w-[70vw] bg-[#ffeed5] lg:w-[30vw] mt-16">
+                        <Carousel className="w-[70vw] bg-white rounded-2xl lg:w-[30vw] mt-16">
                             <CarouselContent>
                                 {packages.map((pkg) => (
                                     <CarouselItem key={pkg.id}>
-                                        <div className="p-1">
-                                            <Card className="flex flex-col items-center bg-[#ffeed5] shadow-[0_10px_20px_rgba(251,_146,_60,_1)] m-1 rounded-2xl">
+                                        <div className="p-1 rounded-2xl">
+                                            <Card className="flex flex-col items-center bg-white shadow-[0_10px_20px_rgba(193,_225,_193,_1)] m-1 rounded-2xl">
                                                 <CardHeader>
-                                                    <CardTitle className="text-[#a99595] font-bold text-2xl">{pkg.name}</CardTitle>
+                                                    <CardTitle className="text-gray-700 font-bold text-2xl">{pkg.name}</CardTitle>
                                                 </CardHeader>
                                                 <CardContent className="text-center">
                                                     <p className="text-4xl font-bold text-gray-800 mt-4">{pkg.price}</p>
@@ -77,7 +77,7 @@ const SectionFirst = () => {
                                                 </CardContent>
                                                 <CardFooter>
                                                     <Button
-                                                        className="w-full bg-orange-500 hover:bg-orange-600"
+                                                        className="w-full bg-green-400"
                                                         onClick={() => handleSubmit(pkg.id)}
                                                     >
                                                         {pkg.selectBtn}
@@ -93,8 +93,8 @@ const SectionFirst = () => {
                         </Carousel>
                     </article>
                 </section>
-            </main> */}
-        <main className="bg-[#C1E1C1]">
+            </main>
+            {/* <main className="bg-[#C1E1C1]">
             <section className="container mx-auto pt-24 w-full">
                 <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
                     <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
@@ -156,7 +156,7 @@ const SectionFirst = () => {
                     </Carousel>
                 </article>
             </section>
-        </main>
+        </main> */}
         </>
     )
 }
