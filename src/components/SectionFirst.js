@@ -35,7 +35,7 @@ const SectionFirst = () => {
     return (
         <>
             <main>
-                <section className="container mx-auto pt-24 w-full">
+                <section className="container mx-auto pt-40 w-full">
                     <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
                         <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
                             <div className=" flex flex-col gap-y-4">
