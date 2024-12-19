@@ -95,9 +95,9 @@ const FAQ = () => {
 
     return (
         <>
-            <Card className="w-[85vw] md:w-[40vw] bg-[#ffedd5]">
+            <Card className="w-[85vw] md:w-[40vw] bg-white">
                 <CardHeader>
-                    <CardTitle className="text-3xl text-center text-orange-400 font-bold">Nu vraag stellen</CardTitle>
+                    <CardTitle className="text-3xl text-center text-green-400 font-bold">Nu vraag stellen</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <form className='flex flex-col gap-y-4'>

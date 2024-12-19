@@ -9,12 +9,12 @@ const SectionSixth = () => {
             <main>
                 <section>
                     <article>
-                        <div className="bg-[#a99595] max-h-fit ">
+                        <div className="bg-[#c1e1c1] max-h-fit ">
                             <div className="text-white w-[95vw] mx-auto flex justify-around items-center py-10 flex-col md:flex-row gap-x-5">
                                 <div className="w-11/12 lg:w-1/2">
                                     <div className="flex flex-col gap-y-3">
-                                        <div className="text-orange-400 font-semibold text-2xl">F A Q</div>
-                                        <div className="text-[#ffedd5] text-5xl font-bold">Veelgestelde vraag</div>
+                                        <div className="text-green-400 font-semibold text-2xl">F A Q</div>
+                                        <div className="text-gray-700 text-5xl font-bold">Veelgestelde vraag</div>
                                     </div>
                                     <div>
                                         <AccordionCom />

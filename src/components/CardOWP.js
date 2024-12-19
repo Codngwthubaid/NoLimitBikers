@@ -14,10 +14,10 @@ const CardOWP = () => {
     <>
       <main>
         <div>
-          <div className='flex justify-center gap-x-5 flex-col sm:flex-row gap-y-5'>
+          <div className='flex justify-center gap-x-5 flex-col sm:flex-row gap-y-5 text-gray-700'>
             <div className='flex flex-col gap-y-5 justify-center items-center lg:flex-row gap-x-5'>
-              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400 h-60'>
-                <div className='flex justify-around items-end'>
+              <div className='border justify-center border-green-400 hover:bg-[#c1e1c1] rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw]  h-60'>
+                {/* <div className='flex justify-around items-end'>
                   <div>
                     <Image
                       src={one}
@@ -30,14 +30,14 @@ const CardOWP = () => {
                       alt=''
                       className='w-10' />
                   </div>
-                </div>
+                </div> */}
                 <div className='flex flex-col text-center gap-y-2'>
                   <div className='text-xl font-bold'>Selecteer uw abonnement</div>
                   <div>Voordat u met een cursus begint, selecteert u een plan als vereiste om uw doel op tijd te bereiken.</div>
                 </div>
               </div>
-              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400 h-60'>
-                <div className='flex justify-around items-center'>
+              <div className='border justify-center border-green-400 hover:bg-[#c1e1c1] rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw]  h-60'>
+                {/* <div className='flex justify-around items-center'>
                   <div>
                     <Image
                       src={two}
@@ -50,7 +50,7 @@ const CardOWP = () => {
                       alt=''
                       className='w-[42px]' />
                   </div>
-                </div>
+                </div> */}
                 <div className='flex flex-col text-center gap-y-2'>
                   <div className='text-xl font-bold'>Overleg</div>
                   <div>Als u problemen ondervindt bij het starten van uw programma, staat ons ondersteuningsteam altijd klaar om met hen te overleggen.</div>
@@ -58,8 +58,8 @@ const CardOWP = () => {
               </div>
             </div>
             <div className='flex flex-col gap-y-5 justify-center items-center lg:flex-row gap-x-5'>
-              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400 h-60'>
-                <div className='flex justify-around items-center'>
+              <div className='border justify-center border-green-400 hover:bg-[#c1e1c1] rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw]  h-60'>
+                {/* <div className='flex justify-around items-center'>
                   <div>
                     <Image
                       src={three}
@@ -72,14 +72,14 @@ const CardOWP = () => {
                       alt=''
                       className='w-10' />
                   </div>
-                </div>
+                </div> */}
                 <div className='flex flex-col text-center gap-y-2'>
                   <div className='text-xl font-bold'>Koop uw cursussen</div>
                   <div>Zodra u klaar bent om met de cursus te beginnen, kunt u de door u gekozen cursus online of fysiek kopen.</div>
                 </div>
               </div>
-              <div className='border border-orange-400 rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw] hover:text-orange-400 h-60'>
-                <div className='flex justify-around items-center'>
+              <div className='border justify-center border-green-400 hover:bg-[#c1e1c1] rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw]  h-60'>
+                {/* <div className='flex justify-around items-center'>
                   <div>
                     <Image
                       src={fourth}
@@ -92,7 +92,7 @@ const CardOWP = () => {
                       alt=''
                       className='w-[38px]' />
                   </div>
-                </div>
+                </div> */}
                 <div className='flex flex-col text-center gap-y-2'>
                   <div className='text-xl font-bold'>Begin met uw training</div>
                   <div>Als je eindelijk elk proces hebt afgerond, is het tijd om regelmatig bij ons te gaan trainen.</div>

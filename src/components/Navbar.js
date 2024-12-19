@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
         <ul className="hidden md:flex justify-between items-center">
           <li className="mr-8 p-1">
-            <Link href="/" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Thuis</Link>
+            <Link href="/" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Home</Link>
           </li>
           <li className="mr-8 p-1">
             <Link href="/pages/about" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Over</Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <SheetDescription>
                   <ul className='h-[100vh] flex flex-col justify-center border border-red-500'>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
-                      <Link href="/" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Thuis</Link>
+                      <Link href="/" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Hpome</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
                       <Link href="/pages/about" className="text-xl text-[#c1e1c1] hover:text-[#c1e1c1] hover:font-semibold">Over</Link>

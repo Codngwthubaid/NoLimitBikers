@@ -44,10 +44,10 @@ const SectionThird = () => {
               </div>
               <div>
                 <div className="flex flex-col gap-y-5 sm:w-[45vw]">
-                  <div className="text-2xl font-semibold text-orange-400">Over ons</div>
-                  <div className="text-4xl font-bold">Leer autorijden, rijd veilig en onder controle</div>
-                  <div className="text-lg">Om veilig en beheerst te leren rijden, moet u zich eerst vertrouwd maken met het voertuig en de verkeersregels naleven. Houd een veilige volgafstand aan, gebruik richtingaanwijzers en controleer regelmatig de spiegels en dode hoeken.</div>
-                  <div className="flex justify-evenly font-semibold my-3">
+                  <div className="text-2xl font-semibold text-green-400">Over ons</div>
+                  <div className="text-4xl font-bold text-gray-700">Leer autorijden, rijd veilig en onder controle</div>
+                  <div className="text-lg text-black">Om veilig en beheerst tpe leren rijden, moet u zich eerst vertrouwd maken met het voertuig en de verkeersregels naleven. Houd een veilige volgafstand aan, gebruik richtingaanwijzers en controleer regelmatig de spiegels en dode hoeken.</div>
+                  <div className="flex justify-evenly font-semibold my-3 text-black">
                     <div className="flex flex-col items-start gap-y-1">
                       <AboutTick src={rightTick} data="Basis van rijvaardigheid" />
                       <AboutTick src={rightTick} data="Practice Defensive Driving" />
@@ -61,7 +61,7 @@ const SectionThird = () => {
                   </div>
                   <div>
                     <Link href="/pages/about">
-                      <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-gradient-to-br from-pink-400 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-4 text-center me-2 mb-2">OVER MEER
+                      <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">OVER MEER
                         <Image
                           src={rightArrowWhite}
                           width={18}

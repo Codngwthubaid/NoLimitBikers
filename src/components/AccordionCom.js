@@ -10,7 +10,7 @@ const AccordionCom = () => {
     return (
         <>
             <div className="my-10 flex flex-col gap-y-4 ">
-                <div className="bg-orange-400 px-3 rounded-xl">
+                <div className="bg-green-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg">Kan ik online lessen boeken?</AccordionTrigger>
@@ -20,7 +20,7 @@ const AccordionCom = () => {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className="bg-orange-400 px-3 rounded-xl">
+                <div className="bg-green-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg">Hoe lang duurt elke fietsrijles?</AccordionTrigger>
@@ -30,7 +30,7 @@ const AccordionCom = () => {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className="bg-orange-400 px-3 rounded-xl">
+                <div className="bg-green-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg">Hoeveel lessen heb ik nodig om een ​​zelfverzekerde ruiter te worden?</AccordionTrigger>
@@ -40,7 +40,7 @@ const AccordionCom = () => {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className="bg-orange-400 px-3 rounded-xl">
+                <div className="bg-green-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg">Welke veiligheidsuitrusting heb ik nodig voor de lessen?</AccordionTrigger>
