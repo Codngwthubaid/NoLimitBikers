@@ -47,16 +47,16 @@ const SectionThird = () => {
                   <div className="text-2xl font-semibold text-green-400">Over ons</div>
                   <div className="text-4xl font-bold text-gray-700">Leer autorijden, rijd veilig en onder controle</div>
                   <div className="text-lg text-black">Om veilig en beheerst tpe leren rijden, moet u zich eerst vertrouwd maken met het voertuig en de verkeersregels naleven. Houd een veilige volgafstand aan, gebruik richtingaanwijzers en controleer regelmatig de spiegels en dode hoeken.</div>
-                  <div className="flex justify-evenly font-semibold my-3 text-black">
+                  <div className="flex flex-col md:flex-row justify-evenly  font-semibold my-3 text-black">
                     <div className="flex flex-col items-start gap-y-1">
-                      <AboutTick src={rightTick} data="Basis van rijvaardigheid" />
-                      <AboutTick src={rightTick} data="Practice Defensive Driving" />
-                      <AboutTick src={rightTick} data="Road test preparation" />
+                      <AboutTick data="Basis van rijvaardigheid" />
+                      <AboutTick data="Practice Defensive Driving" />
+                      <AboutTick data="Road test preparation" />
                     </div>
                     <div className="flex flex-col items-start gap-y-1">
-                      <AboutTick src={rightTick} data="Beheers uw snelheid in bochten" />
-                      <AboutTick src={rightTick} data="Beheers de basis" />
-                      <AboutTick src={rightTick} data="Blijf kalm tijdens lange ritten" />
+                      <AboutTick data="Beheers uw snelheid in bochten" />
+                      <AboutTick data="Beheers de basis" />
+                      <AboutTick data="Blijf kalm tijdens lange ritten" />
                     </div>
                   </div>
                   <div>

@@ -1,17 +1,12 @@
 import React from 'react'
-import Image from 'next/image'
+import { ArrowRight } from 'lucide-react';
+
 
 const AboutTick = (props) => {
     return (
         <>
-            <div className="flex justify-center items-end gap-x-2">
-                <div>
-                    <Image
-                        src={props.src}
-                        className="w-5 rounded-3xl object-cover"
-                        alt="Picture of the author"
-                    />
-                </div>
+            <div className="flex justify-center sm:items-end gap-x-2">
+                <ArrowRight className='text-green-400' />
                 <div>{props.data}</div>
             </div>
         </>
