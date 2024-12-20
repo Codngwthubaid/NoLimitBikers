@@ -13,9 +13,9 @@ const AccordionCom = () => {
                 <div className="bg-green-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg">Kan ik online lessen boeken?</AccordionTrigger>
+                            <AccordionTrigger className="text-lg">Kan ik mijn lessen online boeken?</AccordionTrigger>
                             <AccordionContent className="text-lg">
-                                Ja, op onze website kunt u eenvoudig met een paar klikken online lessen boeken.
+                            Ja, bij NoLimitBikers kun je eenvoudig je lessen online plannen via onze website.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -23,9 +23,9 @@ const AccordionCom = () => {
                 <div className="bg-green-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg">Hoe lang duurt elke fietsrijles?</AccordionTrigger>
+                            <AccordionTrigger className="text-lg">Hoelang duurt een motorrijles?</AccordionTrigger>
                             <AccordionContent className="text-lg">
-                                Elke les duurt doorgaans tussen de 60 en 90 minuten, afhankelijk van het door u gekozen pakket.
+                            Elke rijles duurt gemiddeld 50 minuten, zodat je voldoende tijd hebt om te oefenen en te groeien.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -33,9 +33,9 @@ const AccordionCom = () => {
                 <div className="bg-green-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg">Hoeveel lessen heb ik nodig om een ​​zelfverzekerde ruiter te worden?</AccordionTrigger>
+                            <AccordionTrigger className="text-lg">Hoeveel lessen heb ik nodig om zelfverzekerd te rijden?</AccordionTrigger>
                             <AccordionContent className="text-lg">
-                                Het aantal lessen varieert afhankelijk van uw individuele vooruitgang, maar de meeste leerlingen hebben 10-15 lessen nodig om vertrouwen te winnen.
+                            Dit verschilt per persoon, maar onze instructeurs helpen je met een persoonlijk plan op basis van jouw leerproces en vooruitgang.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -43,9 +43,9 @@ const AccordionCom = () => {
                 <div className="bg-green-400 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg">Welke veiligheidsuitrusting heb ik nodig voor de lessen?</AccordionTrigger>
+                            <AccordionTrigger className="text-lg">Welke veiligheidsuitrusting moet ik meenemen?</AccordionTrigger>
                             <AccordionContent className="text-lg">
-                                Wij bieden helmen en basisbeschermingsmiddelen. We raden aan handschoenen, jassen en stevig schoeisel te dragen voor extra bescherming.
+                            Voor de lessen heb je minimaal een goedgekeurde helm, handschoenen, stevige schoenen en een motorjas nodig. Geen uitrusting? Geen probleem, we kunnen dit voor je regelen!
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>

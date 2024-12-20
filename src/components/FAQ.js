@@ -97,20 +97,20 @@ const FAQ = () => {
         <>
             <Card className="w-[85vw] md:w-[40vw] bg-white">
                 <CardHeader>
-                    <CardTitle className="text-3xl text-center text-green-400 font-bold">Nu vraag stellen</CardTitle>
+                    <CardTitle className="text-3xl text-center text-green-400 font-bold">Stel je vraag</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <form className='flex flex-col gap-y-4'>
                         <div className="grid w-full items-center gap-4">
                             <div className="flex flex-col space-y-1.5">
                                 <label htmlFor="name">
-                                    <Input type='text' id='name' placeholder='Voer Naam in' onChange={(e) => { setName(e.target.value) }} />
+                                    <Input type='text' id='name' placeholder='Naam' onChange={(e) => { setName(e.target.value) }} />
                                 </label>
                                 {errors.name && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.name}</span></span>}
                             </div>
                             <div className="flex flex-col space-y-1.5">
                                 <label htmlFor="email">
-                                    <Input type='email' id='email' placeholder='Voer e-mailadres in' onChange={(e) => { setEmail(e.target.value) }} />
+                                    <Input type='email' id='email' placeholder=' E-mailadres' onChange={(e) => { setEmail(e.target.value) }} />
                                 </label>
                                 {errors.email && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.email}</span></span>}
                             </div>
@@ -119,7 +119,7 @@ const FAQ = () => {
                                     onChange={(e) => { setMessage(e.target.value) }}
                                     id="message"
                                     name="message"
-                                    placeholder="Jouw bericht ..."
+                                    placeholder=" Jouw bericht..."
                                 />
                                 {errors.message && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.message}</span></span>}
                             </div>
@@ -138,7 +138,7 @@ const FAQ = () => {
                                     {isLoading ? (
                                         <>
                                             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                            Indienen...
+                                            Verzenden
                                         </>
                                     ) : (
                                         'Indienen'

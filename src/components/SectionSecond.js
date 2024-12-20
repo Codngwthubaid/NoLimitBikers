@@ -13,23 +13,35 @@ const SectionSecond = () => {
           <article>
             <div className="flex justify-center items-center flex-col gap-y-3">
               <div className="text-2xl font-semibold text-green-400">Onze diensten</div>
-              <div className="text-4xl font-bold text-gray-700">Wij bieden service voor u</div>
+              <div className="text-4xl font-bold text-gray-700">Wij helpen je vol vertrouwen en veilig de weg op!</div>
             </div>
             <div className="flex flex-col lg:flex-row gap-5 my-10">
               <div className="flex gap-x-5 justify-center items-center gap-y-5 flex-col sm:flex-row">
                 <div className="w-10/12 sm:w-[45vw] lg:w-[22vw]">
-                  <Card img={ELD} data="Gemakkelijk leren motorrijden" details="Onze Cursusmodule is heel gemakkelijk te begrijpen" />
+                  <Card
+                    img={ELD}
+                    data="🏍️ Motorrijlessen"
+                    details="Bij NoLimitBikers bieden we motorrijlessen die aansluiten op jouw tempo en ervaring. Onze lessen zijn gericht op veiligheid, controle en plezier, zodat jij zonder zorgen je motorrijbewijs haalt." />
                 </div>
                 <div className="w-10/12 sm:w-[45vw] lg:w-[22vw]">
-                  <Card img={IT} data="Instructeursopleiding" details="Brainstorm over woorden die verband houden met uw vaardigheden en zelfvertrouwen." />
+                  <Card
+                    img={IT}
+                    data="🏁 AVB en AVD Dagcursussen"
+                    details="Wil je snel en efficiënt je voertuigbeheersing (AVB) of verkeersdeelname (AVD) examen halen? Kies dan voor onze dagcursussen. Perfect voor iedereen die in één dag wil focussen op een specifiek onderdeel van het rijexamen." />
                 </div>
               </div>
               <div className="flex gap-x-5 justify-center items-center flex-col sm:flex-row gap-y-5">
                 <div className="w-10/12 sm:w-[45vw] lg:w-[22vw]">
-                  <Card img={CYSAT} data="Gemakkelijk leren motorrijden" details="Onze Cursusmodule is heel gemakkelijk te begrijpen." />
+                  <Card
+                    img={CYSAT}
+                    data="Gemakkelijk leren motorrijden"
+                    details="Onze Cursusmodule is heel gemakkelijk te begrijpen." />
                 </div>
                 <div className="w-10/12 sm:w-[45vw] lg:w-[22vw]">
-                  <Card img={RTP} data="Gemakkelijk leren motorrijden" details="Onze Cursusmodule is heel gemakkelijk te begrijpen." />
+                  <Card
+                    img={RTP}
+                    data="Gemakkelijk leren motorrijden"
+                    details="Onze Cursusmodule is heel gemakkelijk te begrijpen." />
                 </div>
               </div>
             </div>

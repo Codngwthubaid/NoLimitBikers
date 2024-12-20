@@ -45,8 +45,8 @@ const SectionThird = () => {
               <div>
                 <div className="flex flex-col gap-y-5 sm:w-[45vw]">
                   <div className="text-2xl font-semibold text-green-400">Over ons</div>
-                  <div className="text-4xl font-bold text-gray-700">Leer autorijden, rijd veilig en onder controle</div>
-                  <div className="text-lg text-black">Om veilig en beheerst tpe leren rijden, moet u zich eerst vertrouwd maken met het voertuig en de verkeersregels naleven. Houd een veilige volgafstand aan, gebruik richtingaanwijzers en controleer regelmatig de spiegels en dode hoeken.</div>
+                  <div className="text-4xl font-bold text-gray-700">De vrijheid van motorrijden begint hier, veilig en onder controle.</div>
+                  <div className="text-lg text-black">Bij NoLimitBikers draait alles om passie voor motorrijden! Wij bieden hoogwaardige motorrijlessen aan in Rotterdam en omgeving, afgestemd op jouw tempo en ervaring. Of je nu een beginner bent die voor het eerst de weg op gaat, of een ervaren motorrijder die zijn skills wil perfectioneren, bij ons ben je aan het juiste adres. Met een persoonlijke aanpak, ervaren instructeurs en een focus op veiligheid en plezier zorgen wij dat jij vol vertrouwen de weg op gaat. Ontdek de vrijheid van motorrijden met NoLimitBikers!</div>
                   <div className="flex flex-col md:flex-row justify-evenly  font-semibold my-3 text-black">
                     <div className="flex flex-col items-start gap-y-1">
                       <AboutTick data="Basis van rijvaardigheid" />
@@ -61,7 +61,7 @@ const SectionThird = () => {
                   </div>
                   <div>
                     <Link href="/pages/about">
-                      <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">OVER MEER
+                      <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">MEER
                         <Image
                           src={rightArrowWhite}
                           width={18}
