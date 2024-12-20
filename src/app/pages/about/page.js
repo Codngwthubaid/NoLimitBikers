@@ -14,7 +14,7 @@ const Page = () => {
       <main>
         <section>
           <article className='pt-[110px]'>
-            <SubSectionheadings Head="Over ons" mainPage="Thuis" currentPage="Over ons" />
+            <SubSectionheadings Head="Over ons" mainPage="Home" currentPage="Over ons" />
 
             <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
 

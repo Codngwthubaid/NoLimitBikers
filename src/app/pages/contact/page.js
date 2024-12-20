@@ -96,7 +96,7 @@ const Page = () => {
           <article>
             <div>
               <div className='pt-[75px]'>
-                <SubSectionheadings Head="Contact" mainPage="Thuis" currentPage="Contact" />
+                <SubSectionheadings Head="Contact" mainPage="Home" currentPage="Contact" />
               </div>
 
               <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
@@ -120,7 +120,7 @@ const Page = () => {
                       className="" />
                   </div> */}
                   <div>HEEFT U EEN VRAAG?</div>
-                  <div className='text-xl font-bold hover:text-green-400'>06143 82099</div>
+                  <div className='text-xl font-bold hover:text-green-400'>06 14 38 20 99</div>
                 </div>
                 <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1]">
                   {/* <div>

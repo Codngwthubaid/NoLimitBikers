@@ -18,7 +18,7 @@ const Footer = () => {
                             <h2 className="mb-6 text-lg font-bold text-gray-700 uppercase dark:text-white ">Contact</h2>
                             <ul className="text-gray-500 dark:text-gray-400">
                                 <li className="mb-4">
-                                    <Link href="https://flowbite.com/" className="hover:text-green-400">06143 82099</Link>
+                                    <Link href="https://flowbite.com/" className="hover:text-green-400">06 14 38 20 99</Link>
                                 </li>
                                 <li>
                                     <Link href="https://tailwindcss.com/" className="hover:text-green-400">Info@nolimitbikers.nl</Link>
@@ -36,17 +36,6 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        {/* <div>
-                            <h2 className="mb-6 text-lg font-bold text-gray-700 uppercase dark:text-white ">Legaal</h2>
-                            <ul className="text-gray-500 dark:text-gray-400">
-                                <li className="mb-4">
-                                    <Link href="#" className="hover:text-green-400">Privacybeleid</Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="hover:text-green-400">Voorwaarden &amp; Voorwaarden</Link>
-                                </li>
-                            </ul>
-                        </div> */}
                     </div>
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />

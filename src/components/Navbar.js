@@ -42,7 +42,7 @@ const Navbar = () => {
             <Link href="/pages/courses" className="text-xl text-green-400 hover:font-semibold">Cursussen</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/pricing" className="text-xl text-green-400 hover:font-semibold">Prijzen</Link>
+            <Link href="/pages/pricing" className="text-xl text-green-400 hover:font-semibold">Tarieven</Link>
           </li>
           <li className="mr-8 p-1">
             <Link href="/pages/contact" className="text-xl text-green-400 hover:font-semibold">Contact</Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
                       <Link href="/pages/courses" className="text-xl text-gray-700 hover:font-semibold">Cursussen</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
-                      <Link href="/pages/pricing" className="text-xl text-gray-700 hover:font-semibold">Prijzen</Link>
+                      <Link href="/pages/pricing" className="text-xl text-gray-700 hover:font-semibold">Tarieven</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
                       <Link href="/pages/contact" className="text-xl text-gray-700 hover:font-semibold">Contact</Link>

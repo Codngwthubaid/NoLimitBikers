@@ -16,7 +16,7 @@ const Page = () => {
         <section>
           <article className='pt-[75px]'>
             <div>
-              <SubSectionheadings Head="Cursussen" mainPage="Thius" currentPage="Cursussen" />
+              <SubSectionheadings Head="Cursussen" mainPage="Home" currentPage="Cursussen" />
               <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
               <div className='flex flex-col justify-start items-center gap-y-2'>
                 <div className='text-2xl font-semibold text-green-400'>Onze populaire cursussen</div>

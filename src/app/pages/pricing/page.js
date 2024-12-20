@@ -9,7 +9,7 @@ const Page = () => {
     return (
         <div>
             <section className="body-font overflow-hidden pt-[75px]">
-                <SubSectionheadings Head="Prijzen" mainPage="Thuis" currentPage="Prijzen" />
+                <SubSectionheadings Head="Tarieven" mainPage="Home" currentPage="Tarieven" />
                 <div className="container px-5 py-12 mx-auto">
                     <div className="flex flex-col text-center w-full mb-10">
                         <h1 className="text-green-400 text-2xl font-medium title-font mb-2">Prijzen Plan</h1>

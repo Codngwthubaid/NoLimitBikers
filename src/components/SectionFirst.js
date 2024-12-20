@@ -15,13 +15,8 @@ import {
 } from "../components/ui/carousel"
 
 const packages = [
-    { id: 1, name: "AVB Pakket Silver", price: "€749,00", selectBtn: "Beginnen met basis", features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
-    { id: 2, name: "AVB Pakket Gold Mega Deal", price: "€999,00", selectBtn: "Selecteer Goud", features: ["16 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
-    { id: 3, name: "AVB Pakket Platinum", price: "€1299,00", selectBtn: "Kies Platina", features: ["20 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
-    { id: 4, name: "AVD Pakket Silver", price: "€799,00", selectBtn: "Beginnen met basis", features: ["12 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
-    { id: 5, name: "AVD Pakket Gold Mega Deal", price: "€1199,00", selectBtn: "Selecteer Goud", features: ["18 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
-    { id: 6, name: "AVD Pakket Platinum", price: "€1299,00", selectBtn: "Kies Platina", features: ["20 uur rijles", "Vaste instructeur", "Nieuwe les motor", "Leskaart &amp; Advies"] },
-
+    { id: 1, name: "AVB DAG CURUSUS", price: "€699,00", selectBtn: "Beginnen met basis", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVB examen"] },
+    { id: 2, name: "AVD DAG CURUSUS", price: "€699,00", selectBtn: "Selecteer Goud", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVD examen"] }
 ]
 
 
@@ -41,9 +36,9 @@ const SectionFirst = () => {
                             <div className=" flex flex-col gap-y-4">
                                 <div className="text-xl font-semibold text-gray-700">Ontwikkel uw rijvaardigheid</div>
                                 <div className="text-3xl sm:text-5xl font-bold text-gray-700">Leer
-                                    <span className="rounded-xl bg-[#c1e1c1] text-white px-3 mx-2">ermee rijden</span>
+                                    <span className="rounded-xl bg-[#c1e1c1] text-white px-3 mx-2">rijden</span>
                                 </div>
-                                <div className="text-3xl sm:text-5xl font-bold text-gray-700">Vertrouwen</div>
+                                <div className="text-3xl sm:text-5xl font-bold text-gray-700">met Vertrouwe</div>
                             </div>
                             <div>
                                 <Link href="/pages/courses">
