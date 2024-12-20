@@ -119,11 +119,11 @@ const PricingPopUpCard = (props) => {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button className="bg-orange-500 hover:text-white hover:bg-orange-600 text-white" variant="outline">Beginnen met basis</Button>
+                <Button className="text-white flex justify-center items-center gap-x-2 bg-green-400 p-4 rounded-xl" variant="outline">Beginnen met basis</Button>
             </DialogTrigger>
-            <DialogContent className="bg-[#ffedd5] sm:max-w-[425px]">
+            <DialogContent className="bg-white sm:max-w-[425px]">
                 <DialogHeader>
-                    <DialogTitle className="font-bold text-4xl text-orange-400">Book Your Lesson</DialogTitle>
+                    <DialogTitle className="font-bold text-4xl text-gray-700">Book Your Lesson</DialogTitle>
                     <DialogDescription className="text-black text-base">
                         Book your lesson today! Choose your preferred time for driving lessons and start your journey towards becoming a confident driver!
                     </DialogDescription>
@@ -143,12 +143,12 @@ const PricingPopUpCard = (props) => {
                         {errors.number && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.number}</span></span>}
                     </div>
                     <div className="flex flex-col space-y-1.5 items-start">
-                        <Label htmlFor="framework" className="text-base text-orange-400">Select Course</Label>
+                        <Label htmlFor="framework" className="text-base text-green-400">Select Course</Label>
                         <Select onValueChange={handleCourseChange}>
                             <SelectTrigger id="framework">
                                 <SelectValue />
                             </SelectTrigger>
-                            <SelectContent className="bg-[#ffedd5] " position="popper">
+                            <SelectContent className="bg-[#c1e1c1] " position="popper">
                                 <SelectItem className="cursor-pointer" id={props.Op1} value={props.Op1}>{props.Op1} </SelectItem>
                                 <SelectItem className="cursor-pointer" id={props.Op2} value={props.Op2}>{props.Op2}</SelectItem>
                                 <SelectItem className="cursor-pointer" id={props.Op3} value={props.Op3}>{props.Op3} </SelectItem>
