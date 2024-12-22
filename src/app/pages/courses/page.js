@@ -1,27 +1,69 @@
 import React from 'react'
 import SubSectionheadings from '@/components/SubSectionheadings'
-import NumberTicker from "@/components/magicui/number-ticker";
 import Image from 'next/image';
 import G8 from "@/public/Gallery/G8.jpg"
 import G9 from "@/public/Gallery/G9.jpg"
 import G10 from "@/public/Gallery/G10.jpg"
-import Link from 'next/link';
-import rightArrowWhite from "@/public/img/rightArrowWhite.png"
 import PricingPopUpCard from '@/components/PricingPopUpCard';
 
 const Page = () => {
+
+  const drivingLessons = [
+    { name: "Proefles (50 min)", price: "€ 50" },
+    { name: "Proefles (100 min)", price: "€ 70" },
+    { name: "Rijles (50 min)", price: "€ 49.5" },
+  ]
+
+  const examFees = [
+    { name: "CBR - AVB Examen", price: "€ 205" },
+    { name: "CBR - AVD Examen", price: "€ 270" },
+  ]
+
   return (
     <>
       <main>
         <section>
           <article className='pt-[75px]'>
             <div>
-              <SubSectionheadings Head="Cursussen" mainPage="Home" currentPage="Cursussen" />
+              <SubSectionheadings Head="Cursussen" mainPage="Home" currentPage="Cursussen" />          <div className='my-12 text-5xl font-bold text-center text-gray-700'>Losse Lessen en Examen Prijzen</div>
+
+              <div className="container mx-auto px-4 py-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div className='flex items-center justify-between text-gray-700 bg-[#c1e1c1]'>
+                      <h2 className="text-2xl font-semibold p-4">Rijles tarieven</h2>
+                      <div className="px-4 py-3 font-medium">Tarief in €</div>
+                    </div>
+                    <div className="divide-y divide-gray-200">
+                      {drivingLessons.map((item, index) => (
+                        <div key={index} className="flex justify-between px-4 py-3 hover:bg-gray-50">
+                          <span className="text-gray-700">{item.name}</span>
+                          <span className="text-gray-700 font-medium">{item.price}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div className='flex items-center justify-between text-gray-700 bg-[#c1e1c1]'>
+                      <h2 className="text-2xl font-semibold p-4">Examen tarieven</h2>
+                      <div className="px-4 py-3 font-medium">Tarief in €</div>
+                    </div>
+                    <div className="divide-y divide-gray-200">
+                      {examFees.map((item, index) => (
+                        <div key={index} className="flex justify-between px-4 py-3 hover:bg-gray-50">
+                          <span className="text-gray-700">{item.name}</span>
+                          <span className="text-gray-700 font-medium">{item.price}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
               <div className='flex flex-col justify-start items-center gap-y-2'>
-                <div className='text-2xl font-semibold text-green-400'>Onze populaire cursussen</div>
-                <div className='text-5xl font-bold text-center text-gray-700'>Onze populaire rijcursussen</div>
-                <div className='text-4xl mt-5 font-bold text-green-400'>Package AVB</div>
+                <div className='text-2xl font-semibold text-green-400'>Onze topcursussen </div>
+                <div className='text-5xl font-bold text-center text-gray-700'>Kies de cursus die bij jou past!</div>
+                <div className='text-4xl mt-5 font-bold text-green-400'>Pakket AVB</div>
                 <div>
                   <section className="text-gray-600 body-font">
                     <div className="container px-5 py-12 mx-auto">
@@ -40,7 +82,7 @@ const Page = () => {
                             <div>AVB Pakket Silver</div>
                           </h2>
                           <p className="text-base leading-relaxed mt-2">
-                            Het AVB Pakket Silver is een zorgvuldig samengesteld rijlespakket dat is ontworpen om leerlingen de beste voorbereiding te bieden voor het behalen van hun motorrijbewijs. Dit pakket is ideaal voor zowel beginners als voor degenen die hun rijvaardigheden willen verbeteren.
+                            Ben je een beginner of wil je je rijvaardigheden verbeteren? Het AVB Pakket Silver biedt jou een solide basis om vol vertrouwen te starten met motorrijden. Dit pakket is zorgvuldig samengesteld om je optimaal voor te bereiden op het voertuigbeheersingsexamen (AVB).
                           </p>
                           <div>
                             <PricingPopUpCard
@@ -64,7 +106,7 @@ const Page = () => {
                             <div>AVB Pakket Gold Mega Deal</div>
                           </h2>
                           <p className="text-base leading-relaxed mt-2">
-                            Het AVB Pakket Gold Mega Deal is een premium rijlespakket dat speciaal is ontworpen voor leerlingen die de hoogste kwaliteit en een uitgebreide opleiding willen ervaren op weg naar het behalen van hun motorrijbewijs. Dit pakket biedt niet alleen meer rijlessen, maar ook extra voordelen die de leerervaring verbeteren.
+                            Wil je een stap verder gaan? Het AVB Pakket Gold Mega Deal biedt een uitgebreidere opleiding, perfect voor wie meer lessen en extra voordelen wil tijdens de voorbereiding op het AVB-examen. Combineer kwaliteit, comfort en een voordelige deal in één pakket.
                           </p>
                           <div>
 
@@ -89,7 +131,7 @@ const Page = () => {
                             <div>AVB Pakket Platinum</div>
                           </h2>
                           <p className="text-base leading-relaxed mt-2">
-                            Het AVB Pakket Platinum is een exclusief en uitgebreid rijlespakket dat is ontworpen voor leerlingen die serieus zijn over het behalen van hun motorrijbewijs. Dit pakket biedt niet alleen een aanzienlijke hoeveelheid rijlessen, maar ook persoonlijke begeleiding en de nieuwste lesmotoren, wat bijdraagt aan een optimale leerervaring.
+                            Wil je de meest uitgebreide voorbereiding op je motorrijbewijs? Het AVB Pakket Platinum biedt persoonlijke begeleiding en een uitgebreid aantal rijlessen, zodat je vol vertrouwen en uitstekend voorbereid het AVB-examen kunt afleggen. Perfect voor wie niets aan het toeval wil overlaten.
                           </p>
                           <div>
 
@@ -105,7 +147,7 @@ const Page = () => {
                   </section>
                 </div>
 
-                <div className='text-4xl mt-5 font-bold text-green-400'>Package AVD</div>
+                <div className='text-4xl mt-5 font-bold text-green-400'>Pakket AVD</div>
                 <div>
                   <section className="text-gray-600 body-font">
                     <div className="container px-5 py-12 mx-auto">
@@ -124,7 +166,7 @@ const Page = () => {
                             <div>AVD Pakket Silver</div>
                           </h2>
                           <p className="text-base leading-relaxed mt-2">
-                            Het AVD Pakket Silver is een zorgvuldig samengesteld rijlespakket dat is ontworpen voor leerlingen die hun motorrijbewijs willen behalen met een solide basis en persoonlijke begeleiding. Dit pakket biedt een uitstekende combinatie van praktijkervaring en ondersteuning, waardoor het een ideale keuze is voor zowel beginners als voor degenen die hun rijvaardigheden willen verbeteren.
+                            Wil je een solide basis leggen voor het behalen van je motorrijbewijs? Het AVD Pakket Silver combineert praktijkgerichte lessen met persoonlijke begeleiding. Ideaal voor beginners of voor wie zijn rijvaardigheden wil aanscherpen. Dit pakket biedt alles wat je nodig hebt om veilig en met vertrouwen aan je verkeersdeelneming (AVD) examen te beginnen.
                           </p>
                           <div>
 
@@ -149,7 +191,7 @@ const Page = () => {
                             <div>AVD Pakket Gold Mega Deal</div>
                           </h2>
                           <p className="text-base leading-relaxed mt-2">
-                            Het AVD Pakket Gold Mega Deal is een premium rijlespakket dat speciaal is ontworpen voor leerlingen die hun motorrijbewijs willen behalen met een uitgebreide en persoonlijke aanpak. Dit pakket biedt niet alleen een aanzienlijke hoeveelheid rijlessen, maar ook de ondersteuning en middelen die nodig zijn om zelfverzekerd en veilig te leren motorrijden.
+                            Klaar voor de volgende stap? Het AVD Pakket Gold Mega Deal biedt een uitgebreide rijopleiding met extra lessen en persoonlijke ondersteuning. Perfect voor wie grondig wil oefenen en zeker wil zijn van een veilige en zelfverzekerde voorbereiding op het AVD-examen.
                           </p>
                           <div>
 
@@ -174,7 +216,7 @@ const Page = () => {
                             <div>AVD Pakket Platinum</div>
                           </h2>
                           <p className="text-base leading-relaxed mt-2">
-                            Het AVD Pakket Platinum is een exclusief en uitgebreid rijlespakket dat is ontworpen voor leerlingen die hun motorrijbewijs willen behalen met de hoogste kwaliteit van instructie en ondersteuning. Dit pakket biedt een ongeëvenaarde leerervaring, waarbij leerlingen de kans krijgen om hun vaardigheden te ontwikkelen en zich goed voor te bereiden op het motorrijden in diverse omstandigheden.
+                            Voor een complete en diepgaande voorbereiding kies je het AVD Pakket Platinum. Met persoonlijke begeleiding en een uitgebreide reeks lessen krijg je alle tools om je motorrijbewijs te halen. Dit pakket biedt alles wat je nodig hebt om klaar te zijn voor diverse verkeerssituaties en een succesvolle toekomst op twee wielen.
                           </p>
                           <div>
 

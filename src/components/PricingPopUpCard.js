@@ -119,7 +119,7 @@ const PricingPopUpCard = (props) => {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button className="text-white flex justify-center items-center gap-x-2 bg-green-400 p-4 rounded-xl" variant="outline">Beginnen met basis</Button>
+                <Button className="text-white flex justify-center items-center gap-x-2 bg-green-400 p-4 rounded-xl" variant="outline"> Selecteer deze cursus</Button>
             </DialogTrigger>
             <DialogContent className="bg-white sm:max-w-[425px]">
                 <DialogHeader>
