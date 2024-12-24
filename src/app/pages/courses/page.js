@@ -25,7 +25,8 @@ const Page = () => {
         <section>
           <article className='pt-[75px]'>
             <div>
-              <SubSectionheadings Head="Cursussen" mainPage="Home" currentPage="Cursussen" />          <div className='my-12 text-5xl font-bold text-center text-gray-700'>Losse Lessen en Examen Prijzen</div>
+              <SubSectionheadings Head="Cursussen" mainPage="Home" currentPage="Cursussen" />
+              <div className='my-12 text-5xl font-bold text-center text-gray-700'>Losse Lessen en Examen Prijzen</div>
 
               <div className="container mx-auto px-4 py-8">
                 <div className="grid md:grid-cols-2 gap-8">
