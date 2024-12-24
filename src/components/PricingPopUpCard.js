@@ -123,27 +123,27 @@ const PricingPopUpCard = (props) => {
             </DialogTrigger>
             <DialogContent className="bg-white sm:max-w-[425px]">
                 <DialogHeader>
-                    <DialogTitle className="font-bold text-4xl text-gray-700">Book Your Lesson</DialogTitle>
+                    <DialogTitle className="font-bold text-4xl text-gray-700">Plan Je Les</DialogTitle>
                     <DialogDescription className="text-black text-base">
-                        Book your lesson today! Choose your preferred time for driving lessons and start your journey towards becoming a confident driver!
+                    Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden.
                     </DialogDescription>
                 </DialogHeader>
                 <form className="grid gap-4 py-4" onSubmit={handleSubmit}>
                     <div className="flex flex-col space-y-1.5 items-start">
-                        <Input onChange={(e) => { setName(e.target.value) }} placeholder="Name" id="name" className=" text-black col-span-3" />
+                        <Input onChange={(e) => { setName(e.target.value) }} placeholder="Naam" id="name" className=" text-black col-span-3" />
                         {errors.name && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.name}</span></span>}
 
                     </div>
                     <div className="flex flex-col space-y-1.5 items-start">
-                        <Input onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" id="email" className=" text-black col-span-3" />
+                        <Input onChange={(e) => { setEmail(e.target.value) }} placeholder="E-mail" id="email" className=" text-black col-span-3" />
                         {errors.email && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.email}</span></span>}
                     </div>
                     <div className="flex flex-col space-y-1.5 items-start">
-                        <Input onChange={(e) => { setNumber(e.target.value) }} placeholder="Number" id="number" className=" text-black col-span-3" />
+                        <Input onChange={(e) => { setNumber(e.target.value) }} placeholder="Telefoonnummer" id="number" className=" text-black col-span-3" />
                         {errors.number && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.number}</span></span>}
                     </div>
                     <div className="flex flex-col space-y-1.5 items-start">
-                        <Label htmlFor="framework" className="text-base text-green-400">Select Course</Label>
+                        <Label htmlFor="framework" className="text-base text-green-400">Selecteer je cursus</Label>
                         <Select onValueChange={handleCourseChange}>
                             <SelectTrigger id="framework">
                                 <SelectValue />
@@ -169,7 +169,7 @@ const PricingPopUpCard = (props) => {
                 </form>
                 <DialogFooter className="flex justify-between">
                     <DialogTrigger>
-                        <Button variant="outline">Cancel</Button>
+                        <Button variant="outline">Annuleren </Button>
                     </DialogTrigger>
                     <Button
                         type="button"
@@ -180,10 +180,10 @@ const PricingPopUpCard = (props) => {
                         {isLoading ? (
                             <>
                                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                Submitting...
+                                versturen...
                             </>
                         ) : (
-                            'Submit'
+                            'Verzenden'
                         )}
                     </Button>
                 </DialogFooter>

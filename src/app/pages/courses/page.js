@@ -8,16 +8,6 @@ import PricingPopUpCard from '@/components/PricingPopUpCard';
 
 const Page = () => {
 
-  const drivingLessons = [
-    { name: "Proefles (50 min)", price: "€ 50" },
-    { name: "Proefles (100 min)", price: "€ 70" },
-    { name: "Rijles (50 min)", price: "€ 49.5" },
-  ]
-
-  const examFees = [
-    { name: "CBR - AVB Examen", price: "€ 205" },
-    { name: "CBR - AVD Examen", price: "€ 270" },
-  ]
 
   return (
     <>
@@ -26,41 +16,7 @@ const Page = () => {
           <article className='pt-[75px]'>
             <div>
               <SubSectionheadings Head="Cursussen" mainPage="Home" currentPage="Cursussen" />
-              <div className='my-12 text-5xl font-bold text-center text-gray-700'>Losse Lessen en Examen Prijzen</div>
-
-              <div className="container mx-auto px-4 py-8">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div className='flex items-center justify-between text-gray-700 bg-[#c1e1c1]'>
-                      <h2 className="text-2xl font-semibold p-4">Rijles tarieven</h2>
-                      <div className="px-4 py-3 font-medium">Tarief in €</div>
-                    </div>
-                    <div className="divide-y divide-gray-200">
-                      {drivingLessons.map((item, index) => (
-                        <div key={index} className="flex justify-between px-4 py-3 hover:bg-gray-50">
-                          <span className="text-gray-700">{item.name}</span>
-                          <span className="text-gray-700 font-medium">{item.price}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div className='flex items-center justify-between text-gray-700 bg-[#c1e1c1]'>
-                      <h2 className="text-2xl font-semibold p-4">Examen tarieven</h2>
-                      <div className="px-4 py-3 font-medium">Tarief in €</div>
-                    </div>
-                    <div className="divide-y divide-gray-200">
-                      {examFees.map((item, index) => (
-                        <div key={index} className="flex justify-between px-4 py-3 hover:bg-gray-50">
-                          <span className="text-gray-700">{item.name}</span>
-                          <span className="text-gray-700 font-medium">{item.price}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
+             
               <div className='flex flex-col justify-start items-center gap-y-2'>
                 <div className='text-2xl font-semibold text-green-400'>Onze topcursussen </div>
                 <div className='text-5xl font-bold text-center text-gray-700'>Kies de cursus die bij jou past!</div>
