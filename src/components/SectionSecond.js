@@ -17,31 +17,15 @@ const SectionSecond = () => {
             </div>
             <div className="flex flex-col lg:flex-row gap-5 my-10">
               <div className="flex gap-x-5 justify-center items-center gap-y-5 flex-col sm:flex-row">
-                <div className="w-10/12 sm:w-[45vw] lg:w-[22vw]">
+                <div className="flex justify-center items-center gap-5">
                   <Card
                     img={ELD}
                     data="🏍️ Motorrijlessen"
                     details="Bij NoLimitBikers bieden we motorrijlessen die aansluiten op jouw tempo en ervaring. Onze lessen zijn gericht op veiligheid, controle en plezier, zodat jij zonder zorgen je motorrijbewijs haalt." />
-                </div>
-                <div className="w-10/12 sm:w-[45vw] lg:w-[22vw]">
                   <Card
                     img={IT}
                     data="🏁 AVB en AVD Dagcursussen"
                     details="Wil je snel en efficiënt je voertuigbeheersing (AVB) of verkeersdeelname (AVD) examen halen? Kies dan voor onze dagcursussen. Perfect voor iedereen die in één dag wil focussen op een specifiek onderdeel van het rijexamen." />
-                </div>
-              </div>
-              <div className="flex gap-x-5 justify-center items-center flex-col sm:flex-row gap-y-5">
-                <div className="w-10/12 sm:w-[45vw] lg:w-[22vw]">
-                  <Card
-                    img={CYSAT}
-                    data="Gemakkelijk leren motorrijden"
-                    details="Onze Cursusmodule is heel gemakkelijk te begrijpen." />
-                </div>
-                <div className="w-10/12 sm:w-[45vw] lg:w-[22vw]">
-                  <Card
-                    img={RTP}
-                    data="Gemakkelijk leren motorrijden"
-                    details="Onze Cursusmodule is heel gemakkelijk te begrijpen." />
                 </div>
               </div>
             </div>

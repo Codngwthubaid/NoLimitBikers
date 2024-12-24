@@ -1,10 +1,6 @@
 "use client"
 import SubSectionheadings from '@/components/SubSectionheadings'
 import React, { useState } from 'react'
-import Image from 'next/image'
-import iconCall from "@/public/iconsProcess/iconCall.png"
-import iconEmail from "@/public/iconsProcess/iconEmail.png"
-import iconLocation from "@/public/iconsProcess/iconLocation.png"
 import axios from 'axios'
 import { TriangleAlert } from "lucide-react"
 import { Loader2 } from 'lucide-react'
