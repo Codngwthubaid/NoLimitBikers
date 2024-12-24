@@ -17,7 +17,7 @@ const SectionSecond = () => {
             </div>
             <div className="flex flex-col lg:flex-row gap-5 my-10">
               <div className="flex gap-x-5 justify-center items-center gap-y-5 flex-col sm:flex-row">
-                <div className="flex justify-center items-center gap-5">
+                <div className="flex justify-center items-center gap-5 flex-col sm:flex-row">
                   <Card
                     img={ELD}
                     data="🏍️ Motorrijlessen"

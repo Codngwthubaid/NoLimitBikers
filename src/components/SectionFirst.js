@@ -54,13 +54,9 @@ const SectionFirst = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className='relative'>
-                            <div className='w-48 h-auto absolute z-10 left-24'>
-                                <Image
-                                    src={LimitedOffer}
-                                    alt="LIMITED_OFFER" />
-                            </div>
-                            <Carousel className="w-[70vw] bg-white rounded-2xl lg:w-[30vw] mt-16">
+                        <div className='flex flex-col justify-center items-center'>
+                            <div className='relative top-[90px] z-10 text-white bg-red-500 rounded-xl font-semibold p-3'><span>MEGA OFFER</span></div>
+                            <Carousel className="w-[75vw] bg-white rounded-2xl lg:w-[30vw] mt-16">
                                 <CarouselContent>
                                     {packages.map((pkg) => (
                                         <CarouselItem key={pkg.id}>

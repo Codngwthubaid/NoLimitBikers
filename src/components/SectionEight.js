@@ -5,14 +5,14 @@ import rightArrowWhite from "../public/img/rightArrowWhite.png"
 const SectionEight = () => {
   return (
     <>
-    <main>
-    <section>
+      <main>
+        <section>
           <article>
             <div className="bg-[#c1e1c1] min-h-fit h-[60vh] px-5 flex flex-col justify-center items-center gap-y-10">
               <div className="text-green-400 font-semibold text-2xl">06 14 38 20 99</div>
-              <div className="flex flex-col justify-center items-start sm:items-center">
+              <div className="flex flex-col justify-center items-center">
                 <div className="text-4xl lg:text-5xl text-gray-700 font-bold">Boek je eerste rijles</div>
-                <div className="text-4xl lg:-5xl text-gray-700 font-bold">Neem vandaag nog contact met ons op en start je avontuur op de weg!</div>
+                <div className="text-center text-4xl lg:text-5xl text-gray-700 font-bold">Neem vandaag nog contact met ons op en start je avontuur op de weg!</div>
               </div>
               <div className="flex justify-center items-center gap-x-3">
                 <div>
@@ -43,7 +43,7 @@ const SectionEight = () => {
             </div>
           </article>
         </section>
-    </main>
+      </main>
     </>
   )
 }
