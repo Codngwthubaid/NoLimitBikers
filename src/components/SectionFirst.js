@@ -63,7 +63,7 @@ const SectionFirst = () => {
                                             <div className="p-1 rounded-2xl">
                                                 <Card className="flex flex-col items-center bg-white shadow-[0_10px_20px_rgba(193,_225,_193,_1)] m-1 rounded-2xl">
                                                     <CardHeader>
-                                                        <CardTitle className="text-gray-700 font-bold text-2xl">{pkg.name}</CardTitle>
+                                                        <CardTitle className="text-gray-700 font-bold text-xl">{pkg.name}</CardTitle>
                                                     </CardHeader>
                                                     <CardContent className="text-center">
                                                         <p className="text-4xl font-bold text-gray-800 mt-4">{pkg.price}</p>
