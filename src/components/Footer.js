@@ -8,11 +8,6 @@ const Footer = () => {
         <footer className=" bg-white mt-10">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex justify-between">
-                    <div className="mb-6 md:mb-0">
-                        <Link href="/" className="flex items-center">
-                            <span className="self-center text-3xl font-bold whitespace-nowrap text-gray-700">NoLimitBikers</span>
-                        </Link>
-                    </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6">
                         <div>
                             <h2 className="mb-6 text-lg font-bold text-gray-700 uppercase dark:text-white ">Contact</h2>

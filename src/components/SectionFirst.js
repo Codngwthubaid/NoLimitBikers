@@ -13,7 +13,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "../components/ui/carousel"
-import LimitedOffer from "../public/img/LimitedOffer.png"
 
 const packages = [
     { id: 1, name: "AVB DAG CURUSUS", price: "€699,00", selectBtn: "Beginnen met basis", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVB examen"] },
@@ -55,13 +54,13 @@ const SectionFirst = () => {
                             </div>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <div className='relative top-[90px] z-10 text-white bg-red-500 rounded-xl font-semibold p-3'><span>MEGA OFFER</span></div>
-                            <Carousel className="w-[75vw] bg-white rounded-2xl lg:w-[30vw] mt-16">
+                            <div className='relative top-[90px] z-10 text-white bg-red-500 rounded-[40px] font-semibold p-3'><span>MEGA-AANBIEDING</span></div>
+                            <Carousel className="w-[75vw] bg-white rounded-full lg:w-[30vw] mt-16">
                                 <CarouselContent>
                                     {packages.map((pkg) => (
                                         <CarouselItem key={pkg.id}>
                                             <div className="p-1 rounded-2xl">
-                                                <Card className="flex flex-col items-center bg-white shadow-[0_10px_20px_rgba(193,_225,_193,_1)] m-1 rounded-2xl">
+                                                <Card className="flex flex-col items-center bg-white shadow-[0_10px_20px_rgba(193,_225,_193,_1)] m-1 rounded-[40px]">
                                                     <CardHeader>
                                                         <CardTitle className="text-gray-700 font-bold text-xl">{pkg.name}</CardTitle>
                                                     </CardHeader>
