@@ -15,8 +15,8 @@ import {
 } from "../components/ui/carousel"
 
 const packages = [
-    { id: 1, name: "AVB DAG CURUSUS", price: "€699,00", selectBtn: "Beginnen met basis", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVB examen"] },
-    { id: 2, name: "AVD DAG CURUSUS", price: "€699,00", selectBtn: "Selecteer Goud", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVD examen"] }
+    { id: 1, name: "AVB DAG CURSUS", price: "€699,00", selectBtn: "Beginnen met basis", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVB examen"] },
+    { id: 2, name: "AVD DAG CURSUS", price: "€699,00", selectBtn: "Selecteer Goud", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVD examen"] }
 ]
 
 
@@ -38,11 +38,11 @@ const SectionFirst = () => {
                                 <div className="text-3xl sm:text-5xl font-bold text-gray-700">Leer
                                     <span className="rounded-xl bg-[#c1e1c1] text-white px-3 mx-2">rijden</span>
                                 </div>
-                                <div className="text-3xl sm:text-5xl font-bold text-gray-700">met Vertrouwe</div>
+                                <div className="text-3xl sm:text-5xl font-bold text-gray-700">met vertrouwen</div>
                             </div>
                             <div>
                                 <Link href="/pages/courses">
-                                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">ONTDEK CURSUSSEN
+                                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">ONTDEK CURSUS
                                         <Image
                                             src={rightArrowWhite}
                                             width={18}

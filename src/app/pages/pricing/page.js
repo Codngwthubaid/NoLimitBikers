@@ -8,13 +8,13 @@ const Page = () => {
 
     const drivingLessons = [
         { name: "Proefles (50 min)", price: "€ 70,00" },
-        { name: "Losse motorrijles (50 min:)", price: "€55,00" }
+        { name: "Losse motorrijles (50 min)", price: "€55,00" }
     ]
 
     const examFees = [
-        { name: "CBR AVB Praktijk examen : ", price: "€ 215,00" },
-        { name: "CBR AVD Praktijk examen: ", price: "€ 279,00" },
-        { name: "CBR A no Naderonderzoek examen:", price: "€ 289,00" },
+        { name: "CBR AVB Praktijk examen  ", price: "€ 215,00" },
+        { name: "CBR AVD Praktijk examen ", price: "€ 279,00" },
+        { name: "CBR A no Naderonderzoek examen ", price: "€ 289,00" },
     ]
 
 

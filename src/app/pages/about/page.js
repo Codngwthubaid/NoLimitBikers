@@ -1,19 +1,30 @@
-import React from 'react'
+"use client"
+import React, { useState , useEffect} from 'react'
 import SectionThird from '@/components/SectionThird'
-import SectionFourth from '@/components/SectionFourth'
 import G8 from "@/public/Gallery/G8.jpg"
 import Link from 'next/link'
 import Image from 'next/image'
 import SubSectionheadings from '@/components/SubSectionheadings'
 import rightArrowWhite from "@/public/img/rightArrowWhite.png"
-  
+import Loader from '@/components/Loader/Loader'
 
 const Page = () => {
+
+  const [loader, setLoader] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false)
+    }, 3000);
+
+  }, [])
+
+
   return (
     <>
+      {loader && <Loader />}
       <main>
         <section>
-          <article className='pt-[110px]'>
+          <article className='pt-[100px]'>
             <SubSectionheadings Head="Over ons" mainPage="Home" currentPage="Over ons" />
 
             <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
@@ -56,7 +67,7 @@ const Page = () => {
             </div>
 
             <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
-            
+
           </article>
         </section>
       </main>
