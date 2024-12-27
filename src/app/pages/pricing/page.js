@@ -1,10 +1,21 @@
 "use client"
+import React, { useState, useEffect } from "react"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import SubSectionheadings from "@/components/SubSectionheadings"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
+import Loader from '@/components/Loader/Loader'
 
 
 const Page = () => {
+
+    const [loader, setLoader] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setLoader(false)
+        }, 2000);
+    }, [])
+
+
 
     const drivingLessons = [
         { name: "Proefles (50 min)", price: "€ 70,00" },
@@ -20,6 +31,7 @@ const Page = () => {
 
     return (
         <div>
+            {loader && <Loader />}
             <section className="body-font overflow-hidden pt-[75px]">
                 <SubSectionheadings Head="Tarieven" mainPage="Home" currentPage="Tarieven" />
                 <div className="container px-5 py-12 mx-auto">

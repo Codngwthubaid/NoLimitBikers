@@ -1,22 +1,32 @@
-import React from 'react'
+"use client"
+import React, { useState, useEffect } from 'react'
 import SubSectionheadings from '@/components/SubSectionheadings'
 import Image from 'next/image';
 import G8 from "@/public/Gallery/G8.jpg"
 import G9 from "@/public/Gallery/G9.jpg"
 import G10 from "@/public/Gallery/G10.jpg"
 import PricingPopUpCard from '@/components/PricingPopUpCard';
+import Loader from '@/components/Loader/Loader'
 
 const Page = () => {
+
+  const [loader, setLoader] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false)
+    }, 2000);
+  }, [])
 
 
   return (
     <>
+      {loader && <Loader />}
       <main>
         <section>
           <article className='pt-[75px]'>
             <div>
               <SubSectionheadings Head="Cursussen" mainPage="Home" currentPage="Cursussen" />
-             
+
               <div className='flex flex-col justify-start items-center gap-y-2'>
                 <div className='text-2xl font-semibold text-green-400'>Onze topcursussen </div>
                 <div className='text-5xl font-bold text-center text-gray-700'>Kies de cursus die bij jou past!</div>

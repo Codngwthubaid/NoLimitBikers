@@ -1,9 +1,10 @@
 "use client"
 import SubSectionheadings from '@/components/SubSectionheadings'
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import axios from 'axios'
 import { TriangleAlert } from "lucide-react"
 import { Loader2 } from 'lucide-react'
+import Loader from '@/components/Loader/Loader'
 
 const Page = () => {
   const [name, setName] = useState('')
@@ -85,8 +86,17 @@ const Page = () => {
     }
   }
 
+  const [loader, setLoader] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false)
+    }, 2000);
+  }, [])
+
+
   return (
     <>
+    {loader && <Loader />}
       <main>
         <section>
           <article>
@@ -95,7 +105,7 @@ const Page = () => {
                 <SubSectionheadings Head="Contact" mainPage="Home" currentPage="Contact" />
               </div>
               <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
-              <div className='flex items-center justify-evenly'>
+              <div className='flex flex-col sm:flex-row items-center justify-evenly'>
                 <div className='flex gap-10 justify-center items-center flex-col'>
                   <div className="rounded-3xl py-10 gap-y-3 w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1]">
                     <div>NoLimitBikers</div>

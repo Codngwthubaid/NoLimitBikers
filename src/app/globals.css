@@ -9,6 +9,9 @@ body{
     background-color: white
 }
 
+.zoom { transition: transform 0.9s ease-in-out; } 
+.zoom:hover { transform: scale(1.2); }
+
 @layer base {
   :root {
     --background: 0 0% 100%;

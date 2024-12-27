@@ -2,16 +2,27 @@
 import SectionFirst from "../components/SectionFirst";
 import SectionSecond from "../components/SectionSecond";
 import SectionThird from "../components/SectionThird";
-import SectionFourth from "../components/SectionFourth";
 import SectionFifth from "../components/SectionFifth";
 import SectionSixth from "../components/SectionSixth";
 import SectionSeventh from "../components/SectionSeventh";
 import SectionEight from "../components/SectionEight";
 import Head from "next/head";
+import { useEffect, useState } from "react";
+import Loader from '@/components/Loader/Loader'
 
 export default function Home() {
+
+  const [loader, setLoader] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false)
+    }, 2000);
+  }, [])
+
+
   return (
     <>
+      {loader && <Loader />}
       <Head>
         <title>NoLimitBikers - Biking Learning Lessons in the Netherlands</title>
         <meta name="description" content="Book your biking lessons with our expert instructors. Learn to ride safely and confidently in the Netherlands." />
