@@ -15,8 +15,8 @@ import {
 } from "../components/ui/carousel"
 
 const packages = [
-    { id: 1, name: "AVB DAG CURSUS", price: "€699,00", selectBtn: "Beginnen met basis", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVB examen"] },
-    { id: 2, name: "AVD DAG CURSUS", price: "€699,00", selectBtn: "Selecteer Goud", features: ["Start 7:00", "Hele dag lessen", "Inclusief AVD examen"] }
+    { id: 1, name: "AVB DAG CURSUS", price: "€699,00", selectBtn: "Selecteer deze cursus", features: ["Starttijd: 07:00 uur", "Hele dag lessen inbegrepen", "Inclusief AVB-examen"] },
+    { id: 2, name: "AVD DAG CURSUS", price: "€699,00", selectBtn: "Selecteer deze cursus", features: ["Starttijd: 07:00 uur", "Hele dag lessen inbegrepen", "Inclusief AVB-examen"] }
 ]
 
 
@@ -39,10 +39,11 @@ const SectionFirst = () => {
                                     <span className="rounded-xl bg-[#c1e1c1] text-white px-3 mx-2">rijden</span>
                                 </div>
                                 <div className="text-3xl sm:text-5xl font-bold text-gray-700">met vertrouwen</div>
+                                <div className="text-xl font-semibold text-gray-700">Jouw motorrijschool in Rotterdam en omgeving</div>
                             </div>
                             <div>
                                 <Link href="/pages/courses">
-                                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">ONTDEK CURSUS
+                                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">ONTDEK ONZE PAKKETTEN
                                         <Image
                                             src={rightArrowWhite}
                                             width={18}
@@ -54,7 +55,7 @@ const SectionFirst = () => {
                             </div>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <div className='relative top-[90px] z-10 text-white bg-red-500 rounded-[40px] font-semibold p-3'><span>MEGA-AANBIEDING</span></div>
+                            <div className='relative top-[90px] z-10 text-white bg-red-500 rounded-[40px] font-semibold p-3'><span>MEGA DEAL</span></div>
                             <Carousel className="w-[75vw] bg-white rounded-full lg:w-[30vw] mt-16">
                                 <CarouselContent>
                                     {packages.map((pkg) => (

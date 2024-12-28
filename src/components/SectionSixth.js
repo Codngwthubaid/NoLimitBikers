@@ -14,7 +14,7 @@ const SectionSixth = () => {
                                 <div className="w-11/12 lg:w-1/2">
                                     <div className="flex flex-col gap-y-3">
                                         <div className="text-green-400 font-semibold text-2xl">F A Q</div>
-                                        <div className="text-gray-700 text-5xl font-bold">Veelgestelde vragen</div>
+                                        <div className="text-gray-700 text-4xl font-bold">Veelgestelde vragen</div>
                                     </div>
                                     <div>
                                         <AccordionCom />

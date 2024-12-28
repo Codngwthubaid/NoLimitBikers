@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 const AboutTick = (props) => {
     return (
         <>
-            <div className="flex justify-center sm:items-end gap-x-2">
+            <div className="flex justify-center sm:items-start gap-x-2">
                 <ArrowRight className='text-green-400' />
                 <div>{props.data}</div>
             </div>

@@ -49,14 +49,14 @@ const SectionThird = () => {
                   <div className="text-lg text-black">Bij NoLimitBikers draait alles om passie voor motorrijden! Wij bieden hoogwaardige motorrijlessen aan in Rotterdam en omgeving, afgestemd op jouw tempo en ervaring. Of je nu een beginner bent die voor het eerst de weg op gaat, of een ervaren motorrijder die zijn skills wil perfectioneren, bij ons ben je aan het juiste adres. Met een persoonlijke aanpak, ervaren instructeurs en een focus op veiligheid en plezier zorgen wij dat jij vol vertrouwen de weg op gaat. Ontdek de vrijheid van motorrijden met NoLimitBikers!</div>
                   <div className="flex flex-col md:flex-row justify-evenly  font-semibold my-3 text-black">
                     <div className="flex flex-col items-start gap-y-1">
-                      <AboutTick data="Basis van rijvaardigheid" />
-                      <AboutTick data="Practice Defensive Driving" />
-                      <AboutTick data="Road test preparation" />
+                      <AboutTick data="De basis van motorbeheersing - van starten tot stoppen, alles begint hier." />
+                      <AboutTick data="Defensief rijden - anticipeer op het verkeer en rijd met vertrouwen." />
+                      <AboutTick data="Voorbereiding op het praktijkexamen - haal je rijbewijs zonder stress." />
                     </div>
                     <div className="flex flex-col items-start gap-y-1">
-                      <AboutTick data="Beheers uw snelheid in bochten" />
-                      <AboutTick data="Beheers de basis" />
-                      <AboutTick data="Blijf kalm tijdens lange ritten" />
+                      <AboutTick data="BSnelheidscontrole in bochten - soepel en veilig door elke bocht." />
+                      <AboutTick data="Balans en beheersing - de fundamenten van zelfverzekerd motorrijden." />
+                      <AboutTick data="Relaxed rijden op lange ritten - blijf comfortabel, ook tijdens lange afstanden." />
                     </div>
                   </div>
                   <div>
