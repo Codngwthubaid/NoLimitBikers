@@ -54,7 +54,7 @@ const SectionThird = () => {
                       <AboutTick data="Voorbereiding op het praktijkexamen - haal je rijbewijs zonder stress." />
                     </div>
                     <div className="flex flex-col items-start gap-y-1">
-                      <AboutTick data="BSnelheidscontrole in bochten - soepel en veilig door elke bocht." />
+                      <AboutTick data="Snelheidscontrole in bochten - soepel en veilig door elke bocht." />
                       <AboutTick data="Balans en beheersing - de fundamenten van zelfverzekerd motorrijden." />
                       <AboutTick data="Relaxed rijden op lange ritten - blijf comfortabel, ook tijdens lange afstanden." />
                     </div>

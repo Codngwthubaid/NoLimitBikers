@@ -123,7 +123,7 @@ const PricingPopUpCard = (props) => {
             </DialogTrigger>
             <DialogContent className="bg-white sm:max-w-[425px]">
                 <DialogHeader>
-                    <DialogTitle className="font-bold text-4xl text-gray-700">Plan Je Les</DialogTitle>
+                    <DialogTitle className="font-bold text-4xl text-gray-700">Plan je les</DialogTitle>
                     <DialogDescription className="text-black text-base">
                     Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden.
                     </DialogDescription>

@@ -112,7 +112,7 @@ const Page = () => {
                     <div className='text-xl font-bold hover:text-green-400'>Rotterdam</div>
                   </div>
                   <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1]">
-                    <div>HEEFT U EEN VRAAG?</div>
+                    <div>Heeft u een vraag?</div>
                     <div className='text-xl font-bold hover:text-green-400'>06 14 38 20 99</div>
                   </div>
                   <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1]">

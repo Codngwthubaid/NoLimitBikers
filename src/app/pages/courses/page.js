@@ -80,10 +80,10 @@ const Page = () => {
                             />
                           </div>
                           <h2 className="text-xl flex justify-start items-center gap-x-3 font-medium title-font text-gray-900 mt-5">
-                            <div>AVB Pakket Gold Mega Deal</div>
+                            <div>AVB Pakket Gold</div>
                           </h2>
                           <p className="text-base leading-relaxed mt-2">
-                            Wil je een stap verder gaan? Het AVB Pakket Gold Mega Deal biedt een uitgebreidere opleiding, perfect voor wie meer lessen en extra voordelen wil tijdens de voorbereiding op het AVB-examen. Combineer kwaliteit, comfort en een voordelige deal in één pakket.
+                            Wil je een stap verder gaan? Het AVB Pakket Gold biedt een uitgebreidere opleiding, perfect voor wie meer lessen en extra voordelen wil tijdens de voorbereiding op het AVB-examen. Combineer kwaliteit, comfort en een voordelige deal in één pakket.
                           </p>
                         </div>
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 flex flex-col justify-start items-start gap-y-3">
@@ -140,10 +140,10 @@ const Page = () => {
                             />
                           </div>
                           <h2 className="text-xl flex justify-start items-center gap-x-3 font-medium title-font text-gray-900 mt-5">
-                            <div>AVD Pakket Gold Mega Deal</div>
+                            <div>AVD Pakket Gold</div>
                           </h2>
                           <p className="text-base leading-relaxed mt-2">
-                            Klaar voor de volgende stap? Het AVD Pakket Gold Mega Deal biedt een uitgebreide rijopleiding met extra lessen en persoonlijke ondersteuning. Perfect voor wie grondig wil oefenen en zeker wil zijn van een veilige en zelfverzekerde voorbereiding op het AVD-examen.
+                            Klaar voor de volgende stap? Het AVD Pakket Gold biedt een uitgebreide rijopleiding met extra lessen en persoonlijke ondersteuning. Perfect voor wie grondig wil oefenen en zeker wil zijn van een veilige en zelfverzekerde voorbereiding op het AVD-examen.
                           </p>
                         </div>
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 flex flex-col justify-start items-start gap-y-3">
