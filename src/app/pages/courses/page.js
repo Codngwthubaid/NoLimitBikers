@@ -27,9 +27,26 @@ const Page = () => {
             <div>
               <SubSectionheadings Head="Cursussen" mainPage="Home" currentPage="Cursussen" />
 
-              <div className='flex flex-col justify-start items-center gap-y-2'>
+              <div className='flex flex-col justify-center items-center gap-y-2'>
                 <div className='text-2xl mt-5 font-semibold text-green-400'>Onze Toppakketten</div>
                 <div className='text-5xl font-bold text-center text-gray-700'>Kies het pakket wat bij jou past!</div>
+                <div className='mx-6 my-10'>
+                  <div className='text-2xl font-semibold text-gray-700'>Wat is het verschil tussen AVB en AVD?</div>
+                  <div className='text-black text-lg py-4'>Als je je motorrijbewijs wilt halen, doorloop je twee belangrijke examens: AVB (Algemene Voertuigbeheersing) en AVD (Algemene Verkeersdeelname). Beide examens zijn essentieel, maar richten zich op verschillende vaardigheden.</div>
+                  <div className='text-2xl font-semibold text-gray-700'>AVB: Algemene Voertuigbeheersing</div>
+                  <div className='text-black text-lg py-4'>Het AVB-examen draait om het leren beheersen van je motor in verschillende situaties. Je oefent op een afgesloten terrein waar je geen interactie hebt met ander verkeer. Tijdens dit examen voer je verschillende manoeuvres uit, zoals:
+                    <li>Langzaam rijden en balanceren</li>
+                    <li>Uitwijken</li>
+                    <li>Noodstop maken</li>
+                    Het doel is om te laten zien dat je volledige controle hebt over je motor.</div>
+                  <div className='text-2xl font-semibold text-gray-700'>AVD: Algemene Verkeersdeelname</div>
+                  <div className='text-black text-lg py-4'>
+                    Het AVD-examen richt zich op je rijvaardigheid in het echte verkeer. Hier rijd je op de openbare weg en wordt je beoordeeld op hoe je omgaat met verkeersregels, andere weggebruikers en verkeerssituaties. Onder begeleiding van een examinator toon je aan dat je veilig en zelfverzekerd kunt rijden.</div>
+                  <div className='text-2xl font-semibold text-gray-700'>Waarom beide examens?</div>
+                  <div className='text-black text-lg py-4'>
+                    Het AVB-examen legt de basis: je leert je motor volledig onder controle te houden. Pas daarna kun je tijdens het AVD-examen laten zien dat je veilig deel kunt nemen aan het verkeer. Beide examens zijn onmisbaar om je motorrijbewijs te halen en met vertrouwen de weg op te gaan.</div>
+                </div>
+
                 <div className='text-4xl mt-5 font-bold text-green-400'>Pakket AVB</div>
                 <div>
                   <section className="text-gray-600 body-font">
@@ -90,9 +107,6 @@ const Page = () => {
                     </div>
                   </section>
                 </div>
-
-                <div className='text-2xl mt-5 font-semibold text-green-400'>Onze Toppakketten</div>
-                <div className='text-5xl font-bold text-center text-gray-700'>Kies het pakket wat bij jou past!</div>
                 <div className='text-4xl mt-5 font-bold text-green-400'>Pakket AVD</div>
                 <div>
                   <section className="text-gray-600 body-font">
