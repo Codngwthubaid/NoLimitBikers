@@ -154,9 +154,10 @@ const Page = () => {
                   {errors.email && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.email}</span></span>}
                   <div className="relative mb-4 text-gray-700">
                     <label htmlFor="message" className="leading-7 text-base font-semibold text-gray-700">
-                      Bericht (Laat ons weten waarmee we je kunnen helpen)
+                      Bericht
                     </label>
                     <textarea
+                      placeholder='Laat ons weten waarmee we je kunnen helpen'
                       onChange={(e) => { setMessage(e.target.value) }}
                       id="message"
                       name="message"
@@ -181,7 +182,7 @@ const Page = () => {
                         </div>
                       </>
                     ) : (
-                      'Submit'
+                      'Indienen'
                     )}
                   </button>
                 </div>

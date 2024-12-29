@@ -36,7 +36,7 @@ const Navbar = () => {
             <Link href="/" className="text-xl text-green-400 hover:font-semibold">Home</Link>
           </li>
           <li className="mr-8 p-1">
-            <Link href="/pages/about" className="text-xl text-green-400 hover:font-semibold">Over</Link>
+            <Link href="/pages/about" className="text-xl text-green-400 hover:font-semibold">Over ons</Link>
           </li>
           <li className="mr-8 p-1">
             <Link href="/pages/courses" className="text-xl text-green-400 hover:font-semibold">Pakketten</Link>
@@ -51,17 +51,8 @@ const Navbar = () => {
         <div className="md:hidden flex justify-center" onClick={handleMobileMenu}>
           <Sheet>
             <SheetTrigger>
-              <svg
-                className={`w-6 h-6 text-[#c1e1c1] transition duration-300 ease-in-out ${mobileMenuActive ? 'rotate-90' : ''
-                  }`}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <rect x="4" y="4" width="8" height="8" rx="1" fill="#fff" />
-                <rect x="12" y="4" width="8" height="8" rx="1" fill="#fff" />
-                <rect x="4" y="12" width="8" height="8" rx="1" fill="#fff" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill='white' x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
               </svg>
             </SheetTrigger>
             <SheetContent>
@@ -72,7 +63,7 @@ const Navbar = () => {
                       <Link href="/" className="text-xl text-gray-700 hover:font-semibold">Home</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
-                      <Link href="/pages/about" className="text-xl text-gray-700 hover:font-semibold">Over</Link>
+                      <Link href="/pages/about" className="text-xl text-gray-700 hover:font-semibold">Over ons</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
                       <Link href="/pages/courses" className="text-xl text-gray-700 hover:font-semibold">Pakketten</Link>

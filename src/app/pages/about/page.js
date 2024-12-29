@@ -34,11 +34,11 @@ const Page = () => {
                 <div className='text-green-400 font-semibold text-xl'>Meer over ons</div>
                 <div className='text-4xl lg:text-5xl font-bold text-gray-700'>Waarom kiezen voor NoLimitBikers?</div>
                 <div className='text-lg text-black'>Bij NoLimitBikers geloven we in motorrijden met vertrouwen en controle. Onze lessen richten zich op zowel praktische vaardigheden als defensief rijden, zodat je voorbereid bent op elke situatie op de weg. Of je nu kiest voor reguliere lessen of een intensieve dagcursus, onze ervaren instructeurs staan voor je klaar met persoonlijke begeleiding.
-                  <div>Benieuwd naar onze aanpak? Ontdek onze cursussen en ervaar zelf het verschil!</div>
+                  <div>Benieuwd naar onze aanpak? Ontdek onze pakketten en ervaar zelf het verschil!</div>
                 </div>
                 <div>
                   <Link href="/pages/courses">
-                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">ONTDEK CURSUSSEN
+                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">ONTDEK ONZE PAKKETTEN
                       <Image
                         src={rightArrowWhite}
                         width={18}

@@ -36,7 +36,7 @@ const Page = () => {
                 <SubSectionheadings Head="Tarieven" mainPage="Home" currentPage="Tarieven" />
                 <div className="container px-5 py-12 mx-auto">
                     <div className="flex flex-col text-center w-full mb-5">
-                        <h1 className="text-green-400 text-2xl font-medium title-font mb-2">Prijzen en Pakketten</h1>
+                        <h1 className="text-green-400 text-2xl font-medium title-font mb-2">Tarieven</h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-3xl font-semibold text-gray-700">Kies uit onze meest waardevolle rijlespakketten. Wij bieden duidelijke tarieven en flexibele opties, zodat je altijd een pakket vindt dat past bij jouw wensen en budget.</p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Page = () => {
                                     Aanbevolen
                                 </div>
                                 <CardHeader>
-                                    <CardTitle className="text-lg mt-4">AVB Pakket Gold </CardTitle>
+                                    <CardTitle className="text-lg">AVB Pakket Gold </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
                                     <p className="text-4xl font-bold mt-4">€999,00</p>
@@ -145,7 +145,7 @@ const Page = () => {
                                     Aanbevolen
                                 </div>
                                 <CardHeader>
-                                    <CardTitle className="text-lg mt-4">AVD Pakket Gold </CardTitle>
+                                    <CardTitle className="text-lg">AVD Pakket Gold </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
                                     <p className="text-4xl font-bold mt-4">€1199,00</p>
@@ -190,7 +190,7 @@ const Page = () => {
 
                 <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
 
-                <div className='my-12 text-5xl font-bold text-center text-gray-700'>Losse Lessen en Examen Prijzen</div>
+                <div className='my-12 text-5xl font-bold text-center text-gray-700'>Losse lessen en examen prijzen</div>
 
                 <div className="container mx-auto px-4 py-8">
                     <div className="grid md:grid-cols-2 gap-8">

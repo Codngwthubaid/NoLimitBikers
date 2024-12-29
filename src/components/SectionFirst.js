@@ -39,7 +39,7 @@ const SectionFirst = () => {
                                     <span className="rounded-xl bg-[#c1e1c1] text-white px-3 mx-2">rijden</span>
                                 </div>
                                 <div className="text-3xl sm:text-5xl font-bold text-gray-700">met vertrouwen</div>
-                                <div className="text-xl font-semibold text-gray-700">Jouw motorrijschool in Rotterdam en omgeving</div>
+                                <div className="text-xl font-semibold text-gray-700">in Rotterdam e.o.</div>
                             </div>
                             <div>
                                 <Link href="/pages/courses">
