@@ -95,7 +95,7 @@ const CardOWP = () => {
                 </div> */}
                 <div className='flex flex-col text-center gap-y-2'>
                   <div className='text-xl font-bold'>🚦 Start je training</div>
-                  <div>Na het plannen is het tijd om op de motor te stappen! Volg onze professionele training en werk stap voor stap toe naar je motorrijbewijs.</div>
+                  <div>Na het plannen is het tijd om op de motor te stappen! Volg onze professionele lessen en werk stap voor stap toe naar je motorrijbewijs.</div>
                 </div>
               </div>
             </div>

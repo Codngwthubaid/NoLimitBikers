@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "NoLimitBikers - Biking Learning Lessons",
+  title: "NoLimitBikers - Motorrijschool",
   description: "NoLimitBikers offers a comprehensive platform for biking enthusiasts to enhance their skills and knowledge. Through engaging lessons, expert tips, and community support, riders of all levels can learn essential techniques, safety practices, and maintenance skills, fostering a deeper appreciation for biking while promoting a safe and enjoyable riding experience.",
 };
 
