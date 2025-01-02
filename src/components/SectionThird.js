@@ -2,12 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import AboutTick from './AboutTick'
-import bikeFirst from "../public/img/bikeFirst.jpg"
-import bikeSecond from "../public/img/bikeSecond.jpg"
-import bikeThird from "../public/img/bikeThird.jpg"
-import bikeFour from "../public/img/bikeFour.jpg"
+import bike8 from "../public/img/bike8.jpg"
+import bike7 from "../public/img/bike7.jpg"
+import bike4 from "../public/img/bike4.jpg"
+import bike9 from "../public/img/bike9.jpg"
 import rightArrowWhite from "../public/img/rightArrowWhite.png"
-import rightTick from "../public/img/rightTick.png"
 
 const SectionThird = () => {
   return (
@@ -19,24 +18,24 @@ const SectionThird = () => {
               <div className="sm:w-[45vw] flex justify-center items-center gap-x-3">
                 <div className="flex flex-col gap-y-2">
                   <Image
-                    src={bikeFirst}
+                    src={bike8}
                     className="sm:w-[200px] rounded-3xl object-cover"
                     alt="Picture of the author"
                   />
                   <Image
-                    src={bikeSecond}
+                    src={bike7}
                     className="sm:w-[200px] h-auto rounded-3xl object-cover"
                     alt="Picture of the author"
                   />
                 </div>
                 <div className="flex flex-col gap-y-2">
                   <Image
-                    src={bikeFour}
+                    src={bike4}
                     className="sm:w-[200px] rounded-3xl object-cover"
                     alt="Picture of the author"
                   />
                   <Image
-                    src={bikeThird}
+                    src={bike9}
                     className="sm:w-[200px] h-auto rounded-3xl object-cover"
                     alt="Picture of the author"
                   />
