@@ -66,15 +66,15 @@ export default function Home() {
       <main>
         <SectionFirst />
         <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
-        <SectionSecond />
-        <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
         <SectionThird />
+        <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
+        <SectionSecond />
         <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
         <SectionFifth />
         <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
         <SectionSixth />
-        <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
-        <SectionSeventh />
+        {/* <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div> */}
+        {/* <SectionSeventh /> */}
         <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
         <SectionEight />
       </main>

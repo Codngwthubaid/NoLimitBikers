@@ -10,7 +10,7 @@ const AccordionCom = () => {
     return (
         <>
             <div className="my-10 flex flex-col gap-y-4 ">
-                <div className="bg-green-400 px-3 rounded-xl">
+                {/* <div className="bg-green-300 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg text-start">Kan ik mijn lessen online boeken?</AccordionTrigger>
@@ -19,8 +19,8 @@ const AccordionCom = () => {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                </div>
-                <div className="bg-green-400 px-3 rounded-xl">
+                </div> */}
+                <div className="bg-green-300 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg text-start">Hoelang duurt een motorrijles?</AccordionTrigger>
@@ -30,7 +30,7 @@ const AccordionCom = () => {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className="bg-green-400 px-3 rounded-xl">
+                <div className="bg-green-300 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg text-start">Hoeveel lessen heb ik nodig om zelfverzekerd te rijden?</AccordionTrigger>
@@ -40,7 +40,7 @@ const AccordionCom = () => {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div className="bg-green-400 px-3 rounded-xl">
+                <div className="bg-green-300 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg text-start">Welke veiligheidsuitrusting moet ik meenemen?</AccordionTrigger>
