@@ -157,7 +157,7 @@ const Page = () => {
                       Bericht
                     </label>
                     <textarea
-                      placeholder='Laat ons weten waarmee we je kunnen helpen'
+                      placeholder='Laat ons weten waarmee we je kunnen help'
                       onChange={(e) => { setMessage(e.target.value) }}
                       id="message"
                       name="message"
