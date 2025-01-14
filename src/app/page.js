@@ -32,10 +32,8 @@ export default function Home() {
         <meta property="og:description" content="Book your biking lessons with our expert instructors. Learn to ride safely and confidently in the Netherlands." />
         <meta property="og:image" content="https://www.yourwebsite.com/images/home-banner.jpg" />
         <meta property="og:url" content="https://www.yourwebsite.com/" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="NoLimitBikers - Biking Learning Lessons in the Netherlands" />
         <meta name="twitter:description" content="Book your biking lessons with our expert instructors. Learn to ride safely and confidently in the Netherlands." />
-        <meta name="twitter:image" content="https://www.yourwebsite.com/images/home-banner.jpg" />
         <link rel="canonical" href="https://www.yourwebsite.com/" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
