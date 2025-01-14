@@ -92,79 +92,70 @@ const SectionFirst = () => {
                             </Carousel>
                         </div>
                     </article> */}
-                    <p className='text-[50px] text-center text-gray-900 font-bold mb-10'>Begin vandaag nog uw reis met NoLimitBikers</p>
-                    <div className="flex flex-col lg:flex-row gap-8 justify-center">
-                        <Card className="w-[25vw] relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">
-                        <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
-                              MEGA DEAL
+                    <p className='text-3xl md:text-4xl lg:text-[50px] text-center text-gray-900 font-bold mb-10'>Begin vandaag nog uw reis met NoLimitBikers</p>
+                    <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
+                        <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">
+                            <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
+                                MEGA DEAL
                             </div>
                             <CardHeader>
                                 <CardTitle className="text-gray-800 text-lg">AVB DAG CURSUS</CardTitle>
                             </CardHeader>
                             <CardContent className="text-center">
-                                <p className="text-4xl font-bold text-gray-800 mt-4">€699,00</p>
+                                <p className="text-4xl font-bold text-gray-800 mt-4">€699</p>
                                 <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                    <li>12 uur rijles</li>
-                                    <li>Vaste instructeur</li>
-                                    <li>Nieuwe lesmotor</li>
-                                    <li>Leskaart &amp; Advies</li>
+                                    <li>Starttijd: 07:00 uur</li>
+                                    <li>Hele dag lessen inbegrepen</li>
+                                    <li>Inclusief AVB-examen</li>
                                 </ul>
                             </CardContent>
                             <CardFooter>
-                                <PricingPopUpCard
-                                    Op1="AVB Pakket Silver"
-                                    Op2="AVB Pakket Gold "
-                                    Op3="AVB Pakket Platinum"
-                                />
+                                <PricingPopUpCard Op1="AVB DAG CURSUS" />
                             </CardFooter>
                         </Card>
 
-                        <Card className="w-[25vw] relative flex flex-col items-center  bg-[#050B30] text-white transition-all duration-300 ease-in-out hover:scale-105">
+                        <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center  bg-[#050B30] text-white transition-all duration-300 ease-in-out hover:scale-105">
                             <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
-                              MEGA DEAL
+                                MEGA DEAL
                             </div>
                             <CardHeader>
-                                <CardTitle className="text-lg">AVB Pakket Gold </CardTitle>
+                                <CardTitle className=" text-lg">AVB herkansing</CardTitle>
                             </CardHeader>
                             <CardContent className="text-center">
-                                <p className="text-4xl font-bold mt-4">€999,00</p>
-                                <ul className="mt-4 space-y-2 text-sm text-gray-300">
-                                    <li>16 uur rijles</li>
-                                    <li>Vaste instructeur</li>
-                                    <li>Nieuwe lesmotor</li>
-                                    <li>Leskaart &amp; Advies</li>
+                                <p className="text-4xl font-bold  mt-4">€499</p>
+                                <ul className="mt-4 space-y-2  text-gray-300 text-sm">
+                                <li>Starttijd: 07:00 uur</li>
+                                    <li>6 rijlessen</li>
+                                    <li>Inclusief AVB-examen</li>
                                 </ul>
                             </CardContent>
                             <CardFooter>
                                 <PricingPopUpCard
-                                    Op1="AVB Pakket Silver"
-                                    Op2="AVB Pakket Gold "
-                                    Op3="AVB Pakket Platinum" />
+                                    Op1="AVB herkansing" />
                             </CardFooter>
                         </Card>
 
-                        <Card className="w-[25vw] relative flex flex-col items-center  bg-green-100 transition-all duration-300 ease-in-out hover:scale-105">
-                        <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
-                              MEGA DEAL
+                        <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center transition-all duration-300 ease-in-out hover:scale-105">
+
+                            <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
+                                MEGA DEAL
                             </div>
                             <CardHeader>
-                                <CardTitle className="text-gray-800 text-lg">AVB Pakket Platinum</CardTitle>
+                                <CardTitle className="text-lg">AVD DAG CURSUS</CardTitle>
                             </CardHeader>
                             <CardContent className="text-center">
-                                <p className="text-4xl font-bold text-gray-800 mt-4">€1299,00</p>
-                                <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                    <li>20 uur rijles</li>
-                                    <li>Vaste instructeur</li>
-                                    <li>Nieuwe lesmotor</li>
-                                    <li>Leskaart &amp; Advies</li>
+                                <p className="text-4xl font-bold mt-4">€699</p>
+                                <ul className="mt-4 space-y-2 text-sm text-gray-700">
+                                    <li>Starttijd: 07:00 uur</li>
+                                    <li>Hele dag lessen inbegrepen</li>
+                                    <li>Inclusief AVD-examen</li>
                                 </ul>
                             </CardContent>
                             <CardFooter>
                                 <PricingPopUpCard
-                                    Op1="AVB Pakket Silver"
-                                    Op2="AVB Pakket Gold "
-                                    Op3="AVB Pakket Platinum" />
+                                    Op1="AVD DAG CURSUS"/>
                             </CardFooter>
+
                         </Card>
                     </div>
                 </section>
