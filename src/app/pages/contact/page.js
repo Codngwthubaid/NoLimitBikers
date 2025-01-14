@@ -105,20 +105,23 @@ const Page = () => {
               <div className='pt-[75px]'>
                 <SubSectionheadings Head="Contact" mainPage="Home" currentPage="Contact" />
               </div>
-              <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
+              <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14 container "></div>
               <div className='flex flex-col items-center gap-y-10 justify-evenly'>
-                <div className='flex gap-10 justify-center items-center'>
-                  <div className="rounded-3xl py-10 gap-y-3 w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1]">
+                <div className='flex gap-10 justify-center items-center container mx-auto'>
+                  <div className="rounded-3xl py-10 gap-y-3 w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1] h-48">
                     <div className='text-2xl font-bold'>NoLimitBikers</div>
-                    <div className='hover:text-green-400'>Rotterdam</div>
+                    {/* <div className='hover:text-green-400'>Rotterdam</div> */}
+                    <div className='hover:text-green-400'>KVK 50463829</div>
+                    <div className='hover:text-green-400'> BTW Nr. NL134561028B01</div>
                   </div>
-                  <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1]">
+                  <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1] h-48">
+                    <div className='text-2xl font-bold'>Service & vragen</div>
+                    <div className='hover:text-green-400'>Info@nolimitbikers.nl</div>
+                    <div className='hover:text-green-400'>Appen? +316 14 38 20 99</div>
+                  </div>
+                  <div className="rounded-3xl py-10 gap-y-3 w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1] h-48">
                     <div className='text-2xl font-bold'>Heeft u een vraag?</div>
                     <div className='hover:text-green-400'>06 14 38 20 99</div>
-                  </div>
-                  <div className="rounded-3xl py-10 gap-y-3  w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1]">
-                    <div className='text-2xl font-bold'>E-mail ons</div>
-                    <div className='hover:text-green-400'>Info@nolimitbikers.nl</div>
                   </div>
                 </div>
 
@@ -194,7 +197,7 @@ const Page = () => {
                         Request a trial lesson
                       </h1>
                       <p className="text-gray-600 mb-6">
-                        That's arranged super fast. Request a trial lesson now and experience it yourself!
+                        That&apos;s arranged super fast. Request a trial lesson now and experience it yourself!
                       </p>
                       <p className="text-gray-600 mb-8">
                         Fill in the form below and we will contact you as soon as possible.

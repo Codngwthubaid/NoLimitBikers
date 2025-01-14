@@ -11,7 +11,7 @@ import {
 const SubSectionheadings = (props) => {
     return (
         <>
-            <main>
+            <main className='container mx-auto'>
                 <div className='bg-[#c1e1c1] py-10 h-[50vh] gap-y-5 flex flex-col justify-center items-center text-green-400'>
                     <div className='text-5xl font-bold text-black'>{props.Head}</div>
                     <div>

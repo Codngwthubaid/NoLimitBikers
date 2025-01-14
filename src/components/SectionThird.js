@@ -12,10 +12,10 @@ const SectionThird = () => {
   return (
     <>
     <main>
-    <section className="container mx-auto">
-          <article>
-            <div className="flex justify-evenly items-center gap-x-5 flex-col sm:flex-row gap-y-10">
-              <div className="sm:w-[45vw] flex justify-center items-center gap-x-3">
+    <section>
+          <article className='container mx-auto'>
+            <div className="flex justify-evenly items-center gap-x-5 flex-col sm:flex-row gap-y-10 ">
+              <div className="sm:w-[45vw] flex justify-center items-center gap-x-3 ">
                 <div className="flex flex-col gap-y-2">
                   <Image
                     src={bike8}

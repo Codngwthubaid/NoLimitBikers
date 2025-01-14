@@ -10,16 +10,6 @@ const AccordionCom = () => {
     return (
         <>
             <div className="my-10 flex flex-col gap-y-4 ">
-                {/* <div className="bg-green-300 px-3 rounded-xl">
-                    <Accordion type="single" collapsible>
-                        <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-lg text-start">Kan ik mijn lessen online boeken?</AccordionTrigger>
-                            <AccordionContent className="text-lg">
-                            Ja, bij NoLimitBikers kun je eenvoudig je lessen online plannen via onze website.
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
-                </div> */}
                 <div className="bg-green-300 px-3 rounded-xl">
                     <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">

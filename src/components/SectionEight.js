@@ -7,7 +7,7 @@ const SectionEight = () => {
     <>
       <main>
         <section>
-          <article>
+          <article className='container mx-auto'>  
             <div className="min-h-fit h-[60vh] px-5 flex flex-col justify-center items-center gap-y-10">
               <div className="text-green-400 font-semibold text-2xl">06 14 38 20 99</div>
               <div className="flex flex-col justify-center items-center">
