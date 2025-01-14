@@ -13,6 +13,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "../components/ui/carousel"
+import PricingPopUpCard from "@/components/PricingPopUpCard"
 
 const packages = [
     { id: 1, name: "AVB DAG CURSUS", price: "€699,00", selectBtn: "Selecteer deze cursus", features: ["Starttijd: 07:00 uur", "Hele dag lessen inbegrepen", "Inclusief AVB-examen"] },
@@ -30,8 +31,8 @@ const SectionFirst = () => {
     return (
         <>
             <main>
-                <section className="container mx-auto pt-28 w-full">
-                    <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
+                <section className="container mx-auto pt-36 w-full">
+                    {/* <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
                         <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
                             <div className=" flex flex-col gap-y-4">
                                 <div className="text-xl font-semibold text-gray-700">Ontwikkel uw rijvaardigheid</div>
@@ -90,7 +91,82 @@ const SectionFirst = () => {
                                 <CarouselNext />
                             </Carousel>
                         </div>
-                    </article>
+                    </article> */}
+                    <p className='text-[50px] text-center text-gray-900 font-bold mb-10'>Begin vandaag nog uw reis met NoLimitBikers</p>
+                    <div className="flex flex-col lg:flex-row gap-8 justify-center">
+                        <Card className="w-[25vw] relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">
+                        <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
+                              MEGA DEAL
+                            </div>
+                            <CardHeader>
+                                <CardTitle className="text-gray-800 text-lg">AVB DAG CURSUS</CardTitle>
+                            </CardHeader>
+                            <CardContent className="text-center">
+                                <p className="text-4xl font-bold text-gray-800 mt-4">€699,00</p>
+                                <ul className="mt-4 space-y-2 text-gray-700 text-sm">
+                                    <li>12 uur rijles</li>
+                                    <li>Vaste instructeur</li>
+                                    <li>Nieuwe lesmotor</li>
+                                    <li>Leskaart &amp; Advies</li>
+                                </ul>
+                            </CardContent>
+                            <CardFooter>
+                                <PricingPopUpCard
+                                    Op1="AVB Pakket Silver"
+                                    Op2="AVB Pakket Gold "
+                                    Op3="AVB Pakket Platinum"
+                                />
+                            </CardFooter>
+                        </Card>
+
+                        <Card className="w-[25vw] relative flex flex-col items-center  bg-[#050B30] text-white transition-all duration-300 ease-in-out hover:scale-105">
+                            <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
+                              MEGA DEAL
+                            </div>
+                            <CardHeader>
+                                <CardTitle className="text-lg">AVB Pakket Gold </CardTitle>
+                            </CardHeader>
+                            <CardContent className="text-center">
+                                <p className="text-4xl font-bold mt-4">€999,00</p>
+                                <ul className="mt-4 space-y-2 text-sm text-gray-300">
+                                    <li>16 uur rijles</li>
+                                    <li>Vaste instructeur</li>
+                                    <li>Nieuwe lesmotor</li>
+                                    <li>Leskaart &amp; Advies</li>
+                                </ul>
+                            </CardContent>
+                            <CardFooter>
+                                <PricingPopUpCard
+                                    Op1="AVB Pakket Silver"
+                                    Op2="AVB Pakket Gold "
+                                    Op3="AVB Pakket Platinum" />
+                            </CardFooter>
+                        </Card>
+
+                        <Card className="w-[25vw] relative flex flex-col items-center  bg-green-100 transition-all duration-300 ease-in-out hover:scale-105">
+                        <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
+                              MEGA DEAL
+                            </div>
+                            <CardHeader>
+                                <CardTitle className="text-gray-800 text-lg">AVB Pakket Platinum</CardTitle>
+                            </CardHeader>
+                            <CardContent className="text-center">
+                                <p className="text-4xl font-bold text-gray-800 mt-4">€1299,00</p>
+                                <ul className="mt-4 space-y-2 text-gray-700 text-sm">
+                                    <li>20 uur rijles</li>
+                                    <li>Vaste instructeur</li>
+                                    <li>Nieuwe lesmotor</li>
+                                    <li>Leskaart &amp; Advies</li>
+                                </ul>
+                            </CardContent>
+                            <CardFooter>
+                                <PricingPopUpCard
+                                    Op1="AVB Pakket Silver"
+                                    Op2="AVB Pakket Gold "
+                                    Op3="AVB Pakket Platinum" />
+                            </CardFooter>
+                        </Card>
+                    </div>
                 </section>
             </main>
 

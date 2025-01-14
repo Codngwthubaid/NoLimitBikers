@@ -169,7 +169,7 @@ const PricingPopUpCard = (props) => {
                 </form>
                 <DialogFooter className="flex justify-between">
                     <DialogTrigger>
-                        <Button variant="outline">Annuleren </Button>
+                        <Button variant="outline">Annuleren</Button>
                     </DialogTrigger>
                     <Button
                         type="button"

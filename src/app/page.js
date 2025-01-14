@@ -64,8 +64,8 @@ export default function Home() {
         </script>
       </Head>
       <main>
-        {/* <SectionFirst />
-        <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div> */}
+        <SectionFirst />
+        <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
         <SectionThird />
         <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
         <SectionSecond />
