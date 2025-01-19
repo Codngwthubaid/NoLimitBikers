@@ -13,10 +13,10 @@ const Footer = () => {
                             <h2 className="mb-6 text-lg font-bold text-gray-700 uppercase dark:text-white ">Contact</h2>
                             <ul className="text-gray-500 dark:text-gray-400">
                                 <li className="mb-4">
-                                    <Link href="https://flowbite.com/" className="hover:text-green-400">06 14 38 20 99</Link>
+                                    <Link href="#" className="hover:text-green-400">06 14 38 20 99</Link>
                                 </li>
                                 <li>
-                                    <Link href="https://tailwindcss.com/" className="hover:text-green-400">Info@nolimitbikers.nl</Link>
+                                    <Link href="#" className="hover:text-green-400">Info@nolimitbikers.nl</Link>
                                 </li>
                             </ul>
                         </div>
@@ -24,10 +24,10 @@ const Footer = () => {
                             <h2 className="mb-6 text-lg font-bold text-gray-700 uppercase dark:text-white ">Volg ons</h2>
                             <ul className="text-gray-500 dark:text-gray-400">
                                 <li className="mb-4">
-                                    <Link href="https://github.com/themesberg/flowbite" className=" hover:text-green-400">Instagram</Link>
+                                    <Link href="#" className=" hover:text-green-400">Instagram</Link>
                                 </li>
                                 <li>
-                                    <Link href="https://discord.gg/4eeurUVvTy" className="hover:text-green-400">Facebook</Link>
+                                    <Link href="#" className="hover:text-green-400">Facebook</Link>
                                 </li>
                             </ul>
                         </div>

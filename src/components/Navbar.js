@@ -31,7 +31,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="hidden md:flex justify-between items-center">
+        <ul className="hidden lg:flex justify-between items-center">
           <li className="mr-8 p-1">
             <Link href="/" className="text-xl text-green-400 hover:font-semibold">Home</Link>
           </li>
@@ -48,7 +48,12 @@ const Navbar = () => {
             <Link href="/pages/contact" className="text-xl text-green-400 hover:font-semibold">Contact</Link>
           </li>
         </ul>
-        <div className="md:hidden flex justify-center" onClick={handleMobileMenu}>
+        <div className='hidden lg:block'>
+          <button className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md'>
+            <Link href="/pages/DirectTrialLesson">DIRECT PROEFLES</Link>
+          </button>
+        </div>
+        <div className="lg:hidden flex justify-center" onClick={handleMobileMenu}>
           <Sheet>
             <SheetTrigger>
               <svg xmlns="http://www.w3.org/2000/svg" fill='white' x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
@@ -75,6 +80,11 @@ const Navbar = () => {
                       <Link href="/pages/contact" className="text-xl text-gray-700 hover:font-semibold">Contact</Link>
                     </li>
                   </ul>
+                  <div>
+                    <button className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md'>
+                      <Link href="/pages/DirectTrialLesson">DIRECT PROEFLES</Link>
+                    </button>
+                  </div>
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>

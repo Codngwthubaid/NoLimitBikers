@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import MainLogo from "../../public/img/MainLogo.png"
 import BikeLogo from "../../public/img/BikeLogo.png"
 
 
