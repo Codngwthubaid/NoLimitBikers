@@ -50,7 +50,7 @@ const Navbar = () => {
         </ul>
         <div className='hidden lg:block'>
           <button className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md'>
-            <Link href="/pages/DirectTrialLesson">DIRECT PROEFLES</Link>
+            <Link href="/pages/triallesson">DIRECT PROEFLES</Link>
           </button>
         </div>
         <div className="lg:hidden flex justify-center" onClick={handleMobileMenu}>
@@ -82,7 +82,7 @@ const Navbar = () => {
                   </ul>
                   <div>
                     <button className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md'>
-                      <Link href="/pages/DirectTrialLesson">DIRECT PROEFLES</Link>
+                      <Link href="/pages/triallesson">DIRECT PROEFLES</Link>
                     </button>
                   </div>
                 </SheetDescription>
