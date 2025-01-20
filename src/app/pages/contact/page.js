@@ -25,7 +25,7 @@ const Page = () => {
               </div>
               <div className="h-[2px] w-11/12 bg-green-400 my-14"></div>
               <div className='flex flex-col items-center gap-y-10 justify-evenly'>
-                <div className='flex gap-10 justify-center items-center container mx-auto'>
+                <div className='flex flex-col md:flex-row gap-10 justify-center items-center container mx-auto'>
                   <div className="rounded-3xl py-10 gap-y-3 w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1] h-48">
                     <div className='text-2xl font-bold'>NoLimitBikers</div>
                     <div className='hover:text-green-400'>KVK 50463829</div>

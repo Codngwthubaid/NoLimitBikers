@@ -63,7 +63,7 @@ const Navbar = () => {
             <SheetContent>
               <SheetHeader>
                 <SheetDescription>
-                  <ul className='h-[100vh] flex flex-col justify-center border border-red-500'>
+                  <ul className='h-[100vh] flex flex-col justify-center items-center border border-red-500'>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
                       <Link href="/" className="text-xl text-gray-700 hover:font-semibold">Home</Link>
                     </li>
@@ -79,12 +79,13 @@ const Navbar = () => {
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
                       <Link href="/pages/contact" className="text-xl text-gray-700 hover:font-semibold">Contact</Link>
                     </li>
+                    <li>
+                      <button className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md'>
+                        <Link href="/pages/triallesson">DIRECT PROEFLES</Link>
+                      </button>
+                    </li>
                   </ul>
-                  <div>
-                    <button className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md'>
-                      <Link href="/pages/triallesson">DIRECT PROEFLES</Link>
-                    </button>
-                  </div>
+
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
