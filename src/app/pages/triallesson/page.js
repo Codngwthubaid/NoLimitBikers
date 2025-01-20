@@ -6,7 +6,7 @@ import { Loader2 } from 'lucide-react'
 import { Check } from 'lucide-react'
 import Loader from '@/components/Loader/Loader'
 
-const page = () => {
+const Page = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
@@ -252,4 +252,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

@@ -28,7 +28,6 @@ const Page = () => {
                 <div className='flex gap-10 justify-center items-center container mx-auto'>
                   <div className="rounded-3xl py-10 gap-y-3 w-[80vw] md:w-[30vw] border border-green-400 flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1] h-48">
                     <div className='text-2xl font-bold'>NoLimitBikers</div>
-                    {/* <div className='hover:text-green-400'>Rotterdam</div> */}
                     <div className='hover:text-green-400'>KVK 50463829</div>
                     <div className='hover:text-green-400'> BTW Nr. NL134561028B01</div>
                   </div>
@@ -46,7 +45,7 @@ const Page = () => {
             </div>
             <div className='flex flex-col gap-y-5 container mx-auto my-16'>
               <h4 className='text-3xl font-semibold text-gray-700'>Contact Driving School Speedway in Rotterdam</h4>
-              <div className='text-gray-700'>Welcome to Rijschool Speedway, your partner for affordable and high-quality driving lessons in Rotterdam. Our professional instructors are ready to guide you to your driver's license. Whether you are looking for car driving lessons, motorcycle driving lessons, or scooter driving lessons, you have come to the right place.
+              <div className='text-gray-700'>Welcome to Rijschool Speedway, your partner for affordable and high-quality driving lessons in Rotterdam. Our professional instructors are ready to guide you to your driver&apos;s license. Whether you are looking for car driving lessons, motorcycle driving lessons, or scooter driving lessons, you have come to the right place.
               </div>
               <div className='text-gray-700'>We understand that everyone has unique needs when it comes to driving lessons, which is why we offer flexible lesson times and tailor-made lesson packages. Contact us today via email, phone, or WhatsApp for more information or to book your first driving lesson.
               </div>
