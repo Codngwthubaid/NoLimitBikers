@@ -18,11 +18,11 @@ const SubSectionheadings = (props) => {
                         <Breadcrumb>
                             <BreadcrumbList>
                                 <BreadcrumbItem>
-                                    <BreadcrumbLink href="/" className="text-green-400 text-lg hover:text-green-400 hover:font-semibold hover:underline">{props.mainPage}</BreadcrumbLink>
+                                    <BreadcrumbLink href="/" className="text-gray-700 text-lg hover:font-semibold hover:underline">{props.mainPage}</BreadcrumbLink>
                                 </BreadcrumbItem>
                                 <BreadcrumbSeparator />
                                 <BreadcrumbItem>
-                                    <BreadcrumbPage className="text-green-400 font-medium text-lg">{props.currentPage}</BreadcrumbPage>
+                                    <BreadcrumbPage className="text-gray-700 font-medium text-lg">{props.currentPage}</BreadcrumbPage>
                                 </BreadcrumbItem>
                             </BreadcrumbList>
                         </Breadcrumb>

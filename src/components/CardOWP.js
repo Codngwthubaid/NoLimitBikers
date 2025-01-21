@@ -26,7 +26,7 @@ const CardOWP = () => {
 
                 <div className='flex flex-col text-center gap-y-2'>
                   <div className='text-xl font-bold'>🛒 Plan je lessen</div>
-                  <div>Boek je motorrijlessen eenvoudig online of neem contact op met ons team. Wij zorgen ervoor dat alles soepel verloopt, zodat jij snel van start kunt.</div>
+                  <div>Neem contact met ons op of vraag direct een proefles aan via onze website. Wij helpen je graag met het plannen van je lessen, zodat je zonder gedoe kunt beginnen aan jouw motorrijavontuur.</div>
                 </div>
               </div>
               <div className='border justify-center border-green-400 hover:bg-[#c1e1c1] rounded-xl p-2 flex flex-col gap-y-5 w-10/12  lg:w-[22vw]  h-60'>
