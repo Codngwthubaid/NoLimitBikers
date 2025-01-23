@@ -32,67 +32,7 @@ const SectionFirst = () => {
         <>
             <main>
                 <section className="container mx-auto pt-36 w-full">
-                    {/* <article className="flex justify-center items-center flex-col gap-y-5 lg:flex-row">
-                        <div className="flex flex-col justify-center items-center lg:items-start gap-y-12 lg:w-[50vw] w-[95vw]">
-                            <div className=" flex flex-col gap-y-4">
-                                <div className="text-xl font-semibold text-gray-700">Ontwikkel uw rijvaardigheid</div>
-                                <div className="text-3xl sm:text-5xl font-bold text-gray-700">Leer
-                                    <span className="rounded-xl bg-[#c1e1c1] text-white px-3 mx-2">rijden</span>
-                                </div>
-                                <div className="text-3xl sm:text-5xl font-bold text-gray-700">met vertrouwen</div>
-                                <div className="text-xl font-semibold text-gray-700">in Rotterdam e.o.</div>
-                            </div>
-                            <div>
-                                <Link href="/pages/courses">
-                                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">ONTDEK ONZE PAKKETTEN
-                                        <Image
-                                            src={rightArrowWhite}
-                                            width={18}
-                                            height={20}
-                                            alt="Picture of the author"
-                                        />
-                                    </button>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className='flex flex-col justify-center items-center'>
-                            <div className='relative top-[90px] z-10 text-white bg-red-500 rounded-[40px] font-semibold p-3'><span>MEGA DEAL</span></div>
-                            <Carousel className="w-[75vw] bg-white rounded-full lg:w-[30vw] mt-16">
-                                <CarouselContent>
-                                    {packages.map((pkg) => (
-                                        <CarouselItem key={pkg.id}>
-                                            <div className="p-1 rounded-2xl">
-                                                <Card className="flex flex-col items-center bg-white shadow-[0_10px_20px_rgba(193,_225,_193,_1)] m-1 rounded-[40px]">
-                                                    <CardHeader>
-                                                        <CardTitle className="text-gray-700 font-bold text-xl">{pkg.name}</CardTitle>
-                                                    </CardHeader>
-                                                    <CardContent className="text-center">
-                                                        <p className="text-4xl font-bold text-gray-800 mt-4">{pkg.price}</p>
-                                                        <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                                            {pkg.features.map((feature, index) => (
-                                                                <li key={index}>{feature}</li>
-                                                            ))}
-                                                        </ul>
-                                                    </CardContent>
-                                                    <CardFooter>
-                                                        <Button
-                                                            className="w-full bg-green-400"
-                                                            onClick={() => handleSubmit(pkg.id)}
-                                                        >
-                                                            {pkg.selectBtn}
-                                                        </Button>
-                                                    </CardFooter>
-                                                </Card>
-                                            </div>
-                                        </CarouselItem>
-                                    ))}
-                                </CarouselContent>
-                                <CarouselPrevious />
-                                <CarouselNext />
-                            </Carousel>
-                        </div>
-                    </article> */}
-                    <p className='text-3xl md:text-4xl lg:text-[50px] text-center text-gray-900 font-bold mb-10'>Begin vandaag nog uw reis met NoLimitBikers</p>
+                    <p className='text-3xl md:text-4xl text-center text-gray-900 font-bold mb-10'>Klaar om de weg op te gaan? Begin vandaag met NoLimitBikers</p>
                     <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                         <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">
                             <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
@@ -110,7 +50,10 @@ const SectionFirst = () => {
                                 </ul>
                             </CardContent>
                             <CardFooter>
-                                <PricingPopUpCard Op1="AVB DAG CURSUS" />
+                                <PricingPopUpCard
+                                    details="Wil je een motorrijles plannen? Neem vandaag nog contact met ons op via telefoon en zet de eerste stap naar zelfverzekerd motorrijden. We helpen je graag met het vinden van een tijdstip dat bij jou past!"
+                                    btnName="Selecteer deze cursus"
+                                    Op1="AVB DAG CURSUS" />
                             </CardFooter>
                         </Card>
 
@@ -119,18 +62,20 @@ const SectionFirst = () => {
                                 MEGA DEAL
                             </div>
                             <CardHeader>
-                                <CardTitle className=" text-lg">AVB herkansing</CardTitle>
+                                <CardTitle className=" text-lg">AVB HERKANSING</CardTitle>
                             </CardHeader>
                             <CardContent className="text-center">
                                 <p className="text-4xl font-bold  mt-4">€499</p>
                                 <ul className="mt-4 space-y-2  text-gray-300 text-sm">
-                                <li>Starttijd: 07:00 uur</li>
+                                    <li>Starttijd: 07:00 uur</li>
                                     <li>6 rijlessen</li>
                                     <li>Inclusief AVB-examen</li>
                                 </ul>
                             </CardContent>
                             <CardFooter>
                                 <PricingPopUpCard
+                                    details="Wil je een motorrijles plannen? Neem vandaag nog contact met ons op via telefoon en zet de eerste stap naar zelfverzekerd motorrijden. We helpen je graag met het vinden van een tijdstip dat bij jou past!"
+                                    btnName="Selecteer deze cursus"
                                     Op1="AVB herkansing" />
                             </CardFooter>
                         </Card>
@@ -153,7 +98,9 @@ const SectionFirst = () => {
                             </CardContent>
                             <CardFooter>
                                 <PricingPopUpCard
-                                    Op1="AVD DAG CURSUS"/>
+                                    details="Wil je een motorrijles plannen? Neem vandaag nog contact met ons op via telefoon en zet de eerste stap naar zelfverzekerd motorrijden. We helpen je graag met het vinden van een tijdstip dat bij jou past!"
+                                    btnName="Selecteer deze cursus"
+                                    Op1="AVD DAG CURSUS" />
                             </CardFooter>
 
                         </Card>

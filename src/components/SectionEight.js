@@ -16,7 +16,7 @@ const SectionEight = () => {
               <div className="flex justify-center items-center gap-x-3">
                 <div>
                   <Link href="pages/courses">
-                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">BOEK NU
+                    <button type="button" className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl">BOTTON
                       <Image
                         src={rightArrowWhite}
                         width={18}

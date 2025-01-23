@@ -4,7 +4,6 @@ import SectionSecond from "../components/SectionSecond";
 import SectionThird from "../components/SectionThird";
 import SectionFifth from "../components/SectionFifth";
 import SectionSixth from "../components/SectionSixth";
-import SectionSeventh from "../components/SectionSeventh";
 import SectionEight from "../components/SectionEight";
 import Head from "next/head";
 import { useEffect, useState } from "react";

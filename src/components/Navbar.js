@@ -64,19 +64,19 @@ const Navbar = () => {
               <SheetHeader>
                 <SheetDescription>
                   <ul className='h-[100vh] flex flex-col justify-center items-center border border-red-500'>
-                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '100ms' }}>
+                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
                       <Link href="/" className="text-xl text-gray-700 hover:font-semibold">Home</Link>
                     </li>
-                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '200ms' }}>
+                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
                       <Link href="/pages/about" className="text-xl text-gray-700 hover:font-semibold">Over ons</Link>
                     </li>
-                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
+                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
                       <Link href="/pages/courses" className="text-xl text-gray-700 hover:font-semibold">Pakketten</Link>
                     </li>
-                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
+                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
                       <Link href="/pages/pricing" className="text-xl text-gray-700 hover:font-semibold">Tarieven</Link>
                     </li>
-                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out" style={{ transitionDelay: '300ms' }}>
+                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
                       <Link href="/pages/contact" className="text-xl text-gray-700 hover:font-semibold">Contact</Link>
                     </li>
                     <li>

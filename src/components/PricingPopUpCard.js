@@ -119,13 +119,13 @@ const PricingPopUpCard = (props) => {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button className="text-white flex justify-center items-center gap-x-2 bg-green-400 p-4 rounded-xl" variant="outline"> Selecteer dit pakket</Button>
+                <Button className="text-white flex justify-center items-center gap-x-2 bg-green-400 p-4 rounded-xl" variant="outline"> {props.btnName}</Button>
             </DialogTrigger>
             <DialogContent className="bg-white sm:max-w-[425px]">
                 <DialogHeader>
                     <DialogTitle className="font-bold text-4xl text-gray-700">Plan je les</DialogTitle>
                     <DialogDescription className="text-black text-base">
-                    Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden.
+                    {props.details}
                     </DialogDescription>
                 </DialogHeader>
                 <form className="grid gap-4 py-4" onSubmit={handleSubmit}>

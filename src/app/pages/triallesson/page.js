@@ -18,112 +18,7 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 
-const Page = (props) => {
-    // const [name, setName] = useState('')
-    // const [email, setEmail] = useState('')
-    // const [message, setMessage] = useState('')
-    // const [errors, setErrors] = useState({
-    //     name: '',
-    //     email: '',
-    //     number: '',
-    //     course: ''
-    // })
-    // const [submitted, setSubmitted] = useState(false)
-    // const [isLoading, setIsLoading] = useState(false)
-
-    // const SubmitName = (e) => {
-    //     setName(e.target.value)
-    // }
-    // const SubmitEmail = (e) => {
-    //     setEmail(e.target.value)
-    // }
-    // const SubmitMessage = (e) => {
-    //     setMessage(e.target.value)
-    // }
-
-    // const validateForm = () => {
-    //     let isValid = true
-    //     const newErrors = {
-    //         name: '',
-    //         email: '',
-    //         message: ''
-    //     }
-
-    //     if (!name.trim()) {
-    //         newErrors.name = 'Please enter your name'
-    //         isValid = false
-    //     }
-
-    //     if (!email.trim()) {
-    //         newErrors.email = 'Please enter your email'
-    //         isValid = false
-    //     } else if (!/\S+@\S+\.\S+/.test(email)) {
-    //         newErrors.email = 'Please enter a valid email'
-    //         isValid = false
-    //     }
-
-    //     if (!message.trim()) {
-    //         newErrors.name = 'Please enter your name'
-    //         isValid = false
-    //     }
-
-    //     setErrors(newErrors)
-    //     return isValid
-    // }
-
-
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault()
-    //     if (!validateForm()) return
-    //     setIsLoading(true)
-    //     setSubmitted(false)
-
-    //     try {
-    //         const response = await axios.post('/api/contact', { name, email, message })
-    //         console.log(name, email, message);
-
-    //         if (response.data.success) {
-    //             setSubmitted(true)
-    //             setName('')
-    //             setEmail('')
-    //             setMessage('')
-    //         } else {
-    //             setErrors(prev => ({ ...prev, submit: 'Failed to send message. Please try again.' }))
-    //         }
-    //     } catch (error) {
-    //         console.error('Error submitting form:', error)
-    //         setErrors(prev => ({ ...prev, submit: 'An error occurred. Please try again later.' }))
-    //     } finally {
-    //         setIsLoading(false)
-    //     }
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-    // --------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const Page = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [number, setNumber] = useState("")
@@ -229,17 +124,11 @@ const Page = (props) => {
             {loader && <Loader />}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className="text-3xl font-bold text-gray-900 mb-4">
-                        Request a trial lesson
-                    </h1>
-                    <p className="text-gray-600 mb-6">
-                        That&apos;s arranged super fast. Request a trial lesson now and experience it yourself!
-                    </p>
-                    <p className="text-gray-600 mb-8">
-                        Fill in the form below and we will contact you as soon as possible.
-                    </p>
+                    <h1 className="text-3xl font-bold text-gray-900 mb-4">Vraag een proefles aan</h1>
+                    <p className="text-gray-600 mb-6">Dat is supersnel geregeld. Vraag nu een proefles aan en ervaar het zelf!</p>
+                    <p className="text-gray-600 mb-8">Vul het onderstaande formulier in en wij nemen zo snel mogelijk contact met je op.</p>
                     <div className="flex items-center mb-8">
-                        <span className="text-gray-600 mr-2">Rating is a 9.3 / 10</span>
+                        <span className="text-gray-600 mr-2">Beoordeling: 9,3 / 10</span>
                         {[...Array(5)].map((_, i) => (
                             <svg
                                 key={i}
@@ -254,72 +143,6 @@ const Page = (props) => {
                 </div>
                 <div className="grid md:grid-cols-2 gap-12">
                     <div>
-                        
-                        {/* <div className="bg-[#c1e1c1] flex flex-col w-full md:py-8 mt-8 md:mt-0 p-5 rounded-2xl">
-                            <h2 className="text-3xl mb-1 font-semibold title-font text-gray-700 text-center">Neem contact met ons op</h2>
-                            <p className="leading-relaxed mb-5 text-gray-700 text-center">
-                                Heb je vragen over onze motorrijlessen of wil je persoonlijk advies? Vul het formulier in, en we helpen je graag verder!
-                            </p>
-                            <div className="relative mb-4 text-gray-700">
-                                <label htmlFor="name" className="text-base font-semibold leading-7  text-gray-700">
-                                    Naam
-                                </label>
-                                <input
-                                    onChange={(e) => { setName(e.target.value) }}
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
-                                />
-                                {errors.name && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.name}</span></span>}
-                            </div>
-                            <div className="relative mb-4 text-gray-700">
-                                <label htmlFor="email" className="leading-7 text-base font-semibold text-gray-700">
-                                    E-mail
-                                </label>
-                                <input
-                                    onChange={(e) => { setEmail(e.target.value) }}
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
-                                />
-                            </div>
-                            {errors.email && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.email}</span></span>}
-                            <div className="relative mb-4 text-gray-700">
-                                <label htmlFor="message" className="leading-7 text-base font-semibold text-gray-700">
-                                    Bericht
-                                </label>
-                                <textarea
-                                    placeholder='Laat ons weten waarmee we je kunnen helpen'
-                                    onChange={(e) => { setMessage(e.target.value) }}
-                                    id="message"
-                                    name="message"
-                                    className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
-                                ></textarea>
-                                {errors.message && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.message}</span></span>}
-
-                            </div>
-
-                            <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We&apos;ll get back to you soon!</p>}
-                            </div>
-
-                            <button type="button"
-                                onClick={handleSubmit}
-                                disabled={isLoading}
-                                className="text-white flex justify-center items-end gap-x-2 bg-green-400 p-4 rounded-xl font-semibold text-lg hover:bg-green-500">
-                                {isLoading ? (
-                                    <>
-                                        <div className='flex justify-center items-center'>
-                                            <span><Loader2 className="mr-2 h-4 w-4 animate-spin" /></span>
-                                            <span>Submitting...</span>
-                                        </div>
-                                    </>
-                                ) : (
-                                    'Indienen'
-                                )}
-                            </button>
-                        </div> */}
                         <form className="grid gap-4 py-4" onSubmit={handleSubmit}>
                             <div className="flex flex-col space-y-1.5 items-start">
                                 <Input onChange={(e) => { setName(e.target.value) }} placeholder="Naam" id="name" className=" text-black col-span-3" />
@@ -340,10 +163,16 @@ const Page = (props) => {
                                     <SelectTrigger id="framework">
                                         <SelectValue />
                                     </SelectTrigger>
-                                    <SelectContent className="bg-[#c1e1c1] " position="popper">
-                                        <SelectItem className="cursor-pointer" id={props.Op1} value={props.Op1}>{props.Op1} </SelectItem>
-                                        <SelectItem className="cursor-pointer" id={props.Op2} value={props.Op2}>{props.Op2}</SelectItem>
-                                        <SelectItem className="cursor-pointer" id={props.Op3} value={props.Op3}>{props.Op3} </SelectItem>
+                                    <SelectContent position="popper">
+                                        <SelectItem className="cursor-pointer" value="AVB DAG CURSUS">AVB DAG CURSUS</SelectItem>
+                                        <SelectItem className="cursor-pointer" value="AVB HERKANSING">AVB HERKANSING</SelectItem>
+                                        <SelectItem className="cursor-pointer" value="AVB Pakket Silver">AVB Pakket Silver</SelectItem>
+                                        <SelectItem className="cursor-pointer" value="AVB Pakket Gold">AVB Pakket Gold</SelectItem>
+                                        <SelectItem className="cursor-pointer" value="AVB Pakket Platinum">AVB Pakket Platinum</SelectItem>
+                                        <SelectItem className="cursor-pointer" value="AVD DAG CURSUS">AVD DAG CURSUS</SelectItem>
+                                        <SelectItem className="cursor-pointer" value="AVD Pakket Silver">AVD Pakket Silver</SelectItem>
+                                        <SelectItem className="cursor-pointer" value="AVD Pakket Gold">AVD Pakket Gold</SelectItem>
+                                        <SelectItem className="cursor-pointer" value="AVD Pakket Platinum">AVD Pakket Platinum</SelectItem>
                                     </SelectContent>
                                 </Select>
                                 {errors.course && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.course}</span></span>}
@@ -394,15 +223,15 @@ const Page = (props) => {
                                         d="M5 13l4 4L19 7"
                                     />
                                 </svg>
-                                Our guarantees
+                                Onze garanties
                             </h2>
                             <ul className="space-y-3">
                                 {[
-                                    'Extensive experience',
-                                    'High success rate',
-                                    'Lessons in new vehicles',
-                                    'Most affordable in Rotterdam & surroundings',
-                                    'Register today = drive tomorrow'
+                                    "Uitgebreide ervaring",
+                                    "Hoog slagingspercentage",
+                                    "Lessen op nieuwe lesmotoren",
+                                    "Meest betaalbaar in Rotterdam en omgeving",
+                                    "Vandaag inschrijven = morgen rijden"
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-2">
                                         <Check className="w-5 h-5 text-green-500" />
@@ -414,24 +243,21 @@ const Page = (props) => {
                     </div>
                 </div>
                 <div className="mt-10 prose max-w-none">
-                    <h2 className="text-2xl font-bold mb-4 text-gray-900">
-                        Why a trial driving lesson at Speedway Driving School?
-                    </h2>
+                    <h2 className="text-2xl font-bold mb-4 text-gray-900">Waarom een proefles bij NoLimitBikers?</h2>
                     <p className="mb-4 text-gray-900">
-                        At Driving School Speedway we understand how important it is to get a good first impression of your driving school. That is why we offer a free trial lesson. During this lesson you will get to know our experienced instructors, the teaching vehicles, and our teaching methods. This will help you make a well-considered decision before you sign up for a full lesson package.
+                        Bij NoLimitBikers begrijpen we hoe belangrijk het is om een goede eerste indruk te krijgen van je motorrijschool. Daarom bieden wij een proefles aan, zodat je kunt kennismaken met onze ervaren instructeurs, onze lesmotoren en onze lesmethoden. Zo kun je een weloverwogen keuze maken voordat je je inschrijft voor een volledig lespakket.
                     </p>
                     <p className="mb-4 text-gray-900">
-                        Our trial lesson is specially designed to put you at ease and give you an idea of what to expect during your driving lessons. We ensure that you can take your first steps in driving with confidence.
+                        Onze proefles is speciaal ontworpen om jou op je gemak te stellen en een duidelijk beeld te geven van wat je kunt verwachten tijdens de motorrijlessen. We zorgen ervoor dat je vol vertrouwen je eerste stappen richting motorrijden zet.
                     </p>
-                    <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                        Benefits of a trial driving lesson at Speedway Driving School:
-                    </h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Voordelen van een proefles bij NoLimitBikers:</h3>
                     <ul className="list-disc pl-5 space-y-1 text-gray-900">
-                        <li>Free, no-obligation introduction</li>
-                        <li>Experienced and patient instructors</li>
-                        <li>Insight into our teaching methods and vehicles</li>
-                        <li>Direct feedback and a personal lesson plan</li>
+                        <li>Persoonlijke kennismaking zonder verplichtingen</li>
+                        <li>Ervaren en geduldige instructeurs</li>
+                        <li>Inzicht in onze lesmethoden en motoren</li>
+                        <li>Directe feedback en een persoonlijk lesplan</li>
                     </ul>
+                    <div className='text-base my-5 text-black'>Ontdek zelf waarom NoLimitBikers dé keuze is voor jouw motorrijopleiding!</div>
                 </div>
             </main>
         </>

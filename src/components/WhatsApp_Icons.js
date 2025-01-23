@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+
 const WhatsApp_Icons = () => {
     return (
         <div className='flex justify-center items-center gap-x-3 fixed bottom-7 right-2'>
             <div className='text-center text-gray-700 text-sm'>
-                <div>Question ?</div>
-                <div>Send me a message</div>
+                <div>Vraag?</div>
+                <div>Stuur ons een berichtje</div>
             </div>
             <Link href="https://wa.me/+310614382099" className="hover:text-blue-600 text-green-600 font-semibold">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">

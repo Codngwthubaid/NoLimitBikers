@@ -29,8 +29,8 @@ const Page = () => {
 
               <div className='flex flex-col justify-center items-center gap-y-2'>
                 <div className='text-2xl mt-5 font-semibold text-green-400'>Onze Toppakketten</div>
-                <div className='text-5xl font-bold text-center text-gray-700'>Kies het pakket wat bij jou past!</div>
-                <div className='mx-6 my-10'>
+                <div className='text-2xl font-bold text-center text-green-400'>Onze toppakketten - Kies het pakket wat bij jou past!</div>
+                <div className='container mx-6 my-10'>
                   <div className='text-2xl font-semibold text-gray-700'>Wat is het verschil tussen AVB en AVD?</div>
                   <div className='text-black text-lg py-4'>Als je je motorrijbewijs wilt halen, doorloop je twee belangrijke examens: AVB (Algemene Voertuigbeheersing) en AVD (Algemene Verkeersdeelname). Beide examens zijn essentieel, maar richten zich op verschillende vaardigheden.</div>
                   <div className='text-2xl font-semibold text-gray-700'>AVB: Algemene Voertuigbeheersing</div>
