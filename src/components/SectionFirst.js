@@ -53,7 +53,10 @@ const SectionFirst = () => {
                                 <PricingPopUpCard
                                     details="Wil je een motorrijles plannen? Neem vandaag nog contact met ons op via telefoon en zet de eerste stap naar zelfverzekerd motorrijden. We helpen je graag met het vinden van een tijdstip dat bij jou past!"
                                     btnName="Selecteer deze cursus"
-                                    Op1="AVB DAG CURSUS" />
+                                    Op1="AVB DAG CURSUS"
+                                    Op2="  "
+                                    Op3="  "
+                                />
                             </CardFooter>
                         </Card>
 
@@ -76,7 +79,11 @@ const SectionFirst = () => {
                                 <PricingPopUpCard
                                     details="Wil je een motorrijles plannen? Neem vandaag nog contact met ons op via telefoon en zet de eerste stap naar zelfverzekerd motorrijden. We helpen je graag met het vinden van een tijdstip dat bij jou past!"
                                     btnName="Selecteer deze cursus"
-                                    Op1="AVB herkansing" />
+                                    Op1="AVB herkansing"
+                                    Op2="  "
+                                    Op3="  "
+                                />
+
                             </CardFooter>
                         </Card>
 
@@ -100,7 +107,10 @@ const SectionFirst = () => {
                                 <PricingPopUpCard
                                     details="Wil je een motorrijles plannen? Neem vandaag nog contact met ons op via telefoon en zet de eerste stap naar zelfverzekerd motorrijden. We helpen je graag met het vinden van een tijdstip dat bij jou past!"
                                     btnName="Selecteer deze cursus"
-                                    Op1="AVD DAG CURSUS" />
+                                    Op1="AVD DAG CURSUS"
+                                    Op2="  "
+                                    Op3="  "
+                                />
                             </CardFooter>
 
                         </Card>

@@ -49,7 +49,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className='hidden lg:block'>
-          <button className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md'>
+          <button className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md hover:text-white trnsition duration-300 ease-in-out'>
             <Link href="/pages/triallesson">DIRECT PROEFLES</Link>
           </button>
         </div>
