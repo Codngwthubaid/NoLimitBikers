@@ -47,9 +47,6 @@ const Page = () => {
                         </h2>
                         <div className="flex flex-col lg:flex-row gap-8">
                             <Card className="flex flex-col items-center bg-white">
-                                <div className="relative -top-4 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
-                                    Aanbevolen
-                                </div>
                                 <CardHeader>
                                     <CardTitle className="text-gray-800 text-lg">AVB Pakket Silver</CardTitle>
                                 </CardHeader>
@@ -73,7 +70,7 @@ const Page = () => {
                             </Card>
 
                             <Card className="relative flex flex-col items-center  bg-[#050B30] text-white">
-                                <div className="relative -top-4 bg-green-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
+                                <div className="relative -top-4  bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
                                     Aanbevolen
                                 </div>
                                 <CardHeader>
@@ -99,9 +96,6 @@ const Page = () => {
                             </Card>
 
                             <Card className="flex flex-col items-center  bg-green-100">
-                                <div className="relative -top-4 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
-                                    Aanbevolen
-                                </div>
                                 <CardHeader>
                                     <CardTitle className="text-gray-800 text-lg">AVB Pakket Platinum</CardTitle>
                                 </CardHeader>
@@ -132,9 +126,6 @@ const Page = () => {
                         </h2>
                         <div className="flex flex-col lg:flex-row gap-8">
                             <Card className="flex flex-col items-center  bg-white">
-                                <div className="relative -top-4 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
-                                    Aanbevolen
-                                </div>
                                 <CardHeader>
                                     <CardTitle className="text-gray-800 text-lg">AVD Pakket Silver</CardTitle>
                                 </CardHeader>
@@ -158,7 +149,7 @@ const Page = () => {
                             </Card>
 
                             <Card className="relative flex flex-col items-center  bg-[#050B30] text-white">
-                                <div className="relative -top-4 bg-green-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
+                                <div className="relative -top-4  bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
                                     Aanbevolen
                                 </div>
                                 <CardHeader>
@@ -184,9 +175,6 @@ const Page = () => {
                             </Card>
 
                             <Card className="flex flex-col items-center  bg-green-100">
-                                <div className="relative -top-4 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
-                                    Aanbevolen
-                                </div>
                                 <CardHeader>
                                     <CardTitle className="text-gray-800 text-lg">AVD Pakket Platinum</CardTitle>
                                 </CardHeader>
