@@ -200,7 +200,7 @@ const Page = () => {
                                         versturen...
                                     </>
                                 ) : (
-                                    'PLAN MY TRIAL LESSON'
+                                    'Plan mijn proefles'
                                 )}
                             </Button>
                         </form>
