@@ -73,7 +73,7 @@ const Page = () => {
                                 <div className="relative -top-4  bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
                                     Aanbevolen
                                 </div>
-                                <CardHeader>
+                                <CardHeader className="pt-1 pb-4">
                                     <CardTitle className="text-lg">AVB Pakket Gold </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
@@ -152,7 +152,7 @@ const Page = () => {
                                 <div className="relative -top-4  bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
                                     Aanbevolen
                                 </div>
-                                <CardHeader>
+                                <CardHeader className="pt-1 pb-4">
                                     <CardTitle className="text-lg">AVD Pakket Gold </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
