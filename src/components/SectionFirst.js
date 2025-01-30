@@ -32,7 +32,8 @@ const SectionFirst = () => {
         <>
             <main>
                 <section className="container mx-auto pt-36 w-full">
-                    <p className='text-3xl md:text-4xl text-center text-gray-900 font-bold mb-10'>Klaar om de weg op te gaan? Begin vandaag met NoLimitBikers</p>
+                    <p className='text-3xl md:text-4xl text-center text-gray-900 font-bold'>Klaar om de weg op te gaan? Begin vandaag met NoLimitBikers!</p>
+                    <div className='mt-5 rounded-lg mb-10 h-2 mx-auto bg-pink-600'></div>
                     <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                         <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">
                             <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
@@ -51,7 +52,7 @@ const SectionFirst = () => {
                             </CardContent>
                             <CardFooter>
                                 <PricingPopUpCard
-                                    details="Wil je een motorrijles plannen? Neem vandaag nog contact met ons op via telefoon en zet de eerste stap naar zelfverzekerd motorrijden. We helpen je graag met het vinden van een tijdstip dat bij jou past!"
+                                    details="Wil je een motorrijles plannen? Neem vandaag nog contact met ons op via telefoon of onderstaand formulier en zet de eerste stap naar zelfverzekerd motorrijden. We helpen je graag met het vinden van een tijdstip dat bij jou past!"
                                     btnName="Selecteer deze cursus"
                                     Op1="AVB DAG CURSUS"
                                     Op2="  "

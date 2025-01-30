@@ -158,7 +158,7 @@ const Page = () => {
                                 {errors.number && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.number}</span></span>}
                             </div>
                             <div className="flex flex-col space-y-1.5 items-start">
-                                <Label htmlFor="framework" className="text-base text-green-400">Selecteer je cursus</Label>
+                                {/* <Label htmlFor="framework" className="text-base text-green-400">Selecteer je cursus</Label> */}
                                 <Select onValueChange={handleCourseChange}>
                                     <SelectTrigger id="framework">
                                         <SelectValue />
