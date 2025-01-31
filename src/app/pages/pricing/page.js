@@ -202,7 +202,7 @@ const Page = () => {
 
                 <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
 
-                <div className='my-12 text-5xl font-bold text-center text-gray-700'>Losse lessen en examen prijzen</div>
+                <div className='my-12 text-3xl lg:text-5xl font-bold text-center text-gray-700'>Losse lessen en examen prijzen</div>
 
                 <div className="container mx-auto px-4 py-8">
                     <div className="grid md:grid-cols-2 gap-8">

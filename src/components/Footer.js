@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className=" bg-white mt-10">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex justify-between">
-                    <div className="grid grid-cols-2 gap-8 sm:gap-6">
+                    <div className="flex justify-around sm:justify-start gap-x-10">
                         <div>
                             <h2 className="mb-6 text-lg font-bold text-gray-700 uppercase dark:text-white ">Contact</h2>
                             <ul className="text-gray-500 dark:text-gray-400">
@@ -16,7 +16,7 @@ const Footer = () => {
                                     <Link href="#" className="hover:text-green-400">📞 06 14 38 20 99</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-green-400">📩 Info@nolimitbikers.nl</Link>
+                                    <Link href="#" className=" hover:text-green-400">📩 Info@nolimitbikers.nl</Link>
                                 </li>
                             </ul>
                         </div>

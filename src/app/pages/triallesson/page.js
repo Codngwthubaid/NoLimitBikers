@@ -157,26 +157,7 @@ const Page = () => {
                                 <Input onChange={(e) => { setNumber(e.target.value) }} placeholder="Telefoonnummer" id="number" className=" text-black col-span-3" />
                                 {errors.number && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.number}</span></span>}
                             </div>
-                            <div className="flex flex-col space-y-1.5 items-start">
-                                {/* <Label htmlFor="framework" className="text-base text-green-400">Selecteer je cursus</Label> */}
-                                <Select onValueChange={handleCourseChange}>
-                                    <SelectTrigger id="framework">
-                                        <SelectValue />
-                                    </SelectTrigger>
-                                    <SelectContent position="popper">
-                                        <SelectItem className="cursor-pointer" value="AVB DAG CURSUS">AVB DAG CURSUS</SelectItem>
-                                        <SelectItem className="cursor-pointer" value="AVB HERKANSING">AVB HERKANSING</SelectItem>
-                                        <SelectItem className="cursor-pointer" value="AVB Pakket Silver">AVB Pakket Silver</SelectItem>
-                                        <SelectItem className="cursor-pointer" value="AVB Pakket Gold">AVB Pakket Gold</SelectItem>
-                                        <SelectItem className="cursor-pointer" value="AVB Pakket Platinum">AVB Pakket Platinum</SelectItem>
-                                        <SelectItem className="cursor-pointer" value="AVD DAG CURSUS">AVD DAG CURSUS</SelectItem>
-                                        <SelectItem className="cursor-pointer" value="AVD Pakket Silver">AVD Pakket Silver</SelectItem>
-                                        <SelectItem className="cursor-pointer" value="AVD Pakket Gold">AVD Pakket Gold</SelectItem>
-                                        <SelectItem className="cursor-pointer" value="AVD Pakket Platinum">AVD Pakket Platinum</SelectItem>
-                                    </SelectContent>
-                                </Select>
-                                {errors.course && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.course}</span></span>}
-                            </div>
+                          
                             <div>
                                 <Link href="https://wa.me/+310614382099" className="hover:text-blue-600 text-green-600 font-semibold">
                                     <div className="flex">

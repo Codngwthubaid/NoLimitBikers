@@ -32,8 +32,7 @@ const SectionFirst = () => {
         <>
             <main>
                 <section className="container mx-auto pt-36 w-full">
-                    <p className='text-3xl md:text-4xl text-center text-gray-900 font-bold'>Klaar om de weg op te gaan? Begin vandaag met NoLimitBikers!</p>
-                    <div className='mt-5 rounded-lg mb-10 h-2 mx-auto bg-pink-600'></div>
+                    <p className='text-3xl mb-16 md:text-4xl text-center text-gray-900 font-bold'>Klaar om de weg op te gaan? Begin vandaag met NoLimitBikers!</p>
                     <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                         <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">
                             <div className="absolute -top-4 bg-red-500 text-white text-base px-4 py-1 rounded-full font-semibold">
