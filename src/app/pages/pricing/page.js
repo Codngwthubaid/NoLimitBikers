@@ -18,14 +18,13 @@ const Page = () => {
 
 
     const drivingLessons = [
-        { name: "Proefles (50 min)", price: "€ 70,00" },
+        { name: "Proefles (100 min)", price: "€ 100,00" },
         { name: "Losse motorrijles (50 min)", price: "€55,00" }
     ]
 
     const examFees = [
         { name: "CBR AVB Praktijk examen  ", price: "€ 215,00" },
         { name: "CBR AVD Praktijk examen ", price: "€ 279,00" },
-        { name: "CBR A no Naderonderzoek examen ", price: "€ 289,00" },
     ]
 
 
@@ -51,9 +50,9 @@ const Page = () => {
                                     <CardTitle className="text-gray-800 text-lg">AVB Pakket Silver</CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-4xl font-bold text-gray-800 mt-4">€749,00</p>
+                                    <p className="text-4xl font-bold text-gray-800 mt-4">€750</p>
                                     <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                        <li>12 uur rijles</li>
+                                        <li>12 uur rijlesuren van 50 min + AVB examen</li>
                                         <li>Vaste instructeur</li>
                                         <li>Nieuwe lesmotor</li>
                                         <li>Leskaart &amp; Advies</li>
@@ -77,9 +76,9 @@ const Page = () => {
                                     <CardTitle className="text-lg">AVB Pakket Gold </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-4xl font-bold mt-4">€999,00</p>
+                                    <p className="text-4xl font-bold mt-4">€1050</p>
                                     <ul className="mt-4 space-y-2 text-sm text-gray-300">
-                                        <li>16 uur rijles</li>
+                                        <li>16 uur rijlesuren van 50 min + AVB examen </li>
                                         <li>Vaste instructeur</li>
                                         <li>Nieuwe lesmotor</li>
                                         <li>Leskaart &amp; Advies</li>
@@ -100,9 +99,9 @@ const Page = () => {
                                     <CardTitle className="text-gray-800 text-lg">AVB Pakket Platinum</CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-4xl font-bold text-gray-800 mt-4">€1299,00</p>
+                                    <p className="text-4xl font-bold text-gray-800 mt-4">€1300</p>
                                     <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                        <li>20 uur rijles</li>
+                                        <li>20 uur rijlesuren van 50 min + AVB examen </li>
                                         <li>Vaste instructeur</li>
                                         <li>Nieuwe lesmotor</li>
                                         <li>Leskaart &amp; Advies</li>
@@ -130,9 +129,9 @@ const Page = () => {
                                     <CardTitle className="text-gray-800 text-lg">AVD Pakket Silver</CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-4xl font-bold text-gray-800 mt-4">€799,00</p>
+                                    <p className="text-4xl font-bold text-gray-800 mt-4">€810</p>
                                     <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                        <li>12 uur rijles</li>
+                                        <li>12 uur rijlesuren van 50 min + AVD examen </li>
                                         <li>Vaste instructeur</li>
                                         <li>Nieuwe lesmotor</li>
                                         <li>Leskaart &amp; Advies</li>
@@ -156,9 +155,9 @@ const Page = () => {
                                     <CardTitle className="text-lg">AVD Pakket Gold </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-4xl font-bold mt-4">€1199,00</p>
+                                    <p className="text-4xl font-bold mt-4">€1099</p>
                                     <ul className="mt-4 space-y-2 text-sm text-gray-300">
-                                        <li>18 uur rijles</li>
+                                        <li>16 uur rijlesuren van 50 min + AVD examen </li>
                                         <li>Vaste instructeur</li>
                                         <li>Nieuwe lesmotor</li>
                                         <li>Leskaart &amp; Advies</li>
@@ -179,9 +178,9 @@ const Page = () => {
                                     <CardTitle className="text-gray-800 text-lg">AVD Pakket Platinum</CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-4xl font-bold text-gray-800 mt-4">€1299,00</p>
+                                    <p className="text-4xl font-bold text-gray-800 mt-4">€1350</p>
                                     <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                        <li>20 uur rijles</li>
+                                        <li>20 uur rijlesuren van 50 min + AVD examen </li>
                                         <li>Vaste instructeur</li>
                                         <li>Nieuwe lesmotor</li>
                                         <li>Leskaart &amp; Advies</li>
@@ -233,6 +232,13 @@ const Page = () => {
                                     </div>
                                 ))}
                             </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="mt-12 text-3xl font-bold text-gray-700">Annuleringsbeleid dagcursus en examen</div>
+                        <div className="mt-5 text-black">
+                        Wanneer u niet op komt dagen voor uw geplande dagcursus en examen, bent u het volledige bedrag verschuldigd aan de rijschool. Annulering is uitsluitend mogelijk in geval van ziekte of overlijden. In dergelijke situaties vragen wij om een geldig bewijs, zoals een doktersverklaring.
+                        Indien de factuur niet tijdig wordt voldaan, zal deze worden overgedragen aan een incassobureau.
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,6 @@ import Card from './Card'
 
 const SectionSecond = () => {
   return (
-    <>
       <main>
         <section className="container mx-auto">
           <article>
@@ -26,8 +25,6 @@ const SectionSecond = () => {
           </article>
         </section>
       </main>
-
-    </>
   )
 }
 

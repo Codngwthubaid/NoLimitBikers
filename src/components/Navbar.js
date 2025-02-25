@@ -42,6 +42,9 @@ const Navbar = () => {
             <Link href="/pages/courses" className="text-xl text-green-400 hover:font-semibold">Pakketten</Link>
           </li>
           <li className="mr-8 p-1">
+            <Link href="/pages/exams" className="text-xl text-green-400 hover:font-semibold">Examens</Link>
+          </li>
+          <li className="mr-8 p-1">
             <Link href="/pages/pricing" className="text-xl text-green-400 hover:font-semibold">Tarieven</Link>
           </li>
           <li className="mr-8 p-1">
@@ -72,6 +75,9 @@ const Navbar = () => {
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
                       <Link href="/pages/courses" className="text-xl text-gray-700 hover:font-semibold">Pakketten</Link>
+                    </li>
+                    <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
+                    <Link href="/pages/exams" className="text-xl text-gray-700 hover:font-semibold">Examens</Link>
                     </li>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
                       <Link href="/pages/pricing" className="text-xl text-gray-700 hover:font-semibold">Tarieven</Link>

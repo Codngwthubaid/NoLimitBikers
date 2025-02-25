@@ -2,11 +2,11 @@
 import React, { useState, useEffect } from 'react'
 import SubSectionheadings from '@/components/SubSectionheadings'
 import Image from 'next/image';
-import G8 from "@/public/Gallery/G8.jpg"
-import G9 from "@/public/Gallery/G9.jpg"
-import G10 from "@/public/Gallery/G10.jpg"
-import PricingPopUpCard from '@/components/PricingPopUpCard';
 import Loader from '@/components/Loader/Loader'
+import nlb1 from '@/public/Gallery/nlb1.webp'
+import nlb2 from '@/public/Gallery/nlb2.webp'
+import nlb3 from '@/public/Gallery/nlb3.webp'
+
 
 const Page = () => {
 
@@ -56,7 +56,7 @@ const Page = () => {
                             <Image
                               alt="content"
                               className="object-cover object-center h-full w-full"
-                              src={G8}
+                              src={nlb1}
                               width={1203}
                               height={503}
                             />
@@ -73,7 +73,7 @@ const Page = () => {
                             <Image
                               alt="content"
                               className="object-cover object-center h-full w-full"
-                              src={G9}
+                              src={nlb2}
                               width={1204}
                               height={504}
                             />
@@ -90,7 +90,7 @@ const Page = () => {
                             <Image
                               alt="content"
                               className="object-cover object-center h-full w-full"
-                              src={G10}
+                              src={nlb3}
                               width={1205}
                               height={505}
                             />
@@ -116,7 +116,7 @@ const Page = () => {
                             <Image
                               alt="content"
                               className="object-cover object-center h-full w-full"
-                              src={G8}
+                              src={nlb1}
                               width={1203}
                               height={503}
                             />
@@ -133,7 +133,7 @@ const Page = () => {
                             <Image
                               alt="content"
                               className="object-cover object-center h-full w-full"
-                              src={G9}
+                              src={nlb2}
                               width={1204}
                               height={504}
                             />
@@ -150,7 +150,7 @@ const Page = () => {
                             <Image
                               alt="content"
                               className="object-cover object-center h-full w-full"
-                              src={G10}
+                              src={nlb3}
                               width={1205}
                               height={505}
                             />

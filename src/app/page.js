@@ -8,6 +8,7 @@ import SectionEight from "../components/SectionEight";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Loader from '@/components/Loader/Loader'
+import SectionFourth from "@/components/SectionFourth";
 
 export default function Home() {
 
@@ -64,6 +65,8 @@ export default function Home() {
         <SectionFirst />
         <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
         <SectionThird />
+        <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
+        <SectionFourth />
         <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
         <SectionSecond />
         <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
