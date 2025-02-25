@@ -1,7 +1,7 @@
 "use client"
 import React, { useState , useEffect} from 'react'
 import SectionThird from '@/components/SectionThird'
-import G8 from "@/public/Gallery/G8.jpg"
+import nlb1 from "@/public/Gallery/nlb1.jpg"
 import Link from 'next/link'
 import Image from 'next/image'
 import SubSectionheadings from '@/components/SubSectionheadings'
@@ -52,7 +52,7 @@ const Page = () => {
               <div className='px-10 lg:w-[45vw]'>
                 <div>
                   <Image
-                    src={G8}
+                    src={nlb1}
                     className='rounded-full'
                     alt="Picture of the author"
                   />
