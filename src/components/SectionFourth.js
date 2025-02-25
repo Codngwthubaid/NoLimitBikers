@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Image1 from '../public/Gallery/Image1.png'
-import Image2 from '../public/Gallery/Image2.png'
+import Image1 from '../public/Gallery/Image1.jpg'
+import Image2 from '../public/Gallery/Image2.jpg'
 
 
 const SectionFourth = () => {
