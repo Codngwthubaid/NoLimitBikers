@@ -1,7 +1,7 @@
 "use client"
 import React, { useState , useEffect} from 'react'
 import SectionThird from '@/components/SectionThird'
-import nlb1 from "@/public/Gallery/nlb1.jpg"
+import nlb1 from "@/public/Gallery/nlb1.webp"
 import Link from 'next/link'
 import Image from 'next/image'
 import SubSectionheadings from '@/components/SubSectionheadings'
