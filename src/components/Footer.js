@@ -29,12 +29,6 @@ const Footer = () => {
                                         <div>Instagram</div>
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="#" className="flex gap-x-1 items-center hover:text-green-400">
-                                    <img width="24" height="24" src="https://img.icons8.com/color/48/facebook-circled--v1.png" alt="facebook-circled--v1"/>
-                                    <div>Facebook</div>
-                                    </Link>
-                                </li>
                             </ul>
                         </div>
                     </div>
