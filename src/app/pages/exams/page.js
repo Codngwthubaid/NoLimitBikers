@@ -47,7 +47,7 @@ const Page = () => {
                                 <dd>➡️ Werkschoenen die minimaal S3-gecertificeerd zijn</dd>
                                 <dd>➡️ Motorsneakers met goedkeuring</dd>
                             </dl>
-                            <div className='text-green-500 my-10'>Als je niet de juiste schoenen draagt, word je niet toegelaten tot het examen.</div>
+                            <div className='text-green-500 my-10'>🔹Als je niet de juiste schoenen draagt, word je niet toegelaten tot het examen.</div>
                         </div>
 
                     </div>
