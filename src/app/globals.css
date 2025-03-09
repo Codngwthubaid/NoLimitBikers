@@ -7,6 +7,7 @@ body{
   color: rgb(169, 149, 149);
   --tw-bg-opacity: 1;
     background-color: white
+    
 }
 
 .zoom { transition: transform 0.9s ease-in-out; } 

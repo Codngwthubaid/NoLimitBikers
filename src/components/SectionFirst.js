@@ -2,13 +2,13 @@
 import React from 'react'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
-
+import HeroImage from "@/public/hero-section.jpg"
 
 const SectionFirst = () => {
     return (
         <>
             <main>
-                <section className="container mx-auto pt-36 w-full">
+                <section className="container mx-auto pt-36 w-full bg-cover bg-center" style={{ backgroundImage: `url(${HeroImage.src})` }}>
                     <p className='text-3xl mb-16 md:text-4xl text-center text-gray-900 font-bold'>Klaar om de weg op te gaan? Begin vandaag met NoLimitBikers!</p>
                     <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                         <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">
