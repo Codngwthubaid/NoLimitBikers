@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsApp_Icons from "@/components/WhatsApp_Icons";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +30,8 @@ export default function RootLayout({ children }) {
       >
         <Navbar/>
         {children}
+        <Analytics/>
+        <SpeedInsights />
         <WhatsApp_Icons/>
         <Footer/>
       </body>
