@@ -63,7 +63,7 @@ const Page = () => {
                                 <dd>➡️ Schoenen: Enkelbedekkend en gemaakt van slijtvast materiaal.</dd>
                             </dl>
 
-                            <div className='text-green-500 my-10'>🔹 Tip: Draag kleding met reflecterende elementen voor extra zichtbaarheid en overweeg gehoorbescherming..</div>
+                            <div className='text-green-500 my-10'>🔹 Tip: Draag kleding met reflecterende elementen voor extra zichtbaarheid en overweeg gehoorbescherming.</div>
                         </div>
                         <div className='md:w-[45%]'>
                             <div className='text-2xl font-bold text-gray-700 my-6'>Hoe verloopt het AVB-examen?</div>
@@ -73,10 +73,10 @@ const Page = () => {
                                 <dd>➡️ In de lessen leer je 12 oefeningen om goed voorbereid te zijn.</dd>
                                 <dd>➡️ De oefeningen zijn verdeeld over 4 categorieën:</dd>
                                 <div className='ml-5'>
-                                    <dd>➡️ remmun (2 oefeningen op examen)</dd>
-                                    <dd>➡️ Snelle oefeningen (2 oefeningen op examen)</dd>
-                                    <dd>➡️ Langzame oefeningen (2 oefeningen op examen)</dd>
-                                    <dd>➡️ Parkeren (1 oefeningen op examen)</dd>
+                                    <dd>🔵 Remmen (2 oefeningen op examen)</dd>
+                                    <dd>🔵 Snelle oefeningen (2 oefeningen op examen)</dd>
+                                    <dd>🔵 Langzame oefeningen (2 oefeningen op examen)</dd>
+                                    <dd>🔵 Parkeren (1 oefening op examen)</dd>
                                 </div>
 
                             </dl>
