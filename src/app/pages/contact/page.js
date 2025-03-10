@@ -28,7 +28,7 @@ const Page = () => {
                 <div className='flex flex-col md:flex-row gap-10 justify-center items-center container mx-auto'>
                   <div className="rounded-3xl py-10 gap-y-3 w-[80vw] md:w-[30vw] flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1] h-48 shadow-lg">
                     <div className='text-2xl font-bold text-center'>NoLimitBikers</div>
-                    <div className='text-xl font-bold text-center'>(Onderdeel van Rijschool Speedway)</div>
+                    <div className='text-xl text-center'>(Onderdeel van Rijschool Speedway)</div>
                     <div className='hover:text-green-400 text-xl font-semibold'>KVK 50463829</div>
                     <div className='hover:text-green-400 text-xl font-semibold'> BTW Nr. NL134561028B01</div>
                   </div>

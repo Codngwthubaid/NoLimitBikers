@@ -72,15 +72,17 @@ const Page = () => {
                                 <dd>➡️ Tijdens het examen doe je 7 oefeningen.</dd>
                                 <dd>➡️ In de lessen leer je 12 oefeningen om goed voorbereid te zijn.</dd>
                                 <dd>➡️ De oefeningen zijn verdeeld over 4 categorieën:</dd>
-                                <dd>➡️ remmun (2 oefeningen op examen)</dd>
-                                <dd>➡️ Snelle oefeningen (2 oefeningen op examen)</dd>
-                                <dd>➡️ Langzame oefeningen (2 oefeningen op examen)</dd>
-                                <dd>➡️ Parkeren (1 oefeningen op examen)</dd>
+                                <div className='ml-5'>
+                                    <dd>➡️ remmun (2 oefeningen op examen)</dd>
+                                    <dd>➡️ Snelle oefeningen (2 oefeningen op examen)</dd>
+                                    <dd>➡️ Langzame oefeningen (2 oefeningen op examen)</dd>
+                                    <dd>➡️ Parkeren (1 oefeningen op examen)</dd>
+                                </div>
 
                             </dl>
                             <div className='text-green-500 my-10'>
                                 <div>
-                                    Je mag 2 onvoldoendes halen, maar niet binnen dezelfde categorie. Als je bijvoorbeeld 2 onvoldoende scores hebt bij de snelle oefeningen, zak je.
+                                    🔹 Je mag 2 onvoldoendes halen, maar niet binnen dezelfde categorie. Als je bijvoorbeeld 2 onvoldoende scores hebt bij de snelle oefeningen, zak je.
                                 </div>
                                 <div>
                                     📌 Elke oefening mag je één keer herkansen. Als je de herkansing goed uitvoert, wordt de oefening alsnog als voldoende beoordeeld.
@@ -107,7 +109,7 @@ const Page = () => {
                                 <dd>🏍️ A1 (Lichte Motor) - Max 125 CC, Max. 11kW</dd>
                                 <dd>🏍️ A2 (Middelware Motor) - Max. 35kW</dd>
                                 <dd>
-                                🏍️ A (Zware Motor) - onbeperkt vermogen
+                                    🏍️ A (Zware Motor) - onbeperkt vermogen
                                 </dd>
                             </dl>
                         </div>

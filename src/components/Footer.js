@@ -24,7 +24,7 @@ const Footer = () => {
                             <h2 className="mb-6 text-lg font-bold text-gray-700 uppercase dark:text-white ">Volg ons</h2>
                             <ul className="text-gray-500 dark:text-gray-400">
                                 <li className="mb-4">
-                                    <Link href="#" className="flex gap-x-1 items-center hover:text-green-400">
+                                    <Link href="https://www.instagram.com/nolimitbikers_010/" className="flex gap-x-1 items-center hover:text-green-400">
                                         <img width="24" height="24" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1" />
                                         <div>Instagram</div>
                                     </Link>
