@@ -7,7 +7,7 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import HeroImage from "@/public/hero-section.jpg"
+import HeroImage from "@/public/hero-section.png"
 
 const SubSectionheadings = (props) => {
     return (
