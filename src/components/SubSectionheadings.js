@@ -6,23 +6,27 @@ import {
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator,
-  } from "@/components/ui/breadcrumb"
+} from "@/components/ui/breadcrumb"
+import HeroImage from "@/public/hero-section.jpg"
 
 const SubSectionheadings = (props) => {
     return (
         <>
             <main>
-                <div className='bg-[#c1e1c1] py-10 h-[50vh] gap-y-5 flex flex-col justify-center items-center text-green-400'>
-                    <div className='text-5xl font-bold text-black'>{props.Head}</div>
+                <div className='py-10 h-[90vh] gap-y-5 flex flex-col justify-center items-center bg-cover bg-center' style={{
+                    backgroundImage: `url(${HeroImage.src})`,
+                    filter: 'grayscale(100%)',
+                }}>
+                    <div className='text-5xl font-bold text-green-500'>{props.Head}</div>
                     <div>
                         <Breadcrumb>
                             <BreadcrumbList>
                                 <BreadcrumbItem>
-                                    <BreadcrumbLink href="/" className="text-gray-700 text-lg hover:font-semibold hover:underline">{props.mainPage}</BreadcrumbLink>
+                                    <BreadcrumbLink href="/" className="text-white text-lg hover:font-semibold hover:underline">{props.mainPage}</BreadcrumbLink>
                                 </BreadcrumbItem>
                                 <BreadcrumbSeparator />
                                 <BreadcrumbItem>
-                                    <BreadcrumbPage className="text-gray-700 font-medium text-lg">{props.currentPage}</BreadcrumbPage>
+                                    <BreadcrumbPage className="text-white font-medium text-lg">{props.currentPage}</BreadcrumbPage>
                                 </BreadcrumbItem>
                             </BreadcrumbList>
                         </Breadcrumb>
