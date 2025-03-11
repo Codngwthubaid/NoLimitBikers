@@ -97,7 +97,7 @@ const Page = () => {
                             <dl>
                                 <dt className='text-xl text-gray-700 font-semibold'>Het AVD (Verkeersdeelname) examen test of je veilig en zelfstandig kunt deelnemen aan het verkeer.</dt>
                                 <dd>➡️ Je rijdt ongeveer 35 minuten onder begeleiding van een examinator.</dd>
-                                <dd>➡️ De examinator beoordeelt of je inzichtelijk, vlot en veilig rijdt</dd>
+                                <dd>➡️ De examinator beoordeelt of je inzichtelijk, vlot en veilig rijdt.</dd>
                                 <dd>➡️ Tijdens de rit krijg je een stop-and-go opdracht.</dd>
                                 <dd>➡️ Na afloop hoor je direct of je geslaagd bent.</dd>
                             </dl>
@@ -107,7 +107,7 @@ const Page = () => {
                             <dl>
                                 <dt className='text-xl text-gray-700 font-semibold'>Het motorrijbewijs is opgedeeld in drie categorieen:</dt>
                                 <dd>🏍️ A1 (Lichte Motor) - Max 125 CC, Max. 11kW</dd>
-                                <dd>🏍️ A2 (Middelware Motor) - Max. 35kW</dd>
+                                <dd>🏍️ A2 (Middwlzware Motor) - Max. 35kW</dd>
                                 <dd>
                                     🏍️ A (Zware Motor) - onbeperkt vermogen
                                 </dd>

@@ -11,7 +11,7 @@ const SectionFourth = () => {
                 <article>
                     <div className="flex justify-center items-center flex-col gap-y-3">
                         <div className="text-2xl font-semibold text-green-400">Geslaagden </div>
-                        <div className="text-4xl text-gray-700 text-center">Onze trots!</div>
+                        <div className="text-4xl text-gray-700 font-bold text-center">Onze trots!</div>
                     </div>
                     <div className="flex flex-col lg:flex-row gap-5 my-10">
 
