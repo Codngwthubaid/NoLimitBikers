@@ -33,8 +33,8 @@ const Page = () => {
             {loader && <Loader />}
             <section className="body-font overflow-hidden pt-[75px]">
                 <SubSectionheadings Head="Tarieven" mainPage="Home" currentPage="Tarieven" />
-                <div className="container px-5 py-12 mx-auto">
-                    <div className="flex flex-col text-center w-full mb-5">
+                <div className="container px-5 pt-12 mx-auto">
+                    <div className="flex flex-col text-center w-full">
                         <h1 className="text-green-400 text-2xl font-medium title-font mb-2">Tarieven</h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-3xl font-semibold text-gray-700">Kies uit onze meest waardevolle rijlespakketten. Wij bieden duidelijke tarieven en flexibele opties, zodat je altijd een pakket vindt dat past bij jouw wensen en budget.</p>
                     </div>

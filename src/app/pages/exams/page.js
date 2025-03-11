@@ -107,7 +107,7 @@ const Page = () => {
                             <dl>
                                 <dt className='text-xl text-gray-700 font-semibold'>Het motorrijbewijs is opgedeeld in drie categorieen:</dt>
                                 <dd>🏍️ A1 (Lichte Motor) - Max 125 CC, Max. 11kW</dd>
-                                <dd>🏍️ A2 (Middwlzware Motor) - Max. 35kW</dd>
+                                <dd>🏍️ A2 (Middelzware Motor) - Max. 35kW</dd>
                                 <dd>
                                     🏍️ A (Zware Motor) - onbeperkt vermogen
                                 </dd>
