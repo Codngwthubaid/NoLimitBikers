@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Image1 from '../public/Gallery/Image1.jpg'
-import Image2 from '../public/Gallery/Image2.jpg'
+import new1 from '../public/Gallery/new1.png'
+import new2 from '../public/Gallery/new2.png'
 
 
 const SectionFourth = () => {
@@ -16,8 +16,8 @@ const SectionFourth = () => {
                     <div className="flex flex-col lg:flex-row gap-5 my-10">
 
                         <div className="flex justify-center items-start gap-5 flex-col sm:flex-row w-full">
-                                <Image src={Image1} alt="image1" width={300} height={400} className='rounded-lg hover:scale-125'/>
-                                <Image src={Image2} alt="image2" width={300} height={300} className='rounded-lg hover:scale-125'/>
+                                <Image src={new1} alt="image1" width={300} height={400} className='rounded-lg hover:scale-125'/>
+                                <Image src={new2} alt="image2" width={300} height={300} className='rounded-lg hover:scale-125'/>
                         </div>
                     </div>
 
