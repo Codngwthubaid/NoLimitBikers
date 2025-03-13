@@ -2,7 +2,7 @@
 import React from 'react'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
-import HeroImage from "@/public/hero-section.png"
+import HeroImage from "@/public/hero-section.jpg"
 
 const SectionFirst = () => {
     return (
