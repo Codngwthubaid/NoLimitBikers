@@ -33,7 +33,7 @@ const Page = () => {
             {loader && <Loader />}
             <section className="body-font overflow-hidden pt-[75px]">
                 <SubSectionheadings Head="Tarieven" mainPage="Home" currentPage="Tarieven" />
-                <div className="container px-5 pt-12 mx-auto">
+                <div className="px-5 pt-12">
                     <div className="flex flex-col text-center w-full">
                         <h1 className="text-green-400 text-2xl font-medium title-font mb-2">Tarieven</h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-3xl font-semibold text-gray-700">Kies uit onze meest waardevolle rijlespakketten. Wij bieden duidelijke tarieven en flexibele opties, zodat je altijd een pakket vindt dat past bij jouw wensen en budget.</p>
@@ -43,7 +43,7 @@ const Page = () => {
                     <div className="my-12">
                         <h2 className="text-green-400 text-2xl lg:text-4xl font-bold mb-6 text-center">
                             MOTOREXAMEN VOERTUIGBEHEERSING <span className="text-[#050B30]">AVB</span>
-                        </h2>
+                        </h2>  
                         <div className="flex flex-col lg:flex-row gap-8">
                             <Card className="flex flex-col items-center bg-white">
                                 <CardHeader>
@@ -203,7 +203,7 @@ const Page = () => {
 
                 <div className='my-12 text-3xl lg:text-5xl font-bold text-center text-gray-700'>Losse lessen en examen prijzen</div>
 
-                <div className="container mx-auto px-4 py-8">
+                <div className="px-4 py-8">
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
                             <div className='flex items-center justify-between text-gray-700 bg-[#c1e1c1]'>

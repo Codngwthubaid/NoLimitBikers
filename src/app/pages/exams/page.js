@@ -17,7 +17,7 @@ const Page = () => {
             {loader && <Loader />}
             <section className="body-font overflow-hidden pt-[75px]">
                 <SubSectionheadings Head="Examens" mainPage="Home" currentPage="Examens" />
-                <div className="container px-5 py-12 mx-auto">
+                <div className="px-5 py-12">
                     <div className="flex flex-col text-center w-full mb-5">
                         <h1 className="text-green-400 text-3xl font-medium title-font mb-2">Examens</h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-3xl font-semibold text-gray-700">Alles wat je moet weten over jouw motorpraktijkexamens.</p>

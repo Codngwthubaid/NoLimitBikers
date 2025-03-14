@@ -6,7 +6,7 @@ const Footer = () => {
 
 
         <footer className=" bg-white mt-10">
-            <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div className="w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex justify-between">
                     <div className="flex justify-around sm:justify-start gap-x-10">
                         <div>

@@ -8,7 +8,7 @@ const SectionFirst = () => {
     return (
         <>
             <main>
-                <section className="container mx-auto pt-36 w-full bg-cover bg-center pb-20" style={{ backgroundImage: `url(${frontImage.src})`}}>
+                <section className="pt-36 w-full bg-cover bg-center pb-20" style={{ backgroundImage: `url(${frontImage.src})`}}>
                     <p className='text-3xl mb-16 md:text-4xl text-center text-white font-bold'>Klaar om de weg op te gaan? Begin vandaag met NoLimitBikers!</p>
                     <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                         <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">

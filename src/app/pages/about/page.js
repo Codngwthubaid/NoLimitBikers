@@ -29,7 +29,7 @@ const Page = () => {
 
             <div className="h-[2px] w-11/12 bg-[#c1e1c1] mx-auto my-14"></div>
 
-            <div className='mx-auto flex justify-center items-center lg:gap-x-5 lg:flex-row flex-col-reverse  gap-y-10'>
+            <div className='flex justify-center items-center lg:gap-x-5 lg:flex-row flex-col-reverse  gap-y-10'>
               <div className='px-6 lg:w-[50vw] flex justify-center items-start flex-col gap-y-5'>
                 <div className='text-green-400 font-semibold text-xl'>Meer over ons</div>
                 <div className='text-4xl lg:text-5xl font-bold text-gray-700'>Waarom kiezen voor NoLimitBikers?</div>
