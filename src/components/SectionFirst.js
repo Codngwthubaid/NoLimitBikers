@@ -2,14 +2,13 @@
 import React from 'react'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
-// import frontImage from "@/public/frontImage.jpg"
-import lullabike from "@/public/lullabike.png"
+import qawsed from "@/public/qawsed.png"
 
 const SectionFirst = () => {
     return (
         <>
             <main>
-                <section className="pt-36 w-full bg-cover bg-center pb-20" style={{ backgroundImage: `url(${lullabike.src})`}}>
+                <section className="pt-36 w-full bg-cover bg-center pb-20" style={{ backgroundImage: `url(${qawsed.src})`}}>
                     <p className='text-3xl mb-16 md:text-4xl text-center text-white font-bold'>Klaar om de weg op te gaan? Begin vandaag met NoLimitBikers!</p>
                     <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                         <Card className="w-10/12 lg:w-[25vw] justify-center relative flex flex-col items-center bg-white transition-all duration-300 ease-in-out hover:scale-105">
