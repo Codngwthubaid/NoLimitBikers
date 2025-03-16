@@ -12,7 +12,7 @@ const SectionThird = () => {
   return (
     <>
       <main>
-        <div className="flex justify-evenly items-center gap-x-5 flex-col sm:flex-row gap-y-10 ">
+        <div className="flex justify-evenly items-center gap-x-5 flex-col sm:flex-row gap-y-10 mx-5">
           <div className="sm:w-[45vw] flex justify-center items-center gap-x-3 ">
             <div className="flex flex-col gap-y-2">
               <Image

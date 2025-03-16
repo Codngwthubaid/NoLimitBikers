@@ -18,7 +18,7 @@ const Page = () => {
 
 
     const drivingLessons = [
-        { name: "Proefles (100 min)", price: "€ 100,00" },
+        { name: "Proefles (100 min)", price: "€ 80,00" },
         { name: "Losse motorrijles (50 min)", price: "€55,00" }
     ]
 
