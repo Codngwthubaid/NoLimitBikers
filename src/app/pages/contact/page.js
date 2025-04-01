@@ -44,7 +44,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <dl className='flex flex-col gap-y-5 my-16'>
+            <dl className='flex flex-col gap-y-5 my-16 mx-5'>
               <dt className='text-3xl font-semibold text-gray-700'>Contact NoLimitBikers in Rotterdam</dt>
               <dd className='text-gray-700'>Welkom bij NoLimitBikers, jouw partner voor betaalbare en hoogwaardige motorrijlessen in Rotterdam en omgeving. Onze ervaren instructeurs staan klaar om jou te begeleiden naar jouw motorrijbewijs. Of je nu een beginner bent of jouw vaardigheden wilt perfectioneren, bij ons ben je aan het juiste adres.</dd>
               <dd className='text-gray-700'>Wij begrijpen dat iedereen unieke behoeften heeft als het gaat om motorrijlessen. Daarom bieden wij flexibele lestijden en op maat gemaakte lespakketten. Neem vandaag nog contact met ons op via e-mail, telefoon of WhatsApp voor meer informatie of om je eerste motorrijles in te plannen.</dd>

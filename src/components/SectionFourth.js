@@ -13,9 +13,9 @@ const SectionFourth = () => {
             </div>
             <div className="flex flex-col lg:flex-row gap-5 my-10">
 
-                <div className="flex justify-center items-start gap-5 flex-col sm:flex-row w-full">
-                    <Image src={new1} alt="image1" width={300} height={400} className='rounded-lg hover:scale-125' />
-                    <Image src={new2} alt="image2" width={300} height={300} className='rounded-lg hover:scale-125' />
+                <div className="flex justify-center items-center gap-5 flex-col sm:flex-row w-full">
+                    <Image src={new1} alt="image1" width={300} height={400} className='rounded-lg' />
+                    <Image src={new2} alt="image2" width={300} height={300} className='rounded-lg' />
                 </div>
             </div>
         </main>
