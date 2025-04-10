@@ -5,17 +5,13 @@ import SubSectionheadings from "@/components/SubSectionheadings"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
 import Loader from '@/components/Loader/Loader'
 
-
 const Page = () => {
-
     const [loader, setLoader] = useState(true)
     useEffect(() => {
         setTimeout(() => {
             setLoader(false)
         }, 2000);
     }, [])
-
-
 
     const drivingLessons = [
         { name: "Proefles (100 min)", price: "€ 80,00" },
@@ -27,6 +23,91 @@ const Page = () => {
         { name: "CBR AVD Praktijk examen ", price: "€ 279,00" },
     ]
 
+    const avbPackages = [
+        {
+            title: "AVB Pakket Silver",
+            price: "€750",
+            features: [
+                "12 uur rijlesuren van 50 min + AVB examen",
+                "Vaste instructeur",
+                "Nieuwe lesmotor",
+                "Leskaart & Advies"
+            ],
+            bgColor: "bg-white",
+            textColor: "text-gray-800",
+            listColor: "text-gray-700"
+        },
+        {
+            title: "AVB Pakket Gold",
+            price: "€1050",
+            features: [
+                "16 uur rijlesuren van 50 min + AVB examen",
+                "Vaste instructeur",
+                "Nieuwe lesmotor",
+                "Leskaart & Advies"
+            ],
+            bgColor: "bg-[#050B30]",
+            textColor: "text-white",
+            listColor: "text-gray-300",
+            badge: "Aanbevolen"
+        },
+        {
+            title: "AVB Pakket Platinum",
+            price: "€1300",
+            features: [
+                "20 uur rijlesuren van 50 min + AVB examen",
+                "Vaste instructeur",
+                "Nieuwe lesmotor",
+                "Leskaart & Advies"
+            ],
+            bgColor: "bg-green-100",
+            textColor: "text-gray-800",
+            listColor: "text-gray-700"
+        }
+    ]
+
+    const avdPackages = [
+        {
+            title: "AVD Pakket Silver",
+            price: "€810",
+            features: [
+                "12 uur rijlesuren van 50 min + AVD examen",
+                "Vaste instructeur",
+                "Nieuwe lesmotor",
+                "Leskaart & Advies"
+            ],
+            bgColor: "bg-white",
+            textColor: "text-gray-800",
+            listColor: "text-gray-700"
+        },
+        {
+            title: "AVD Pakket Gold",
+            price: "€1099",
+            features: [
+                "16 uur rijlesuren van 50 min + AVD examen",
+                "Vaste instructeur",
+                "Nieuwe lesmotor",
+                "Leskaart & Advies"
+            ],
+            bgColor: "bg-[#050B30]",
+            textColor: "text-white",
+            listColor: "text-gray-300",
+            badge: "Aanbevolen"
+        },
+        {
+            title: "AVD Pakket Platinum",
+            price: "€1350",
+            features: [
+                "20 uur rijlesuren van 50 min + AVD examen",
+                "Vaste instructeur",
+                "Nieuwe lesmotor",
+                "Leskaart & Advies"
+            ],
+            bgColor: "bg-green-100",
+            textColor: "text-gray-800",
+            listColor: "text-gray-700"
+        }
+    ]
 
     return (
         <div>
@@ -36,7 +117,7 @@ const Page = () => {
                 <div className="px-5 pt-12">
                     <div className="flex flex-col text-center w-full">
                         <h1 className="text-green-400 text-2xl font-medium title-font mb-2">Tarieven</h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-3xl font-semibold text-gray-700">Kies uit onze meest waardevolle rijlespakketten. Wij bieden duidelijke tarieven en flexibele opties, zodat je altijd een pakket vindt dat past bij jouw wensen en budget.</p>
+                        <p className="lg:w-2/3 mx-auto leading-relaxed text-3xl font-semibold text-gray-700">Kies uit onze meest waardevolle rijlespakketten.</p>
                     </div>
                 </div>
                 <div className="flex flex-col items-center py-10 px-4">
@@ -45,77 +126,35 @@ const Page = () => {
                             MOTOREXAMEN VOERTUIGBEHEERSING <span className="text-[#050B30]">AVB</span>
                         </h2>  
                         <div className="flex flex-col lg:flex-row gap-8">
-                            <Card className="flex flex-col items-center bg-white">
-                                <CardHeader>
-                                    <CardTitle className="text-gray-800 text-lg">AVB Pakket Silver</CardTitle>
-                                </CardHeader>
-                                <CardContent className="text-center">
-                                    <p className="text-4xl font-bold text-gray-800 mt-4">€750</p>
-                                    <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                        <li>12 uur rijlesuren van 50 min + AVB examen</li>
-                                        <li>Vaste instructeur</li>
-                                        <li>Nieuwe lesmotor</li>
-                                        <li>Leskaart &amp; Advies</li>
-                                    </ul>
-                                </CardContent>
-                                <CardFooter>
-                                    <PricingPopUpCard
-                                        details="Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden."
-                                        btnName="Selecteer dit pakket"
-                                        Op1="AVB Pakket Silver"
-                                        Op2="AVB Pakket Gold "
-                                        Op3="AVB Pakket Platinum" />
-                                </CardFooter>
-                            </Card>
-
-                            <Card className="relative flex flex-col items-center  bg-[#050B30] text-white">
-                                <div className="relative -top-4  bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
-                                    Aanbevolen
-                                </div>
-                                <CardHeader className="pt-1 pb-4">
-                                    <CardTitle className="text-lg">AVB Pakket Gold </CardTitle>
-                                </CardHeader>
-                                <CardContent className="text-center">
-                                    <p className="text-4xl font-bold mt-4">€1050</p>
-                                    <ul className="mt-4 space-y-2 text-sm text-gray-300">
-                                        <li>16 uur rijlesuren van 50 min + AVB examen </li>
-                                        <li>Vaste instructeur</li>
-                                        <li>Nieuwe lesmotor</li>
-                                        <li>Leskaart &amp; Advies</li>
-                                    </ul>
-                                </CardContent>
-                                <CardFooter>
-                                    <PricingPopUpCard
-                                        details="Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden."
-                                        btnName="Selecteer dit pakket"
-                                        Op1="AVB Pakket Silver"
-                                        Op2="AVB Pakket Gold "
-                                        Op3="AVB Pakket Platinum" />
-                                </CardFooter>
-                            </Card>
-
-                            <Card className="flex flex-col items-center  bg-green-100">
-                                <CardHeader>
-                                    <CardTitle className="text-gray-800 text-lg">AVB Pakket Platinum</CardTitle>
-                                </CardHeader>
-                                <CardContent className="text-center">
-                                    <p className="text-4xl font-bold text-gray-800 mt-4">€1300</p>
-                                    <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                        <li>20 uur rijlesuren van 50 min + AVB examen </li>
-                                        <li>Vaste instructeur</li>
-                                        <li>Nieuwe lesmotor</li>
-                                        <li>Leskaart &amp; Advies</li>
-                                    </ul>
-                                </CardContent>
-                                <CardFooter>
-                                    <PricingPopUpCard
-                                        details="Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden."
-                                        btnName="Selecteer dit pakket"
-                                        Op1="AVB Pakket Silver"
-                                        Op2="AVB Pakket Gold "
-                                        Op3="AVB Pakket Platinum" />
-                                </CardFooter>
-                            </Card>
+                            {avbPackages.map((pkg, index) => (
+                                <Card key={index} className={`relative flex flex-col items-center ${pkg.bgColor}`}>
+                                    {pkg.badge && (
+                                        <div className="relative -top-4 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
+                                            {pkg.badge}
+                                        </div>
+                                    )}
+                                    <CardHeader className={pkg.badge ? "pt-1 pb-4" : ""}>
+                                        <CardTitle className={`text-lg ${pkg.textColor}`}>{pkg.title}</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="text-center">
+                                        <p className={`text-4xl font-bold ${pkg.textColor} mt-4`}>{pkg.price}</p>
+                                        <ul className={`mt-4 space-y-2 text-sm ${pkg.listColor}`}>
+                                            {pkg.features.map((feature, fIndex) => (
+                                                <li key={fIndex}>{feature}</li>
+                                            ))}
+                                        </ul>
+                                    </CardContent>
+                                    <CardFooter>
+                                        <PricingPopUpCard
+                                            details="Boek vandaag nog je motorrijles!"
+                                            btnName="Selecteer dit pakket"
+                                            Op1="AVB Pakket Silver"
+                                            Op2="AVB Pakket Gold"
+                                            Op3="AVB Pakket Platinum"
+                                        />
+                                    </CardFooter>
+                                </Card>
+                            ))}
                         </div>
                     </div>
 
@@ -124,77 +163,35 @@ const Page = () => {
                             MOTOREXAMEN VERKEERSDEELNAME <span className="text-[#050B30]">AVD</span>
                         </h2>
                         <div className="flex flex-col lg:flex-row gap-8">
-                            <Card className="flex flex-col items-center  bg-white">
-                                <CardHeader>
-                                    <CardTitle className="text-gray-800 text-lg">AVD Pakket Silver</CardTitle>
-                                </CardHeader>
-                                <CardContent className="text-center">
-                                    <p className="text-4xl font-bold text-gray-800 mt-4">€810</p>
-                                    <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                        <li>12 uur rijlesuren van 50 min + AVD examen </li>
-                                        <li>Vaste instructeur</li>
-                                        <li>Nieuwe lesmotor</li>
-                                        <li>Leskaart &amp; Advies</li>
-                                    </ul>
-                                </CardContent>
-                                <CardFooter>
-                                    <PricingPopUpCard
-                                        details="Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden."
-                                        btnName="Selecteer dit pakket"
-                                        Op1="AVD Pakket Silver"
-                                        Op2="AVD Pakket Gold "
-                                        Op3="AVD Pakket Platinum" />
-                                </CardFooter>
-                            </Card>
-
-                            <Card className="relative flex flex-col items-center  bg-[#050B30] text-white">
-                                <div className="relative -top-4  bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
-                                    Aanbevolen
-                                </div>
-                                <CardHeader className="pt-1 pb-4">
-                                    <CardTitle className="text-lg">AVD Pakket Gold </CardTitle>
-                                </CardHeader>
-                                <CardContent className="text-center">
-                                    <p className="text-4xl font-bold mt-4">€1099</p>
-                                    <ul className="mt-4 space-y-2 text-sm text-gray-300">
-                                        <li>16 uur rijlesuren van 50 min + AVD examen </li>
-                                        <li>Vaste instructeur</li>
-                                        <li>Nieuwe lesmotor</li>
-                                        <li>Leskaart &amp; Advies</li>
-                                    </ul>
-                                </CardContent>
-                                <CardFooter>
-                                    <PricingPopUpCard
-                                        details="Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden."
-                                        btnName="Selecteer dit pakket"
-                                        Op1="AVD Pakket Silver"
-                                        Op2="AVD Pakket Gold "
-                                        Op3="AVD Pakket Platinum" />
-                                </CardFooter>
-                            </Card>
-
-                            <Card className="flex flex-col items-center  bg-green-100">
-                                <CardHeader>
-                                    <CardTitle className="text-gray-800 text-lg">AVD Pakket Platinum</CardTitle>
-                                </CardHeader>
-                                <CardContent className="text-center">
-                                    <p className="text-4xl font-bold text-gray-800 mt-4">€1350</p>
-                                    <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-                                        <li>20 uur rijlesuren van 50 min + AVD examen </li>
-                                        <li>Vaste instructeur</li>
-                                        <li>Nieuwe lesmotor</li>
-                                        <li>Leskaart &amp; Advies</li>
-                                    </ul>
-                                </CardContent>
-                                <CardFooter>
-                                    <PricingPopUpCard
-                                        details="Boek vandaag nog je motorrijles! Kies een tijdstip dat jou uitkomt en zet de eerste stap naar zelfverzekerd motorrijden."
-                                        btnName="Selecteer dit pakket"
-                                        Op1="AVD Pakket Silver"
-                                        Op2="AVD Pakket Gold "
-                                        Op3="AVD Pakket Platinum" />
-                                </CardFooter>
-                            </Card>
+                            {avdPackages.map((pkg, index) => (
+                                <Card key={index} className={`relative flex flex-col items-center ${pkg.bgColor}`}>
+                                    {pkg.badge && (
+                                        <div className="relative -top-4 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
+                                            {pkg.badge}
+                                        </div>
+                                    )}
+                                    <CardHeader className={pkg.badge ? "pt-1 pb-4" : ""}>
+                                        <CardTitle className={`text-lg ${pkg.textColor}`}>{pkg.title}</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="text-center">
+                                        <p className={`text-4xl font-bold ${pkg.textColor} mt-4`}>{pkg.price}</p>
+                                        <ul className={`mt-4 space-y-2 text-sm ${pkg.listColor}`}>
+                                            {pkg.features.map((feature, fIndex) => (
+                                                <li key={fIndex}>{feature}</li>
+                                            ))}
+                                        </ul>
+                                    </CardContent>
+                                    <CardFooter>
+                                        <PricingPopUpCard
+                                            details="Boek vandaag nog je motorrijles!"
+                                            btnName="Selecteer dit pakket"
+                                            Op1="AVD Pakket Silver"
+                                            Op2="AVD Pakket Gold"
+                                            Op3="AVD Pakket Platinum"
+                                        />
+                                    </CardFooter>
+                                </Card>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -237,8 +234,7 @@ const Page = () => {
                     <div>
                         <div className="mt-12 text-3xl font-bold text-gray-700">Annuleringsbeleid dagcursus en examen</div>
                         <div className="mt-5 text-black">
-                        Wanneer u niet op komt dagen voor uw geplande dagcursus en examen, bent u het volledige bedrag verschuldigd aan de rijschool. Annulering is uitsluitend mogelijk in geval van ziekte of overlijden. In dergelijke situaties vragen wij om een geldig bewijs, zoals een doktersverklaring.
-                        Indien de factuur niet tijdig wordt voldaan, zal deze worden overgedragen aan een incassobureau.
+                            Wanneer u niet op komt dagen voor uw geplande dagcursus en examen, bent u het volledige bedrag verschuldigd aan de rijschool.
                         </div>
                     </div>
                 </div>

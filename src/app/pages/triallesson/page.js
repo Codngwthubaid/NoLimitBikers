@@ -5,18 +5,10 @@ import { TriangleAlert } from "lucide-react"
 import { Check } from 'lucide-react'
 import Loader from '@/components/Loader/Loader'
 import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import { SquareArrowOutUpRight } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { Loader2 } from "lucide-react"
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select"
 
 const Page = () => {
     const [name, setName] = useState('')
@@ -31,7 +23,6 @@ const Page = () => {
     })
     const [submitted, setSubmitted] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
-
 
     const handleCourseChange = (e) => {
         setSelectedCourse(e);
@@ -81,7 +72,7 @@ const Page = () => {
         setEmail(e.target.value)
     }
     const SubmitNumber = (e) => {
-        setMessage(e.target.value)
+        setNumber(e.target.value) // Fixed typo from setMessage to setNumber
     }
 
     const handleSubmit = async (e) => {
@@ -118,6 +109,13 @@ const Page = () => {
         }, 2000);
     }, [])
 
+    // Array for trial lesson benefits
+    const trialLessonBenefits = [
+        "Persoonlijke kennismaking zonder verplichtingen",
+        "Ervaren en geduldige instructeurs",
+        "Inzicht in onze lesmethoden en motoren",
+        "Directe feedback en een persoonlijk lesplan"
+    ]
 
     return (
         <>
@@ -147,7 +145,6 @@ const Page = () => {
                             <div className="flex flex-col space-y-1.5 items-start">
                                 <Input onChange={(e) => { setName(e.target.value) }} placeholder="Naam" id="name" className=" text-black col-span-3" />
                                 {errors.name && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.name}</span></span>}
-
                             </div>
                             <div className="flex flex-col space-y-1.5 items-start">
                                 <Input onChange={(e) => { setEmail(e.target.value) }} placeholder="E-mail" id="email" className=" text-black col-span-3" />
@@ -157,18 +154,16 @@ const Page = () => {
                                 <Input onChange={(e) => { setNumber(e.target.value) }} placeholder="Telefoonnummer" id="number" className=" text-black col-span-3" />
                                 {errors.number && <span className="text-red-500 font-semibold flex"><TriangleAlert className="mr-2" /> <span>{errors.number}</span></span>}
                             </div>
-                          
                             <div>
                                 <Link href="https://wa.me/+310614382099" className="hover:text-blue-600 text-green-600 font-semibold">
                                     <div className="flex">
                                         <span><SquareArrowOutUpRight /></span>
                                         <span>WhatsApp</span>
                                     </div>
-                                    <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We&apos;ll get back to you soon!</p>}
+                                    <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We'll get back to you soon!</p>}
                                     </div>
                                 </Link>
                             </div>
-
                             <Button
                                 type="button"
                                 onClick={handleSubmit}
@@ -185,9 +180,7 @@ const Page = () => {
                                 )}
                             </Button>
                         </form>
-
                     </div>
-
                     <div>
                         <div className="text-gray-900 bg-gray-50 p-6 rounded-lg mb-8">
                             <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
@@ -226,17 +219,16 @@ const Page = () => {
                 <div className="mt-10 prose max-w-none">
                     <h2 className="text-2xl font-bold mb-4 text-gray-900">Waarom een proefles bij NoLimitBikers?</h2>
                     <p className="mb-4 text-gray-900">
-                        Bij NoLimitBikers begrijpen we hoe belangrijk het is om een goede eerste indruk te krijgen van je motorrijschool. Daarom bieden wij een proefles aan, zodat je kunt kennismaken met onze ervaren instructeurs, onze lesmotoren en onze lesmethoden. Zo kun je een weloverwogen keuze maken voordat je je inschrijft voor een volledig lespakket.
+                        Bij NoLimitBikers begrijpen we hoe belangrijk het is om een goede eerste indruk te krijgen van je motorrijschool.
                     </p>
                     <p className="mb-4 text-gray-900">
-                        Onze proefles is speciaal ontworpen om jou op je gemak te stellen en een duidelijk beeld te geven van wat je kunt verwachten tijdens de motorrijlessen. We zorgen ervoor dat je vol vertrouwen je eerste stappen richting motorrijden zet.
+                        Onze proefles is speciaal ontworpen om jou op je gemak te stellen en een duidelijk beeld te geven van wat je kunt verwachten tijdens de motorrijlessen.
                     </p>
                     <h3 className="text-xl font-semibold mb-2 text-gray-900">Voordelen van een proefles bij NoLimitBikers:</h3>
                     <ul className="list-disc pl-5 space-y-1 text-gray-900">
-                        <li>Persoonlijke kennismaking zonder verplichtingen</li>
-                        <li>Ervaren en geduldige instructeurs</li>
-                        <li>Inzicht in onze lesmethoden en motoren</li>
-                        <li>Directe feedback en een persoonlijk lesplan</li>
+                        {trialLessonBenefits.map((benefit, index) => (
+                            <li key={index}>{benefit}</li>
+                        ))}
                     </ul>
                     <div className='text-base my-5 text-black'>Ontdek zelf waarom NoLimitBikers dé keuze is voor jouw motorrijopleiding!</div>
                 </div>
