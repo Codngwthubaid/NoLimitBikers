@@ -75,7 +75,7 @@ const Page = () => {
 
               <div className='flex flex-col justify-center items-center gap-y-2'>
 
-                <div className="text-green-400 text-3xl font-medium title-font mb-2">Pakket AVB</div>
+                <div className="text-green-400 text-3xl font-medium title-font mt-10 mb-2">Pakket AVB</div>
                 <div>
                   <section className="text-gray-600 body-font">
                     <div className="px-5 py-12">

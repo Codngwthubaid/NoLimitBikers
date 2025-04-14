@@ -23,7 +23,7 @@ const Page = () => {
               <div className='pt-[75px]'>
                 <SubSectionheadings Head="Contact" mainPage="Home" currentPage="Contact" />
               </div>
-              <h1 className="text-green-400 text-3xl font-medium title-font mb-2">Contact</h1>
+              <h1 className="text-center text-green-400 text-3xl font-medium title-font my-10">Contact</h1>
               <div className='flex flex-col items-center gap-y-10 justify-evenly'>
                 <div className='flex flex-col md:flex-row gap-10 justify-center items-center'>
                   <div className="rounded-3xl py-10 gap-y-3 w-[80vw] md:w-[30vw] flex justify-center items-center flex-col text-gray-700 hover:bg-[#c1e1c1] h-48 shadow-lg">
