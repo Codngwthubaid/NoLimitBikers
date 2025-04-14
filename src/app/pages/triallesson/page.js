@@ -160,7 +160,7 @@ const Page = () => {
                                         <span><SquareArrowOutUpRight /></span>
                                         <span>WhatsApp</span>
                                     </div>
-                                    <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We'll get back to you soon!</p>}
+                                    <div> {submitted && <p className="mt-4 text-green-800 font-semibold">Thank you for your message. We&apos;ll get back to you soon!</p>}
                                     </div>
                                 </Link>
                             </div>
