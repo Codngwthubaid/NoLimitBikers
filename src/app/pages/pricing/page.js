@@ -116,7 +116,7 @@ const Page = () => {
                 <SubSectionheadings Head="Tarieven" mainPage="Home" currentPage="Tarieven" />
                 <div className="px-5 pt-12">
                     <div className="flex flex-col text-center w-full">
-                        <h1 className="text-green-400 text-2xl font-medium title-font mb-2">Tarieven</h1>
+                        <h1 className="text-green-400 text-3xl font-medium title-font mb-2">Tarieven</h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-3xl font-semibold text-gray-700">Kies uit onze meest waardevolle rijlespakketten.</p>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ const Page = () => {
                     <div className="my-12">
                         <h2 className="text-green-400 text-2xl lg:text-4xl font-bold mb-6 text-center">
                             MOTOREXAMEN VOERTUIGBEHEERSING <span className="text-[#050B30]">AVB</span>
-                        </h2>  
+                        </h2>
                         <div className="flex flex-col lg:flex-row gap-8">
                             {avbPackages.map((pkg, index) => (
                                 <Card key={index} className={`relative flex flex-col items-center ${pkg.bgColor}`}>

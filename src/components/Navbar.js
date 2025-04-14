@@ -66,7 +66,7 @@ const Navbar = () => {
             <SheetContent>
               <SheetHeader>
                 <SheetDescription>
-                  <ul className='h-[100vh] flex flex-col justify-center items-center border border-red-500'>
+                  <ul className='h-[100vh] flex flex-col justify-center items-center'>
                     <li onClick={handleMobileMenu} className="py-2 transition duration-300 ease-in-out">
                       <Link href="/" className="text-xl text-gray-700 hover:font-semibold">Home</Link>
                     </li>

@@ -74,9 +74,8 @@ const Page = () => {
               <SubSectionheadings Head="Pakketten" mainPage="Home" currentPage="Pakketten" />
 
               <div className='flex flex-col justify-center items-center gap-y-2'>
-                {/* ... Keep your existing introductory text ... */}
 
-                <div className='text-4xl mt-5 font-bold text-green-400'>Pakket AVB</div>
+                <div className="text-green-400 text-3xl font-medium title-font mb-2">Pakket AVB</div>
                 <div>
                   <section className="text-gray-600 body-font">
                     <div className="px-5 py-12">
@@ -105,7 +104,7 @@ const Page = () => {
                   </section>
                 </div>
 
-                <div className='text-4xl mt-5 font-bold text-green-400'>Pakket AVD</div>
+                <div className="text-green-400 text-3xl font-medium title-font mb-2">Pakket AVD</div>
                 <div>
                   <section className="text-gray-600 body-font">
                     <div className="px-5 py-12">

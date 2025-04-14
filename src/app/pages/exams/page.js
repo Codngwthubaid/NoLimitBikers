@@ -80,7 +80,7 @@ const Page = () => {
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-3xl font-semibold text-gray-700">Alles wat je moet weten over jouw motorpraktijkexamens.</p>
                     </div>
                     <div>
-                        <div className="text-2xl sm:text-3xl font-bold text-gray-700 text-center">新しい eisen voor motorkleding en schoeisel (vanaf 1 januari 2025)</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-700 text-center">Nieuwe eisen voor motorkleding en schoeisel (vanaf 1 januari 2025)</div>
                         <div className='text-black my-4'>Het CBR heeft per 1 januari 2025 nieuwe eisen ingesteld voor de kleding en schoenen die je moet dragen tijdens het praktijkexamen voor de motor (AVB & AVD). Houd hier rekening mee om te voorkomen dat je niet aan het examen mag deelnemen.</div>
                     </div>
 
