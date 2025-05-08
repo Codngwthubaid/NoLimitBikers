@@ -24,7 +24,7 @@ export default function Footer(){
                             <ul className="text-gray-500 dark:text-gray-400">
                                 <li className="mb-4">
                                     <Link href="https://www.instagram.com/nolimitbikers_010/" className="flex gap-x-1 items-center hover:text-green-400">
-                                        <Image width="24" height="24" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1" />
+                                        <img width="24" height="24" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1" />
                                         <div>Instagram</div>
                                     </Link>
                                 </li>

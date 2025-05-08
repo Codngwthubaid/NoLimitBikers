@@ -2,7 +2,7 @@ import React from 'react'
 import { ArrowRight } from 'lucide-react';
 
 
-export default function AboutTick() {
+export default function AboutTick(props) {
     return (
         <>
             <div className="flex justify-center sm:items-start gap-x-2">
@@ -12,5 +12,3 @@ export default function AboutTick() {
         </>
     )
 }
-
-s
