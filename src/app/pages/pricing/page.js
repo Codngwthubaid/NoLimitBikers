@@ -1,23 +1,17 @@
-"use client"
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import SubSectionheadings from "@/components/SubSectionheadings"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
-import Loader from '@/components/Loader/Loader'
 import { avbPackagesForPricing, avdPackagesForPricing, drivingLessons, examFees } from "@/constants"
 
-const Page = () => {
-    const [loader, setLoader] = useState(true)
-    useEffect(() => {
-        setTimeout(() => {
-            setLoader(false)
-        }, 2000);
-    }, [])
+export const metadata = {
+    title: "Tarieven",
+    description: "Ontdek onze motorrijlespakketten en losse lessen tegen scherpe en transparante prijzen. Kies wat bij jou past en start vandaag nog met leren!",
+}
 
-
+export default function Page() {
     return (
-        <div>
-            {loader && <Loader />}
+        <AboutLoaderWrapper>
             <section className="body-font overflow-hidden pt-[75px]">
                 <SubSectionheadings Head="Tarieven" mainPage="Home" currentPage="Tarieven" />
                 <div className="px-5 pt-12">
@@ -145,8 +139,6 @@ const Page = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </AboutLoaderWrapper>
     )
 }
-
-export default Page

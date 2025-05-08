@@ -1,22 +1,17 @@
-"use client"
-import React, { useState, useEffect } from 'react'
-import SubSectionheadings from '@/components/SubSectionheadings'
+import React from 'react'
 import Image from 'next/image';
-import Loader from '@/components/Loader/Loader'
+import SubSectionheadings from '@/components/SubSectionheadings'
 import { avbPackagesForCourses, avdPackagesForCourses } from '@/constants';
+import AboutLoaderWrapper from '@/components/AboutLoaderWrapper';
 
-const Page = () => {
-  const [loader, setLoader] = useState(true)
-  
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false)
-    }, 2000);
-  }, [])
+export const metadata = {
+  title: "Pakketten",
+  description: "Bij NoLimitBikers vind je motorrijlessen op maat, van beginner tot gevorderde. Kies uit verschillende pakketten en krijg persoonlijke begeleiding om veilig en zelfverzekerd je motorrijbewijs te halen. Start vandaag nog!",
+};
 
+export default function Page() {
   return (
-    <>
-      {loader && <Loader />}
+    <AboutLoaderWrapper>
       <main>
         <section>
           <article className='pt-[75px]'>
@@ -89,8 +84,7 @@ const Page = () => {
           </article>
         </section>
       </main>
-    </>
+    </AboutLoaderWrapper>
   )
 }
 
-export default Page

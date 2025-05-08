@@ -1,9 +1,9 @@
 import localFont from "next/font/local";
-import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsApp_Icons from "@/components/WhatsApp_Icons";
 import { Analytics } from "@vercel/analytics/react"
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

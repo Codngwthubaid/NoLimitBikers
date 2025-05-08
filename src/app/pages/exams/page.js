@@ -1,21 +1,16 @@
-"use client"
-import React, { useState, useEffect } from 'react'
-import Loader from '@/components/Loader/Loader'
+import React from 'react'
 import SubSectionheadings from '@/components/SubSectionheadings'
-import { ageRequirements, allowedFootwear, avbCategories, clothingRequirements, licenseCategories, notAllowedFootwear } from '@/constants'
+import { ageRequirementItems, allowedFootwear, avbCategories, avbExamDetails, avdExamDetails, clothingRequirements, licenseCategories, notAllowedFootwear } from '@/constants'
+import AboutLoaderWrapper from '@/components/AboutLoaderWrapper'
 
-const Page = () => {
-    const [loader, setLoader] = useState(true)
-    useEffect(() => {
-        setTimeout(() => {
-            setLoader(false)
-        }, 2000);
-    }, [])
+export const metadata = {
+    title: "Examens",
+    description: "Bereid je goed voor op je motorpraktijkexamen met de juiste informatie over kledingvoorschriften, examenonderdelen en rijbewijs categorieën. Bij NoLimitBikers helpen we je stap voor stap naar succes!",
+}
 
-
+export default function Page() {
     return (
-        <div>
-            {loader && <Loader />}
+        <AboutLoaderWrapper>
             <section className="body-font overflow-hidden pt-[75px]">
                 <SubSectionheadings Head="Examens" mainPage="Home" currentPage="Examens" />
                 <div className="px-5 py-12">
@@ -65,9 +60,9 @@ const Page = () => {
                             <div className='text-2xl font-bold text-gray-700 my-6'>Hoe verloopt het AVB-examen?</div>
                             <dl>
                                 <dt className='text-xl text-gray-700 font-semibold'>Het AVB (Voertuigbeheersing) examen test of je de motor goed onder controle hebt.</dt>
-                                <dd>➡️ Tijdens het examen doe je 7 oefeningen.</dd>
-                                <dd>➡️ In de lessen leer je 12 oefeningen om goed voorbereid te zijn.</dd>
-                                <dd>➡️ De oefeningen zijn verdeeld over 4 categorieën:</dd>
+                                {avbExamDetails.map((detail, index) => (
+                                    <dd key={index}>➡️ {detail}</dd>
+                                ))}
                                 <div className='ml-5'>
                                     {avbCategories.map((category, index) => (
                                         <dd key={index}>🔵 {category}</dd>
@@ -86,10 +81,9 @@ const Page = () => {
                             <div className='text-2xl font-bold text-gray-700 my-6'>Hoe verloopt het AVD-examen?</div>
                             <dl>
                                 <dt className='text-xl text-gray-700 font-semibold'>Het AVD (Verkeersdeelname) examen test of je veilig en zelfstandig kunt deelnemen aan het verkeer.</dt>
-                                <dd>➡️ Je rijdt ongeveer 35 minuten onder begeleiding van een examinator.</dd>
-                                <dd>➡️ De examinator beoordeelt of je inzichtelijk, vlot en veilig rijdt.</dd>
-                                <dd>➡️ Tijdens de rit krijg je een stop-and-go opdracht.</dd>
-                                <dd>➡️ Na afloop hoor je direct of je geslaagd bent.</dd>
+                                {avdExamDetails.map((detail, index) => (
+                                    <dd key={index}>➡️ {detail}</dd>
+                                ))}
                             </dl>
                         </div>
                         <div className='md:w-[45%]'>
@@ -105,19 +99,23 @@ const Page = () => {
 
                     <div className='flex flex-col md:flex-row items-start gap-x-10'>
                         <div className='md:w-[45%]'>
-                            <div className='text-2xl font-bold text-gray-700 mt-16 mb-5'>Wanneer mag je welk motorrijbewijs halen?</div>
-                            {ageRequirements.map((req, index) => (
-                                <dl key={index}>
-                                    <dt className='text-xl text-gray-700 font-semibold'>✅ {req.age} → {req.license}</dt>
-                                    <dd className='ml-10 my-2'>{req.note}</dd>
-                                </dl>
+                            {ageRequirementItems.map((item, index) => (
+                                <div key={index}>
+                                    <div className='text-2xl font-bold text-gray-700 mt-16 mb-5'>{item.title}</div>
+                                    <dl>
+                                        {item.requirements.map((req, reqIndex) => (
+                                            <React.Fragment key={reqIndex}>
+                                                <dt className='text-xl text-gray-700 font-semibold'>✅ {req.age} → {req.license}</dt>
+                                                <dd className='ml-10 my-2'>{req.note}</dd>
+                                            </React.Fragment>
+                                        ))}
+                                    </dl>
+                                </div>
                             ))}
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
+        </AboutLoaderWrapper>
     )
 }
-
-export default Page

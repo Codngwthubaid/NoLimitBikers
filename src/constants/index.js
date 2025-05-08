@@ -255,3 +255,67 @@ export const tickData = [
     "Balans en beheersing - de fundamenten van zelfverzekerd motorrijden.",
     "Relaxed rijden op lange ritten - blijf comfortabel, ook tijdens lange afstanden."
 ];
+
+export const trialLessonBenefits = [
+    "Persoonlijke kennismaking zonder verplichtingen",
+    "Ervaren en geduldige instructeurs",
+    "Inzicht in onze lesmethoden en motoren",
+    "Directe feedback en een persoonlijk lesplan"
+]
+
+export const contactCards = [
+    {
+        title: "NoLimitBikers",
+        details: [
+            "(Onderdeel van Rijschool Speedway)",
+            "KVK 50463829",
+            "BTW Nr. NL134561028B01"
+        ]
+    },
+    {
+        title: "Service & vragen",
+        details: [
+            "Info@nolimitbikers.nl",
+            "Appen? +316 14 38 20 99"
+        ]
+    },
+    {
+        title: "Heeft u een vraag?",
+        details: [
+            "06 14 38 20 99"
+        ]
+    }
+];
+
+export const descriptionItems = [
+    {
+        title: "Contact NoLimitBikers in Rotterdam",
+        descriptions: [
+            "Welkom bij NoLimitBikers, jouw partner voor betaalbare en hoogwaardige motorrijlessen in Rotterdam en omgeving. Onze ervaren instructeurs staan klaar om jou te begeleiden naar jouw motorrijbewijs. Of je nu een beginner bent of jouw vaardigheden wilt perfectioneren, bij ons ben je aan het juiste adres.",
+            "Wij begrijpen dat iedereen unieke behoeften heeft als het gaat om motorrijlessen. Daarom bieden wij flexibele lestijden en op maat gemaakte lespakketten. Neem vandaag nog contact met ons op via e-mail, telefoon of WhatsApp voor meer informatie of om je eerste motorrijles in te plannen.",
+            "Bij NoLimitBikers streven we naar de hoogste slagingspercentages en klanttevredenheid. Onze instructeurs hebben jarenlange ervaring en hanteren een persoonlijke aanpak, zodat jij met zelfvertrouwen en veiligheid de weg op gaat.",
+            "Aarzel niet om contact met ons op te nemen voor al je vragen over motorrijlessen en tarieven. Wij staan klaar om je te helpen op weg naar succes.",
+            "We kijken ernaar uit om jou te helpen slagen voor je motorrijbewijs en heten je van harte welkom bij NoLimitBikers in Rotterdam!"
+        ]
+    }
+];
+
+export const ageRequirementItems = [
+    {
+        title: "Wanneer mag je welk motorrijbewijs halen?",
+        requirements: ageRequirements
+    }
+];
+
+export const avbExamDetails = [
+    "Tijdens het examen doe je 7 oefeningen.",
+    "In de lessen leer je 12 oefeningen om goed voorbereid te zijn.",
+    "De oefeningen zijn verdeeld over 4 categorieën:"
+];
+
+export const avdExamDetails = [
+    "Je rijdt ongeveer 35 minuten onder begeleiding van een examinator.",
+    "De examinator beoordeelt of je inzichtelijk, vlot en veilig rijdt.",
+    "Tijdens de rit krijg je een stop-and-go opdracht.",
+    "Na afloop hoor je direct of je geslaagd bent."
+];

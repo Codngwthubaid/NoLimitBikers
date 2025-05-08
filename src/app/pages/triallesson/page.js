@@ -9,8 +9,12 @@ import { SquareArrowOutUpRight } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { Loader2 } from "lucide-react"
+import { trialLessonBenefits } from '@/constants'
 
-const Page = () => {
+export default function Page() {
+
+    const [submitted, setSubmitted] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [number, setNumber] = useState("")
@@ -21,13 +25,6 @@ const Page = () => {
         number: '',
         course: ''
     })
-    const [submitted, setSubmitted] = useState(false)
-    const [isLoading, setIsLoading] = useState(false)
-
-    const handleCourseChange = (e) => {
-        setSelectedCourse(e);
-        setErrors(prev => ({ ...prev, course: '' }))
-    }
 
     const validateForm = () => {
         let isValid = true
@@ -108,13 +105,6 @@ const Page = () => {
             setLoader(false)
         }, 2000);
     }, [])
-
-    const trialLessonBenefits = [
-        "Persoonlijke kennismaking zonder verplichtingen",
-        "Ervaren en geduldige instructeurs",
-        "Inzicht in onze lesmethoden en motoren",
-        "Directe feedback en een persoonlijk lesplan"
-    ]
 
     return (
         <>
@@ -235,5 +225,3 @@ const Page = () => {
         </>
     )
 }
-
-export default Page
