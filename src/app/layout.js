@@ -17,7 +17,10 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "NoLimitBikers - Motorrijschool",
+  title: {
+    default: "NoLimitBikers - Motorrijschool",
+    template: "%s | NoLimitBikers - Motorrijschool",
+  },
   description: "NoLimitBikers offers a comprehensive platform for biking enthusiasts to enhance their skills and knowledge. Through engaging lessons, expert tips, and community support, riders of all levels can learn essential techniques, safety practices, and maintenance skills, fostering a deeper appreciation for biking while promoting a safe and enjoyable riding experience.",
 };
 
@@ -27,11 +30,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <Analytics/>
-        <WhatsApp_Icons/>
-        <Footer/>
+        <Analytics />
+        <WhatsApp_Icons />
+        <Footer />
       </body>
     </html>
   );

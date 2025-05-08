@@ -1,6 +1,10 @@
 import nlb1 from '@/public/Gallery/nlb1.webp'
 import nlb2 from '@/public/Gallery/nlb2.webp'
 import nlb3 from '@/public/Gallery/nlb3.webp'
+import bike8 from "../public/img/bike8.jpg"
+import bike7 from "../public/img/bike7.jpg"
+import bike4 from "../public/img/bike4.jpg"
+import bike9 from "../public/img/bike9.jpg"
 
 export const drivingLessons = [
     { name: "Proefles (100 min)", price: "€ 80,00" },
@@ -155,6 +159,28 @@ export const ageRequirements = [
     }
 ]
 
+export const cards = [
+    {
+        emoji: '🏍️',
+        title: 'Kies je lespakket',
+        description: 'Kies het lespakket dat past bij jouw behoeften en planning. Of je nu voor losse lessen gaat of een compleet traject, wij helpen je je doel te bereiken.'
+    },
+    {
+        emoji: '🤝',
+        title: 'Persoonlijk overleg',
+        description: 'Heb je vragen of weet je niet waar je moet beginnen? Ons team staat voor je klaar om je persoonlijk te adviseren over de beste aanpak voor jouw situatie.'
+    },
+    {
+        emoji: '🛒',
+        title: 'Plan je lessen',
+        description: 'Neem contact met ons op of vraag direct een proefles aan via onze website. Wij helpen je graag met het plannen van je lessen, zodat je zonder gedoe kunt beginnen aan jouw motorrijavontuur.'
+    },
+    {
+        emoji: '🚦',
+        title: 'Start je training',
+        description: 'Na het plannen is het tijd om op de motor te stappen! Volg onze professionele lessen en werk stap voor stap toe naar je motorrijbewijs.'
+    }
+]
 
 export const avbPackagesForCourses = [
     {
@@ -203,3 +229,29 @@ export const avdPackagesForCourses = [
         description: "Voor een complete en diepgaande voorbereiding kies je het AVD Pakket Platinum. Met persoonlijke begeleiding en een uitgebreide reeks lessen krijg je alle tools om je motorrijbewijs te halen."
     }
 ]
+
+export const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/pages/about", label: "Over ons" },
+    { href: "/pages/courses", label: "Pakketten" },
+    { href: "/pages/exams", label: "Examens" },
+    { href: "/pages/pricing", label: "Tarieven" },
+    { href: "/pages/contact", label: "Contact" },
+];
+
+export const images = [
+    bike8,
+    bike7,
+    bike4,
+    bike9
+
+];
+
+export const tickData = [
+    "De basis van motorbeheersing - van starten tot stoppen, alles begint hier.",
+    "Defensief rijden - anticipeer op het verkeer en rijd met vertrouwen.",
+    "Voorbereiding op het praktijkexamen - haal je rijbewijs zonder stress.",
+    "Snelheidscontrole in bochten - soepel en veilig door elke bocht.",
+    "Balans en beheersing - de fundamenten van zelfverzekerd motorrijden.",
+    "Relaxed rijden op lange ritten - blijf comfortabel, ook tijdens lange afstanden."
+];

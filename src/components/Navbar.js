@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/sheet"
 import Image from 'next/image';
 import MainLogo from "@/public/img/MainLogo.png";
+import { navLinks } from '@/constants';
 
 export default function Navbar() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -32,24 +33,13 @@ export default function Navbar() {
         </div>
 
         <ul className="hidden lg:flex justify-between items-center">
-          <li className="mr-8 p-1">
-            <Link href="/" className="text-xl text-green-400 hover:font-semibold">Home</Link>
-          </li>
-          <li className="mr-8 p-1">
-            <Link href="/pages/about" className="text-xl text-green-400 hover:font-semibold">Over ons</Link>
-          </li>
-          <li className="mr-8 p-1">
-            <Link href="/pages/courses" className="text-xl text-green-400 hover:font-semibold">Pakketten</Link>
-          </li>
-          <li className="mr-8 p-1">
-            <Link href="/pages/exams" className="text-xl text-green-400 hover:font-semibold">Examens</Link>
-          </li>
-          <li className="mr-8 p-1">
-            <Link href="/pages/pricing" className="text-xl text-green-400 hover:font-semibold">Tarieven</Link>
-          </li>
-          <li className="mr-8 p-1">
-            <Link href="/pages/contact" className="text-xl text-green-400 hover:font-semibold">Contact</Link>
-          </li>
+          {navLinks.map((link, index) => (
+            <li key={index} className="mr-8 p-1">
+              <Link href={link.href} className="text-xl text-green-400 hover:font-semibold">
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <div className='hidden lg:block'>
@@ -69,24 +59,13 @@ export default function Navbar() {
               <SheetHeader>
                 <SheetDescription>
                   <ul className='h-[100vh] flex flex-col justify-center items-center space-y-4'>
-                    <li onClick={handleLinkClick}>
-                      <Link href="/" className="text-xl text-gray-700 hover:font-semibold">Home</Link>
-                    </li>
-                    <li onClick={handleLinkClick}>
-                      <Link href="/pages/about" className="text-xl text-gray-700 hover:font-semibold">Over ons</Link>
-                    </li>
-                    <li onClick={handleLinkClick}>
-                      <Link href="/pages/courses" className="text-xl text-gray-700 hover:font-semibold">Pakketten</Link>
-                    </li>
-                    <li onClick={handleLinkClick}>
-                      <Link href="/pages/exams" className="text-xl text-gray-700 hover:font-semibold">Examens</Link>
-                    </li>
-                    <li onClick={handleLinkClick}>
-                      <Link href="/pages/pricing" className="text-xl text-gray-700 hover:font-semibold">Tarieven</Link>
-                    </li>
-                    <li onClick={handleLinkClick}>
-                      <Link href="/pages/contact" className="text-xl text-gray-700 hover:font-semibold">Contact</Link>
-                    </li>
+                    {navLinks.map((link, index) => (
+                      <li key={index} onClick={handleLinkClick}>
+                        <Link href={link.href} className="text-xl text-gray-700 hover:font-semibold">
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
                     <li>
                       <button onClick={handleLinkClick} className='bg-green-500 text-black font-semibold text-lg p-3 rounded-md'>
                         <Link href="/pages/triallesson">DIRECT PROEFLES</Link>
