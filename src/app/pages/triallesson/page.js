@@ -72,7 +72,7 @@ const Page = () => {
         setEmail(e.target.value)
     }
     const SubmitNumber = (e) => {
-        setNumber(e.target.value) // Fixed typo from setMessage to setNumber
+        setNumber(e.target.value)
     }
 
     const handleSubmit = async (e) => {
@@ -109,7 +109,6 @@ const Page = () => {
         }, 2000);
     }, [])
 
-    // Array for trial lesson benefits
     const trialLessonBenefits = [
         "Persoonlijke kennismaking zonder verplichtingen",
         "Ervaren en geduldige instructeurs",

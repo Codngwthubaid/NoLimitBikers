@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Loader from '@/components/Loader/Loader'
 import SubSectionheadings from '@/components/SubSectionheadings'
+import { ageRequirements, allowedFootwear, avbCategories, clothingRequirements, licenseCategories, notAllowedFootwear } from '@/constants'
 
 const Page = () => {
     const [loader, setLoader] = useState(true)
@@ -11,63 +12,6 @@ const Page = () => {
         }, 2000);
     }, [])
 
-    // Data arrays
-    const allowedFootwear = [
-        "Chelsea boots",
-        "Allstars",
-        "Nike Air Jordans",
-        "Schoenen met elastische banden"
-    ]
-
-    const notAllowedFootwear = [
-        "Bergschoenen van stevig leer",
-        "Timberlands",
-        "Werkschoenen die minimaal S3-gecertificeerd zijn",
-        "Motorsneakers met goedkeuring"
-    ]
-
-    const clothingRequirements = [
-        "Motorhelm: Moet ECE-gecertificeerd zijn en goed passen. Een helm zonder vizier is toegestaan als je een bril draagt.",
-        "Handschoenen: Moeten de handen en polsen volledig bedekken en beschermen.",
-        "Jas & broek: Moeten het lichaam volledig bedekken, voorzien zijn van CE-gecertificeerde knie-, heup-, elleboog- en schouderprotectoren.",
-        "Schoenen: Enkelbedekkend en gemaakt van slijtvast materiaal."
-    ]
-
-    const avbCategories = [
-        "Remmen (2 oefeningen op examen)",
-        "Snelle oefeningen (2 oefeningen op examen)",
-        "Langzame oefeningen (2 oefeningen op examen)",
-        "Parkeren (1 oefening op examen)"
-    ]
-
-    const licenseCategories = [
-        { type: "A1 (Lichte Motor)", desc: "Max 125 CC, Max. 11kW" },
-        { type: "A2 (Middelzware Motor)", desc: "Max. 35kW" },
-        { type: "A (Zware Motor)", desc: "onbeperkt vermogen" }
-    ]
-
-    const ageRequirements = [
-        { 
-            age: "Vanaf 18 jaar", 
-            license: "A1-rijbewijs (max. 125cc)",
-            note: "Na 2 jaar ervaring kun je doorgaan naar A2."
-        },
-        { 
-            age: "Vanaf 20 jaar", 
-            license: "A2-rijbewijs",
-            note: "Je krijgt een code 80, waardoor je 2 jaar alleen op A2-motoren mag rijden. Daarna kun je het volledige A-rijbewijs behalen."
-        },
-        { 
-            age: "Vanaf 21 jaar", 
-            license: "A-rijbewijs (beperkt)",
-            note: "Je krijgt een code 80, waardoor je 2 jaar op A2-motoren moet rijden. Na 2 jaar wordt dit automatisch omzet naar een volledig A-rijbewijs."
-        },
-        { 
-            age: "Vanaf 24 jaar", 
-            license: "Direct het volledige A-rijbewijs",
-            note: "Geen beperkingen, je mag meteen alle motoren rijden."
-        }
-    ]
 
     return (
         <div>

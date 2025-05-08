@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import SubSectionheadings from "@/components/SubSectionheadings"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
 import Loader from '@/components/Loader/Loader'
+import { avbPackagesForPricing, avdPackagesForPricing, drivingLessons, examFees } from "@/constants"
 
 const Page = () => {
     const [loader, setLoader] = useState(true)
@@ -13,101 +14,6 @@ const Page = () => {
         }, 2000);
     }, [])
 
-    const drivingLessons = [
-        { name: "Proefles (100 min)", price: "€ 80,00" },
-        { name: "Losse motorrijles (50 min)", price: "€55,00" }
-    ]
-
-    const examFees = [
-        { name: "CBR AVB Praktijk examen  ", price: "€ 215,00" },
-        { name: "CBR AVD Praktijk examen ", price: "€ 279,00" },
-    ]
-
-    const avbPackages = [
-        {
-            title: "AVB Pakket Silver",
-            price: "€750",
-            features: [
-                "12 uur rijlesuren van 50 min + AVB examen",
-                "Vaste instructeur",
-                "Nieuwe lesmotor",
-                "Leskaart & Advies"
-            ],
-            bgColor: "bg-white",
-            textColor: "text-gray-800",
-            listColor: "text-gray-700"
-        },
-        {
-            title: "AVB Pakket Gold",
-            price: "€1050",
-            features: [
-                "16 uur rijlesuren van 50 min + AVB examen",
-                "Vaste instructeur",
-                "Nieuwe lesmotor",
-                "Leskaart & Advies"
-            ],
-            bgColor: "bg-[#050B30]",
-            textColor: "text-white",
-            listColor: "text-gray-300",
-            badge: "Aanbevolen"
-        },
-        {
-            title: "AVB Pakket Platinum",
-            price: "€1300",
-            features: [
-                "20 uur rijlesuren van 50 min + AVB examen",
-                "Vaste instructeur",
-                "Nieuwe lesmotor",
-                "Leskaart & Advies"
-            ],
-            bgColor: "bg-green-100",
-            textColor: "text-gray-800",
-            listColor: "text-gray-700"
-        }
-    ]
-
-    const avdPackages = [
-        {
-            title: "AVD Pakket Silver",
-            price: "€810",
-            features: [
-                "12 uur rijlesuren van 50 min + AVD examen",
-                "Vaste instructeur",
-                "Nieuwe lesmotor",
-                "Leskaart & Advies"
-            ],
-            bgColor: "bg-white",
-            textColor: "text-gray-800",
-            listColor: "text-gray-700"
-        },
-        {
-            title: "AVD Pakket Gold",
-            price: "€1099",
-            features: [
-                "16 uur rijlesuren van 50 min + AVD examen",
-                "Vaste instructeur",
-                "Nieuwe lesmotor",
-                "Leskaart & Advies"
-            ],
-            bgColor: "bg-[#050B30]",
-            textColor: "text-white",
-            listColor: "text-gray-300",
-            badge: "Aanbevolen"
-        },
-        {
-            title: "AVD Pakket Platinum",
-            price: "€1350",
-            features: [
-                "20 uur rijlesuren van 50 min + AVD examen",
-                "Vaste instructeur",
-                "Nieuwe lesmotor",
-                "Leskaart & Advies"
-            ],
-            bgColor: "bg-green-100",
-            textColor: "text-gray-800",
-            listColor: "text-gray-700"
-        }
-    ]
 
     return (
         <div>
@@ -126,7 +32,7 @@ const Page = () => {
                             MOTOREXAMEN VOERTUIGBEHEERSING <span className="text-[#050B30]">AVB</span>
                         </h2>
                         <div className="flex flex-col lg:flex-row gap-8">
-                            {avbPackages.map((pkg, index) => (
+                            {avbPackagesForPricing.map((pkg, index) => (
                                 <Card key={index} className={`relative flex flex-col items-center ${pkg.bgColor}`}>
                                     {pkg.badge && (
                                         <div className="relative -top-4 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">
@@ -163,7 +69,7 @@ const Page = () => {
                             MOTOREXAMEN VERKEERSDEELNAME <span className="text-[#050B30]">AVD</span>
                         </h2>
                         <div className="flex flex-col lg:flex-row gap-8">
-                            {avdPackages.map((pkg, index) => (
+                            {avdPackagesForPricing.map((pkg, index) => (
                                 <Card key={index} className={`relative flex flex-col items-center ${pkg.bgColor}`}>
                                     {pkg.badge && (
                                         <div className="relative -top-4 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-semibold">

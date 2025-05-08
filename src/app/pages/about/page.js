@@ -1,5 +1,5 @@
 "use client"
-import React, { useState , useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import SectionThird from '@/components/SectionThird'
 import nlb1 from "@/public/Gallery/nlb1.webp"
 import Link from 'next/link'
@@ -65,9 +65,7 @@ const Page = () => {
             <div>
               <SectionThird />
             </div>
-
             <div className="h-[2px] w-11/12 bg-green-400 mx-auto my-14"></div>
-
           </article>
         </section>
       </main>
