@@ -6,7 +6,7 @@ import { SquareArrowOutUpRight, TriangleAlert } from 'lucide-react';
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import axios from "axios"
-import {Loader2} from "lucide-react"
+import { Loader2 } from "lucide-react"
 import {
     Dialog,
     DialogContent,
@@ -24,7 +24,7 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 
-const PricingPopUpCard = (props) => {
+export default function PricingPopUpCard(props) {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [number, setNumber] = useState("")
@@ -80,15 +80,9 @@ const PricingPopUpCard = (props) => {
         return isValid
     }
 
-    const SubmitName = (e) => {
-        setName(e.target.value)
-    }
-    const SubmitEmail = (e) => {
-        setEmail(e.target.value)
-    }
-    const SubmitNumber = (e) => {
-        setMessage(e.target.value)
-    }
+    const SubmitName = (e) => { setName(e.target.value) }
+    const SubmitEmail = (e) => { setEmail(e.target.value) }
+    const SubmitNumber = (e) => { setMessage(e.target.value) }
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -125,7 +119,7 @@ const PricingPopUpCard = (props) => {
                 <DialogHeader>
                     <DialogTitle className="font-bold text-4xl text-gray-700">Plan je les</DialogTitle>
                     <DialogDescription className="text-black text-base">
-                    {props.details}
+                        {props.details}
                     </DialogDescription>
                 </DialogHeader>
                 <form className="grid gap-4 py-4" onSubmit={handleSubmit}>
@@ -192,4 +186,3 @@ const PricingPopUpCard = (props) => {
     )
 }
 
-export default PricingPopUpCard

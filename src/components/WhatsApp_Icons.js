@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
-const WhatsApp_Icons = () => {
+
+export default function WhatsApp_Icons() {
     return (
         <div className='flex justify-center items-center gap-x-3 fixed bottom-7 right-2'>
             <div className='text-center text-gray-700 text-sm'>
@@ -16,5 +17,3 @@ const WhatsApp_Icons = () => {
         </div>
     )
 }
-
-export default WhatsApp_Icons

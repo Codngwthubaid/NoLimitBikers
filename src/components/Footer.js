@@ -1,10 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
-const Footer = () => {
+export default function Footer(){
     return (
-
-
         <footer className=" bg-white mt-10">
             <div className="w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex justify-between">
@@ -25,7 +24,7 @@ const Footer = () => {
                             <ul className="text-gray-500 dark:text-gray-400">
                                 <li className="mb-4">
                                     <Link href="https://www.instagram.com/nolimitbikers_010/" className="flex gap-x-1 items-center hover:text-green-400">
-                                        <img width="24" height="24" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1" />
+                                        <Image width="24" height="24" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1" />
                                         <div>Instagram</div>
                                     </Link>
                                 </li>
@@ -40,9 +39,8 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-
     );
 };
 
 
-export default Footer;
+

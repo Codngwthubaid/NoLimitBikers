@@ -319,3 +319,18 @@ export const avdExamDetails = [
     "Tijdens de rit krijg je een stop-and-go opdracht.",
     "Na afloop hoor je direct of je geslaagd bent."
 ];
+
+export const faqItems = [
+    {
+        question: "Hoelang duurt een motorrijles?",
+        answer: "Elke rijles duurt gemiddeld 50 minuten, zodat je voldoende tijd hebt om te oefenen en te groeien."
+    },
+    {
+        question: "Hoeveel lessen heb ik nodig om zelfverzekerd te rijden?",
+        answer: "Dit verschilt per persoon, maar onze instructeurs helpen je met een persoonlijk plan op basis van jouw leerproces en vooruitgang."
+    },
+    {
+        question: "Welke veiligheidsuitrusting moet ik meenemen?",
+        answer: "Voor de lessen heb je minimaal een goedgekeurde helm, handschoenen, stevige schoenen en een motorjas nodig. Geen uitrusting? Geen probleem, we kunnen dit voor je regelen!"
+    }
+]

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Card = (props) => {
+export default function Card() {
     return (
         <>
             <div className='flex flex-col justify-start items-center text-center gap-y-3 border border-green-400 rounded-2xl text-gray-700 h-fit p-10 hover:bg-[#c1e1c1] px-2 '>
@@ -16,4 +16,3 @@ const Card = (props) => {
     )
 }
 
-export default Card

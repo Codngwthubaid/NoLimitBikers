@@ -3,8 +3,7 @@ import Image from 'next/image'
 import new1 from '../public/Gallery/new1.png'
 import new2 from '../public/Gallery/new2.png'
 
-
-const SectionFourth = () => {
+export default function SectionFourth() {
     return (
         <main>
             <div className="flex justify-center items-center flex-col gap-y-3">
@@ -21,5 +20,3 @@ const SectionFourth = () => {
         </main>
     )
 }
-
-export default SectionFourth

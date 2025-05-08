@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 
-const SectionSecond = () => {
+export default function SectionSecond() {
   return (
     <main>
       <div className="flex justify-center items-center flex-col gap-y-3 mx-5">
@@ -24,9 +24,8 @@ const SectionSecond = () => {
           </div>
         </div>
       </div>
-
     </main>
   )
 }
 
-export default SectionSecond
+

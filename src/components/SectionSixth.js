@@ -2,8 +2,7 @@ import React from 'react'
 import FAQ from './FAQ'
 import AccordionCom from './AccordionCom'
 
-const SectionSixth = () => {
-
+export default function SectionSixth() {
     return (
         <div className="bg-gray-300 max-h-fit">
             <div className="text-white w-[95vw] mx-auto flex justify-around items-center py-10 flex-col md:flex-row gap-x-5">
@@ -26,4 +25,4 @@ const SectionSixth = () => {
     )
 }
 
-export default SectionSixth
+
