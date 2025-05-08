@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import SubSectionheadings from "@/components/SubSectionheadings"
 import PricingPopUpCard from "@/components/PricingPopUpCard"
 import { avbPackagesForPricing, avdPackagesForPricing, drivingLessons, examFees } from "@/constants"
+import AboutLoaderWrapper from "@/components/AboutLoaderWrapper"
 
 export const metadata = {
     title: "Tarieven",
