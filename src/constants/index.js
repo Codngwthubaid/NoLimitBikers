@@ -102,14 +102,14 @@ export const avdPackagesForPricing = [
     }
 ]
 
-export const allowedFootwear = [
+export const notAllowedFootwear = [
     "Chelsea boots",
     "Allstars",
     "Nike Air Jordans",
     "Schoenen met elastische banden"
 ]
 
-export const notAllowedFootwear = [
+export const allowedFootwear = [
     "Bergschoenen van stevig leer",
     "Timberlands",
     "Werkschoenen die minimaal S3-gecertificeerd zijn",
