@@ -18,30 +18,31 @@ export async function POST(req) {
       from: process.env.STRATO_EMAIL,  // Use your Strato email as the "from" address
       replyTo: email, // User's email
       to: process.env.STRATO_EMAIL, // Company email (same as "from")
-      subject: 'Inquiry About Driving Lessons',
+      subject: 'Vraag over rijles lessen',
       html: `
-       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #FFF3E0; padding: 20px; border-radius: 8px;">
-  <h2 style="color: #FF5722;">Inquiry About Driving Lessons</h2>
-  <p style="color: #FF7043;">Dear NoLimitBikers Team,</p>
-  <p style="color: #FF7043;">I hope this message finds you well. My name is <strong>${name}</strong>, and I am interested in your driving lessons.</p>
-  <p style="color: #FF7043;">${message}</p>
-  <p style="color: #FF7043;">Thank you for your assistance!</p>
-  <p style="color: #FF7043;">Best regards,</p>
-  <p style="color: #FF5722;"><strong>${name}</strong></p>
+       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #E0FFF3; padding: 20px; border-radius: 8px;">
+  <h2 style="color: #22FF57;">Vraag over rijles lessen</h2>
+  <p style="color: #43FF70;">Beste NoLimitBikers team,</p>
+  <p style="color: #43FF70;">Ik hoop dat dit bericht je in goede gezondheid aantreft. Mijn naam is <strong>${name}</strong>, en ik ben geïnteresseerd in j rijles lessen.</p>
+  <p style="color: #43FF70;">${message}</p>
+  <p style="color: #43FF70;">Dank u wel voor uw hulp!</p>
+  <p style="color: #43FF70;">Met vriendelijke groet,</p>
+  <p style="color: #22FF57;"><strong>${name}</strong></p>
 </div>
       `,
     });
+
     await transporter.sendMail({
       from: process.env.STRATO_EMAIL,  // Use your Strato email as the "from" address
       to: email,
-      subject: 'Thank You for Your Inquiry About Driving Lessons!',
+      subject: 'Dank u wel voor uw vraag over rijles lessen!',
       html: `
-        <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #FFF3E0; padding: 20px; border-radius: 8px;">
-  <h2 style="color: #FF5722;">Dear ${name},</h2>
-  <p style="color: #FF7043;">Thank you for reaching out to us at <strong>NoLimitBikers</strong>. We have resolved your inquiry regarding <strong>${message}</strong> and will be in touch with you shortly to provide further assistance.</p>
-  <p style="color: #FF7043;">If you have any immediate questions, feel free to contact us at <strong>06143 82099</strong>.</p>
-  <p style="color: #FF7043;">Best regards,</p>
-  <p style="color: #FF5722;"><strong>NoLimitBikers Team</strong></p>
+        <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #E0FFF3; padding: 20px; border-radius: 8px;">
+  <h2 style="color: #22FF57;">Beste ${name},</h2>
+  <p style="color: #43FF70;">Dank u wel voor het contact met ons bij <strong>NoLimitBikers</strong>. We hebben uw vraag over <strong>${message}</strong> verwerkt en zullen spoedig contact met u opnemen om verder te helpen.</p>
+  <p style="color: #43FF70;">Als u directe vragen heeft, aarzel dan niet om contact met ons op te nemen op <strong>06143 82099</strong>.</p>
+  <p style="color: #43FF70;">Met vriendelijke groet,</p>
+  <p style="color: #22FF57;"><strong>NoLimitBikers Team</strong></p>
 </div>
       `,
     });
@@ -49,8 +50,7 @@ export async function POST(req) {
     return NextResponse.json(
       { success: true, message: 'Emails sent successfully!' },
       { status: 200 }
-    )
-
+    );
   } catch (error) {
     console.error(error);
     return NextResponse.json(

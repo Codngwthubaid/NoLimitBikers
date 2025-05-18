@@ -80,10 +80,6 @@ export default function PricingPopUpCard(props) {
         return isValid
     }
 
-    const SubmitName = (e) => { setName(e.target.value) }
-    const SubmitEmail = (e) => { setEmail(e.target.value) }
-    const SubmitNumber = (e) => { setMessage(e.target.value) }
-
     const handleSubmit = async (e) => {
         e.preventDefault()
         if (!validateForm()) return
