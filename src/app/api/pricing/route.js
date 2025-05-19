@@ -36,11 +36,13 @@ export async function POST(req) {
     <strong style="color: #ff9f1c;">Cursus:</strong> ${courseId}
   </p>
 </div>`
+
     });
 
     await transport.sendMail({
       from: process.env.STRATO_EMAIL,  // Use your Strato email as the "from" address
       to: email,
+
       subject: "Bevestiging van uw inschrijving voor rijles - Bereid om de weg te lopen!",
       html: `<div style="font-family: Arial, sans-serif; background-color: #fff4db; margin: 0; padding: 0; color: #333;">
   <div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border: 1px solid #ff9f1c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
