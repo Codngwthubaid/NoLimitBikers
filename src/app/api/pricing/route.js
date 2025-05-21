@@ -18,7 +18,7 @@ export async function POST(req) {
       from: process.env.STRATO_EMAIL,  // Use your Strato email as the "from" address
       replyTo: email, // User's email
       to: process.env.STRATO_EMAIL, // Company email (same as "from")
-      subject: "Nieuwe Lesboeking – Gegevens",
+      subject: "Lesboekingsformulier",
       html: `<div style="font-family: Arial, sans-serif; background-color: #fff4db; border: 1px solid #ff9f1c; padding: 20px; border-radius: 10px; max-width: 500px; margin: 20px auto; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
   <h3 style="font-size: 24px; color: #ff9f1c; font-weight: bold; text-align: center; margin-bottom: 20px;">
     Nieuwe Lesboeking – Gegevens
