@@ -2,7 +2,6 @@ import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsApp_Icons from "@/components/WhatsApp_Icons";
-import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 
 const geistSans = localFont({
@@ -26,8 +25,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+   <html lang="en">
       <head>
+        {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q477YD7MHF"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -39,10 +39,36 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
+        {/* Google Ads */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-991894060"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-991894060');
+
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) !== 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-991894060/g9GjCO7JxNgaEKy0_NgD',
+                  'value': 1.0,
+                  'currency': 'EUR',
+                  'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
+        />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         {children}
         <WhatsApp_Icons />
