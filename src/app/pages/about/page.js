@@ -23,8 +23,10 @@ export default function Page() {
             <div className="text-green-400 font-semibold text-xl">Meer over ons</div>
             <div className="text-4xl lg:text-5xl font-bold text-gray-700">Waarom kiezen voor NoLimitBikers?</div>
             <div className="text-lg text-black">
-              Bij NoLimitBikers geloven we in motorrijden met vertrouwen en controle...
-              <div>Benieuwd naar onze aanpak? Ontdek onze pakketten en ervaar zelf het verschil!</div>
+              Bij NoLimitBikers geloven we in motorrijden met vertrouwen, controle en plezier. Wij bieden professionele motor rijlessen in Rotterdam aan die passen bij elk niveau – of je nu op zoek bent naar de goedkoopste motor rijlessen in Rotterdam, of juist de beste begeleiding.
+              <div>Met onze ervaren instructeurs, flexibele pakketten en persoonlijke aanpak kies je voor de beste, goedkoopste en dichtstbijzijnde motor rijlessen in Rotterdam.
+                Benieuwd naar onze aanpak? Ontdek onze cursussen voor motor rijlessen in Rotterdam en ervaar zelf het verschil bij NoLimitBikers!</div>
+              {/* <div>Benieuwd naar onze aanpak? Ontdek onze pakketten en ervaar zelf het verschil!</div> */}
             </div>
             <div>
               <Link href="/pages/courses">

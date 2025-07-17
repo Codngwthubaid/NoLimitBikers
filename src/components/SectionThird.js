@@ -33,8 +33,9 @@ export default function SectionThird() {
       <div>
         <div className="flex flex-col gap-y-5 sm:w-[45vw]">
           <div className="text-2xl text-center font-semibold text-green-400">Over ons</div>
-          <div className="text-4xl lg:text-5xl font-bold text-gray-700">De vrijheid van motorrijden begint hier, veilig en onder controle.</div>
-          <div className="text-lg text-black">Bij NoLimitBikers draait alles om passie voor motorrijden! Wij bieden hoogwaardige motorrijlessen aan in Rotterdam en omgeving, afgestemd op jouw tempo en ervaring. Of je nu een beginner bent die voor het eerst de weg op gaat, of een ervaren motorrijder die zijn skills wil perfectioneren, bij ons ben je aan het juiste adres. Met een persoonlijke aanpak, ervaren instructeurs en een focus op veiligheid en plezier zorgen wij dat jij vol vertrouwen de weg op gaat. Ontdek de vrijheid van motorrijden met NoLimitBikers!</div>
+          <div className="text-4xl lg:text-5xl font-bold text-gray-700">De vrijheid van motorrijden begint hier – veilig, professioneel en betaalbaar.</div>
+          <div className="text-lg text-black">Bij NoLimitBikers ervaar je de ultieme vrijheid van motorrijden met professionele, goedkope én de beste motor rijlessen in Rotterdam. Of je nu beginner bent of ervaren motorrijder, wij bieden persoonlijke begeleiding op jouw niveau.
+            Onze ervaren instructeurs helpen je veilig, zelfverzekerd en stressvrij richting je examen. Zoek je de dichtstbijzijnde of goedkoopste motor rijlessen in Rotterdam? Ontdek onze cursussen voor motor rijlessen in Rotterdam – kwaliteit en betaalbaarheid gegarandeerd!</div>
           <div className="flex flex-col md:flex-row justify-evenly font-semibold my-3 text-black">
             <div className="flex flex-col items-start gap-y-1">
               {tickData.slice(0, 3).map((data, index) => (

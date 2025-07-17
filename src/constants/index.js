@@ -163,72 +163,130 @@ export const cards = [
     {
         emoji: '🏍️',
         title: 'Kies je lespakket',
-        description: 'Kies het lespakket dat past bij jouw behoeften en planning. Of je nu voor losse lessen gaat of een compleet traject, wij helpen je je doel te bereiken.'
+        description: 'Of je nu losse lessen zoekt of een volledig traject: bij NoLimitBikers kies je uit de beste en goedkoopste motor rijlessen in Rotterdam, afgestemd op jouw planning.'
+        // description: 'Kies het lespakket dat past bij jouw behoeften en planning. Of je nu voor losse lessen gaat of een compleet traject, wij helpen je je doel te bereiken.'
     },
     {
         emoji: '🤝',
         title: 'Persoonlijk overleg',
-        description: 'Heb je vragen of weet je niet waar je moet beginnen? Ons team staat voor je klaar om je persoonlijk te adviseren over de beste aanpak voor jouw situatie.'
+        description: 'Twijfel je waar te beginnen? Ons team adviseert je graag over de juiste aanpak én de meest geschikte cursussen voor motor rijlessen in Rotterdam.'
+        // description: 'Heb je vragen of weet je niet waar je moet beginnen? Ons team staat voor je klaar om je persoonlijk te adviseren over de beste aanpak voor jouw situatie.'
     },
     {
         emoji: '🛒',
         title: 'Plan je lessen',
-        description: 'Neem contact met ons op of vraag direct een proefles aan via onze website. Wij helpen je graag met het plannen van je lessen, zodat je zonder gedoe kunt beginnen aan jouw motorrijavontuur.'
+        description: 'Vraag gemakkelijk online een proefles aan. Wij bieden professionele motorrijlessen op een locatie die ideaal is als je zoekt naar de dichtstbijzijnde motor rijschool in Rotterdam.'
+        // description: 'Neem contact met ons op of vraag direct een proefles aan via onze website. Wij helpen je graag met het plannen van je lessen, zodat je zonder gedoe kunt beginnen aan jouw motorrijavontuur.'
     },
     {
         emoji: '🚦',
         title: 'Start je training',
-        description: 'Na het plannen is het tijd om op de motor te stappen! Volg onze professionele lessen en werk stap voor stap toe naar je motorrijbewijs.'
+        description: 'Stap op de motor en volg onze stapsgewijze begeleiding. Met onze professionele en betaalbare rijlessen behaal je zonder stress je rijbewijs!'
+        // description: 'Na het plannen is het tijd om op de motor te stappen! Volg onze professionele lessen en werk stap voor stap toe naar je motorrijbewijs.'
     }
 ]
+
+// export const avbPackagesForCourses = [
+//     {
+//         title: "AVB Pakket Silver",
+//         image: nlb1,
+//         width: 1203,
+//         height: 503,
+//         description: "Ben je een beginner of wil je je rijvaardigheden verbeteren? Het AVB Pakket Silver biedt jou een solide basis om vol vertrouwen te starten met motorrijden. Dit pakket is zorgvuldig samengesteld om je optimaal voor te bereiden op het voertuigbeheersingsexamen (AVB)."
+//     },
+//     {
+//         title: "AVB Pakket Gold",
+//         image: nlb2,
+//         width: 1204,
+//         height: 504,
+//         description: "Wil je een stap verder gaan? Het AVB Pakket Gold biedt een uitgebreidere opleiding, perfect voor wie meer lessen en extra voordelen wil tijdens de voorbereiding op het AVB-examen. Combineer kwaliteit, comfort en een voordelige deal in één pakket."
+//     },
+//     {
+//         title: "AVB Pakket Platinum",
+//         image: nlb3,
+//         width: 1205,
+//         height: 505,
+//         description: "Wil je de meest uitgebreide voorbereiding op je motorrijbewijs? Het AVB Pakket Platinum biedt persoonlijke begeleiding en een uitgebreid aantal rijlessen, zodat je vol vertrouwen en uitstekend voorbereid het AVB-examen kunt afleggen. Perfect voor wie niets aan het toeval wil overlaten."
+//     }
+// ]
+
+// export const avdPackagesForCourses = [
+//     {
+//         title: "AVD Pakket Silver",
+//         image: nlb1,
+//         width: 1203,
+//         height: 503,
+//         description: "Wil je een solide basis leggen voor het behalen van je motorrijbewijs? Het AVD Pakket Silver combineert praktijkgerichte lessen met persoonlijke begeleiding. Ideaal voor beginners of voor wie zijn rijvaardigheden wil aanscherpen."
+//     },
+//     {
+//         title: "AVD Pakket Gold",
+//         image: nlb2,
+//         width: 1204,
+//         height: 504,
+//         description: "Klaar voor de volgende stap? Het AVD Pakket Gold biedt een uitgebreide rijopleiding met extra lessen en persoonlijke ondersteuning. Perfect voor wie grondig wil oefenen en zeker wil zijn van een veilige en zelfverzekerde voorbereiding op het AVD-examen."
+//     },
+//     {
+//         title: "AVD Pakket Platinum",
+//         image: nlb3,
+//         width: 1205,
+//         height: 505,
+//         description: "Voor een complete en diepgaande voorbereiding kies je het AVD Pakket Platinum. Met persoonlijke begeleiding en een uitgebreide reeks lessen krijg je alle tools om je motorrijbewijs te halen."
+//     }
+// ]
 
 export const avbPackagesForCourses = [
-    {
-        title: "AVB Pakket Silver",
-        image: nlb1,
-        width: 1203,
-        height: 503,
-        description: "Ben je een beginner of wil je je rijvaardigheden verbeteren? Het AVB Pakket Silver biedt jou een solide basis om vol vertrouwen te starten met motorrijden. Dit pakket is zorgvuldig samengesteld om je optimaal voor te bereiden op het voertuigbeheersingsexamen (AVB)."
-    },
-    {
-        title: "AVB Pakket Gold",
-        image: nlb2,
-        width: 1204,
-        height: 504,
-        description: "Wil je een stap verder gaan? Het AVB Pakket Gold biedt een uitgebreidere opleiding, perfect voor wie meer lessen en extra voordelen wil tijdens de voorbereiding op het AVB-examen. Combineer kwaliteit, comfort en een voordelige deal in één pakket."
-    },
-    {
-        title: "AVB Pakket Platinum",
-        image: nlb3,
-        width: 1205,
-        height: 505,
-        description: "Wil je de meest uitgebreide voorbereiding op je motorrijbewijs? Het AVB Pakket Platinum biedt persoonlijke begeleiding en een uitgebreid aantal rijlessen, zodat je vol vertrouwen en uitstekend voorbereid het AVB-examen kunt afleggen. Perfect voor wie niets aan het toeval wil overlaten."
-    }
-]
+  {
+    title: "AVB Pakket Silver",
+    image: nlb1,
+    width: 1203,
+    height: 503,
+    description:
+      "Ben je een beginner of wil je je rijvaardigheden verbeteren? Het AVB Pakket Silver van NoLimitBikers biedt een solide basis voor een veilige start. Deze cursus maakt deel uit van onze cheap en professional motor driving lessons in Rotterdam en bereidt je uitstekend voor op het voertuigbeheersingsexamen (AVB)."
+  },
+  {
+    title: "AVB Pakket Gold",
+    image: nlb2,
+    width: 1204,
+    height: 504,
+    description:
+      "Wil je een stap verder gaan? Het AVB Pakket Gold van NoLimitBikers is onderdeel van de best motor driving lessons in Rotterdam en biedt extra rijlessen, comfort en begeleiding. Deze cursus is perfect voor wie kwaliteit zoekt tegen een scherpe prijs."
+  },
+  {
+    title: "AVB Pakket Platinum",
+    image: nlb3,
+    width: 1205,
+    height: 505,
+    description:
+      "Voor de meest complete voorbereiding kies je het AVB Pakket Platinum. Dit pakket biedt persoonlijke begeleiding, uitgebreide lessen en maakt deel uit van onze professional en cheapest motor driving lessons in Rotterdam – ideaal voor wie niets aan het toeval wil overlaten."
+  }
+];
 
 export const avdPackagesForCourses = [
-    {
-        title: "AVD Pakket Silver",
-        image: nlb1,
-        width: 1203,
-        height: 503,
-        description: "Wil je een solide basis leggen voor het behalen van je motorrijbewijs? Het AVD Pakket Silver combineert praktijkgerichte lessen met persoonlijke begeleiding. Ideaal voor beginners of voor wie zijn rijvaardigheden wil aanscherpen."
-    },
-    {
-        title: "AVD Pakket Gold",
-        image: nlb2,
-        width: 1204,
-        height: 504,
-        description: "Klaar voor de volgende stap? Het AVD Pakket Gold biedt een uitgebreide rijopleiding met extra lessen en persoonlijke ondersteuning. Perfect voor wie grondig wil oefenen en zeker wil zijn van een veilige en zelfverzekerde voorbereiding op het AVD-examen."
-    },
-    {
-        title: "AVD Pakket Platinum",
-        image: nlb3,
-        width: 1205,
-        height: 505,
-        description: "Voor een complete en diepgaande voorbereiding kies je het AVD Pakket Platinum. Met persoonlijke begeleiding en een uitgebreide reeks lessen krijg je alle tools om je motorrijbewijs te halen."
-    }
-]
+  {
+    title: "AVD Pakket Silver",
+    image: nlb1,
+    width: 1203,
+    height: 503,
+    description:
+      "Het AVD Pakket Silver van NoLimitBikers biedt praktijkgerichte lessen en persoonlijke ondersteuning. Deze cursus is ideaal voor beginners en maakt deel uit van onze cheapest en nearest motor driving lessons in Rotterdam."
+  },
+  {
+    title: "AVD Pakket Gold",
+    image: nlb2,
+    width: 1204,
+    height: 504,
+    description:
+      "Klaar voor de volgende stap? Het AVD Pakket Gold biedt een complete rijopleiding met extra lessen. Als onderdeel van onze best en professional motor driving lessons in Rotterdam is dit pakket perfect voor een zelfverzekerde voorbereiding op het AVD-examen."
+  },
+  {
+    title: "AVD Pakket Platinum",
+    image: nlb3,
+    width: 1205,
+    height: 505,
+    description:
+      "Voor een grondige voorbereiding kies je het AVD Pakket Platinum. Deze cursus hoort bij onze top-tier courses for motor driving lessons in Rotterdam en biedt persoonlijke begeleiding, uitgebreide training en maximale kans van slagen met NoLimitBikers."
+  }
+];
 
 export const navLinks = [
     { href: "/", label: "Home" },
@@ -248,12 +306,18 @@ export const images = [
 ];
 
 export const tickData = [
-    "De basis van motorbeheersing - van starten tot stoppen, alles begint hier.",
-    "Defensief rijden - anticipeer op het verkeer en rijd met vertrouwen.",
-    "Voorbereiding op het praktijkexamen - haal je rijbewijs zonder stress.",
-    "Snelheidscontrole in bochten - soepel en veilig door elke bocht.",
-    "Balans en beheersing - de fundamenten van zelfverzekerd motorrijden.",
-    "Relaxed rijden op lange ritten - blijf comfortabel, ook tijdens lange afstanden."
+    "De basis van motorbeheersing – van starten tot stoppen, alles begint hier.",
+    "Defensief rijden – anticipeer op het verkeer en rijd met vertrouwen.",
+    "Voorbereiding op het praktijkexamen – haal je rijbewijs zonder stress.",
+    "Snelheidscontrole in bochten – soepel en veilig door elke bocht.",
+    "Balans en beheersing – de fundamenten van zelfverzekerd motorrijden.",
+    "Relaxed rijden op lange ritten – blijf comfortabel, ook tijdens lange afstanden."
+    // "De basis van motorbeheersing - van starten tot stoppen, alles begint hier.",
+    // "Defensief rijden - anticipeer op het verkeer en rijd met vertrouwen.",
+    // "Voorbereiding op het praktijkexamen - haal je rijbewijs zonder stress.",
+    // "Snelheidscontrole in bochten - soepel en veilig door elke bocht.",
+    // "Balans en beheersing - de fundamenten van zelfverzekerd motorrijden.",
+    // "Relaxed rijden op lange ritten - blijf comfortabel, ook tijdens lange afstanden."
 ];
 
 export const trialLessonBenefits = [
@@ -287,18 +351,34 @@ export const contactCards = [
     }
 ];
 
+// export const descriptionItems = [
+//     {
+//         title: "Contact NoLimitBikers in Rotterdam",
+//         descriptions: [
+//             "Welkom bij NoLimitBikers, jouw partner voor betaalbare en hoogwaardige motorrijlessen in Rotterdam en omgeving. Onze ervaren instructeurs staan klaar om jou te begeleiden naar jouw motorrijbewijs. Of je nu een beginner bent of jouw vaardigheden wilt perfectioneren, bij ons ben je aan het juiste adres.",
+//             "Wij begrijpen dat iedereen unieke behoeften heeft als het gaat om motorrijlessen. Daarom bieden wij flexibele lestijden en op maat gemaakte lespakketten. Neem vandaag nog contact met ons op via e-mail, telefoon of WhatsApp voor meer informatie of om je eerste motorrijles in te plannen.",
+//             "Bij NoLimitBikers streven we naar de hoogste slagingspercentages en klanttevredenheid. Onze instructeurs hebben jarenlange ervaring en hanteren een persoonlijke aanpak, zodat jij met zelfvertrouwen en veiligheid de weg op gaat.",
+//             "Aarzel niet om contact met ons op te nemen voor al je vragen over motorrijlessen en tarieven. Wij staan klaar om je te helpen op weg naar succes.",
+//             "We kijken ernaar uit om jou te helpen slagen voor je motorrijbewijs en heten je van harte welkom bij NoLimitBikers in Rotterdam!"
+//         ]
+//     }
+// ];
+
 export const descriptionItems = [
-    {
-        title: "Contact NoLimitBikers in Rotterdam",
-        descriptions: [
-            "Welkom bij NoLimitBikers, jouw partner voor betaalbare en hoogwaardige motorrijlessen in Rotterdam en omgeving. Onze ervaren instructeurs staan klaar om jou te begeleiden naar jouw motorrijbewijs. Of je nu een beginner bent of jouw vaardigheden wilt perfectioneren, bij ons ben je aan het juiste adres.",
-            "Wij begrijpen dat iedereen unieke behoeften heeft als het gaat om motorrijlessen. Daarom bieden wij flexibele lestijden en op maat gemaakte lespakketten. Neem vandaag nog contact met ons op via e-mail, telefoon of WhatsApp voor meer informatie of om je eerste motorrijles in te plannen.",
-            "Bij NoLimitBikers streven we naar de hoogste slagingspercentages en klanttevredenheid. Onze instructeurs hebben jarenlange ervaring en hanteren een persoonlijke aanpak, zodat jij met zelfvertrouwen en veiligheid de weg op gaat.",
-            "Aarzel niet om contact met ons op te nemen voor al je vragen over motorrijlessen en tarieven. Wij staan klaar om je te helpen op weg naar succes.",
-            "We kijken ernaar uit om jou te helpen slagen voor je motorrijbewijs en heten je van harte welkom bij NoLimitBikers in Rotterdam!"
-        ]
-    }
+  {
+    title: "Contact NoLimitBikers in Rotterdam",
+    descriptions: [
+      "Ben je op zoek naar motorrijles in Rotterdam? NoLimitBikers biedt betaalbare en hoogwaardige motorrijlessen in Rotterdam en omgeving, verzorgd door ervaren motorinstructeurs.",
+      "Of je nu een beginner bent of jouw motorvaardigheden wilt verbeteren, bij NoLimitBikers ben je aan het juiste adres om je motorrijbewijs te halen met vertrouwen en veiligheid.",
+      "Onze motorrijschool in Rotterdam biedt flexibele motorrijlessen en op maat gemaakte lespakketten, afgestemd op jouw leerstijl en agenda.",
+      "Neem vandaag nog contact op via e-mail, WhatsApp of telefonisch om je eerste motorrijles in Rotterdam te plannen of meer informatie aan te vragen.",
+      "Wij streven naar een hoog slagingspercentage en klanttevredenheid. Onze persoonlijke aanpak helpt jou met zekerheid en controle de weg op te gaan.",
+      "Heb je vragen over motorrijlessen, tarieven of ons lesaanbod in Rotterdam? Wij helpen je graag verder – contacteer NoLimitBikers nu!",
+      "Welkom bij NoLimitBikers – jouw motorrijschool in Rotterdam waar je snel, veilig en met plezier jouw motorrijbewijs kunt behalen!"
+    ]
+  }
 ];
+
 
 export const ageRequirementItems = [
     {
@@ -320,17 +400,34 @@ export const avdExamDetails = [
     "Na afloop hoor je direct of je geslaagd bent."
 ];
 
+// export const faqItems = [
+//     {
+//         question: "Hoelang duurt een motorrijles?",
+//         answer: "Elke rijles duurt gemiddeld 50 minuten, zodat je voldoende tijd hebt om te oefenen en te groeien."
+//     },
+//     {
+//         question: "Hoeveel lessen heb ik nodig om zelfverzekerd te rijden?",
+//         answer: "Dit verschilt per persoon, maar onze instructeurs helpen je met een persoonlijk plan op basis van jouw leerproces en vooruitgang."
+//     },
+//     {
+//         question: "Welke veiligheidsuitrusting moet ik meenemen?",
+//         answer: "Voor de lessen heb je minimaal een goedgekeurde helm, handschoenen, stevige schoenen en een motorjas nodig. Geen uitrusting? Geen probleem, we kunnen dit voor je regelen!"
+//     }
+// ]
 export const faqItems = [
     {
         question: "Hoelang duurt een motorrijles?",
-        answer: "Elke rijles duurt gemiddeld 50 minuten, zodat je voldoende tijd hebt om te oefenen en te groeien."
+        answer:
+            "Elke motorrijles bij NoLimitBikers duurt gemiddeld 50 minuten. Onze professionele instructeurs zorgen ervoor dat je in korte tijd veilig en effectief leert rijden. Of je nu kiest voor goedkope of uitgebreide motor rijlessen in Rotterdam – je krijgt altijd kwaliteit."
     },
     {
         question: "Hoeveel lessen heb ik nodig om zelfverzekerd te rijden?",
-        answer: "Dit verschilt per persoon, maar onze instructeurs helpen je met een persoonlijk plan op basis van jouw leerproces en vooruitgang."
+        answer:
+            "Dit verschilt per persoon. Onze ervaren instructeurs stellen een persoonlijk plan op dat past bij jouw niveau. Dankzij onze flexibele cursussen voor motor rijlessen in Rotterdam behaal je met vertrouwen je motorrijbewijs – of je nu zoekt naar de beste, goedkoopste of dichtstbijzijnde optie."
     },
     {
         question: "Welke veiligheidsuitrusting moet ik meenemen?",
-        answer: "Voor de lessen heb je minimaal een goedgekeurde helm, handschoenen, stevige schoenen en een motorjas nodig. Geen uitrusting? Geen probleem, we kunnen dit voor je regelen!"
+        answer:
+            "Voor de lessen heb je minimaal een goedgekeurde helm, handschoenen, stevige schoenen en een motorjas nodig. Geen eigen uitrusting? Geen probleem – bij NoLimitBikers, jouw keuze voor professionele en goedkope motor rijlessen in Rotterdam, kunnen we dit voor je regelen!"
     }
-]
+];
