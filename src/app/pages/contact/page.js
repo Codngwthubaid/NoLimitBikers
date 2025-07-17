@@ -5,10 +5,10 @@ import { contactCards, descriptionItems } from '@/constants';
 
 export const metadata = {
   title: "Contact",
-  description: "Heb je vragen over onze motorrijlessen of wil je direct een les boeken? Neem contact met ons op via telefoon, e-mail of WhatsApp. Ons team staat klaar om je persoonlijk te helpen en je snel op weg te helpen naar je motorrijbewijs. Wij horen graag van je!",
+  description: "Vragen over motorrijlessen of direct een les boeken? Neem contact op via telefoon, e-mail of WhatsApp. Wij helpen je graag verder!"
 };
 
-export default function Page(){
+export default function Page() {
   return (
     <AboutLoaderWrapper>
       <main>

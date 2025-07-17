@@ -5,7 +5,7 @@ import AboutLoaderWrapper from '@/components/AboutLoaderWrapper'
 
 export const metadata = {
     title: "Examens",
-    description: "Bereid je goed voor op je motorpraktijkexamen met de juiste informatie over kledingvoorschriften, examenonderdelen en rijbewijs categorieën. Bij NoLimitBikers helpen we je stap voor stap naar succes!",
+    description: "Bereid je optimaal voor op je motorpraktijkexamen met info over kleding, onderdelen en categorieën. NoLimitBikers helpt je stap voor stap!",
 }
 
 export default function Page() {

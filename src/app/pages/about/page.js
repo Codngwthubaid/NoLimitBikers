@@ -9,7 +9,7 @@ import React from "react";
 
 export const metadata = {
   title: "Over ons",
-  description: "Ontdek waarom NoLimitBikers de juiste keuze is voor motorrijlessen. Veiligheid, persoonlijke begeleiding en expertise.",
+  description: "Ontdek waarom NoLimitBikers de juiste keuze is voor motorrijlessen in Rotterdam. Veiligheid, persoonlijke begeleiding en ervaren instructeurs staan centraal voor een succesvolle en zelfverzekerde rijervaring."
 };
 
 export default function Page() {

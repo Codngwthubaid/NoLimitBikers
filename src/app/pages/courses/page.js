@@ -6,7 +6,7 @@ import AboutLoaderWrapper from '@/components/AboutLoaderWrapper';
 
 export const metadata = {
   title: "Pakketten",
-  description: "Bij NoLimitBikers vind je motorrijlessen op maat, van beginner tot gevorderde. Kies uit verschillende pakketten en krijg persoonlijke begeleiding om veilig en zelfverzekerd je motorrijbewijs te halen. Start vandaag nog!",
+  description: "Motorrijlessen op maat bij NoLimitBikers – van beginner tot gevorderde. Kies je pakket en start veilig en zelfverzekerd vandaag nog!",
 };
 
 export default function Page() {

@@ -20,12 +20,12 @@ export const metadata = {
     default: "NoLimitBikers - Motorrijschool",
     template: "%s | NoLimitBikers - Motorrijschool",
   },
-  description: "NoLimitBikers offers a comprehensive platform for biking enthusiasts to enhance their skills and knowledge. Through engaging lessons, expert tips, and community support, riders of all levels can learn essential techniques, safety practices, and maintenance skills, fostering a deeper appreciation for biking while promoting a safe and enjoyable riding experience.",
+  description: "NoLimitBikers is jouw betrouwbare motorrijschool in Rotterdam. Wij bieden hoogwaardige motorrijlessen, deskundige instructeurs en flexibele lespakketten. Of je nu een beginner bent of gevorderd, leer veilig en met vertrouwen rijden. Boek vandaag je motorrijles en behaal je rijbewijs met succes bij NoLimitBikers!"
 };
 
 export default function RootLayout({ children }) {
   return (
-   <html lang="en">
+    <html lang="en">
       <head>
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q477YD7MHF"></script>

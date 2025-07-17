@@ -7,7 +7,7 @@ import AboutLoaderWrapper from "@/components/AboutLoaderWrapper"
 
 export const metadata = {
     title: "Tarieven",
-    description: "Ontdek onze motorrijlespakketten en losse lessen tegen scherpe en transparante prijzen. Kies wat bij jou past en start vandaag nog met leren!",
+    description: "Ontdek motorrijlespakketten en losse lessen tegen scherpe, transparante prijzen. Kies wat bij je past en start direct!"
 }
 
 export default function Page() {
