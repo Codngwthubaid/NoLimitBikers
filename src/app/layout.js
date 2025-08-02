@@ -20,13 +20,30 @@ export const metadata = {
     default: "NoLimitBikers - Motorrijschool",
     template: "%s | NoLimitBikers - Motorrijschool",
   },
-  description: "NoLimitBikers is jouw betrouwbare motorrijschool in Rotterdam. Wij bieden hoogwaardige motorrijlessen, deskundige instructeurs en flexibele lespakketten. Of je nu een beginner bent of gevorderd, leer veilig en met vertrouwen rijden. Boek vandaag je motorrijles en behaal je rijbewijs met succes bij NoLimitBikers!"
+  description: "NoLimitBikers is jouw betrouwbare motorrijschool in Rotterdam...",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-WVC5MLKW');
+            `,
+          }}
+        />
+
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q477YD7MHF"></script>
         <script
@@ -49,7 +66,6 @@ export default function RootLayout({ children }) {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-991894060');
-
               function gtag_report_conversion(url) {
                 var callback = function () {
                   if (typeof(url) !== 'undefined') {
@@ -69,6 +85,16 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WVC5MLKW"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
         <Navbar />
         {children}
         <WhatsApp_Icons />
